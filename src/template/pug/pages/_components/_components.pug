@@ -419,28 +419,28 @@ block content
 						.components__desc
 							p Используются для всплывающих окон и галерей.
 							p Зона видимость атрибутов для передачи аргумента — "data-src" -> "href"
-							table.table
-								thead
-									tr
-										th Состояние
-										th Класс
-										th Действие
-								tbody
-									tr
-										td Нормальное
-										td #[div.tac —]
-										td #[div.tac —]
-									tr
-										td Клик
-										td --checked
-										td
-											ul
-												li удаляется, при повтроном клике, если это input type="checkbox" 
-												li удаляется, при клике на элемент, если это input type="radio" 
-									tr
-										td Ошибка
-										td --error
-										td #[div.tac —]
+							//- table.table
+							//- 	thead
+							//- 		tr
+							//- 			th Состояние
+							//- 			th Класс
+							//- 			th Действие
+							//- 	tbody
+							//- 		tr
+							//- 			td Нормальное
+							//- 			td #[div.tac —]
+							//- 			td #[div.tac —]
+							//- 		tr
+							//- 			td Клик
+							//- 			td --checked
+							//- 			td
+							//- 				ul
+							//- 					li удаляется, при повтроном клике, если это input type="checkbox" 
+							//- 					li удаляется, при клике на элемент, если это input type="radio" 
+							//- 		tr
+							//- 			td Ошибка
+							//- 			td --error
+							//- 			td #[div.tac —]
 							table.table
 								thead
 									tr
@@ -460,45 +460,45 @@ block content
 										td close()
 										td Popup.close();
 
-							blockquote
-								h4 Использование
-								pre
-									| .check.--checkbox
-									|   input.check__input(type="checkbox" name="" value="")
-									|   .check__box
-									|   .check__wrap
-									|     input.check__title
-									|
-									| .check.--radio
-									|   input.check__input(type="radio" name="" value="")
-									|   .check__box
-									|   .check__wrap
-									|     input.check__title
-									|
-									| .check.--toggle(data-true="checked" data-false="not checked")
-									|   input.check__input(type="checkbox" name="" value="")
-									|   .check__box
-									|   .check__wrap
-									|     input.check__title
+							//- blockquote
+							//- 	h4 Использование
+							//- 	pre
+							//- 		| .check.--checkbox
+							//- 		|   input.check__input(type="checkbox" name="" value="")
+							//- 		|   .check__box
+							//- 		|   .check__wrap
+							//- 		|     input.check__title
+							//- 		|
+							//- 		| .check.--radio
+							//- 		|   input.check__input(type="radio" name="" value="")
+							//- 		|   .check__box
+							//- 		|   .check__wrap
+							//- 		|     input.check__title
+							//- 		|
+							//- 		| .check.--toggle(data-true="checked" data-false="not checked")
+							//- 		|   input.check__input(type="checkbox" name="" value="")
+							//- 		|   .check__box
+							//- 		|   .check__wrap
+							//- 		|     input.check__title
 
-							blockquote
-								h4 Подключение
-								p #[u style.sass:]
-								pre
-									| @import ../components/check/check
-								p #[u default.pug:]
-								pre
-									| +script('check', 'components')
-								p #[u common.js:]
-								pre
-									| // Checks
-									| let checks = document.querySelectorAll('.check');
-									| 
-									| if (checks) {
-									|   fields.forEach((check)=>{
-									|     new Check(check);
-									|   });
-									| }
+							//- blockquote
+							//- 	h4 Подключение
+							//- 	p #[u style.sass:]
+							//- 	pre
+							//- 		| @import ../components/check/check
+							//- 	p #[u default.pug:]
+							//- 	pre
+							//- 		| +script('check', 'components')
+							//- 	p #[u common.js:]
+							//- 	pre
+							//- 		| // Checks
+							//- 		| let checks = document.querySelectorAll('.check');
+							//- 		| 
+							//- 		| if (checks) {
+							//- 		|   fields.forEach((check)=>{
+							//- 		|     new Check(check);
+							//- 		|   });
+							//- 		| }
 						.components__inner
 							.button.--md.--b-gray(data-popup="" data-src="#modal-1") Попап кнопка
 							a.button.--md.--b-gray(href="#modal-1" data-popup="") Попап ссылка
@@ -640,6 +640,10 @@ block content
 
 		.components__inner .select .field {
 			margin-bottom: 0;
+		}
+
+		.components__inner .modal {
+			display: none;
 		}
 
 		.components__aside {
