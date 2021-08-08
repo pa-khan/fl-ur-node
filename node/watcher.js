@@ -40,7 +40,7 @@ class Watcher {
 				browserSync.reload(file.replace('.sass', '.css'));
 			} 
 			// else if (event == 'change' && path.extname(file) == '.pug') {
-			// 	browserSync.reload(path.join(PATH.DEV + '*.html'));
+			// 	browserSync.reload(path.join(PATH.SRC + '*.html'));
 			// }
 		});
 	}
@@ -61,18 +61,18 @@ class Watcher {
 			if (event == 'change' && path.extname(file) == '.sass') {
 				browserSync.reload(file.replace('.sass', '.css'));
 			} else if (event == 'change' && path.extname(file) == '.pug') {
-				browserSync.reload(path.join(PATH.DEV + '*.html'));
+				browserSync.reload(path.join(PATH.SRC + '*.html'));
 			}
 		});
 	}
 	watchPages(){
 		browserSync.watch(path.join(PATH.PAGES, '*/*.pug'), (event, file)=>{
-			fs.writeFile(path.join(PATH.DEV, path.basename(file.replace('.pug', '.html'))), Watcher.compilePug(file), (err) => {
+			fs.writeFile(path.join(PATH.SRC, path.basename(file.replace('.pug', '.html'))), Watcher.compilePug(file), (err) => {
 				
 			});
 
 			
-			browserSync.reload(path.join(PATH.DEV + '*.html'));
+			browserSync.reload(path.join(PATH.SRC + '*.html'));
 		});
 	}
 	watchSysSass(){
@@ -105,7 +105,7 @@ class Watcher {
 
 
 		getFiles(PATH.PAGES).forEach((file)=>{
-			fs.writeFile(path.join(PATH.DEV, path.basename(file.replace('.pug', '.html'))), Watcher.compilePug(file), (err) => {
+			fs.writeFile(path.join(PATH.SRC, path.basename(file.replace('.pug', '.html'))), Watcher.compilePug(file), (err) => {
 				
 			});	
 		})
@@ -113,7 +113,7 @@ class Watcher {
 	}
 	constructor(){
 		browserSync.init({
-			server: PATH.DEV
+			server: PATH.SRC
 		});
 		this.watchPages();
 		this.watchComponents();

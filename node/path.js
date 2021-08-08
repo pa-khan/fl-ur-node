@@ -1,21 +1,20 @@
 class PATH {
-	static SRC     = './source/';
-	static DEV     = this.SRC + 'dev/';
-	static DIST    = this.SRC + 'dist/';
-	static ASSETS  = this.DEV + '_/';
-	static UPLOAD  = this.ASSETS + 'upload/';
-	static BLOCKS  = this.ASSETS + 'blocks/';
-	static COMPS   = this.ASSETS + 'components/';
-	static TEMPS   = this.ASSETS + 'templates/';
-	static PAGES   = this.ASSETS + 'pages/';
-	static SYS     = this.ASSETS + 'sys/';
-	static CSS     = this.SYS + 'css/';
-	static SASS    = this.SYS + 'sass/';
-	static PUG     = this.SYS + 'pug/';
-	static JS      = this.SYS + 'js/';
-	static IMGS    = this.SYS + 'imgs/';
-	static LIBS    = this.SYS + 'libs/';
-	static FONTS   = this.SYS + 'fonts/';
+	static SRC     = 'src/';
+	static DIST    = 'dist/';
+	static TEMP    = this.SRC + 'template/';
+	static UPLOAD  = this.SRC + 'uploads/';
+	static BLOCKS  = this.TEMP + 'blocks/';
+	static COMPS   = this.TEMP + 'components/';
+	static CSS     = this.TEMP + 'css/';
+	static SASS    = this.TEMP + 'sass/';
+	static PUG     = this.TEMP + 'pug/';
+	static JS      = this.TEMP + 'js/';
+	static IMGS    = this.TEMP + 'imgs/';
+	static LIBS    = this.TEMP + 'libs/';
+	static FONTS   = this.TEMP + 'fonts/';
+
+	static TEMPS   = this.PUG + 'templates/';
+	static PAGES   = this.PUG + 'pages/';
 }
 
 module.exports = PATH;
