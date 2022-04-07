@@ -401,6 +401,7 @@
     height: auto;
   }
   .fm {
+    overflow: hidden;
     &__content {
       padding-top: 320px;
     }
@@ -446,6 +447,15 @@
   .main {
     height: auto;
   }
+}
 
+@media screen and (max-width: 767px) and (min-height: 560px){
+  html, body {
+    min-height: 1px;
+  }
+  html, body, .wrap {
+    height: 100%;
+    overflow-y: hidden;
+  }
 
 }

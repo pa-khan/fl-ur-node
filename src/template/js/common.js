@@ -3,9 +3,9 @@ var html = document.querySelector('html'),
 		wrap = document.querySelector('.wrap');
 
 document.addEventListener('DOMContentLoaded', ()=>{
-  wrap.style.minHeight = html.clientHeight + 'px';
+  wrap.style.minHeight = body.clientHeight + 'px';
   window.addEventListener('resize', ()=>{
-    wrap.style.minHeight = html.clientHeight + 'px';
+    wrap.style.minHeight = body.clientHeight + 'px';
   });
 
   let fields = document.querySelectorAll('.field');

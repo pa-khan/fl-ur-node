@@ -530,6 +530,9 @@ img, svg, path, circle, rect, line {
     height: auto;
   }
 
+  .fm {
+    overflow: hidden;
+  }
   .fm__content {
     padding-top: 320px;
   }
@@ -568,5 +571,15 @@ img, svg, path, circle, rect, line {
 @media screen and (max-height: 550px) {
   .main {
     height: auto;
+  }
+}
+@media screen and (max-width: 767px) and (min-height: 560px) {
+  html, body {
+    min-height: 1px;
+  }
+
+  html, body, .wrap {
+    height: 100%;
+    overflow-y: hidden;
   }
 }
