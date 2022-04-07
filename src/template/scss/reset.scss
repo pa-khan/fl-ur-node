@@ -5,6 +5,7 @@
   margin: 0;
   border: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html, body {
@@ -19,7 +20,8 @@ body {
   margin-right: auto;
   position: relative;
   font-weight: 400;
-  background: #E5E5E5;
+  background: #f5f5f5;
+  -webkit-touch-callout: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -74,6 +76,8 @@ picture {
 
 img {
   display: block;
+  -webkit-user-select: none;
+  user-select: none;
   // max-width: 100% !important;
   // max-height: 100% !important;
   pointer-events: none;
@@ -81,6 +85,8 @@ img {
 
 svg {
   display: block;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 img, svg, path, circle, rect, line {

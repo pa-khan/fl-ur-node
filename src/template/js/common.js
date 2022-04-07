@@ -3,9 +3,9 @@ var html = document.querySelector('html'),
 		wrap = document.querySelector('.wrap');
 
 document.addEventListener('DOMContentLoaded', ()=>{
-  wrap.style.minHeight = body.clientHeight + 'px';
+  wrap.style.minHeight = html.clientHeight + 'px';
   window.addEventListener('resize', ()=>{
-    wrap.style.minHeight = body.clientHeight + 'px';
+    wrap.style.minHeight = html.clientHeight + 'px';
   });
 
   let fields = document.querySelectorAll('.field');
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
       counter.diff = new Date(counter.diff);
 
       if (counter.diff < new Date(0)) {
-        counter.val.innerHTML = '00:00:00';
+        counter.val.innerHTML = '— — —';
         // startBtnPlay.classList.add('--hide');
         // startBtnStop.classList.remove('--hide');
 

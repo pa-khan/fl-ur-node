@@ -4,6 +4,7 @@
   margin: 0;
   border: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html, body {
@@ -18,7 +19,8 @@ body {
   margin-right: auto;
   position: relative;
   font-weight: 400;
-  background: #E5E5E5;
+  background: #f5f5f5;
+  -webkit-touch-callout: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -73,11 +75,15 @@ picture {
 
 img {
   display: block;
+  -webkit-user-select: none;
+  user-select: none;
   pointer-events: none;
 }
 
 svg {
   display: block;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 img, svg, path, circle, rect, line {
@@ -419,6 +425,18 @@ img, svg, path, circle, rect, line {
     opacity: 0;
   }
 }
+@media screen and (max-height: 855px) {
+  .start {
+    margin-top: -23px;
+    transform: scale(0.9);
+  }
+}
+@media screen and (max-height: 700px) {
+  .start {
+    margin-top: -53px;
+    transform: scale(0.8);
+  }
+}
 @media screen and (max-height: 735px) and (min-width: 993px) {
   .fm {
     padding-bottom: 0;
@@ -437,6 +455,10 @@ img, svg, path, circle, rect, line {
     overflow: hidden;
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+
+  .start {
+    margin-top: 0;
   }
 }
 @media screen and (max-width: 1160px) {
@@ -530,11 +552,15 @@ img, svg, path, circle, rect, line {
     height: auto;
   }
 
+  .start {
+    margin-top: 0;
+  }
+
   .fm {
     overflow: hidden;
   }
   .fm__content {
-    padding-top: 320px;
+    padding-top: 310px;
   }
   .fm__title {
     font-size: 24px;
