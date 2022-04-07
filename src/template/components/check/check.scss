@@ -1,0 +1,48 @@
+@import '../../scss/vars';
+
+
+
+.check {
+	cursor: pointer;
+	&__input {
+		display: none;
+  }
+}
+
+.checkbox {
+  &__wrap {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+	&__box {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		transition: $t;
+    width: 24px;
+    height: 24px;
+    background: #F2F3F5;
+    border: 1px solid #E2E4E9;
+    border-radius: 6px;
+    svg {
+      opacity: 0;
+      transform: scale(0);
+      transition: .3s;
+    }
+  }
+  &__text {
+    max-width: calc(100% - 24px);
+    padding-left: 16px;
+  }
+	&.--checked {
+		.checkbox {
+			&__box {
+        svg {
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    }
+  }
+}	

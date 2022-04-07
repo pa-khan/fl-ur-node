@@ -50,6 +50,7 @@ class Popup {
                 Popup.element = this.element = document.querySelector(element);
               }
             }
+            console.log(this.element);
 
             if (this.element) {
               this.element.classList.add(Popup.classItem);

@@ -1,0 +1,27 @@
+.btn {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  font-size: 24px;
+  font-family: "Tinkoff Sans", sans-serif;
+  border: none;
+  background-color: transparent;
+  transition: 0.3s;
+  outline: none;
+  border-bottom: none;
+}
+.btn.--md {
+  font-size: 13px;
+  height: 31px;
+  border-radius: 2px;
+}
+.btn.--bg-yellow {
+  background: #FFDF2D;
+}
+.btn.--bg-yellow:hover {
+  background: #f9d300;
+}

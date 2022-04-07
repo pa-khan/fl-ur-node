@@ -6,7 +6,7 @@ class PATH {
 	static BLOCKS  = this.TEMP + 'blocks/';
 	static COMPS   = this.TEMP + 'components/';
 	static CSS     = this.TEMP + 'css/';
-	static SASS    = this.TEMP + 'sass/';
+	static SASS    = this.TEMP + 'scss/';
 	static PUG     = this.TEMP + 'pug/';
 	static JS      = this.TEMP + 'js/';
 	static IMGS    = this.TEMP + 'imgs/';

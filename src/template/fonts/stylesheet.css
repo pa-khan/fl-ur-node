@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Tinkoff Sans';
+    src: url('TinkoffSans-Bold.eot');
+    src: url('TinkoffSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('TinkoffSans-Bold.woff2') format('woff2'),
+        url('TinkoffSans-Bold.woff') format('woff'),
+        url('TinkoffSans-Bold.ttf') format('truetype'),
+        url('TinkoffSans-Bold.svg#TinkoffSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tinkoff Sans';
+    src: url('TinkoffSans-Regular.eot');
+    src: url('TinkoffSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('TinkoffSans-Regular.woff2') format('woff2'),
+        url('TinkoffSans-Regular.woff') format('woff'),
+        url('TinkoffSans-Regular.ttf') format('truetype'),
+        url('TinkoffSans-Regular.svg#TinkoffSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Tinkoff Sans';
+    src: url('TinkoffSans-Medium.eot');
+    src: url('TinkoffSans-Medium.eot?#iefix') format('embedded-opentype'),
+        url('TinkoffSans-Medium.woff2') format('woff2'),
+        url('TinkoffSans-Medium.woff') format('woff'),
+        url('TinkoffSans-Medium.ttf') format('truetype'),
+        url('TinkoffSans-Medium.svg#TinkoffSans-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+

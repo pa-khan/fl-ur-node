@@ -1,3 +1,5 @@
+@import 'vars';
+
 *, :before, :after {
   padding: 0;
   margin: 0;
@@ -10,9 +12,9 @@ html, body {
 }
 
 body {
-  color: #000;
-  font-size: 24px;
-  font-family: "Tinkoff Sans", sans-serif;
+  color: $black;
+  font-size: $fzMain;
+  font-family: $ffMain;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -38,10 +40,10 @@ li {
 }
 
 a {
-  color: #000;
+  color: $black;
   text-decoration: none;
   outline: none;
-  transition: 0.3s;
+  transition: .3s;
   border-bottom: 1px solid transparent;
 }
 
@@ -72,6 +74,8 @@ picture {
 
 img {
   display: block;
+  // max-width: 100% !important;
+  // max-height: 100% !important;
   pointer-events: none;
 }
 
@@ -80,7 +84,7 @@ svg {
 }
 
 img, svg, path, circle, rect, line {
-  transition: 0.3s;
+  transition: .3s;
 }
 
 .wrap {

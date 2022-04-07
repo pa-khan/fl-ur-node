@@ -1,10 +1,10 @@
 .case {
   position: relative;
   width: 100%;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin: 0 auto;
-  max-width: 1170px;
+  max-width: 1275px;
 }
 .case .case {
   padding-left: 0;
@@ -14,26 +14,4 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-}
-
-.col {
-  display: flex;
-  flex-direction: column;
-}
-
-.grid {
-  display: grid;
-}
-
-.left {
-  margin-right: auto;
-}
-
-.mid {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.right {
-  margin-left: auto;
 }

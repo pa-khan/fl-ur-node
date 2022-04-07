@@ -1,0 +1,47 @@
+@import '../../scss/vars';
+
+
+.field {
+  transition: .3s;
+	&__wrap {
+		position: relative;
+		cursor: text;
+  }
+	&__area {
+		display: block;
+		font-size: 16px;
+		font-family: $ffMain;
+		width: 100%;
+		overflow: hidden;
+		resize: none;
+		transition: $t;
+    height: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #ECF1F7;
+    background: #ECF1F7;
+    border-radius: 2px;
+    transition: .3s;
+		&::placeholder {
+			// opacity: 0;
+      opacity: 1;
+      color: #95928B;
+      transition: .3s;
+    }
+  }
+  textarea.field__area {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    height: 96px;
+    resize: none;
+  }
+  &.--error {
+    .field__area {
+      // border-bottom-color: #f00;
+      &::placeholder {
+        color: #f00;
+      }
+    }
+    
+  }
+}

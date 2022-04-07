@@ -15,7 +15,7 @@ if (process.argv.length > 1) {
 			var fileBlocks = PATH.PUG + 'blocks.txt';
 			for (let item of argv.list) {
 				var name = item;
-				new Creator(name, PATH.BLOCKS, ['.sass', '.pug', '.js'], {true: `Блок ${name} успешно создан`, false: `Блок ${name} уже имеется`})
+				new Creator(name, PATH.BLOCKS, ['.scss', '.pug', '.js'], {true: `Блок ${name} успешно создан`, false: `Блок ${name} уже имеется`})
 				var blocks = fs.readFileSync(fileBlocks);
 				fs.writeFileSync(fileBlocks, blocks + `//- ${item} \n+style('${item}', 'blocks')\ninclude ../../blocks/${item}/${item}\n\n`);
 			}	
@@ -23,7 +23,7 @@ if (process.argv.length > 1) {
 		case '-cc':
 			for (let item of argv.list) {
 				var name = item.replace(/[\W\d]/g,'')
-				new Creator(name, PATH.COMPS, ['.sass', '.pug', '.js'], {true: `Компонент ${name} успешно создан`, false: `Компонент ${name} уже имеется`})				
+				new Creator(name, PATH.COMPS, ['.scss', '.pug', '.js'], {true: `Компонент ${name} успешно создан`, false: `Компонент ${name} уже имеется`})				
 			}	
 			break;
 		case '-cp':

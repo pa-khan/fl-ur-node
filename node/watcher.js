@@ -26,8 +26,8 @@ class Watcher {
 	}
 	watchBlocks(){
 		browserSync.watch(path.join(PATH.BLOCKS, '*/*.*'), (event, file)=>{
-			if (path.extname(file) == '.sass') {
-				fs.writeFile(file.replace('.sass', '.css'), this.compileSass(file), (err) => {
+			if (path.extname(file) == '.scss') {
+				fs.writeFile(file.replace('.scss', '.css'), this.compileSass(file), (err) => {
 				
 				});
 			} else if (path.extname(file) == '.pug') {
@@ -36,8 +36,8 @@ class Watcher {
 				});
 			}
 
-			if (event == 'change' && path.extname(file) == '.sass') {
-				browserSync.reload(file.replace('.sass', '.css'));
+			if (event == 'change' && path.extname(file) == '.scss') {
+				browserSync.reload(file.replace('.scss', '.css'));
 			} 
 			// else if (event == 'change' && path.extname(file) == '.pug') {
 			// 	browserSync.reload(path.join(PATH.SRC + '*.html'));
@@ -46,8 +46,8 @@ class Watcher {
 	}
 	watchComponents(){
 		browserSync.watch(path.join(PATH.COMPS, '*/*.*'), (event, file)=>{
-			if (path.extname(file) == '.sass') {
-				fs.writeFile(file.replace('.sass', '.css'), this.compileSass(file), (err) => {
+			if (path.extname(file) == '.scss') {
+				fs.writeFile(file.replace('.scss', '.css'), this.compileSass(file), (err) => {
 				
 				});
 			} 
@@ -58,8 +58,8 @@ class Watcher {
 			// 	});
 			// }
 			
-			if (event == 'change' && path.extname(file) == '.sass') {
-				browserSync.reload(file.replace('.sass', '.css'));
+			if (event == 'change' && path.extname(file) == '.scss') {
+				browserSync.reload(file.replace('.scss', '.css'));
 			} else if (event == 'change' && path.extname(file) == '.pug') {
 				browserSync.reload(path.join(PATH.SRC + '*.html'));
 			}
@@ -76,13 +76,13 @@ class Watcher {
 		});
 	}
 	watchSysSass(){
-		browserSync.watch(path.join(PATH.SASS, '**/*.sass'), (event, file)=>{
-			var cssFile = path.join(PATH.CSS, path.basename(file.replace('.sass', '.css')));
+		browserSync.watch(path.join(PATH.SASS, '**/*.scss'), (event, file)=>{
+			var cssFile = path.join(PATH.CSS, path.basename(file.replace('.scss', '.css')));
 			fs.writeFile(cssFile, this.compileSass(file), (err) => {
 			
 			});
 			
-			browserSync.reload(cssFile.replace('.sass', '.css'));
+			browserSync.reload(cssFile.replace('.scss', '.css'));
 		});
 	}
 	static compilePages(){
