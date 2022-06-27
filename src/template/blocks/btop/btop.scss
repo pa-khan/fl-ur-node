@@ -1,0 +1,35 @@
+@import '../../scss/vars';
+
+.btop {
+    display: flex;
+    align-items: center;
+
+    &__title {
+        margin-right: auto;
+    }
+
+    &__link {
+        display: none;
+        margin-left: 10px;
+        line-height: 19px;
+        font-weight: 700;
+        padding-top: 4px;
+        letter-spacing: 0.013em;
+
+        a {
+            color: $red;
+
+            &:hover {
+                border-color: $red;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .btop {
+        &__link {
+            display: block;
+        }
+    }
+}

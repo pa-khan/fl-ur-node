@@ -1,0 +1,155 @@
+@import '../../scss/vars';
+
+.ord {
+    padding-top: 20px;
+    padding-bottom: 75px;
+
+    &__breadcrumb {
+        margin-bottom: 20px;
+    }
+
+    &__left {
+        width: 455px;
+    }
+
+    &__num {
+        font-size: 24px;
+        line-height: 38px;
+        font-family: $ff2;
+        margin-bottom: 25px;
+    }
+
+    &__block {
+        padding: 10px;
+        background: #FFFFFF;
+        border: 1px solid #F1F1F1;
+        border-radius: 4px;
+        box-shadow: 0px 0px 45px rgba(41, 41, 41, 0.15);
+        margin-bottom: 8px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        h3 {
+            display: block;
+            font-size: 18px;
+            line-height: 25px;
+            font-weight: 400;
+            letter-spacing: -0.005em;
+            margin-bottom: 12px;
+        }
+
+        ul {
+            flex-direction: column;
+        }
+
+        li {
+            line-height: 20.5px;
+            letter-spacing: -0.005em;
+
+            b {
+                font-weight: 700;
+            }
+        }
+
+        &_button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 52px;
+            transition: .3s;
+
+            &:hover {
+                background: $red;
+
+                svg {
+                    fill: #fff;
+                }
+
+                span {
+                    color: #fff;
+                }
+            }
+
+            svg {
+                width: 16px;
+                height: 20px;
+                margin-right: 14px;
+            }
+
+            span {
+                line-height: 19px;
+                color: $black-dark;
+                transition: .3s;
+            }
+        }
+    }
+
+    &__right {
+        width: calc(100% - 455px);
+        padding-left: 25px;
+    }
+
+    &__list {
+        margin: 0 -10px -20px;
+    }
+
+    &__item {
+        width: calc(100% / 2 - 20px);
+        margin: 0 10px 20px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .ord {
+        .case {
+            max-width: 540px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__left {
+            width: 100%;
+        }
+
+        &__right {
+            width: 100%;
+            padding-left: 0;
+            margin-top: 40px;
+        }
+
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .ord {
+        padding-top: 76px;
+        padding-bottom: 0;
+
+        &__title {
+            font-size: 18px;
+            line-height: 24px;
+            padding-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        &__num {
+            font-size: 18px;
+            line-height: 24px;
+            margin-bottom: 10px;
+        }
+
+        &__right {
+            margin-top: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 465px) {
+    .ord {
+        &__item {
+            width: calc(100% - 20px);
+        }
+    }
+}

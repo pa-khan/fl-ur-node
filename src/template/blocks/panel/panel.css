@@ -1,0 +1,32 @@
+.panel {
+  z-index: 100;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: #F1F1F1;
+}
+.panel__wrap {
+  align-items: center;
+}
+.panel__phone {
+  align-items: center;
+  border-bottom: none;
+  margin-left: auto;
+  border-bottom: none;
+}
+.panel__phone:after {
+  content: "";
+  width: 1px;
+  height: 28px;
+  background: #4F4F4F;
+  margin-left: 22px;
+  margin-right: 18px;
+}
+.panel__phone svg {
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+.panel__phone span {
+  font-weight: 600;
+}

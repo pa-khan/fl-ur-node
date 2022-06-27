@@ -1,0 +1,99 @@
+@import '../../scss/vars';
+
+.togs {
+    &__item {
+        background: #FFFFFF;
+        border: 1px solid #F1F1F1;
+        box-shadow: 0px 0px 45px rgba(41, 41, 41, 0.15);
+        border-radius: 4px;
+        padding: 13px 18px;
+        margin-bottom: 11px;
+        cursor: default;
+        cursor: pointer;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &_current {
+            cursor: default;
+
+            .togs {
+                &__head {
+                    padding-left: 0;
+                }
+
+                &__icon {
+                    transform: rotate(-45deg);
+                }
+
+                &__body {
+                    margin-top: 32px;
+                    margin-bottom: 20px;
+                    max-height: 1000px;
+                }
+            }
+        }
+    }
+
+    &__head {
+        display: flex;
+        align-items: center;
+        transition: .3s;
+        // padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    &__body {
+        max-height: 0;
+        transition: .3s;
+        // padding-left: 10px;
+        // padding-right: 10px;
+        overflow: hidden;
+    }
+
+    &__title {
+        color: $black-dark;
+        font-size: 18px;
+        line-height: 22px;
+        font-family: $ff2;
+        letter-spacing: -0.005em;
+        margin-right: auto;
+    }
+
+    &__icon {
+        position: relative;
+        width: 16px;
+        min-width: 16px;
+        height: 16px;
+        margin-left: 10px;
+        transition: .3s;
+
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 16px;
+            height: 3px;
+            left: 50%;
+            top: 50%;
+            background: $black;
+            transition: .3s;
+            border-radius: 10px;
+        }
+
+        &:before {
+            transform: translate(-50%, -50%);
+        }
+
+        &:after {
+            transform: translate(-50%, -50%) rotate(90deg);
+        }
+    }
+
+    &__text {
+        color: #8A8E85;
+        line-height: 1.4;
+    }
+}

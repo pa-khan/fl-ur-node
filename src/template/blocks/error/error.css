@@ -1,0 +1,59 @@
+.error {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.error__inner {
+  width: 100%;
+  max-width: 355px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.error__title {
+  font-size: 22px;
+  line-height: 22px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #262626;
+  margin-bottom: 27px;
+}
+.error__img {
+  margin-bottom: -3px;
+}
+.error__img img {
+  margin-left: auto;
+  margin-right: auto;
+}
+.error__code {
+  font-size: 72px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #262626;
+  letter-spacing: -0.41px;
+  text-align: center;
+}
+.error__status {
+  font-size: 22px;
+  line-height: 22px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #262626;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.error__desc {
+  margin-top: 21px;
+  color: #999999;
+}
+.error__desc a {
+  color: #F05454;
+}
+.error__desc a:hover {
+  border-color: #F05454;
+}
+
+@media screen and (max-width: 767px) {
+  .error {
+    padding-top: 110px;
+    padding-bottom: 0;
+  }
+}

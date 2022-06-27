@@ -11,9 +11,9 @@ html, body {
 }
 
 body {
-  color: #000;
-  font-size: 24px;
-  font-family: "Tinkoff Sans", sans-serif;
+  color: #4F4F4F;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -40,7 +40,7 @@ li {
 }
 
 a {
-  color: #000;
+  color: #4F4F4F;
   text-decoration: none;
   outline: none;
   transition: 0.3s;

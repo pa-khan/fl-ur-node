@@ -1,0 +1,126 @@
+@import '../../scss/vars';
+
+.filter {
+    transition: .3s;
+
+    &__toggle {
+        display: none;
+        // display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        span {
+            font-size: 24px;
+            line-height: 22px;
+            font-weight: 700;
+            color: #4F4F4F;
+            letter-spacing: -0.41px;
+            margin-right: 25px;
+        }
+
+        svg {
+            width: 21px;
+            height: 21px;
+        }
+    }
+
+    &__inner {
+        padding: 22px 10px;
+        background: #fff;
+        border-radius: 4px;
+        transition: .3s;
+    }
+
+    &__main-title {
+        color: $red;
+        margin-bottom: 6px;
+    }
+
+    &__item {
+        margin-bottom: 25px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__title {
+        margin-bottom: 11px;
+    }
+
+    &__pluses {
+        margin: 0 -3px -6px;
+    }
+
+    &__plus {
+        margin: 0 3px 6px;
+    }
+
+    &__selects {
+        margin-left: -8px;
+        margin-right: -8px;
+        margin-bottom: -16px;
+    }
+
+    &__select {
+        width: calc(100% - 16px);
+        margin-left: 8px;
+        margin-right: 8px;
+        margin-bottom: 16px;
+
+        &_w2 {
+            width: calc(100% / 2 - 16px);
+        }
+
+        &_w3 {
+            width: calc(100% / 3 - 16px);
+        }
+
+    }
+
+    &__auto {
+        &-select {
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__myauto {
+        cursor: pointer;
+
+        &_current {
+            border-color: #d9d9d9;
+        }
+    }
+
+    &__radios {
+        margin-bottom: -12px;
+    }
+
+    &__radio {
+        width: calc(100% / 2);
+        margin-bottom: 12px;
+    }
+
+    &__buttons {
+        margin: 0 -2px -10px;
+    }
+
+    &__button {
+        width: calc(100% / 2 - 4px);
+        margin: 0 2px 10px;
+    }
+
+    &_show {
+        .filter {
+            &__inner {
+                opacity: 1 !important;
+                visibility: visible !important;
+                pointer-events: auto !important;
+            }
+        }
+    }
+}

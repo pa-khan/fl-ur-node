@@ -1,0 +1,17 @@
+@import '../../scss/vars';
+
+.auto {
+
+    &__select,
+    &__button {
+        width: 100%;
+    }
+
+    &__select {
+        &_error {
+            .select__area {
+                border-color: $red;
+            }
+        }
+    }
+}

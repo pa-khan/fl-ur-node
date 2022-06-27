@@ -1,0 +1,216 @@
+@import '../../scss/vars';
+
+.profile {
+    z-index: 5;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 75px;
+
+    &__breadcrumb {
+        margin-bottom: 20px;
+    }
+
+    &__left {
+        width: 455px;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    &__desc {
+        margin-bottom: 23px;
+    }
+
+    &__field {
+        margin-bottom: 15px;
+    }
+
+    &__myauto {
+        margin-top: 40px;
+    }
+
+    &__links {
+        margin-top: 20px;
+
+        &-title {
+            font-size: 18px;
+            font-family: $ff2;
+            line-height: 22px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: $black-dark;
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        height: 52px;
+        padding: 0 23px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 45px rgba(41, 41, 41, 0.15);
+        border-radius: 4px;
+        margin-bottom: 15px;
+        transition: .3s;
+
+        &:hover {
+            box-shadow: 0px 0px 45px rgba(41, 41, 41, 0.25);
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 19px;
+            height: 19px;
+            margin-right: 18px;
+        }
+
+        &-title {
+            font-family: $ff2;
+            line-height: 17px;
+            font-weight: 500;
+            color: $black-dark;
+            letter-spacing: 0.2px;
+        }
+    }
+
+    &__right {
+        width: calc(100% - 455px);
+        padding-left: 25px;
+    }
+
+    &__orders {
+        margin: 0 -10px -20px;
+    }
+
+    &__order {
+        width: calc(100% / 2 - 20px);
+        padding: 20px 18px 23px;
+        margin: 0 10px 20px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 45px rgba(41, 41, 41, 0.15);
+        border-radius: 4px;
+
+        &:hover {
+            box-shadow: 0 1px 25px rgb(0 0 0 / 15%);
+        }
+
+        &-name {
+            font-size: 18px;
+            line-height: 25px;
+            color: $black-dark;
+            letter-spacing: -0.005em;
+            margin-bottom: 6px;
+        }
+
+        &-date {
+            line-height: 1.4;
+            margin-bottom: 8px;
+        }
+
+        &-data {
+            align-items: center;
+        }
+
+        &-price {
+            font-size: 16px;
+            color: $black-dark;
+        }
+
+        &-status {
+            display: flex;
+            align-items: center;
+            margin-left: auto;
+
+            span {
+                color: #8A8E85;
+                margin-right: 8px;
+            }
+
+            div {
+                width: 16px;
+                height: 16px;
+                padding: 3px;
+                border-radius: 50%;
+
+                svg {
+                    width: 100%;
+                    height: 100%;
+                    fill: #fff;
+                }
+            }
+
+            &_successful {
+                div {
+                    background: #369E12;
+                }
+            }
+
+            &_procces {
+                div {
+                    background: #FFC833;
+                }
+            }
+
+            &_error {
+                div {
+                    background: #D9211C;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .profile {
+        .case {
+            max-width: 540px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &__left {
+            width: 100%;
+        }
+
+        &__right {
+            width: 100%;
+            padding-left: 0;
+            margin-top: 40px;
+        }
+
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .profile {
+        padding-top: 76px;
+        padding-bottom: 0;
+
+        &__title {
+            font-size: 18px;
+            line-height: 24px;
+            padding-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        &__desc {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .profile {
+        &__order {
+            width: calc(100% - 20px);
+        }
+    }
+
+}

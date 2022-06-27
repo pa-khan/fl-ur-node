@@ -1,0 +1,220 @@
+.header {
+  z-index: 100;
+  position: relative;
+  transition: 0.3s;
+}
+.header__panel {
+  margin-bottom: 25px;
+}
+.header__inner {
+  z-index: 10;
+  position: relative;
+  padding: 14px 21px 14px 30px;
+  align-items: center;
+  background: #FFFFFF;
+  box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.04), 0px 0px 12px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  transition: 0.3s;
+}
+.header__inner_shadow-hide {
+  box-shadow: none;
+}
+.header__links {
+  margin-left: 12px;
+  margin-right: auto;
+}
+.header__links-item {
+  line-height: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-bottom: none;
+}
+.header__links-item_current, .header__links-item:hover {
+  color: #F05454;
+}
+.header__button-search {
+  margin-right: 45px;
+}
+.header__button-search_hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+.header__button-search:hover circle {
+  stroke: #E35050;
+}
+.header__button-search:hover rect {
+  fill: #E35050;
+}
+.header__button-search:active circle {
+  stroke: #B93E3E;
+}
+.header__button-search:active rect {
+  fill: #B93E3E;
+}
+.header__button-favorit {
+  margin-right: 45px;
+}
+.header__button-cart {
+  margin-right: 25px;
+}
+.header__button-cart .button__text {
+  position: static;
+}
+.header__button-cart span {
+  position: absolute;
+  top: 0;
+  right: -2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #D9D9D9;
+  font-size: 9px;
+  font-weight: 700;
+  padding-bottom: 2px;
+}
+.header__button-selection {
+  z-index: 10;
+  width: 355px;
+}
+.header__ham {
+  display: none;
+}
+.header__search {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 14px 21px 14px 14px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.04), 0px 0px 12px rgba(0, 0, 0, 0.04);
+}
+
+@media screen and (max-width: 1400px) {
+  .header__button-selection {
+    width: 275px;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .header__button-selection {
+    width: 235px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .header__inner {
+    padding: 12px;
+  }
+  .header__links-item {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .header__button-selection {
+    width: 255px;
+  }
+  .header__search {
+    padding: 12px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .header__inner {
+    min-height: 76px;
+  }
+  .header__button-selection {
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  .header__inner {
+    padding: 24px;
+  }
+  .header__logo {
+    margin-right: auto;
+  }
+  .header__links {
+    display: none;
+  }
+  .header__ham {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+  }
+  .header__ham div {
+    position: relative;
+    width: 18px;
+    height: 2px;
+    background: #F05454;
+    margin-bottom: 3px;
+    transition: 0.3s;
+  }
+  .header__ham div:last-of-type {
+    margin-bottom: 0;
+  }
+  .header__ham_x div:nth-of-type(1) {
+    top: 5px;
+    transform: rotate(45deg);
+  }
+  .header__ham_x div:nth-of-type(2) {
+    opacity: 0;
+  }
+  .header__ham_x div:nth-of-type(3) {
+    top: -5px;
+    transform: rotate(-45deg);
+  }
+  .header__button-search, .header__button-favorit, .header__button-cart {
+    margin-right: 24px;
+  }
+  .header__button-search svg, .header__button-favorit svg, .header__button-cart svg {
+    width: 18px;
+    height: 18px;
+  }
+  .header__button-cart .cart-count {
+    width: 10px;
+    height: 10px;
+    font-size: 7px;
+    padding-bottom: 0;
+    top: -2px;
+  }
+  .header__search {
+    z-index: 5;
+  }
+}
+@media screen and (max-width: 767px) {
+  .panel {
+    display: none;
+  }
+
+  .header {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background: #fff;
+  }
+  .header__inner {
+    padding: 10px;
+    min-height: 1px;
+  }
+  .header__button-search {
+    margin-right: 27px;
+  }
+  .header__ham {
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+  }
+  .header__search {
+    padding: 15px 11px;
+  }
+}

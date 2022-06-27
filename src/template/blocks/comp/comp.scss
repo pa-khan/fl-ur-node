@@ -1,0 +1,69 @@
+@import '../../scss/vars';
+
+.comp {
+    padding-top: 20px;
+    padding-bottom: 75px;
+
+    &__breadcrumb {
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    &__desc {
+        max-width: 450px;
+        margin-bottom: 28px;
+    }
+
+    .comp__slider {
+        overflow: visible;
+    }
+
+    .comp__item {
+        width: 261px;
+        margin-right: 20px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        .product {
+            &__inner {
+                height: auto;
+            }
+        }
+    }
+
+    &__alert {
+        font-size: 18px;
+        line-height: 24px;
+        color: $red;
+        padding-top: 20px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .comp {
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .comp {
+        padding-top: 77px;
+        padding-bottom: 0;
+
+        &__title {
+            font-size: 18px;
+            line-height: 24px;
+            padding-top: 5px;
+            margin-bottom: 10px;
+        }
+
+        &__desc {
+            margin-bottom: 15px;
+        }
+    }
+}

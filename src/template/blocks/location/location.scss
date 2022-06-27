@@ -1,0 +1,92 @@
+@import '../../scss/vars';
+
+.location {
+    cursor: pointer;
+    position: relative;
+
+    &__inner {
+        line-height: 24px;
+        align-items: center;
+    }
+
+    &__title {
+        margin-right: 6px;
+    }
+
+    &__icon {
+        margin-left: 10px;
+        transition: .3s;
+
+        svg {
+            width: 12px;
+            height: 9px;
+        }
+    }
+
+    &__drop {
+        overflow: hidden;
+        border-radius: 4px;
+        width: 336px;
+        box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.04);
+        position: absolute;
+        top: 100%;
+        left: -40px;
+        margin-top: 24px;
+        transition: .3s;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(15px);
+    }
+
+    &__item {
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.03em;
+        transition: .3s;
+        padding: 23px 38px;
+        background-color: #fff;
+
+        &_current {
+            background: #F1F1F1;
+        }
+    }
+
+    &_open {
+        .location {
+            &__icon {
+                svg {
+                    transform: rotate(180deg);
+                }
+            }
+
+            &__drop {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1840px) {
+    .location {
+        &__drop {
+            left: 0;
+        }
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .location {
+        &__drop {
+            width: 255px;
+        }
+
+        &__item {
+            font-size: 14px;
+            padding: 10px 18px;
+        }
+
+    }
+}

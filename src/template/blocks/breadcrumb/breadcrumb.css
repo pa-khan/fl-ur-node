@@ -1,0 +1,29 @@
+.breadcrumb__list {
+  display: inline-flex;
+  align-items: center;
+  border-top: 1px solid #F05454;
+  border-bottom: 1px solid #F05454;
+  padding-left: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.breadcrumb__item {
+  line-height: 1.5;
+  color: #999999;
+}
+.breadcrumb__item a {
+  color: #999999;
+}
+.breadcrumb__item a:hover {
+  color: #F05454;
+}
+.breadcrumb__sep {
+  width: 9px;
+  height: 6px;
+  margin-left: 17px;
+  margin-right: 17px;
+  transform: rotate(-90deg);
+}
+.breadcrumb__sep svg {
+  fill: #999;
+}

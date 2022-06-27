@@ -1,0 +1,6 @@
+.auto__select, .auto__button {
+  width: 100%;
+}
+.auto__select_error .select__area {
+  border-color: #F05454;
+}

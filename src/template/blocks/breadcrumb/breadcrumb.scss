@@ -1,0 +1,39 @@
+@import '../../scss/vars';
+
+.breadcrumb {
+    &__list {
+        display: inline-flex;
+        align-items: center;
+        border-top: 1px solid $red;
+        border-bottom: 1px solid $red;
+        padding-left: 8px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    &__item {
+        line-height: 1.5;
+        color: #999999;
+
+        a {
+            color: #999999;
+
+            &:hover {
+                color: $red;
+            }
+        }
+    }
+
+    &__sep {
+        width: 9px;
+        height: 6px;
+        margin-left: 17px;
+        margin-right: 17px;
+        transform: rotate(-90deg);
+
+        svg {
+            fill: #999;
+        }
+    }
+
+}

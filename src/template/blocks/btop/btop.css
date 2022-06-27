@@ -1,0 +1,27 @@
+.btop {
+  display: flex;
+  align-items: center;
+}
+.btop__title {
+  margin-right: auto;
+}
+.btop__link {
+  display: none;
+  margin-left: 10px;
+  line-height: 19px;
+  font-weight: 700;
+  padding-top: 4px;
+  letter-spacing: 0.013em;
+}
+.btop__link a {
+  color: #F05454;
+}
+.btop__link a:hover {
+  border-color: #F05454;
+}
+
+@media screen and (max-width: 767px) {
+  .btop__link {
+    display: block;
+  }
+}

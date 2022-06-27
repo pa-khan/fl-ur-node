@@ -1,0 +1,42 @@
+@import '../../scss/vars';
+
+.utp {
+    z-index: 2;
+    position: relative;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+    &__wrap {
+        display: flex;
+        padding: 23px 18px;
+        height: 390px;
+        overflow: hidden;
+        border-radius: 4px;
+
+        &_bottom {
+            align-items: flex-end;
+        }
+
+        &_right {
+            text-align: right;
+            justify-content: flex-end;
+        }
+    }
+
+    &__text {
+        color: #fff;
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 25px;
+        letter-spacing: -0.005em;
+        margin-bottom: 2px;
+    }
+
+    &__price {
+        font-size: 16px;
+        line-height: 22px;
+    }
+}

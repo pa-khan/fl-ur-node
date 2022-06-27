@@ -6,3 +6,211 @@ include ../../blocks/header/header
 +style('footer', 'blocks')
 include ../../blocks/footer/footer
 
+//- actual 
++style('actual', 'blocks')
+include ../../blocks/actual/actual
+
+//- alert 
++style('alert', 'blocks')
+include ../../blocks/alert/alert
+
+//- auth 
++style('auth', 'blocks')
+include ../../blocks/auth/auth
+
+//- auto 
++style('auto', 'blocks')
+include ../../blocks/auto/auto
+
+//- breadcrumb 
++style('breadcrumb', 'blocks')
+include ../../blocks/breadcrumb/breadcrumb
+
+//- btop 
++style('btop', 'blocks')
+include ../../blocks/btop/btop
+
+//- card 
++style('card', 'blocks')
+include ../../blocks/card/card
+
+//- cart 
++style('cart', 'blocks')
+include ../../blocks/cart/cart
+
+//- cats 
++style('cats', 'blocks')
+include ../../blocks/cats/cats
+
+//- choiser 
++style('choiser', 'blocks')
+include ../../blocks/choiser/choiser
+
+//- comp 
++style('comp', 'blocks')
+include ../../blocks/comp/comp
+
+//- error 
++style('error', 'blocks')
+include ../../blocks/error/error
+
+//- filter 
++style('filter', 'blocks')
+include ../../blocks/filter/filter
+
+//- footer 
++style('footer', 'blocks')
+include ../../blocks/footer/footer
+
+//- form 
++style('form', 'blocks')
+include ../../blocks/form/form
+
+//- group 
++style('group', 'blocks')
+include ../../blocks/group/group
+
+//- header 
++style('header', 'blocks')
+include ../../blocks/header/header
+
+//- icons 
++style('icons', 'blocks')
+include ../../blocks/icons/icons
+
+//- info 
++style('info', 'blocks')
+include ../../blocks/info/info
+
+//- intro 
++style('intro', 'blocks')
+include ../../blocks/intro/intro
+
+//- lkp 
++style('lkp', 'blocks')
+include ../../blocks/lkp/lkp
+
+//- location 
++style('location', 'blocks')
+include ../../blocks/location/location
+
+//- modal 
++style('modal', 'blocks')
+include ../../blocks/modal/modal
+
+//- myauto 
++style('myauto', 'blocks')
+include ../../blocks/myauto/myauto
+
+//- nav 
++style('nav', 'blocks')
+include ../../blocks/nav/nav
+
+//- order 
++style('order', 'blocks')
+include ../../blocks/order/order
+
+//- page 
++style('page', 'blocks')
+include ../../blocks/page/page
+
+//- pagination 
++style('pagination', 'blocks')
+include ../../blocks/pagination/pagination
+
+//- panel 
++style('panel', 'blocks')
+include ../../blocks/panel/panel
+
+//- partner 
++style('partner', 'blocks')
+include ../../blocks/partner/partner
+
+//- partnership 
++style('partnership', 'blocks')
+include ../../blocks/partnership/partnership
+
+//- plus 
++style('plus', 'blocks')
+include ../../blocks/plus/plus
+
+//- product 
++style('product', 'blocks')
+include ../../blocks/product/product
+
+//- profile 
++style('profile', 'blocks')
+include ../../blocks/profile/profile
+
+//- questions 
++style('questions', 'blocks')
+include ../../blocks/questions/questions
+
+//- rec 
++style('rec', 'blocks')
+include ../../blocks/rec/rec
+
+//- return 
++style('return', 'blocks')
+include ../../blocks/return/return
+
+//- review 
++style('review', 'blocks')
+include ../../blocks/review/review
+
+//- search 
++style('search', 'blocks')
+include ../../blocks/search/search
+
+//- selection 
++style('selection', 'blocks')
+include ../../blocks/selection/selection
+
+//- share 
++style('share', 'blocks')
+include ../../blocks/share/share
+
+//- socials 
++style('socials', 'blocks')
+include ../../blocks/socials/socials
+
+//- sup 
++style('sup', 'blocks')
+include ../../blocks/sup/sup
+
+//- tabs 
++style('tabs', 'blocks')
+include ../../blocks/tabs/tabs
+
+//- text 
++style('text', 'blocks')
+include ../../blocks/text/text
+
+//- togs 
++style('togs', 'blocks')
+include ../../blocks/togs/togs
+
+//- utp 
++style('utp', 'blocks')
+include ../../blocks/utp/utp
+
+//- video 
++style('video', 'blocks')
+include ../../blocks/video/video
+
+//- catalog 
++style('catalog', 'blocks')
+include ../../blocks/catalog/catalog
+
+//- contact 
++style('contact', 'blocks')
+include ../../blocks/contact/contact
+
+//- fav 
++style('fav', 'blocks')
+include ../../blocks/fav/fav
+
+//- list 
++style('list', 'blocks')
+include ../../blocks/list/list
+

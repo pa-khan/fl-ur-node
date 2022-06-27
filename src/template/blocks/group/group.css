@@ -1,0 +1,122 @@
+.group__btop {
+  margin-bottom: 15px;
+}
+.group__nav {
+  margin-bottom: 15px;
+}
+.group__nav-list {
+  display: flex;
+  margin: 0 -6px;
+}
+.group__nav-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 19px;
+  padding: 12px 24px;
+  margin: 0 6px;
+  border-radius: 4px;
+  transition: 0.3s;
+  cursor: pointer;
+  position: relative;
+  color: transparent;
+}
+.group__nav-item:before {
+  content: attr(data-text);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #8A8E85;
+  transform: translate(-50%, -50%);
+  display: inline;
+  transition: 0.3s;
+  line-height: 14px;
+}
+.group__nav-item_current {
+  background: #F05454;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+  cursor: default;
+}
+.group__nav-item_current:before {
+  color: #fff;
+  font-weight: 700;
+}
+.group__nav-item:hover:before {
+  font-weight: 700;
+}
+.group__slider {
+  overflow: visible;
+}
+.group .group__item {
+  width: 261px;
+}
+.group__bg {
+  display: none;
+  transform: rotate(3deg);
+  left: -2%;
+  right: -2%;
+}
+.group__bg:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #4F4F4F;
+}
+.group__bg img {
+  opacity: 0.15;
+}
+
+@media screen and (min-width: 768px) {
+  .group {
+    color: #fff;
+    padding-top: 55px;
+    padding-bottom: 157px;
+  }
+  .group__nav {
+    display: inline-block;
+    border-radius: 4px;
+  }
+  .group__nav-item:before {
+    color: #fff;
+  }
+  .group__bg {
+    display: block;
+  }
+  .group_pt {
+    padding-top: 100px;
+  }
+  .group_sm .case {
+    padding-left: 466px;
+  }
+  .group_sm .group__inner {
+    max-width: 1120px;
+  }
+}
+@media screen and (max-width: 1700px) and (min-width: 768px) {
+  .group_sm .case {
+    padding-left: 425px;
+  }
+}
+@media screen and (max-width: 1430px) and (min-width: 768px) {
+  .group_sm .case {
+    max-width: 100%;
+    padding-left: 10px;
+  }
+  .group_sm .group__inner {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .group .group__slider {
+    overflow: visible;
+  }
+}
+@media screen and (max-width: 370px) {
+  .group__nav-item {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+}

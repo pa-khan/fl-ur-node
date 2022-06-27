@@ -1,0 +1,16 @@
+@import '../../scss/vars';
+
+.text {
+    z-index: 2;
+    position: relative;
+    margin-bottom: 13px;
+
+    &__btop {
+        margin-bottom: 18px;
+    }
+
+    &__area {
+        font-size: 16px;
+        line-height: 1.373;
+    }
+}

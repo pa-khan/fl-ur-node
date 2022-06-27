@@ -1,0 +1,28 @@
+.page {
+  padding-top: 20px;
+  padding-bottom: 75px;
+}
+.page__breadcrumb {
+  margin-bottom: 20px;
+}
+.page__content {
+  padding-top: 42px;
+}
+
+@media screen and (max-width: 767px) {
+  .page {
+    padding-top: 77px;
+    padding-bottom: 0;
+  }
+  .page__return {
+    margin-bottom: 5px;
+  }
+  .page__title {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+  }
+  .page__content {
+    padding-top: 0;
+  }
+}

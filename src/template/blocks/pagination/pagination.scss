@@ -1,0 +1,42 @@
+@import '../../scss/vars';
+
+.pagination {
+    &__list {
+        align-items: center;
+        justify-content: center;
+        margin: 0 -3px;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 44px;
+        font-size: 16px;
+        border-radius: 4px;
+        background: #F1F1F1;
+        margin: 0 3px;
+
+        &:hover {
+            background: darken(#F1F1F1, 5%);
+        }
+
+        &_current {
+            color: #fff;
+            background: $red;
+            cursor: default;
+            pointer-events: none;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .pagination {
+        &__item {
+            width: 34px;
+            height: 34px;
+            font-size: 12px;
+        }
+    }
+}

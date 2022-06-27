@@ -1,1 +1,10 @@
-@import '../fonts/stylesheet.css';
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+@font-face {
+  font-family: "ALS Rubl";
+  src: url("~/assets/fonts/ALSRubl/ALSRubl.eot");
+  src: url("~/assets/fonts/ALSRubl/ALSRubl.eot?#iefix") format("embedded-opentype"), url("~/assets/fonts/ALSRubl/ALSRubl.woff2") format("woff2"), url("~/assets/fonts/ALSRubl/ALSRubl.woff") format("woff"), url("~/assets/fonts/ALSRubl/ALSRubl.ttf") format("truetype"), url("~/assets/fonts/ALSRubl/ALSRubl.svg#ALSRubl") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,0 +1,102 @@
+@import '../../scss/vars';
+
+.lkp {
+    cursor: pointer;
+    position: relative;
+
+    &__inner {
+        line-height: 24px;
+        align-items: center;
+        padding-right: 5px;
+    }
+
+    &__ava {
+        margin-right: 6px;
+
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &__value {
+        font-weight: 600;
+    }
+
+    &__icon {
+        margin-left: 10px;
+        transition: .3s;
+
+        svg {
+            width: 12px;
+            height: 9px;
+        }
+    }
+
+    &__drop {
+        overflow: hidden;
+        border-radius: 4px;
+        width: 336px;
+        box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.04);
+        position: absolute;
+        top: 100%;
+        right: -60px;
+        margin-top: 24px;
+        transition: .3s;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(15px);
+    }
+
+    &__item {
+        display: block;
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.03em;
+        transition: .3s;
+        padding: 23px 38px;
+        background-color: #fff;
+
+        &:hover {
+            background: #F1F1F1;
+        }
+    }
+
+    &_open {
+        .lkp {
+            &__icon {
+                svg {
+                    transform: rotate(180deg);
+                }
+            }
+
+            &__drop {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1840px) {
+    .lkp {
+        &__drop {
+            right: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .lkp {
+        &__drop {
+            width: 255px;
+        }
+
+        &__item {
+            font-size: 14px;
+            padding: 10px 18px;
+        }
+
+    }
+}
