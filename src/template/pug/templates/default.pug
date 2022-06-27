@@ -9,8 +9,16 @@ html(lang="ru")
     link(rel="stylesheet" href="template/css/style.css" + version)
   body
     .wrap
-      
+      include ../../blocks/icons/icons
+
+      include ../../blocks/header/header
+      +style('header', 'blocks')
       main.main
         block content
 
+      include ../../blocks/footer/footer
+      +style('footer', 'blocks')
+
+      include ../../blocks/alert/alert
+      +style('alert', 'blocks')
       script(src="template/js/common.js" + version)

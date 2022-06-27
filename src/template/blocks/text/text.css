@@ -1,0 +1,12 @@
+.text {
+  z-index: 2;
+  position: relative;
+  margin-bottom: 13px;
+}
+.text__btop {
+  margin-bottom: 18px;
+}
+.text__area {
+  font-size: 16px;
+  line-height: 1.373;
+}

@@ -1,5 +1,22 @@
 include ../../pug/vars
 
-.panel
-	.case
-		
+<div class="panel header__panel">
+    <div class="case">
+        <!--[-->
+        <div class="panel__wrap row">
+            include ../location/location
+            +style('location', 'blocks')
+            
+            <a href="tel:+32015287667" class="panel__phone row c-red">
+                <svg class="icon icon_phone f-red">
+                    <use xlink:href="#icon-phone"></use>
+                </svg>
+                <span>+32 (0) 15 28 76 67</span>
+            </a>
+
+            include ../lkp/lkp
+            +style('lkp', 'blocks')
+        </div>
+        <!--]-->
+    </div>
+</div>

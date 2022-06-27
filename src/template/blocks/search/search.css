@@ -1,0 +1,184 @@
+.search {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.search__area {
+  display: flex;
+  align-items: center;
+  height: 52px;
+  padding-right: 485px;
+}
+.search__field {
+  width: 100%;
+}
+.search__button-submit {
+  margin-left: 20px;
+  margin-right: 32px;
+  opacity: 0.5;
+}
+.search__button-submit:hover {
+  opacity: 1;
+}
+.search__button-submit svg {
+  display: none;
+}
+.search__last {
+  margin-bottom: 15px;
+}
+.search__last:last-child {
+  margin-bottom: 0;
+}
+.search__inner {
+  padding-top: 14px;
+}
+.search__item {
+  display: flex;
+  align-items: center;
+  padding: 12px 107px 12px 16px;
+  margin: 0 -21px 0 -14px;
+  transition: 0.3s;
+}
+.search__item:hover {
+  background: rgba(38, 38, 38, 0.05);
+}
+.search__item-icon {
+  margin-right: 8px;
+}
+.search__item-name {
+  display: inline-block;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+.search__item-price {
+  font-weight: 600;
+  line-height: 18px;
+  list-style: 0.04em;
+  margin-left: 20px;
+  margin-left: auto;
+  color: #F05454;
+}
+.search__popular-title {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.1px;
+  color: #999999;
+  margin-bottom: 3px;
+}
+.search__popular-item {
+  padding-right: 0;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.search__popular-name {
+  font-size: 18px;
+  font-weight: 600;
+}
+.search__more {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 60px;
+}
+.search__more span {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  color: #F05454;
+  transition: 0.3s;
+  margin-right: 12px;
+}
+.search__more svg {
+  fill: #F05454;
+  width: 16px;
+  height: 8px;
+  position: relative;
+  top: 2px;
+  transform: rotate(-90deg);
+}
+.search__more:hover span {
+  color: #E35050;
+}
+.search__more:hover svg {
+  fill: #E35050;
+  margin-left: 5px;
+}
+.search_show {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media screen and (max-width: 1400px) {
+  .search__area {
+    padding-right: 400px;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .search__area {
+    padding-right: 380px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .search__area {
+    padding-right: 380px;
+  }
+  .search__item {
+    margin-right: -12px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .search__area {
+    padding-right: 125px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .search__area {
+    padding-right: 0;
+  }
+  .search__button-submit {
+    margin-right: 0;
+  }
+  .search__item {
+    padding-right: 16px;
+  }
+  .search__more {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .search {
+    z-index: 110;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+  }
+  .search__area {
+    height: auto;
+  }
+  .search__area .field__body {
+    height: 42px;
+  }
+  .search__button-submit {
+    margin-left: 16px;
+    margin-right: 5px;
+    opacity: 1;
+  }
+  .search__popular-name {
+    font-size: 14px;
+  }
+  .search__item {
+    margin-left: -11px;
+    margin-right: -11px;
+  }
+  .search__item-name {
+    font-size: 14px;
+  }
+}

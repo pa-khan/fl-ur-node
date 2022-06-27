@@ -1,0 +1,117 @@
+.selection {
+  position: relative;
+  padding-top: 124px;
+  padding-bottom: 93px;
+}
+.selection_pb-more {
+  padding-bottom: 250px;
+}
+.selection_pb-more .selection__img {
+  top: -90px;
+}
+.selection .case {
+  position: relative;
+}
+.selection__breadcrumb {
+  margin-top: -100px;
+  margin-bottom: 63px;
+}
+.selection__content {
+  width: 595px;
+  padding-right: 20px;
+}
+.selection__title {
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+.selection__form {
+  width: 725px;
+}
+.selection__list {
+  align-items: center;
+  margin: 0 -7.5px -20px;
+}
+.selection__select, .selection__button {
+  width: calc(50% - 15px);
+  margin: 0 7.5px 20px;
+}
+.selection__img {
+  z-index: -1;
+  position: absolute;
+  top: -200px;
+  right: -317px;
+  width: 972px;
+}
+
+@media screen and (max-width: 1360px) {
+  .selection__wrap {
+    flex-direction: column;
+  }
+  .selection__content {
+    margin-bottom: 40px;
+  }
+  .selection__title {
+    margin-bottom: 35px;
+  }
+}
+@media screen and (max-width: 1060px) {
+  .selection__img {
+    right: -30%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .selection__img {
+    right: -40%;
+  }
+}
+@media screen and (max-width: 920px) {
+  .selection__img {
+    right: -50%;
+  }
+}
+@media screen and (max-width: 860px) {
+  .selection__img {
+    display: none;
+  }
+}
+@media screen and (max-width: 767px) {
+  .selection {
+    padding-top: 77px;
+    padding-bottom: 0px;
+  }
+  .selection__breadcrumb {
+    margin-top: 0;
+  }
+  .selection__content {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 27px;
+  }
+  .selection__title {
+    color: #262626;
+    margin-bottom: 12px;
+  }
+  .selection__form {
+    width: 100%;
+  }
+  .selection__list {
+    margin-bottom: 0;
+  }
+  .selection__select {
+    width: calc(100% - 15px);
+    margin-bottom: 25px;
+  }
+  .selection__button {
+    width: calc(100% - 15px);
+    margin-top: 205px;
+    margin-bottom: 0;
+  }
+  .selection__img {
+    display: block;
+    width: 620px;
+    top: auto !important;
+    bottom: 0;
+    right: -310px;
+    transform: none;
+  }
+}

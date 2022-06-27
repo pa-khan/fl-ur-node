@@ -1,0 +1,13 @@
+.rec {
+  padding-top: 30px;
+}
+.rec__title {
+  margin-bottom: 15px;
+}
+.rec__list {
+  margin-left: -5px;
+  margin-right: -5px;
+}
+.rec .rec__item {
+  width: calc(50% - 10px);
+}
