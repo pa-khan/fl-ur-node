@@ -1,0 +1,53 @@
+.logo {
+    display: flex;
+    align-items: center;
+
+    &__icon {
+        width: 56px;
+        min-width: 56px;
+
+        svg {
+            width: 56px;
+            height: 28px;
+        }
+    }
+
+    &__title {
+        font-size: 8px;
+        line-height: 6px;
+        font-weight: 700;
+        max-width: 60px;
+    }
+
+    &_md {
+        .logo {
+            &__icon {
+                width: 116px;
+                height: 58px;
+
+                svg {
+                    width: 116px;
+                    height: 58px;
+                }
+            }
+
+            &__title {
+                font-size: 22px;
+                line-height: 20px;
+                max-width: 100%;
+            }
+        }
+
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .logo {
+        flex-direction: column;
+
+        &__title {
+            padding-left: 4px;
+        }
+    }
+}

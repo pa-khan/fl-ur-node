@@ -1,0 +1,40 @@
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo__icon {
+  width: 56px;
+  min-width: 56px;
+}
+.logo__icon svg {
+  width: 56px;
+  height: 28px;
+}
+.logo__title {
+  font-size: 8px;
+  line-height: 6px;
+  font-weight: 700;
+  max-width: 60px;
+}
+.logo_md .logo__icon {
+  width: 116px;
+  height: 58px;
+}
+.logo_md .logo__icon svg {
+  width: 116px;
+  height: 58px;
+}
+.logo_md .logo__title {
+  font-size: 22px;
+  line-height: 20px;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 767px) {
+  .logo {
+    flex-direction: column;
+  }
+  .logo__title {
+    padding-left: 4px;
+  }
+}

@@ -1,0 +1,105 @@
+@import '../../scss/vars';
+
+.plus {
+    transition: .3s;
+    overflow: hidden;
+    cursor: pointer;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        transition: .3s;
+    }
+
+    &__input {
+        display: none;
+    }
+
+    &__value {
+        transition: .3s;
+    }
+
+    &__icon {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: .3s;
+        top: 1px;
+
+        div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transition: .3s;
+            border-radius: 20px;
+            transform: translate(-50%, -50%);
+
+            &:nth-of-type(2) {
+                transform: translate(-50%, -50%) translateZ(0) rotate(-90deg);
+            }
+        }
+    }
+
+    &_gray {
+        .plus {
+            &__inner {
+                color: #121212;
+                background: #F1F1F1;
+            }
+
+            &__icon {
+                div {
+                    width: 12px;
+                    height: 2px;
+                    background: #6B6D81;
+                }
+
+            }
+        }
+
+        &.plus_checked {
+            .plus {
+                &__inner {
+                    background: $red;
+                }
+
+                &__value {
+                    color: #fff;
+                }
+
+                &__icon {
+                    transform: rotate(45deg) translateZ(0);
+
+                    div {
+                        background: #fff;
+                    }
+                }
+            }
+        }
+    }
+
+    &_md {
+        height: 44px;
+
+        .plus {
+            &__inner {
+                padding: 10px 17px 10px 20px;
+                border-radius: 4px;
+            }
+
+            &__value {
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            &__icon {
+                width: 22px;
+                height: 22px;
+                margin-left: 8px;
+            }
+        }
+    }
+
+}

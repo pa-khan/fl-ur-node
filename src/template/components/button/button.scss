@@ -1,0 +1,241 @@
+@import '../../scss/vars';
+
+.button {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: $fzMain;
+    font-family: $ffMain;
+    background: transparent;
+    cursor: pointer;
+    transition: .3s;
+    border: none;
+
+    &__icon {
+
+        &_left,
+        &_right {
+            width: 62px;
+            height: 100%;
+        }
+
+        &_left {
+            padding: 16px 23px 16px 19px;
+            margin-right: -8px;
+        }
+    }
+
+    &__text {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition: .3s;
+        width: 100%;
+        height: 100%;
+    }
+
+    &_sm {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        border-radius: 4px;
+
+        .button {
+            &__icon {
+                height: 52px;
+            }
+
+            &__text {
+                height: 36px;
+                padding: 0 15px;
+                border-radius: 4px;
+            }
+        }
+    }
+
+    &_md {
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: 700;
+        border-radius: 4px;
+
+        .button {
+            &__icon {
+                height: 52px;
+            }
+
+            &__text {
+                height: 52px;
+                padding: 0 15px;
+                border-radius: 4px;
+            }
+        }
+    }
+
+    &_lg {
+        font-size: 16px;
+        line-height: 25px;
+        font-weight: 700;
+        border-radius: 4px;
+
+        .button {
+            &__icon {
+                height: 60.5px;
+            }
+
+            &__text {
+                height: 60.5px;
+                padding: 0 15px;
+                border-radius: 4px;
+            }
+        }
+    }
+
+    &_c-red {
+        color: $red;
+
+        &:hover {
+            .button {
+                &__text {
+                    color: #fff;
+                    background: $red;
+                }
+            }
+        }
+    }
+
+    &_b-red {
+        color: $red;
+
+        .button {
+            &__text {
+                border: 1px solid $red;
+            }
+        }
+
+        &:hover {
+            .button {
+                &__text {
+                    color: #fff;
+                    background: $red;
+                }
+            }
+        }
+    }
+
+    &_shadow-black {
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+
+        &:hover {
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    &_shadow-red {
+        .button {
+            &__text {
+                &:before {
+                    z-index: -1;
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 20px;
+                    right: 20px;
+                    bottom: 0;
+                    transition: .3s;
+                    background: rgba(245, 56, 56, 0.3);
+                    filter: blur(54px);
+                    border-radius: 4px;
+                }
+            }
+        }
+
+        &:hover {
+            .button {
+                &__text {
+                    &:before {
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    &_bg-white {
+        .button {
+            &__text {
+                background: #fff;
+            }
+        }
+
+        &:hover {
+            .button {
+                &__text {
+                    background: #E35050;
+                }
+            }
+        }
+
+        &:active {
+            .button {
+                &__text {
+                    background: #B93E3E;
+                }
+            }
+        }
+    }
+
+    &_bg-blue-dark {
+        .button {
+            &__text {
+                color: #fff;
+                background: #30475E;
+            }
+        }
+
+        &:hover {
+            .button {
+                &__text {
+                    background: darken(#30475E, 5%);
+                }
+            }
+        }
+
+        &:active {
+            .button {
+                &__text {
+                    background: darken(#30475E, 10%);
+                }
+            }
+        }
+    }
+
+    &_bg-red {
+        .button {
+            &__text {
+                color: #fff;
+                background: $red;
+            }
+        }
+
+        &:hover {
+            .button {
+                &__text {
+                    background: #E35050;
+                }
+            }
+        }
+
+        &:active {
+            .button {
+                &__text {
+                    background: #B93E3E;
+                }
+            }
+        }
+    }
+}

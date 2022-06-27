@@ -1,15 +1,17 @@
-mixin breadcrumbs()
+mixin breadcrumbs(cls)
 	if (breadcrumbs)
-		.page__breadcrumbs.breadcrumbs
-			.breadcrumbs__list(itemscope itemtype="http://schema.org/BreadcrumbList")
+		.breadcrumb(class=cls)
+			.breadcrumb__list(itemscope itemtype="http://schema.org/BreadcrumbList")
 				- var position = 1
 				each item in breadcrumbs
-					.breadcrumbs__item(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
+					.breadcrumb__item(itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem")
 						if item[1] != undefinded
-							a.breadcrumbs__link(href=item[1] itemprop="item")
-								span.breadcrumbs__name(itemprop="name")= item[0]
+							a.breadcrumb__link(href=item[1] itemprop="item")
+								span.breadcrumb__name(itemprop="name")= item[0]
 						else
-							.breadcrumbs__text(itemprop="item")
-								span.breadcrumbs__name(itemprop="name")= item[0]
+							.breadcrumb__text(itemprop="item")
+								span.breadcrumb__name(itemprop="name")= item[0]
 						meta(itemprop="position" content=position)
 					- position++
+					if position <= breadcrumbs.length
+						<div class="breadcrumb__sep"><svg class="icon icon_chevron"><use xlink:href="#icon-chevron"></use></svg></div>

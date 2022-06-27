@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title></title><link rel="stylesheet" href="template/css/style.css?ver=1656345072587"></head><body><div class="wrap"><svg class="icons" style="display: none;" width="0" height="0">
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title></title><link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"><link rel="stylesheet" href="template/css/style.css?ver=1656368354747"></head><body><div class="wrap"><svg class="icons" style="display: none;" width="0" height="0">
 <symbol id="icon-phone" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.55 2.16667C12.5 2.90833 12.375 3.63333 12.175 4.325L13.175 5.325C13.5167 4.325 13.7333 3.26667 13.8083 2.16667H12.55V2.16667ZM4.33333 12.1833C3.625 12.3833 2.9 12.5083 2.16667 12.5583V13.8C3.26667 13.725 4.325 13.5083 5.33333 13.175L4.33333 12.1833ZM11.75 0.5H14.6667C15.125 0.5 15.5 0.875 15.5 1.33333C15.5 9.15833 9.15833 15.5 1.33333 15.5C0.875 15.5 0.5 15.125 0.5 14.6667V11.7583C0.5 11.3 0.875 10.925 1.33333 10.925C2.36667 10.925 3.375 10.7583 4.30833 10.45C4.39167 10.4167 4.48333 10.4083 4.56667 10.4083C4.78333 10.4083 4.99167 10.4917 5.15833 10.65L6.99167 12.4833C9.35 11.275 11.2833 9.35 12.4833 6.99167L10.65 5.15833C10.4167 4.925 10.35 4.6 10.4417 4.30833C10.75 3.375 10.9167 2.375 10.9167 1.33333C10.9167 0.875 11.2917 0.5 11.75 0.5Z" />
 </symbol>
@@ -133,13 +133,12 @@
 <!--]-->
 </div>
 </div>
-</div><link rel="stylesheet" href="template/blocks/location/location.css?ver=1656345072587"><a href="tel:+32015287667" class="panel__phone row c-red">
+</div><link rel="stylesheet" href="template/blocks/location/location.css?ver=1656368354747"><a href="tel:+32015287667" class="panel__phone row c-red">
 <svg class="icon icon_phone f-red">
 <use xlink:href="#icon-phone"></use>
 </svg>
 <span>+32 (0) 15 28 76 67</span>
-</a>
-<div class="lkp dd panel__lk">
+</a><div class="lkp dd panel__lk">
 <div class="lkp__inner row">
 <div class="lkp__ava">
 <svg class="icon icon_user">
@@ -158,8 +157,507 @@
 <!--[--><a href="/profile/" class="lkp__item">Личный кабинет</a><a href="#" class="lkp__item">Выйти</a><!--]-->
 </div>
 </div>
+</div><link rel="stylesheet" href="template/blocks/lkp/lkp.css?ver=1656368354747"></div>
+<!--]-->
+</div>
+</div><link rel="stylesheet" href="template/blocks/panel/panel.css?ver=1656368354747"><div class="case">
+<!--[-->
+<div class="header__inner row">
+<a class="logo header__logo" href="index.html">
+<div class="logo__icon">
+<svg viewBox="0 0 57 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.09716 0.5H56.4153C56.4153 0.5 54.4996 14.1713 45.1767 20.0868L51.8177 28.3685L33.3635 28.4342L30.6177 24.6878L29.4683 28.5L8.7395 28.4382C8.7395 28.4382 -0.857985 28.9233 0.565992 16.7479C1.01809 12.8055 6.09716 0.5 6.09716 0.5Z" fill="white"></path>
+<path d="M9.08991 4.20564L15.8663 4.18066C14.4742 8.18611 11.9902 15.1362 11.8293 15.9932C11.5151 17.6746 11.6058 18.6933 12.2265 19.4295C12.897 20.2182 13.9557 20.4299 14.7948 20.4667C16.441 20.5219 18.9952 20.6126 20.6554 20.4811C20.6554 20.4811 20.7538 20.5771 21.1663 19.5609L24.6783 9.11024H39.2374C39.2374 9.11024 38.7265 12.0023 35.7892 12.2652C33.9979 12.4237 32.1987 12.465 30.4023 12.3887L26.4663 24.4905L9.99155 24.622C8.8728 24.5431 7.09889 24.2197 5.88947 22.8539C4.61235 21.4079 4.70558 19.0101 4.84479 17.8586C4.88821 17.4984 5.60467 14.3869 5.71323 14.0464L9.08991 4.20564Z" fill="#D9211C"></path>
+<path d="M17.3986 4.24658L13.4664 16.1407C13.4664 16.1407 12.7218 18.5502 14.0462 18.821C15.6273 19.1444 17.313 19.1181 18.4778 19.084C19.1789 19.0655 19.6272 19.0301 19.6272 19.0301L20.1559 17.4526L23.1852 8.38217C23.5862 7.20959 23.4585 7.47249 24.5287 7.40677H41.9191C41.8632 7.81786 41.7674 8.22214 41.633 8.61353C40.559 11.8855 37.499 14.0242 34.1441 13.9283L31.383 13.9138L30.1697 18.449L35.0227 24.3645H43.8348L38.5348 17.5946H38.9179C38.9179 17.5946 47.283 17.5288 51.1143 4.25184L17.3986 4.24658Z" fill="#1D1D1B"></path>
+</svg>
+</div>
+<div class="logo__title">Магазин Автотюнинга</div>
+</a>
+<nav class="header__links">
+<!--[--><a href="/" class="header__links-item">главная</a>
+<a href="/catalog.html" class="header__links-item">каталог</a>
+<a href="/info.html" class="header__links-item">информация</a>
+<a href="/contacts.html" class="header__links-item">контакты</a>
+<a href="javascript:;" class="header__links-item">еще...</a><!--]-->
+</nav>
+<a class="button header__button-search" href="javascript:;">
+<div class="button__icon">
+<!--[-->
+<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="10.8958" cy="10.8949" r="9.20833" stroke="#F05454" stroke-width="2"></circle>
+<rect x="16.0508" y="18.1133" width="2.91667" height="10.2083" transform="rotate(-45 16.0508 18.1133)" fill="#F05454"></rect>
+</svg>
+<!--]-->
+</div>
+<!----><!----><!---->
+</a>
+<a class="button header__button-favorit" href="/profile/favorit">
+<div class="button__icon">
+<!--[-->
+<svg width="23" height="30" viewBox="0 0 23 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.7143 0H3.28571C1.47857 0 0.0164289 1.5 0.0164289 3.33333L0 30L11.5 25L23 30V3.33333C23 1.5 21.5214 0 19.7143 0ZM20.7143 26L11.5 22.5L2.28571 26V2.33333H20.7143V26Z" fill="#F05454"></path>
+</svg>
+<!--]-->
+</div>
+<!----><!----><!---->
+</a>
+<a class="button header__button-cart" href="/basket">
+<div class="button__icon">
+<!--[-->
+<svg width="29" height="30" viewBox="0 0 29 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M27.6502 4.82803C27.3078 4.42828 26.8791 4.10678 26.3945 3.88636C25.91 3.66594 25.3815 3.552 24.8466 3.55263H5.1641L5.11297 3.13697C5.00833 2.27299 4.58144 1.47639 3.91323 0.898197C3.24502 0.320001 2.38195 0.000404755 1.48763 0H1.21737C0.894505 0 0.584862 0.124765 0.35656 0.346847C0.128259 0.56893 0 0.870138 0 1.18421C0 1.49828 0.128259 1.79949 0.35656 2.02157C0.584862 2.24366 0.894505 2.36842 1.21737 2.36842H1.48763C1.7858 2.36846 2.0736 2.47495 2.29642 2.66769C2.51924 2.86043 2.66159 3.12602 2.69648 3.41408L4.37159 17.2693C4.54549 18.7103 5.2572 20.039 6.37162 21.0032C7.48604 21.9674 8.9256 22.5 10.4171 22.5H23.1301C23.4529 22.5 23.7626 22.3752 23.9909 22.1532C24.2192 21.9311 24.3475 21.6299 24.3475 21.3158C24.3475 21.0017 24.2192 20.7005 23.9909 20.4784C23.7626 20.2563 23.4529 20.1316 23.1301 20.1316H10.4171C9.66357 20.1295 8.92918 19.9008 8.31458 19.4768C7.69997 19.0528 7.23523 18.4542 6.98407 17.7632H21.4951C22.9223 17.7632 24.304 17.2755 25.399 16.3853C26.4941 15.495 27.2327 14.2587 27.4858 12.8925L28.4415 7.73645C28.5369 7.22488 28.5154 6.69916 28.3787 6.19654C28.2419 5.69393 27.9932 5.22672 27.6502 4.82803ZM26.0518 7.31605L25.0949 12.4721C24.9429 13.2928 24.499 14.0353 23.8409 14.5696C23.1827 15.1039 22.3524 15.396 21.4951 15.3947H6.59694L5.4514 5.92105H24.8466C25.0254 5.92001 25.2023 5.95731 25.3646 6.0303C25.5269 6.10329 25.6708 6.21017 25.7858 6.34335C25.9009 6.47653 25.9843 6.63273 26.0303 6.80085C26.0763 6.96896 26.0836 7.14487 26.0518 7.31605ZM8.74976 29.9998C10.1305 29.9998 11.2498 28.8805 11.2498 27.4998C11.2498 26.119 10.1305 24.9998 8.74976 24.9998C7.36904 24.9998 6.24976 26.119 6.24976 27.4998C6.24976 28.8805 7.36904 29.9998 8.74976 29.9998ZM23.75 27.4998C23.75 28.8805 22.6307 29.9998 21.25 29.9998C19.8693 29.9998 18.75 28.8805 18.75 27.4998C18.75 26.119 19.8693 24.9998 21.25 24.9998C22.6307 24.9998 23.75 26.119 23.75 27.4998Z" fill="#F05454"></path>
+</svg>
+<!--]-->
+</div>
+<!---->
+<div class="button__text">
+<!--[--><span class="cart-count">0</span><!--]-->
+</div>
+<!---->
+</a>
+<div class="header__ham">
+<div></div>
+<div></div>
+<div></div>
+</div>
+<a class="button button_md button_bg-red header__button-selection" href="/select.html">
+<!----><!---->
+<div class="button__text">
+<!--[-->Подбор по автомобилю<!--]-->
+</div>
+<!---->
+</a><form class="search header__search">
+<div class="search__area">
+<div class="field field_md field_bg-gray field_text search__field">
+<!---->
+<div class="field__body">
+<!---->
+<div class="field__icon field__icon_left">
+<!--[-->
+<svg style="padding-top:2px;" width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="10.8958" cy="10.8949" r="9.20833" stroke="#262626" stroke-width="2"></circle>
+<rect x="16.0508" y="18.1133" width="2.91667" height="10.2083" transform="rotate(-45 16.0508 18.1133)" fill="#262626"></rect>
+</svg>
+<!--]-->
+</div>
+<div class="field__inner">
+<div class="field__placeholder">Поиск каталогу</div>
+<input class="field__area" type="text" value="" name="name">
+</div>
+<div class="field__icon_hidden field__clear field__icon field__icon_right">
+<svg class="icon icon_cross-round">
+<use xlink:href="#icon-cross-round"></use>
+</svg>
+</div>
+<!----><!----><!----><!---->
+</div>
+<!---->
+</div>
+<a class="button search__button-submit" href="javascript:;">
+<!----><!---->
+<div class="button__text">
+<!--[--><span>Отмена</span><!--]-->
+</div>
+<!---->
+</a>
+</div>
+<div class="search__inner">
+<!---->
+<div class="search__popular">
+<div class="search__popular-title">Популярно</div>
+<div class="search__popular-list">
+<!--[-->
+<div class="search__popular-item search__item">
+<div class="search__popular-icon search__item-icon">
+<svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M11.8556 11.795C11.8556 11.795 15.3464 15.2857 16.0303 15.9697L14.9697 17.0303L10.7089 12.7695C9.666 13.4678 8.4118 13.875 7.0625 13.875C3.43813 13.875 0.5 10.9369 0.5 7.3125C0.5 3.68813 3.43813 0.75 7.0625 0.75C10.6869 0.75 13.625 3.68813 13.625 7.3125C13.625 9.04567 12.9531 10.6219 11.8556 11.795ZM7.0625 2.25C4.271 2.25 2 4.521 2 7.3125C2 10.104 4.271 12.375 7.0625 12.375C9.854 12.375 12.125 10.104 12.125 7.3125C12.125 4.521 9.854 2.25 7.0625 2.25Z" fill="black"></path>
+</svg>
+</div>
+<div class="search__popular-name seach__item-name">VW тубина 123412</div>
+</div>
+<div class="search__popular-item search__item">
+<div class="search__popular-icon search__item-icon">
+<svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M11.8556 11.795C11.8556 11.795 15.3464 15.2857 16.0303 15.9697L14.9697 17.0303L10.7089 12.7695C9.666 13.4678 8.4118 13.875 7.0625 13.875C3.43813 13.875 0.5 10.9369 0.5 7.3125C0.5 3.68813 3.43813 0.75 7.0625 0.75C10.6869 0.75 13.625 3.68813 13.625 7.3125C13.625 9.04567 12.9531 10.6219 11.8556 11.795ZM7.0625 2.25C4.271 2.25 2 4.521 2 7.3125C2 10.104 4.271 12.375 7.0625 12.375C9.854 12.375 12.125 10.104 12.125 7.3125C12.125 4.521 9.854 2.25 7.0625 2.25Z" fill="black"></path>
+</svg>
+</div>
+<div class="search__popular-name seach__item-name">Супер кит для моего тигуана</div>
+</div>
+<div class="search__popular-item search__item">
+<div class="search__popular-icon search__item-icon">
+<svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M11.8556 11.795C11.8556 11.795 15.3464 15.2857 16.0303 15.9697L14.9697 17.0303L10.7089 12.7695C9.666 13.4678 8.4118 13.875 7.0625 13.875C3.43813 13.875 0.5 10.9369 0.5 7.3125C0.5 3.68813 3.43813 0.75 7.0625 0.75C10.6869 0.75 13.625 3.68813 13.625 7.3125C13.625 9.04567 12.9531 10.6219 11.8556 11.795ZM7.0625 2.25C4.271 2.25 2 4.521 2 7.3125C2 10.104 4.271 12.375 7.0625 12.375C9.854 12.375 12.125 10.104 12.125 7.3125C12.125 4.521 9.854 2.25 7.0625 2.25Z" fill="black"></path>
+</svg>
+</div>
+<div class="search__popular-name seach__item-name">REVO</div>
+</div>
+<!--]-->
+</div>
+</div>
+<!----><!----><!---->
+</div>
+</form><link rel="stylesheet" href="template/blocks/search/search.css?ver=1656368354748"></div>
+<!--]-->
+</div><div class="nav dd header__nav">
+<div class="case">
+<!--[-->
+<div class="nav__wrap row">
+<div class="nav__left">
+<div class="nav__list">
+<!--[-->
+<div class="nav__item">
+<a class="nav__item-link" href="/catalog">
+<div class="nav__item-name">Каталог</div>
+<div class="nav__item-arrow">
+<svg class="icon icon_arrow">
+<use xlink:href="#icon-arrow"></use>
+</svg>
+</div>
+</a>
+<div class="nav__sub">
+<div class="h3 nav__sub-title c-red">
+<!--[-->Выберите категорию<!--]-->
+</div>
+<div class="nav__sub-list">
+<!--[-->
+<div class="nav__sub-item"><a class="nav__sub-link" href="/catalog">Двигатель</a></div>
+<div class="nav__sub-item"><a class="nav__sub-link" href="/catalog">Турбины</a></div>
+<div class="nav__sub-item"><a class="nav__sub-link" href="/catalog">Трансмиссии</a></div>
+<div class="nav__sub-item"><a class="nav__sub-link" href="/catalog">Выпускные системы</a></div>
+<div class="nav__sub-item"><a class="nav__sub-link" href="/catalog">Впускные системы</a></div>
+<div class="nav__sub-item"><a class="nav__sub-link" href="/catalog">Охлаждение</a></div>
+<div class="nav__sub-item"><a class="nav__sub-link" href="/catalog">Тормозные системы</a></div>
+<div class="nav__sub-item"><a class="nav__sub-link" href="/catalog">Подвеска</a></div>
+<div class="nav__sub-item"><a class="nav__sub-link" href="/catalog">Топливные системы</a></div>
+<div class="nav__sub-item"><a class="nav__sub-link" href="/catalog">Интерьер и экстерьер</a></div>
+<div class="nav__sub-item"><a class="nav__sub-link" href="/catalog">Шины и диски</a></div>
+<div class="nav__sub-item"><a class="nav__sub-link" href="/catalog">Электрика</a></div>
+<div class="nav__sub-item"><a class="nav__sub-link" href="/catalog">Оригинальные детали</a></div>
+<div class="nav__sub-item"><a class="nav__sub-link" href="/catalog">Подарки и мерс</a></div>
+<!--]-->
+</div>
+</div>
+</div>
+<div class="nav__item">
+<a class="nav__item-link" href="">
+<div class="nav__item-name">О нас</div>
+<div class="nav__item-arrow">
+<svg class="icon icon_arrow">
+<use xlink:href="#icon-arrow"></use>
+</svg>
+</div>
+</a>
+<div class="nav__sub">
+<div class="h3 nav__sub-title c-red">
+<!--[-->О нас<!--]-->
+</div>
+<div class="nav__sub-list">
+<!--[-->
+<div class="nav__sub-item"><a class="nav__sub-link" href="/about">О компании</a></div>
+<div class="nav__sub-item"><a class="nav__sub-link" href="/delivery">Доставка и оплата</a></div>
+<!--]-->
+</div>
+</div>
+</div>
+<div class="nav__item">
+<a class="nav__item-link" href="/news">
+<div class="nav__item-name">Новости</div>
+<!---->
+</a>
+<!---->
+</div>
+<div class="nav__item">
+<a class="nav__item-link" href="/contacts">
+<div class="nav__item-name">Контакты</div>
+<!---->
+</a>
+<!---->
+</div>
+<div class="nav__item">
+<a class="nav__item-link" href="/catalog">
+<div class="nav__item-name">Распродажи</div>
+<!---->
+</a>
+<!---->
+</div>
+<div class="nav__item">
+<a class="nav__item-link" href="/info">
+<div class="nav__item-name">Информация</div>
+<!---->
+</a>
+<!---->
+</div>
+<div class="nav__item">
+<a class="nav__item-link" href="/basket">
+<div class="nav__item-name">Корзина</div>
+<!---->
+</a>
+<!---->
+</div>
+<!--]-->
+</div>
+</div>
+<div class="nav__right">
+<div class="h3 nav__title">
+<!--[-->Выберите быстрое действие<!--]-->
+</div>
+<div class="nav__actions">
+<!--[-->
+<a class="nav__action" href="/select">
+<div class="nav__action-icon">
+<div>
+<svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23.4802 5.44493H21.7201C21.586 5.44493 21.4571 5.49674 21.3604 5.58945L20.9846 5.9494C20.3513 4.48391 19.4427 3.0347 18.2154 1.53436C17.552 0.723683 16.5709 0.258789 15.5235 0.258789H8.47642C7.42891 0.258789 6.44782 0.723738 5.78477 1.53441C4.51876 3.08195 3.62822 4.49625 3.00986 5.94423L2.63968 5.58945C2.54291 5.49674 2.41401 5.44493 2.27995 5.44493H0.519865C0.232725 5.44493 0 5.67766 0 5.9648V7.16822C0 7.44263 0.213326 7.66969 0.487182 7.68703L2.29634 7.80097C2.02299 8.59975 1.80955 9.79006 1.80955 11.4687C1.80955 12.9253 2.10047 13.8826 2.60677 14.5023V17.3064C2.60677 17.5468 2.8017 17.7417 3.04215 17.7417H5.04474C5.2853 17.7417 5.48029 17.5468 5.48029 17.3064V15.5651H18.5198V17.3064C18.5198 17.5468 18.7148 17.7417 18.9552 17.7417H20.9578C21.1982 17.7417 21.3932 17.5468 21.3932 17.3064V14.5023C21.8994 13.8826 22.1905 12.9253 22.1905 11.4687C22.1905 9.79006 21.9771 8.59975 21.7037 7.80097L23.5129 7.68703C23.7867 7.66969 24 7.44263 24 7.16822V5.9648C24 5.67766 23.7674 5.44493 23.4802 5.44493ZM7.27055 2.74984C7.5677 2.38666 8.00724 2.17828 8.47642 2.17828H15.5235C15.9927 2.17828 16.4324 2.38666 16.7295 2.74984C17.5881 3.79941 18.2661 4.80384 18.7902 5.80439L5.19782 5.80694C5.7104 4.82863 6.39229 3.82336 7.27055 2.74984ZM5.78933 13.4357C4.79256 13.4357 3.98461 13.1101 3.98461 12.3203C3.98461 11.5306 4.27776 10.8903 5.27446 10.8903C6.27117 10.8903 7.59393 11.5306 7.59393 12.3203C7.59393 13.1101 6.78593 13.4357 5.78933 13.4357ZM13.8918 13.2711H10.1083C9.53794 13.2711 9.07393 12.8071 9.07393 12.2367C9.07393 12.0768 9.20366 11.9471 9.36374 11.9471H14.6365C14.7965 11.9471 14.9261 12.0768 14.9261 12.2367C14.9261 12.8071 14.4621 13.2711 13.8918 13.2711ZM18.2107 13.4357C17.214 13.4357 16.406 13.1101 16.406 12.3203C16.406 11.5306 17.7289 10.8903 18.7255 10.8903C19.7222 10.8903 20.0154 11.5306 20.0154 12.3203C20.0154 13.1101 19.2075 13.4357 18.2107 13.4357Z" fill="#F05454"></path>
+</svg>
+</div>
+</div>
+<div class="nav__action-wrap">
+<div class="nav__action-title">
+<span>Подбор по авто</span>
+<svg class="icon icon_arrow">
+<use xlink:href="#icon-arrow"></use>
+</svg>
+</div>
+<div class="nav__action-text">Подберите для вашего авто</div>
+<div class="nav__action-arrow"></div>
+</div>
+</a>
+<a class="nav__action" href="/profile/compare">
+<div class="nav__action-icon">
+<div>
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11 6.33C11.85 6.03 12.53 5.35 12.83 4.5H16L13 11.5C13 13.16 14.57 14.5 16.5 14.5C18.43 14.5 20 13.16 20 11.5L17 4.5H19V2.5H12.83C12.42 1.33 11.31 0.5 10 0.5C8.69 0.5 7.58 1.33 7.17 2.5H1V4.5H3L0 11.5C0 13.16 1.57 14.5 3.5 14.5C5.43 14.5 7 13.16 7 11.5L4 4.5H7.17C7.47 5.35 8.15 6.03 9 6.33V17.5H0V19.5H20V17.5H11V6.33ZM18.37 11.5H14.63L16.5 7.14L18.37 11.5ZM5.37 11.5H1.63L3.5 7.14L5.37 11.5ZM10 4.5C9.45 4.5 9 4.05 9 3.5C9 2.95 9.45 2.5 10 2.5C10.55 2.5 11 2.95 11 3.5C11 4.05 10.55 4.5 10 4.5Z" fill="#F05454"></path>
+</svg>
+</div>
+</div>
+<div class="nav__action-wrap">
+<div class="nav__action-title">
+<span>Сравнение</span>
+<svg class="icon icon_arrow">
+<use xlink:href="#icon-arrow"></use>
+</svg>
+</div>
+<div class="nav__action-text">Подберите для вашего авто</div>
+<div class="nav__action-arrow"></div>
+</div>
+</a>
+<a class="nav__action" href="/login">
+<div class="nav__action-icon">
+<div>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.25 6C15.25 7.79493 13.7949 9.25 12 9.25C10.2051 9.25 8.75 7.79493 8.75 6C8.75 4.20507 10.2051 2.75 12 2.75C13.7949 2.75 15.25 4.20507 15.25 6Z" stroke="#F05454" stroke-width="1.5"></path>
+<path d="M18.25 17C18.25 18.0756 17.6409 19.1202 16.5138 19.9252C15.3882 20.7293 13.7947 21.25 12 21.25C10.2053 21.25 8.61181 20.7293 7.48618 19.9252C6.35911 19.1202 5.75 18.0756 5.75 17C5.75 15.9244 6.35911 14.8798 7.48618 14.0748C8.61181 13.2707 10.2053 12.75 12 12.75C13.7947 12.75 15.3882 13.2707 16.5138 14.0748C17.6409 14.8798 18.25 15.9244 18.25 17Z" stroke="#F05454" stroke-width="1.5"></path>
+</svg>
+</div>
+</div>
+<div class="nav__action-wrap">
+<div class="nav__action-title">
+<span>Войти</span>
+<svg class="icon icon_arrow">
+<use xlink:href="#icon-arrow"></use>
+</svg>
+</div>
+<div class="nav__action-text">Войти или зарегистрироваться</div>
+<div class="nav__action-arrow"></div>
+</div>
+</a>
+<a class="nav__action" href="/basket">
+<div class="nav__action-icon">
+<div>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 18C9.82843 18 10.5 18.6716 10.5 19.5C10.5 20.3284 9.82843 21 9 21C8.17157 21 7.5 20.3284 7.5 19.5C7.5 18.6716 8.17157 18 9 18Z" stroke="#F05454" stroke-width="1.5"></path>
+<path d="M16 18C16.8284 18 17.5 18.6716 17.5 19.5C17.5 20.3284 16.8284 21 16 21C15.1716 21 14.5 20.3284 14.5 19.5C14.5 18.6716 15.1716 18 16 18Z" stroke="#F05454" stroke-width="1.5"></path>
+<path d="M5.75 12C5.75 10.5646 5.75159 9.56347 5.85315 8.80812C5.9518 8.07434 6.13225 7.68577 6.40901 7.40901C6.68577 7.13225 7.07434 6.9518 7.80812 6.85315C8.56347 6.75159 9.56458 6.75 11 6.75H13.9172C15.5841 6.75 16.7537 6.75179 17.623 6.87517C18.4715 6.9956 18.8954 7.21511 19.1754 7.54566C19.4554 7.8762 19.6023 8.33044 19.5816 9.18719C19.5604 10.0649 19.3698 11.2189 19.0958 12.8631C18.8931 14.0793 18.7511 14.9228 18.5629 15.5551C18.3807 16.1672 18.1794 16.4911 17.913 16.7168C17.6465 16.9425 17.294 17.0878 16.6602 17.1669C16.0056 17.2486 15.1503 17.25 13.9172 17.25H11C9.56458 17.25 8.56347 17.2484 7.80812 17.1469C7.07434 17.0482 6.68577 16.8678 6.40901 16.591C6.13225 16.3142 5.9518 15.9257 5.85315 15.1919C5.75159 14.4365 5.75 13.4354 5.75 12Z" stroke="#F05454" stroke-width="1.5"></path>
+<path d="M5.75 11.5V5C5.75 3.89543 4.85457 3 3.75 3H2.5" stroke="#F05454" stroke-width="1.5" stroke-linecap="round"></path>
+</svg>
+</div>
+</div>
+<div class="nav__action-wrap">
+<div class="nav__action-title">
+<span>Корзина</span>
+<svg class="icon icon_arrow">
+<use xlink:href="#icon-arrow"></use>
+</svg>
+</div>
+<div class="nav__action-text">Оформление заказа</div>
+<div class="nav__action-arrow"></div>
+</div>
+</a>
+<!--]-->
+</div>
+</div>
+<div class="nav__controls row">
+<a class="button nav__control nav__control_bg" href="/basket">
+<div class="button__icon">
+<!--[-->
+<svg class="icon icon_cart">
+<use xlink:href="#icon-cart"></use>
+</svg>
+<!--]-->
+</div>
+<!----><!----><!---->
+</a>
+<a class="button nav__control" href="/profile">
+<div class="button__icon">
+<!--[-->
+<svg class="icon icon_user">
+<use xlink:href="#icon-user"></use>
+</svg>
+<!--]-->
+</div>
+<!----><!----><!---->
+</a>
+<a class="button nav__control" href="tel:+78126484385">
+<div class="button__icon">
+<!--[-->
+<svg class="icon icon_phone">
+<use xlink:href="#icon-phone"></use>
+</svg>
+<!--]-->
+</div>
+<!----><!----><!---->
+</a>
+</div>
+</div>
+<div class="nav__foot">
+<div class="nav__foot-left">
+<div class="nav__phone"><a href="tel:+78126484385">+7 (812) 648-43-85</a></div>
+<div class="socials nav__socials">
+<div class="socials__list">
+<!--[-->
+<a class="socials__item_gray socials__item" href="https://instagram.com" target="_blank">
+<svg class="icon icon_instagram">
+<use xlink:href="#icon-instagram"></use>
+</svg>
+</a>
+<a class="socials__item_gray socials__item" href="https://youtube.com" target="_blank">
+<svg class="icon icon_youtube">
+<use xlink:href="#icon-youtube"></use>
+</svg>
+</a>
+<a class="socials__item_gray socials__item" href="https://t.me" target="_blank">
+<svg class="icon icon_telegram">
+<use xlink:href="#icon-telegram"></use>
+</svg>
+</a>
+<!--]-->
+</div>
+</div>
+</div>
+<div class="nav__foot-right">
+<div class="logo nav__logo logo_md">
+<div class="logo__icon">
+<svg viewBox="0 0 57 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.09716 0.5H56.4153C56.4153 0.5 54.4996 14.1713 45.1767 20.0868L51.8177 28.3685L33.3635 28.4342L30.6177 24.6878L29.4683 28.5L8.7395 28.4382C8.7395 28.4382 -0.857985 28.9233 0.565992 16.7479C1.01809 12.8055 6.09716 0.5 6.09716 0.5Z" fill="white"></path>
+<path d="M9.08991 4.20564L15.8663 4.18066C14.4742 8.18611 11.9902 15.1362 11.8293 15.9932C11.5151 17.6746 11.6058 18.6933 12.2265 19.4295C12.897 20.2182 13.9557 20.4299 14.7948 20.4667C16.441 20.5219 18.9952 20.6126 20.6554 20.4811C20.6554 20.4811 20.7538 20.5771 21.1663 19.5609L24.6783 9.11024H39.2374C39.2374 9.11024 38.7265 12.0023 35.7892 12.2652C33.9979 12.4237 32.1987 12.465 30.4023 12.3887L26.4663 24.4905L9.99155 24.622C8.8728 24.5431 7.09889 24.2197 5.88947 22.8539C4.61235 21.4079 4.70558 19.0101 4.84479 17.8586C4.88821 17.4984 5.60467 14.3869 5.71323 14.0464L9.08991 4.20564Z" fill="#D9211C"></path>
+<path d="M17.3986 4.24658L13.4664 16.1407C13.4664 16.1407 12.7218 18.5502 14.0462 18.821C15.6273 19.1444 17.313 19.1181 18.4778 19.084C19.1789 19.0655 19.6272 19.0301 19.6272 19.0301L20.1559 17.4526L23.1852 8.38217C23.5862 7.20959 23.4585 7.47249 24.5287 7.40677H41.9191C41.8632 7.81786 41.7674 8.22214 41.633 8.61353C40.559 11.8855 37.499 14.0242 34.1441 13.9283L31.383 13.9138L30.1697 18.449L35.0227 24.3645H43.8348L38.5348 17.5946H38.9179C38.9179 17.5946 47.283 17.5288 51.1143 4.25184L17.3986 4.24658Z" fill="#1D1D1B"></path>
+</svg>
+</div>
+<div class="logo__title" style="">Магазин Автотюнинга</div>
+</div>
 </div>
 </div>
 <!--]-->
 </div>
-</div><link rel="stylesheet" href="template/blocks/panel/panel.css?ver=1656345072587"></div><link rel="stylesheet" href="template/blocks/header/header.css?ver=1656345072587"><main class="main"></main><div class="footer"><div class="case"></div></div><link rel="stylesheet" href="template/blocks/footer/footer.css?ver=1656345072587"><div class="alert"><div class="case"></div></div><link rel="stylesheet" href="template/blocks/alert/alert.css?ver=1656345072587"><script src="template/js/common.js?ver=1656345072587"></script></div></body></html>
+<div class="nav__bg"></div>
+</div><link rel="stylesheet" href="template/blocks/nav/nav.css?ver=1656368354748"></div><link rel="stylesheet" href="template/blocks/header/header.css?ver=1656368354748"><main class="main"></main><footer class="footer"><div class="case">
+<!--[-->
+<div class="footer__mid row">
+<div class="footer__data">
+<a class="logo footer__logo" href="/">
+<div class="logo__icon">
+<svg viewBox="0 0 57 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.09716 0.5H56.4153C56.4153 0.5 54.4996 14.1713 45.1767 20.0868L51.8177 28.3685L33.3635 28.4342L30.6177 24.6878L29.4683 28.5L8.7395 28.4382C8.7395 28.4382 -0.857985 28.9233 0.565992 16.7479C1.01809 12.8055 6.09716 0.5 6.09716 0.5Z" fill="white"></path>
+<path d="M9.08991 4.20564L15.8663 4.18066C14.4742 8.18611 11.9902 15.1362 11.8293 15.9932C11.5151 17.6746 11.6058 18.6933 12.2265 19.4295C12.897 20.2182 13.9557 20.4299 14.7948 20.4667C16.441 20.5219 18.9952 20.6126 20.6554 20.4811C20.6554 20.4811 20.7538 20.5771 21.1663 19.5609L24.6783 9.11024H39.2374C39.2374 9.11024 38.7265 12.0023 35.7892 12.2652C33.9979 12.4237 32.1987 12.465 30.4023 12.3887L26.4663 24.4905L9.99155 24.622C8.8728 24.5431 7.09889 24.2197 5.88947 22.8539C4.61235 21.4079 4.70558 19.0101 4.84479 17.8586C4.88821 17.4984 5.60467 14.3869 5.71323 14.0464L9.08991 4.20564Z" fill="#D9211C"></path>
+<path d="M17.3986 4.24658L13.4664 16.1407C13.4664 16.1407 12.7218 18.5502 14.0462 18.821C15.6273 19.1444 17.313 19.1181 18.4778 19.084C19.1789 19.0655 19.6272 19.0301 19.6272 19.0301L20.1559 17.4526L23.1852 8.38217C23.5862 7.20959 23.4585 7.47249 24.5287 7.40677H41.9191C41.8632 7.81786 41.7674 8.22214 41.633 8.61353C40.559 11.8855 37.499 14.0242 34.1441 13.9283L31.383 13.9138L30.1697 18.449L35.0227 24.3645H43.8348L38.5348 17.5946H38.9179C38.9179 17.5946 47.283 17.5288 51.1143 4.25184L17.3986 4.24658Z" fill="#1D1D1B"></path>
+</svg>
+</div>
+<div class="logo__title" style="">Магазин Автотюнинга</div>
+</a>
+<div class="socials footer__socials">
+<div class="socials__list">
+<!--[-->
+<a class="socials__item" href="https://instagram.com" target="_blank">
+<svg class="icon icon_instagram">
+<use xlink:href="#icon-instagram"></use>
+</svg>
+</a>
+<a class="socials__item" href="https://youtube.com" target="_blank">
+<svg class="icon icon_youtube">
+<use xlink:href="#icon-youtube"></use>
+</svg>
+</a>
+<a class="socials__item" href="https://t.me" target="_blank">
+<svg class="icon icon_telegram">
+<use xlink:href="#icon-telegram"></use>
+</svg>
+</a>
+<!--]-->
+</div>
+</div>
+<div class="footer__desc"><u>URBAN</u> RACE <b>- МАГАЗИН АВТОТЮНИНГА</b></div>
+<div class="footer__info">Интернет-магазин тюнинг-комплектующих для современных автомобилей Audi, Skoda, Seat, Skoda, Porsche, BMW, Mercedes-Benz и др.Мы предлагаем только лучшие товары из Европы и США. Работаем напрямую с заводами, тем самым гарантируя отличные цены и сроки доставки.</div>
+</div>
+<div class="footer__navs row">
+<!--[-->
+<div class="footer__navs-col">
+<div class="footer__title">Страницы</div>
+<div class="footer__nav">
+<div class="footer__nav-list">
+<!--[--><a class="footer__nav-item" href="/">Главная</a><a class="footer__nav-item" href="/">Контакты</a><a class="footer__nav-item" href="/">Каталог</a><a class="footer__nav-item" href="/">Партнеры</a><a class="footer__nav-item" href="/">Актуальное</a><a class="footer__nav-item" href="/">Подбор по автомобилю</a><!--]-->
+</div>
+</div>
+</div>
+<div class="footer__navs-col">
+<div class="footer__title">Для покупателей</div>
+<div class="footer__nav">
+<div class="footer__nav-list">
+<!--[--><a class="footer__nav-item" href="/">Доставка</a><a class="footer__nav-item" href="/">Оплата</a><a class="footer__nav-item" href="/">Возврат</a><a class="footer__nav-item" href="/">Партнеры</a><a class="footer__nav-item" href="/">Личный кабинет</a><!--]-->
+</div>
+</div>
+</div>
+<div class="footer__navs-col">
+<div class="footer__title">Информация</div>
+<div class="footer__nav">
+<div class="footer__nav-list">
+<!--[--><a class="footer__nav-item" href="/">Статьи</a><a class="footer__nav-item" href="/">Видеообзоры</a><a class="footer__nav-item" href="/">Бренды</a><a class="footer__nav-item" href="/">Установочные центры</a><!--]-->
+</div>
+</div>
+</div>
+<div class="footer__navs-col">
+<div class="footer__title">Правила</div>
+<div class="footer__nav">
+<div class="footer__nav-list">
+<!--[--><a class="footer__nav-item" href="/">Куки</a><a class="footer__nav-item" href="/">Правила</a><a class="footer__nav-item" href="/">Правила</a><!--]-->
+</div>
+</div>
+</div>
+<!--]-->
+</div>
+<div class="footer__links">
+<div class="footer__links-list">
+<!--[--><a href="/" class="footer__links-item">главная</a><a href="/" class="footer__links-item">каталог</a><a href="/" class="footer__links-item">новости</a><a href="/" class="footer__links-item">информация</a><a href="/" class="footer__links-item">Связаться с нами</a><a href="/" class="footer__links-item">контакты</a><!--]-->
+</div>
+</div>
+</div>
+<div class="footer__bot">
+<div class="footer__buttons">
+<a class="button button_sm button_c-red footer__button" href="/catalog">
+<!----><!---->
+<div class="button__text">
+<!--[-->Вход<!--]-->
+</div>
+<!---->
+</a>
+<a class="button button_sm button_b-red footer__button" href="/catalog">
+<!----><!---->
+<div class="button__text">
+<!--[-->регистрация<!--]-->
+</div>
+<!---->
+</a>
+</div>
+<div class="footer__copy">© 2022 UrbanRacers</div>
+</div>
+<!--]-->
+</div></footer><link rel="stylesheet" href="template/blocks/footer/footer.css?ver=1656368354748"><div class="alert"><div class="case"></div></div><link rel="stylesheet" href="template/blocks/alert/alert.css?ver=1656368354748"><script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script><script src="template/js/common.js?ver=1656368354748"></script></div></body></html>

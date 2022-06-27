@@ -1,0 +1,16 @@
+.case {
+    width: 100%;
+    max-width: 1700px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .case {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    &_sm {
+        max-width: 1038px;
+    }
+}

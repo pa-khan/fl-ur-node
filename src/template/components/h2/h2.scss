@@ -1,0 +1,17 @@
+@import '../../scss/vars';
+
+.h2 {
+    font-size: 35px;
+    line-height: 45px;
+    font-weight: 700;
+    letter-spacing: -0.41px;
+    font-family: $ff2;
+}
+
+@media screen and (max-width: 767px) {
+    .h2 {
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: -0.005em;
+    }
+}

@@ -1,32 +1,45 @@
 extends ../../templates/default
 block vars
   -
-    title = ""
+    title = "Главная"
 block content
 
   include ../../../blocks/intro/intro
   +style('intro', 'blocks')
 
+  - selectionClass = 'hidden-xs'
+  include ../../../blocks/selection/selection
+  +style('selection', 'blocks')
+
+  - choiserClass = 'hidden show-xs'
   include ../../../blocks/choiser/choiser
   +style('choiser', 'blocks')
 
+  - groupClass = 'hidden show-xs'
   include ../../../blocks/group/group
   +style('group', 'blocks')
 
+  - questionsClass = 'hidden-xs'
   include ../../../blocks/questions/questions
   +style('questions', 'blocks')
 
+  - utpClass = 'hidden show-xs'
   include ../../../blocks/utp/utp
   +style('utp', 'blocks')
 
+  - textClass = 'hidden show-xs'
   include ../../../blocks/text/text
   +style('text', 'blocks')
 
   include ../../../blocks/cats/cats
   +style('cats', 'blocks')
 
+  - actualClass = 'actual_mt-minus'
   include ../../../blocks/actual/actual
   +style('actual', 'blocks')
 
+  - questionsClass = 'questions_mt-minus hidden-xs'
   include ../../../blocks/questions/questions
   //- +style('questions', 'blocks')
+
+  <a class="button button_md button_bg-red button_shadow-black super" href="/categories.html"><!----><!----><div class="button__text"><!--[-->Категории<!--]--></div><!----></a>

@@ -1,0 +1,409 @@
+@import '../../scss/vars';
+
+.field {
+    &__body {
+        display: flex;
+        align-items: center;
+        position: relative;
+        border: 1px solid transparent;
+        overflow: hidden;
+        background: #fff;
+        transition: .3s;
+    }
+
+    &__inner {
+        width: 100%;
+        position: relative;
+    }
+
+    &__placeholder {
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: .3s;
+    }
+
+    &__area {
+        display: block;
+        font-size: $fzMain;
+        font-family: $ffMain;
+        width: 100%;
+        background: transparent;
+
+        &::placeholder {
+            opacity: 0;
+        }
+    }
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+
+        .icon {
+            &_cross-round {
+                fill: #A0A0A0;
+            }
+        }
+
+        &_hidden {
+            opacity: 0;
+            visibility: hidden;
+            transform: scale(0) translateX(-50%);
+            width: 0 !important;
+            margin-left: 0 !important;
+        }
+    }
+
+    &__clear {
+        cursor: pointer;
+
+        &:hover {
+            .icon {
+                fill: $red;
+            }
+        }
+    }
+
+    &__visible {
+        cursor: pointer;
+
+        &:hover {
+            .icon {
+                fill: $red;
+            }
+        }
+    }
+
+    &__valid {
+        display: flex;
+        align-items: center;
+        transition: .3s;
+        min-height: 22px;
+
+        &-title {
+            transition: .3s;
+        }
+
+        &-password {
+            display: flex;
+            align-items: center;
+            margin-left: 6px;
+            transition: .3s;
+
+            div {
+                width: 16px;
+                height: 8px;
+                border-radius: 50px;
+                margin-right: 2px;
+                border: 1px solid transparent;
+                transition: .3s;
+
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    &_sm {
+        .field {
+            &__title {
+                font-weight: 600;
+                line-height: 20px;
+                margin-bottom: 6px;
+            }
+
+            &__body {
+                padding-left: 12px;
+                padding-right: 12px;
+                height: 42px;
+                border-radius: 4px;
+            }
+
+            &__icon {
+                min-width: 14px;
+                width: 14px;
+                height: 14px;
+
+                svg {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            &__icon {
+                &_left {
+                    margin-right: 11px;
+                }
+
+                &_right {
+                    margin-left: 12px;
+                }
+            }
+
+            &__valid {
+                font-size: 12px;
+                line-height: 21.6px;
+                margin-top: 6px;
+            }
+        }
+
+        &.field {
+            &_icon-left {
+                .field {
+                    &__area {
+                        // padding-left: 58px;
+                    }
+                }
+            }
+
+            &_icon-right {
+                .field {
+                    &__area {
+                        // padding-right: 58px;
+                    }
+                }
+            }
+
+            &_textarea {
+                .field {
+                    &__body {
+                        padding-top: 12px;
+                        padding-bottom: 12px;
+                        height: 80px;
+                        align-items: flex-start;
+                    }
+
+                    &__inner {
+                        margin-top: -2px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    &_md {
+        .field {
+            &__title {
+                font-weight: 600;
+                line-height: 20px;
+                margin-bottom: 6px;
+            }
+
+            &__body {
+                padding-left: 20px;
+                padding-right: 15px;
+                height: 48px;
+                border-radius: 4px;
+            }
+
+            &__icon {
+                min-width: 18px;
+                width: 18px;
+                height: 18px;
+
+                svg {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            &__icon {
+                &_left {
+                    margin-right: 11px;
+                }
+
+                &_right {
+                    margin-left: 12px;
+                }
+            }
+
+            &__valid {
+                font-size: 12px;
+                line-height: 21.6px;
+                margin-top: 6px;
+            }
+        }
+
+        &.field {
+            &_icon-left {
+                .field {
+                    &__area {
+                        // padding-left: 58px;
+                    }
+                }
+            }
+
+            &_icon-right {
+                .field {
+                    &__area {
+                        // padding-right: 58px;
+                    }
+                }
+            }
+
+            &_textarea {
+                .field {
+                    &__body {
+                        padding-top: 15px;
+                        padding-bottom: 15px;
+                        height: 100px;
+                        align-items: flex-start;
+                    }
+                }
+            }
+        }
+
+    }
+
+    &_b-gray {
+        .field {
+            &__body {
+                border-color: #d9d9d9;
+            }
+
+            &__placeholder {
+                color: rgba(26, 32, 61, 0.3);
+            }
+        }
+
+        &.field_valid {
+            .field {
+                &__body {
+                    border-color: $green;
+                }
+            }
+        }
+
+        &.field_error {
+            .field {
+                &__body {
+                    border-color: $red;
+                }
+            }
+        }
+    }
+
+    &_bg-gray {
+        .field {
+            &__body {
+                background: #F5F5F5;
+            }
+        }
+    }
+
+    &_textarea {
+        .field {
+            &__inner {
+                height: 100%;
+            }
+
+            &__area {
+                height: 100%;
+                resize: none;
+            }
+        }
+    }
+
+    &_filled,
+    &_focus {
+        .field {
+            &__placeholder {
+                opacity: 0;
+                visibility: hidden;
+            }
+        }
+    }
+
+    &_error-type {
+        &-41 {
+            .field {
+                &__valid {
+                    &-password {
+                        diGv {
+                            border-color: $red;
+
+                            &:nth-of-type(1) {
+                                background: $red;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &-42 {
+            .field {
+                &__body {
+                    border-color: #FFAD4F !important;
+                }
+
+                &__valid {
+                    &-title {
+                        color: #FFAD4F;
+                    }
+
+                    &-password {
+                        div {
+                            border-color: #FFAD4F;
+
+                            &:nth-of-type(1),
+                            &:nth-of-type(2) {
+                                background: #FFAD4F;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &-40 {
+            .field {
+                &__body {
+                    border-color: $green  !important;
+                }
+
+                &__valid {
+                    &-title {
+                        color: $green
+                    }
+
+                    &-password {
+                        div {
+                            border-color: $green;
+                            background: $green;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &_textarea {
+        .field {
+            &__area {
+                overflow: hidden;
+                resize: none;
+            }
+        }
+    }
+
+    &_error {
+        .field {
+            &__valid {
+                color: $red;
+            }
+        }
+    }
+
+    &_valid {
+        .field {
+            &__valid {
+                color: $green;
+            }
+        }
+    }
+}

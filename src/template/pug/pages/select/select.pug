@@ -1,10 +1,21 @@
 extends ../../templates/default
 block vars
 	-
-		title = ""
+		title = "Подбор по автомобилю"
 		breadcrumbs = [
 			['Главная', 'index.html'],
 			[title]
 		]
 block content
-	
+	- selectionClass = 'selection_pb-more'
+	- selectionIsPage = true
+	include ../../../blocks/selection/selection
+	+style('selection', 'blocks')
+
+	- actualClass = 'actual_mt-minus hidden-xs'
+	include ../../../blocks/actual/actual
+	+style('actual', 'blocks')
+
+	- questionsClass = 'questions_mt-minus hidden-xs'
+	include ../../../blocks/questions/questions
+	+style('questions', 'blocks')

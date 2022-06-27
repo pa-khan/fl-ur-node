@@ -13,11 +13,11 @@
 
 html,
 body,
-#__nuxt {
+.wrap {
   min-height: 100vh;
 }
 
-#__nuxt {
+.wrap {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
@@ -182,7 +182,7 @@ line {
 
   html,
   body,
-  #__nuxt {
+  .wrap {
     height: 100%;
   }
 
@@ -207,3 +207,24 @@ line {
     bottom: 25px;
   }
 }
+
+
+@import '../components/case/case.scss';
+@import '../components/logo/logo.scss';
+@import '../components/button/button.scss';
+@import '../components/field/field.scss';
+@import '../components/select/select.scss';
+@import '../components/plus/plus.scss';
+@import '../components/icon/icon.scss';
+
+@import '../components/h1/h1.scss';
+@import '../components/h2/h2.scss';
+@import '../components/h3/h3.scss';
+
+@import '../components/t1/t1.scss';
+@import '../components/t2/t2.scss';
+
+@import '../blocks/socials/socials.scss';
+@import '../blocks/btop/btop.scss';
+
+@import '../blocks/product/product.scss';

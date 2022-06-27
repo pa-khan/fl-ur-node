@@ -1,5 +1,25 @@
 include ../../pug/vars
 
-.selection
-	.case
-		
+div(class="selection" class=selectionClass)
+    <div class="case">
+        if selectionIsPage
+            +breadcrumbs('selection__breadcrumb hidden-xs')
+            +style('breadcrumb', 'blocks')
+
+            - returnClass = 'selection__return hidden show-xs-flex'
+            include ../return/return
+            +style('return', 'blocks')
+        <div class="selection__wrap row">
+            <div class="selection__content">
+                <div class="h2 selection__title c-red">Подбор по автомобилю</div>
+                <div class="t1 selection__text">
+                    <p>Ищите товары сразу для вашего автомобиля, это помжет сильно сузить ассортимент и ускорит выбор товаров. </p>
+                </div>
+            </div>
+            <form class="selection__form">
+                include ../auto/auto
+                +style('auto', 'blocks')
+            </form>
+        </div>
+        <div class="selection__img"><img src="/uploads/selection-car.png" alt=""></div>
+    </div>

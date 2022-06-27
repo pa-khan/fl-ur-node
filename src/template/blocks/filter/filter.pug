@@ -1,5 +1,634 @@
 include ../../pug/vars
 
-.filter
-	.case
-		
+
+<div class="filter catalog__filter">
+	<div class="filter__toggle">
+		<span>Фильтр</span>
+		<svg class="icon icon_filter f-red">
+			<use xlink:href="#icon-filter"></use>
+		</svg>
+	</div>
+	<div class="filter__inner">
+		<div class="return filter__return hidden show-xs-flex">
+			<div class="return__button">
+				<svg class="icon icon_chevron f-red">
+					<use xlink:href="#icon-chevron"></use>
+				</svg>
+				<span>Назад</span>
+			</div>
+			<!--v-if-->
+		</div>
+		<div class="h3 filter__main-title">Фильтр</div>
+		<div class="filter__list">
+			<div class="filter__item">
+				<div class="filter__title">Максимальное занижение</div>
+				<div class="filter__element">
+					<div class="filter__pluses row">
+						<div class="plus filter__plus plus_md plus_gray">
+							<input type="checkbox" class="plus__input" name="max" value="9 мм">
+							<div class="plus__inner">
+								<div class="plus__value">9 мм</div>
+								<div class="plus__icon">
+									<div></div>
+									<div></div>
+								</div>
+							</div>
+						</div>
+						<div class="plus filter__plus plus_md plus_gray">
+							<input type="checkbox" class="plus__input" name="max" value="14 мм">
+							<div class="plus__inner">
+								<div class="plus__value">14 мм</div>
+								<div class="plus__icon">
+									<div></div>
+									<div></div>
+								</div>
+							</div>
+						</div>
+						<div class="plus filter__plus plus_md plus_gray">
+							<input type="checkbox" class="plus__input" name="max" value="19 мм">
+							<div class="plus__inner">
+								<div class="plus__value">19 мм</div>
+								<div class="plus__icon">
+									<div></div>
+									<div></div>
+								</div>
+							</div>
+						</div>
+						<div class="plus filter__plus plus_md plus_gray">
+							<input type="checkbox" class="plus__input" name="max" value="24 мм">
+							<div class="plus__inner">
+								<div class="plus__value">24 мм</div>
+								<div class="plus__icon">
+									<div></div>
+									<div></div>
+								</div>
+							</div>
+						</div>
+						<div class="plus filter__plus plus_md plus_gray">
+							<input type="checkbox" class="plus__input" name="max" value="29 мм">
+							<div class="plus__inner">
+								<div class="plus__value">29 мм</div>
+								<div class="plus__icon">
+									<div></div>
+									<div></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="filter__item">
+				<div class="filter__title">Цена</div>
+				<div class="filter__element">
+					<div class="range filter__range">
+						<div class="range__inner noUi-target noUi-ltr noUi-horizontal noUi-txt-dir-ltr">
+							<div class="noUi-base">
+								<div class="noUi-connects">
+									<div class="noUi-connect" style="transform: translate(19%, 0px) scale(0.6, 1);"></div>
+								</div>
+								<div class="noUi-origin" style="transform: translate(-81%, 0px); z-index: 5;">
+									<div class="noUi-handle noUi-handle-lower" data-handle="-1" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="0.0" aria-valuemax="8000.0" aria-valuenow="2000.0" aria-valuetext="2000.00">
+										<div class="noUi-touch-area"></div>
+									</div>
+								</div>
+								<div class="noUi-origin" style="transform: translate(-21%, 0px); z-index: 4;">
+									<div class="noUi-handle noUi-handle-upper" data-handle="0" tabindex="0" role="slider" aria-orientation="horizontal" aria-valuemin="2000.0" aria-valuemax="10000.0" aria-valuenow="8000.0" aria-valuetext="8000.00">
+										<div class="noUi-touch-area"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="range__values">
+							<div class="range__value range__value_from">1&nbsp;000 <span class="r"></span></div>
+							<div class="range__value range__value_to">7&nbsp;000 <span class="r"></span></div>
+						</div>
+						<input type="hidden">
+					</div>
+				</div>
+			</div>
+			<div class="filter__item">
+				<div class="filter__title">Заголовок выпадающих списков</div>
+				<div class="filter__element">
+					<div class="filter__selects row">
+						<div class="select select_md select_b-gray filter__select filter__select_w2">
+							<!--v-if-->
+							<div class="select__area">
+								<!--v-if-->
+								<div class="select__value select__placeholder">Lorem</div>
+								<div class="select__clear">
+									<!--v-if-->
+								</div>
+								<div class="select__chevron">
+									<svg class="icon icon_chevron-wide">
+										<use xlink:href="#icon-chevron-wide"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="select__drop">
+								<div class="select__list">
+									<div class="select__item">
+										<!--v-if-->
+										<div class="select__item-title">0</div>
+										<div class="select__item-check">
+											<svg class="icon icon_check icon_hide">
+												<use xlink:href="#icon-check"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="select__item">
+										<!--v-if-->
+										<div class="select__item-title">1</div>
+										<div class="select__item-check">
+											<svg class="icon icon_check icon_hide">
+												<use xlink:href="#icon-check"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="select__item">
+										<!--v-if-->
+										<div class="select__item-title">2</div>
+										<div class="select__item-check">
+											<svg class="icon icon_check icon_hide">
+												<use xlink:href="#icon-check"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--v-if-->
+							<select>
+								<option value="[object Object]">0</option>
+								<option value="[object Object]">1</option>
+								<option value="[object Object]">2</option>
+							</select>
+						</div>
+						<div class="select select_md select_b-gray filter__select filter__select_w2">
+							<!--v-if-->
+							<div class="select__area">
+								<!--v-if-->
+								<div class="select__value select__placeholder">Min</div>
+								<div class="select__clear">
+									<!--v-if-->
+								</div>
+								<div class="select__chevron">
+									<svg class="icon icon_chevron-wide">
+										<use xlink:href="#icon-chevron-wide"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="select__drop">
+								<div class="select__list">
+									<div class="select__item">
+										<!--v-if-->
+										<div class="select__item-title">9</div>
+										<div class="select__item-check">
+											<svg class="icon icon_check icon_hide">
+												<use xlink:href="#icon-check"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="select__item">
+										<!--v-if-->
+										<div class="select__item-title">19</div>
+										<div class="select__item-check">
+											<svg class="icon icon_check icon_hide">
+												<use xlink:href="#icon-check"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="select__item">
+										<!--v-if-->
+										<div class="select__item-title">29</div>
+										<div class="select__item-check">
+											<svg class="icon icon_check icon_hide">
+												<use xlink:href="#icon-check"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--v-if-->
+							<select>
+								<option value="[object Object]">9</option>
+								<option value="[object Object]">19</option>
+								<option value="[object Object]">29</option>
+							</select>
+						</div>
+						<div class="select select_md select_b-gray filter__select filter__select_w2">
+							<!--v-if-->
+							<div class="select__area">
+								<!--v-if-->
+								<div class="select__value select__placeholder">Max</div>
+								<div class="select__clear">
+									<!--v-if-->
+								</div>
+								<div class="select__chevron">
+									<svg class="icon icon_chevron-wide">
+										<use xlink:href="#icon-chevron-wide"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="select__drop">
+								<div class="select__list">
+									<div class="select__item">
+										<!--v-if-->
+										<div class="select__item-title">50</div>
+										<div class="select__item-check">
+											<svg class="icon icon_check icon_hide">
+												<use xlink:href="#icon-check"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="select__item">
+										<!--v-if-->
+										<div class="select__item-title">51</div>
+										<div class="select__item-check">
+											<svg class="icon icon_check icon_hide">
+												<use xlink:href="#icon-check"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="select__item">
+										<!--v-if-->
+										<div class="select__item-title">52</div>
+										<div class="select__item-check">
+											<svg class="icon icon_check icon_hide">
+												<use xlink:href="#icon-check"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--v-if-->
+							<select>
+								<option value="[object Object]">50</option>
+								<option value="[object Object]">51</option>
+								<option value="[object Object]">52</option>
+							</select>
+						</div>
+						<div class="select select_md select_b-gray filter__select">
+							<!--v-if-->
+							<div class="select__area">
+								<!--v-if-->
+								<div class="select__value select__placeholder">Большой выпадающий список</div>
+								<div class="select__clear">
+									<!--v-if-->
+								</div>
+								<div class="select__chevron">
+									<svg class="icon icon_chevron-wide">
+										<use xlink:href="#icon-chevron-wide"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="select__drop">
+								<div class="select__list">
+									<div class="select__item">
+										<!--v-if-->
+										<div class="select__item-title">50</div>
+										<div class="select__item-check">
+											<svg class="icon icon_check icon_hide">
+												<use xlink:href="#icon-check"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="select__item">
+										<!--v-if-->
+										<div class="select__item-title">51</div>
+										<div class="select__item-check">
+											<svg class="icon icon_check icon_hide">
+												<use xlink:href="#icon-check"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="select__item">
+										<!--v-if-->
+										<div class="select__item-title">52</div>
+										<div class="select__item-check">
+											<svg class="icon icon_check icon_hide">
+												<use xlink:href="#icon-check"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--v-if-->
+							<select>
+								<option value="[object Object]">50</option>
+								<option value="[object Object]">51</option>
+								<option value="[object Object]">52</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="filter__item">
+				<div class="filter__title">Заголовок выпадающих списков</div>
+				<div class="filter__element">
+					<div class="filter__selects row">
+						<div class="select select_md select_b-gray filter__select">
+							<!--v-if-->
+							<div class="select__area">
+								<!--v-if-->
+								<div class="select__value select__placeholder">Большой выпадающий список</div>
+								<div class="select__clear">
+									<!--v-if-->
+								</div>
+								<div class="select__chevron">
+									<svg class="icon icon_chevron-wide">
+										<use xlink:href="#icon-chevron-wide"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="select__drop">
+								<div class="select__list">
+									<div class="select__item">
+										<!--v-if-->
+										<div class="select__item-title">50</div>
+										<div class="select__item-check">
+											<svg class="icon icon_check icon_hide">
+												<use xlink:href="#icon-check"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="select__item">
+										<!--v-if-->
+										<div class="select__item-title">51</div>
+										<div class="select__item-check">
+											<svg class="icon icon_check icon_hide">
+												<use xlink:href="#icon-check"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="select__item">
+										<!--v-if-->
+										<div class="select__item-title">52</div>
+										<div class="select__item-check">
+											<svg class="icon icon_check icon_hide">
+												<use xlink:href="#icon-check"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--v-if-->
+							<select>
+								<option value="[object Object]">50</option>
+								<option value="[object Object]">51</option>
+								<option value="[object Object]">52</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="filter__item">
+				<div class="filter__title">Отфильтровать по моему авто</div>
+				<div class="filter__element">
+					<div class="myauto filter__myauto">
+						<!--v-if-->
+						<div class="myauto__list">
+							<div class="myauto__item">
+								<div class="myauto__item-icon"><img src="/assets/images/marks/volkswagen.svg" alt="Golf R VIII"></div>
+								<div class="myauto__item-name"><b>Мой</b> Golf R VIII</div>
+								<div class="myauto__item-checked">
+									<svg class="icon icon_check f-red">
+										<use xlink:href="#icon-check"></use>
+									</svg>
+								</div>
+							</div>
+						</div>
+						<!--v-if-->
+					</div>
+				</div>
+			</div>
+			<div class="filter__item">
+				<div class="filter__title">Подбор по авто</div>
+				<div class="filter__element">
+					<div class="auto filter__auto row">
+						<div class="select select_md select_b-gray auto__select filter__auto-select">
+							<!--v-if-->
+							<div class="select__area">
+								<!--v-if-->
+								<div class="select__value select__placeholder">Выберите марку автомобиля</div>
+								<div class="select__clear">
+									<svg class="icon icon_cross icon_hide">
+										<use xlink:href="#icon-cross"></use>
+									</svg>
+								</div>
+								<div class="select__chevron">
+									<svg class="icon icon_chevron-wide">
+										<use xlink:href="#icon-chevron-wide"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="select__drop">
+								<div class="select__list">
+									<div class="select__item">
+										<div class="select__item-icon"><img src="/assets/images/marks/volkswagen.svg" alt="Volkswagen"></div>
+										<div class="select__item-title">Volkswagen</div>
+										<div class="select__item-check">
+											<svg class="icon icon_check icon_hide">
+												<use xlink:href="#icon-check"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="select__item">
+										<div class="select__item-icon"><img src="/assets/images/marks/porsche.svg" alt="Porsche"></div>
+										<div class="select__item-title">Porsche</div>
+										<div class="select__item-check">
+											<svg class="icon icon_check icon_hide">
+												<use xlink:href="#icon-check"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="select__item">
+										<div class="select__item-icon"><img src="/assets/images/marks/audi.svg" alt="Audi"></div>
+										<div class="select__item-title">Audi</div>
+										<div class="select__item-check">
+											<svg class="icon icon_check icon_hide">
+												<use xlink:href="#icon-check"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="select__item">
+										<div class="select__item-icon"><img src="/assets/images/marks/bmw.svg" alt="BMW"></div>
+										<div class="select__item-title">BMW</div>
+										<div class="select__item-check">
+											<svg class="icon icon_check icon_hide">
+												<use xlink:href="#icon-check"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="select__item">
+										<div class="select__item-icon"><img src="/assets/images/marks/mini.svg" alt="Mini"></div>
+										<div class="select__item-title">Mini</div>
+										<div class="select__item-check">
+											<svg class="icon icon_check icon_hide">
+												<use xlink:href="#icon-check"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--v-if-->
+							<select>
+								<option value="[object Object]">Volkswagen</option>
+								<option value="[object Object]">Porsche</option>
+								<option value="[object Object]">Audi</option>
+								<option value="[object Object]">BMW</option>
+								<option value="[object Object]">Mini</option>
+							</select>
+						</div>
+						<div class="select select_md select_b-gray auto__select filter__auto-select">
+							<!--v-if-->
+							<div class="select__area">
+								<!--v-if-->
+								<div class="select__value select__placeholder">Выберите модель автомобиля</div>
+								<div class="select__clear">
+									<svg class="icon icon_cross icon_hide">
+										<use xlink:href="#icon-cross"></use>
+									</svg>
+								</div>
+								<div class="select__chevron">
+									<svg class="icon icon_chevron-wide">
+										<use xlink:href="#icon-chevron-wide"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="select__drop">
+								<div class="select__list"></div>
+							</div>
+							<!--v-if--><select></select>
+						</div>
+						<div class="select select_md select_b-gray auto__select filter__auto-select">
+							<!--v-if-->
+							<div class="select__area">
+								<!--v-if-->
+								<div class="select__value select__placeholder">Выберите модификацию </div>
+								<div class="select__clear">
+									<svg class="icon icon_cross icon_hide">
+										<use xlink:href="#icon-cross"></use>
+									</svg>
+								</div>
+								<div class="select__chevron">
+									<svg class="icon icon_chevron-wide">
+										<use xlink:href="#icon-chevron-wide"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="select__drop">
+								<div class="select__list"></div>
+							</div>
+							<!--v-if--><select></select>
+						</div>
+						<!--v-if-->
+					</div>
+				</div>
+			</div>
+			<div class="filter__item">
+				<div class="filter__title">Просто подзаголовок фильтра</div>
+				<div class="filter__element">
+					<div class="check filter__check check_md check_gray" selectbg="false">
+						<input type="checkbox" class="check__input" name="checks" value="Чекбокс">
+						<div class="check__box">
+							<svg class="icon icon_check f-red">
+								<use xlink:href="#icon-check"></use>
+							</svg>
+						</div>
+						<div class="check__wrap">Чекбокс</div>
+					</div>
+				</div>
+			</div>
+			<div class="filter__item">
+				<div class="filter__title">Заголовок выпадающих списков</div>
+				<div class="filter__element">
+					<div class="filter__selects row">
+						<div class="select select_md select_b-gray filter__select">
+							<!--v-if-->
+							<div class="select__area">
+								<!--v-if-->
+								<div class="select__value select__placeholder">Большой выпадающий список</div>
+								<div class="select__clear">
+									<!--v-if-->
+								</div>
+								<div class="select__chevron">
+									<svg class="icon icon_chevron-wide">
+										<use xlink:href="#icon-chevron-wide"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="select__drop">
+								<div class="select__list">
+									<div class="select__item">
+										<!--v-if-->
+										<div class="select__item-title">50</div>
+										<div class="select__item-check">
+											<svg class="icon icon_check icon_hide">
+												<use xlink:href="#icon-check"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="select__item">
+										<!--v-if-->
+										<div class="select__item-title">51</div>
+										<div class="select__item-check">
+											<svg class="icon icon_check icon_hide">
+												<use xlink:href="#icon-check"></use>
+											</svg>
+										</div>
+									</div>
+									<div class="select__item">
+										<!--v-if-->
+										<div class="select__item-title">52</div>
+										<div class="select__item-check">
+											<svg class="icon icon_check icon_hide">
+												<use xlink:href="#icon-check"></use>
+											</svg>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!--v-if-->
+							<select>
+								<option value="[object Object]">50</option>
+								<option value="[object Object]">51</option>
+								<option value="[object Object]">52</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="filter__item">
+				<div class="filter__element">
+					<div class="filter__radios row">
+						<div class="radio radio_checked filter__radio radio_md radio_tab">
+							<input type="checkbox" class="radio__input" name="radios" value="Переключатель 0">
+							<div class="radio__box"></div>
+							<div class="radio__wrap" data-text="Переключатель 0">Переключатель 1</div>
+						</div>
+						<div class="radio filter__radio radio_md radio_tab">
+							<input type="checkbox" class="radio__input" name="radios" value="Переключатель 1">
+							<div class="radio__box"></div>
+							<div class="radio__wrap" data-text="Переключатель 1">Переключатель 2</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="filter__item">
+				<div class="filter__element">
+					<div class="filter__buttons row">
+						<a class="button button_md button_c-red filter__button filter__button-reset" href="javascript:;">
+							<!--v-if--><!--v-if-->
+							<div class="button__text">Сбросить</div>
+							<!--v-if-->
+						</a>
+						<a class="button button_md button_bg-red button_shadow-black filter__button filter__button-send" href="javascript:;">
+							<!--v-if--><!--v-if-->
+							<div class="button__text">Применить</div>
+							<!--v-if-->
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

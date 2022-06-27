@@ -1,5 +1,259 @@
 include ../../pug/vars
 
-.cats
-	.case
-		
+div(class="cats")
+	<div class="case">
+		<!--[--><!----><!---->
+		<div class="cats__wrap row">
+			<div class="cats__content">
+				<div class="h2 cats__title c-red hidden-xs">
+					<!--[-->Категории товаров<!--]-->
+				</div>
+				<div class="t1 cats__text hidden-xs">
+					<!--[-->
+					<p>Выберите категорию котоаря вас интересует. Тут есть все – от ГБЦ до футболки с логотипом БМВ М повер-рейнджерс</p>
+					<!--]-->
+				</div>
+				<div class="cats__actions">
+					<div class="cats__actions-list">
+						<!--[-->
+						<div class="hidden-xs cats__action">
+							<div class="cats__action-text">
+								<div class="cats__action-title">Показать все товары</div>
+								<div class="cats__action-desc">
+									<span>Перейти в каталог</span>
+									<svg class="icon icon_chevron f-red">
+										<use xlink:href="#icon-chevron"></use>
+									</svg>
+								</div>
+							</div>
+							<!---->
+							<div class="cats__action-bg"><img src="/uploads/cats/actions/1-bg.png" alt=""></div>
+						</div>
+						<div class="cats__action">
+							<div class="cats__action-text">
+								<div class="cats__action-title">Не знаете что выбрать?</div>
+								<div class="cats__action-desc">
+									<span>Получить консультацию</span>
+									<svg class="icon icon_chevron f-red">
+										<use xlink:href="#icon-chevron"></use>
+									</svg>
+								</div>
+							</div>
+							<div class="cats__action-img"><img src="/uploads/cats/actions/2.png" alt=""></div>
+							<div class="cats__action-bg"><img src="/uploads/cats/actions/2-bg.png" alt=""></div>
+						</div>
+						<!--]-->
+					</div>
+					<div class="cats__actions-bg"><img src="/uploads/cats/bg.png" alt=""></div>
+				</div>
+			</div>
+			<div class="cats__inner">
+				<div class="btop cats__btop hidden show-xs-flex">
+					<div class="h2 btop__title">
+						<!--[--><!--[-->Категории<!--]--><!--]-->
+					</div>
+					<div class="btop__link"><a href="#">Показать все</a></div>
+				</div>
+				<div class="cats__list_hidden-xs cats__list row">
+					<!--[-->
+					<a class="cats__item" href="/catalog">
+						<div class="cats__item-img"><img src="/uploads/cats/list/1.png" alt="Трубины и турбокомплекты"></div>
+						<div class="cats__item-title">Трубины и турбокомплекты</div>
+					</a>
+					<a class="cats__item" href="/catalog">
+						<div class="cats__item-img"><img src="/uploads/cats/list/2.png" alt="Тормоза и тормозные системы"></div>
+						<div class="cats__item-title">Тормоза и тормозные системы</div>
+					</a>
+					<a class="cats__item" href="/catalog">
+						<div class="cats__item-img"><img src="/uploads/cats/list/3.png" alt="Охлаждение"></div>
+						<div class="cats__item-title">Охлаждение</div>
+					</a>
+					<a class="cats__item" href="/catalog">
+						<div class="cats__item-img"><img src="/uploads/cats/list/4.png" alt="Подвеска"></div>
+						<div class="cats__item-title">Подвеска</div>
+					</a>
+					<a class="cats__item" href="/catalog">
+						<div class="cats__item-img"><img src="/uploads/cats/list/5.png" alt="Подарки и мерч"></div>
+						<div class="cats__item-title">Подарки и мерч</div>
+					</a>
+					<a class="cats__item" href="/catalog">
+						<div class="cats__item-img"><img src="/uploads/cats/list/5.png" alt="Другое"></div>
+						<div class="cats__item-title">Другое</div>
+					</a>
+					<a class="cats__item" href="/catalog">
+						<div class="cats__item-img"><img src="/uploads/cats/list/6.png" alt="Двигатель"></div>
+						<div class="cats__item-title">Двигатель</div>
+					</a>
+					<a class="cats__item" href="/catalog">
+						<div class="cats__item-img"><img src="/uploads/cats/list/7.png" alt="Трансмиссия"></div>
+						<div class="cats__item-title">Трансмиссия</div>
+					</a>
+					<a class="cats__item" href="/catalog">
+						<div class="cats__item-img"><img src="/uploads/cats/list/8.png" alt="Топливные системы"></div>
+						<div class="cats__item-title">Топливные системы</div>
+					</a>
+					<a class="cats__item" href="/catalog">
+						<div class="cats__item-img"><img src="/uploads/cats/list/9.png" alt="Интерьер и экстерер"></div>
+						<div class="cats__item-title">Интерьер и экстерер</div>
+					</a>
+					<a class="cats__item" href="/catalog">
+						<div class="cats__item-img"><img src="/uploads/cats/list/10.png" alt="Шины и диски"></div>
+						<div class="cats__item-title">Шины и диски</div>
+					</a>
+					<a class="cats__item" href="/catalog">
+						<div class="cats__item-img"><img src="/uploads/cats/list/5.png" alt="Оригинальные запчасти"></div>
+						<div class="cats__item-title">Оригинальные запчасти</div>
+					</a>
+					<a class="cats__item" href="/catalog">
+						<div class="cats__item-img"><img src="/uploads/cats/list/11.png" alt="Выпскная система"></div>
+						<div class="cats__item-title">Выпскная система</div>
+					</a>
+					<a class="cats__item" href="/catalog">
+						<div class="cats__item-img"><img src="/uploads/cats/list/12.png" alt="Впускные системы"></div>
+						<div class="cats__item-title">Впускные системы</div>
+					</a>
+					<!--]-->
+				</div>
+			</div>
+		</div>
+		<!--]-->
+	</div>
+	<div class="cats__modal">
+		<div class="cats__controls row">
+			<div class="cats__back">
+				<svg class="icon icon_chevron f-red">
+					<use xlink:href="#icon-chevron"></use>
+				</svg>
+				<span class="c-red">Назад</span>
+			</div>
+			<div class="cats__close">
+				<svg class="icon icon_cross f-red">
+					<use xlink:href="#icon-cross"></use>
+				</svg>
+			</div>
+		</div>
+		<div class="cats__links">
+			<!--[-->
+			<a class="cats__link" href="/catalog">
+				<div class="cats__link-title">Двигатель</div>
+				<div class="cats__link-icon">
+					<svg class="icon icon_arrow">
+						<use xlink:href="#icon-arrow"></use>
+					</svg>
+				</div>
+			</a>
+			<a class="cats__link" href="/catalog">
+				<div class="cats__link-title">Турбо</div>
+				<div class="cats__link-icon">
+					<svg class="icon icon_arrow">
+						<use xlink:href="#icon-arrow"></use>
+					</svg>
+				</div>
+			</a>
+			<a class="cats__link" href="/catalog">
+				<div class="cats__link-title">Трансмиссия</div>
+				<div class="cats__link-icon">
+					<svg class="icon icon_arrow">
+						<use xlink:href="#icon-arrow"></use>
+					</svg>
+				</div>
+			</a>
+			<a class="cats__link" href="/catalog">
+				<div class="cats__link-title">Выпускная система</div>
+				<div class="cats__link-icon">
+					<svg class="icon icon_arrow">
+						<use xlink:href="#icon-arrow"></use>
+					</svg>
+				</div>
+			</a>
+			<a class="cats__link" href="/catalog">
+				<div class="cats__link-title">Впускная система</div>
+				<div class="cats__link-icon">
+					<svg class="icon icon_arrow">
+						<use xlink:href="#icon-arrow"></use>
+					</svg>
+				</div>
+			</a>
+			<a class="cats__link" href="/catalog">
+				<div class="cats__link-title">Охлаждение</div>
+				<div class="cats__link-icon">
+					<svg class="icon icon_arrow">
+						<use xlink:href="#icon-arrow"></use>
+					</svg>
+				</div>
+			</a>
+			<a class="cats__link" href="/catalog">
+				<div class="cats__link-title">Тормозная система</div>
+				<div class="cats__link-icon">
+					<svg class="icon icon_arrow">
+						<use xlink:href="#icon-arrow"></use>
+					</svg>
+				</div>
+			</a>
+			<a class="cats__link" href="/catalog">
+				<div class="cats__link-title">Подвеска</div>
+				<div class="cats__link-icon">
+					<svg class="icon icon_arrow">
+						<use xlink:href="#icon-arrow"></use>
+					</svg>
+				</div>
+			</a>
+			<a class="cats__link" href="/catalog">
+				<div class="cats__link-title">Топливная система</div>
+				<div class="cats__link-icon">
+					<svg class="icon icon_arrow">
+						<use xlink:href="#icon-arrow"></use>
+					</svg>
+				</div>
+			</a>
+			<a class="cats__link" href="/catalog">
+				<div class="cats__link-title">Интерьер и экстерьер</div>
+				<div class="cats__link-icon">
+					<svg class="icon icon_arrow">
+						<use xlink:href="#icon-arrow"></use>
+					</svg>
+				</div>
+			</a>
+			<a class="cats__link" href="/catalog">
+				<div class="cats__link-title">Шины и диски</div>
+				<div class="cats__link-icon">
+					<svg class="icon icon_arrow">
+						<use xlink:href="#icon-arrow"></use>
+					</svg>
+				</div>
+			</a>
+			<a class="cats__link" href="/catalog">
+				<div class="cats__link-title">Электрика</div>
+				<div class="cats__link-icon">
+					<svg class="icon icon_arrow">
+						<use xlink:href="#icon-arrow"></use>
+					</svg>
+				</div>
+			</a>
+			<a class="cats__link" href="/catalog">
+				<div class="cats__link-title">Оригинальные запчасти</div>
+				<div class="cats__link-icon">
+					<svg class="icon icon_arrow">
+						<use xlink:href="#icon-arrow"></use>
+					</svg>
+				</div>
+			</a>
+			<a class="cats__link" href="/catalog">
+				<div class="cats__link-title">Подарки и мерч</div>
+				<div class="cats__link-icon">
+					<svg class="icon icon_arrow">
+						<use xlink:href="#icon-arrow"></use>
+					</svg>
+				</div>
+			</a>
+			<!--]-->
+		</div>
+		<a class="button button_md button_bg-red button_shadow-black cats__button" href="javascript:;">
+			<!----><!---->
+			<div class="button__text">
+				<!--[-->Продолжить<!--]-->
+			</div>
+			<!---->
+		</a>
+	</div>
+	<!---->

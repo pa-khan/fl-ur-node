@@ -1,0 +1,224 @@
+.field__body {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 1px solid transparent;
+  overflow: hidden;
+  background: #fff;
+  transition: 0.3s;
+}
+.field__inner {
+  width: 100%;
+  position: relative;
+}
+.field__placeholder {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: 0.3s;
+}
+.field__area {
+  display: block;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  width: 100%;
+  background: transparent;
+}
+.field__area::placeholder {
+  opacity: 0;
+}
+.field__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.field__icon .icon_cross-round {
+  fill: #A0A0A0;
+}
+.field__icon_hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0) translateX(-50%);
+  width: 0 !important;
+  margin-left: 0 !important;
+}
+.field__clear {
+  cursor: pointer;
+}
+.field__clear:hover .icon {
+  fill: #F05454;
+}
+.field__visible {
+  cursor: pointer;
+}
+.field__visible:hover .icon {
+  fill: #F05454;
+}
+.field__valid {
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+  min-height: 22px;
+}
+.field__valid-title {
+  transition: 0.3s;
+}
+.field__valid-password {
+  display: flex;
+  align-items: center;
+  margin-left: 6px;
+  transition: 0.3s;
+}
+.field__valid-password div {
+  width: 16px;
+  height: 8px;
+  border-radius: 50px;
+  margin-right: 2px;
+  border: 1px solid transparent;
+  transition: 0.3s;
+}
+.field__valid-password div:last-of-type {
+  margin-right: 0;
+}
+.field_sm .field__title {
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 6px;
+}
+.field_sm .field__body {
+  padding-left: 12px;
+  padding-right: 12px;
+  height: 42px;
+  border-radius: 4px;
+}
+.field_sm .field__icon {
+  min-width: 14px;
+  width: 14px;
+  height: 14px;
+}
+.field_sm .field__icon svg {
+  width: 100%;
+  height: 100%;
+}
+.field_sm .field__icon_left {
+  margin-right: 11px;
+}
+.field_sm .field__icon_right {
+  margin-left: 12px;
+}
+.field_sm .field__valid {
+  font-size: 12px;
+  line-height: 21.6px;
+  margin-top: 6px;
+}
+.field_sm.field_textarea .field__body {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  height: 80px;
+  align-items: flex-start;
+}
+.field_sm.field_textarea .field__inner {
+  margin-top: -2px;
+}
+.field_md .field__title {
+  font-weight: 600;
+  line-height: 20px;
+  margin-bottom: 6px;
+}
+.field_md .field__body {
+  padding-left: 20px;
+  padding-right: 15px;
+  height: 48px;
+  border-radius: 4px;
+}
+.field_md .field__icon {
+  min-width: 18px;
+  width: 18px;
+  height: 18px;
+}
+.field_md .field__icon svg {
+  width: 100%;
+  height: 100%;
+}
+.field_md .field__icon_left {
+  margin-right: 11px;
+}
+.field_md .field__icon_right {
+  margin-left: 12px;
+}
+.field_md .field__valid {
+  font-size: 12px;
+  line-height: 21.6px;
+  margin-top: 6px;
+}
+.field_md.field_textarea .field__body {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  height: 100px;
+  align-items: flex-start;
+}
+.field_b-gray .field__body {
+  border-color: #d9d9d9;
+}
+.field_b-gray .field__placeholder {
+  color: rgba(26, 32, 61, 0.3);
+}
+.field_b-gray.field_valid .field__body {
+  border-color: #13BD38;
+}
+.field_b-gray.field_error .field__body {
+  border-color: #F05454;
+}
+.field_bg-gray .field__body {
+  background: #F5F5F5;
+}
+.field_textarea .field__inner {
+  height: 100%;
+}
+.field_textarea .field__area {
+  height: 100%;
+  resize: none;
+}
+.field_filled .field__placeholder, .field_focus .field__placeholder {
+  opacity: 0;
+  visibility: hidden;
+}
+.field_error-type-41 .field__valid-password diGv {
+  border-color: #F05454;
+}
+.field_error-type-41 .field__valid-password diGv:nth-of-type(1) {
+  background: #F05454;
+}
+.field_error-type-42 .field__body {
+  border-color: #FFAD4F !important;
+}
+.field_error-type-42 .field__valid-title {
+  color: #FFAD4F;
+}
+.field_error-type-42 .field__valid-password div {
+  border-color: #FFAD4F;
+}
+.field_error-type-42 .field__valid-password div:nth-of-type(1), .field_error-type-42 .field__valid-password div:nth-of-type(2) {
+  background: #FFAD4F;
+}
+.field_error-type-40 .field__body {
+  border-color: #13BD38 !important;
+}
+.field_error-type-40 .field__valid-title {
+  color: #13BD38;
+}
+.field_error-type-40 .field__valid-password div {
+  border-color: #13BD38;
+  background: #13BD38;
+}
+.field_textarea .field__area {
+  overflow: hidden;
+  resize: none;
+}
+.field_error .field__valid {
+  color: #F05454;
+}
+.field_valid .field__valid {
+  color: #13BD38;
+}

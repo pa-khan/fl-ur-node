@@ -1,5 +1,128 @@
 include ../../pug/vars
 
-.choiser
-	.case
-		
+div(class="choiser" class=choiserClass)
+	<div class="case">
+		<!--[-->
+		<div class="choiser__wrap">
+			<div class="choiser__area">
+				<div class="field field_md field_b-gray field_text choiser__field">
+					<!---->
+					<div class="field__body">
+						<!---->
+						<div class="field__icon field__icon_left">
+							<!--[-->
+							<svg class="icon icon_car f-red">
+								<use xlink:href="#icon-car"></use>
+							</svg>
+							<!--]-->
+						</div>
+						<div class="field__inner">
+							<div class="field__placeholder">Выбрать марку и модель</div>
+							<input class="field__area" type="text" value="" name="name" readonly="">
+						</div>
+						<!----><!----><!----><!----><!---->
+					</div>
+					<!---->
+				</div>
+			</div>
+		</div>
+		<!--]-->
+	</div>
+	<div class="choiser__modal">
+		<div class="choiser__back">
+			<svg class="icon icon_chevron">
+				<use xlink:href="#icon-chevron"></use>
+			</svg>
+			<span>Назад</span>
+		</div>
+		<div class="choiser__inner">
+			<div class="choiser__area">
+				<div class="field field_md field_b-gray field_text choiser__field">
+					<!---->
+					<div class="field__body">
+						<!---->
+						<div class="field__icon field__icon_left">
+							<!--[-->
+							<svg class="icon icon_car f-red">
+								<use xlink:href="#icon-car"></use>
+							</svg>
+							<!--]-->
+						</div>
+						<div class="field__inner">
+							<div class="field__placeholder">Поиск по списку авто</div>
+							<input class="field__area" type="text" value="" name="name">
+						</div>
+						<div class="field__icon_hidden field__clear field__icon field__icon_right">
+							<svg class="icon icon_cross-round">
+								<use xlink:href="#icon-cross-round"></use>
+							</svg>
+						</div>
+						<!----><!----><!----><!---->
+					</div>
+					<!---->
+				</div>
+			</div>
+			<div class="choiser__list">
+				<!--[-->
+				<div style="" class="choiser__item">
+					<div class="choiser__item-icon"><img src="/uploads/marks/volkswagen.svg" alt="Volkswagen"></div>
+					<div class="choiser__item-title">Volkswagen</div>
+					<div class="choiser__item-arrow">
+						<svg class="icon icon_arrow">
+							<use xlink:href="#icon-arrow"></use>
+						</svg>
+					</div>
+				</div>
+				<div style="" class="choiser__item">
+					<div class="choiser__item-icon"><img src="/uploads/marks/porsche.svg" alt="Porsche"></div>
+					<div class="choiser__item-title">Porsche</div>
+					<div class="choiser__item-arrow">
+						<svg class="icon icon_arrow">
+							<use xlink:href="#icon-arrow"></use>
+						</svg>
+					</div>
+				</div>
+				<div style="" class="choiser__item">
+					<div class="choiser__item-icon"><img src="/uploads/marks/audi.svg" alt="Audi"></div>
+					<div class="choiser__item-title">Audi</div>
+					<div class="choiser__item-arrow">
+						<svg class="icon icon_arrow">
+							<use xlink:href="#icon-arrow"></use>
+						</svg>
+					</div>
+				</div>
+				<div style="" class="choiser__item">
+					<div class="choiser__item-icon"><img src="/uploads/marks/bmw.svg" alt="BMW"></div>
+					<div class="choiser__item-title">BMW</div>
+					<div class="choiser__item-arrow">
+						<svg class="icon icon_arrow">
+							<use xlink:href="#icon-arrow"></use>
+						</svg>
+					</div>
+				</div>
+				<div style="" class="choiser__item">
+					<div class="choiser__item-icon"><img src="/uploads/marks/mini.svg" alt="Mini"></div>
+					<div class="choiser__item-title">Mini</div>
+					<div class="choiser__item-arrow">
+						<svg class="icon icon_arrow">
+							<use xlink:href="#icon-arrow"></use>
+						</svg>
+					</div>
+				</div>
+				<!--]-->
+				<div class="choiser__sub" style="display:none;">
+					<!--[--><!--]-->
+				</div>
+				<div class="choiser__sub" style="display:none;">
+					<!--[--><!--]-->
+				</div>
+			</div>
+		</div>
+		<a class="button button_md button_bg-red choiser__button" href="javascript:;">
+			<!----><!---->
+			<div class="button__text">
+				<!--[-->Продолжить<!--]-->
+			</div>
+			<!---->
+		</a>
+	</div>

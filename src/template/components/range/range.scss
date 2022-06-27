@@ -1,0 +1,80 @@
+@import '../../scss/vars';
+
+.range {
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 45px;
+
+    .noUi {
+        &-target {
+            border: none;
+            background: #D9D9D9;
+            box-shadow: none;
+            height: 2px;
+        }
+
+        &-connect {
+            background: $red;
+        }
+
+        &-handle {
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: $red;
+            box-shadow: none;
+            border: 1px solid #fff;
+
+            &:before,
+            &:after {
+                display: none;
+            }
+        }
+    }
+
+    .noUi-handle {
+        top: -10px;
+        right: -12px;
+        outline: none;
+        cursor: ew-resize;
+    }
+
+    .noUi-value {
+        font-size: 14px;
+        line-height: 19px;
+        font-weight: 600;
+        letter-spacing: -0.3px;
+        color: #4F4F4F;
+        top: 20px;
+    }
+
+    .noUi-marker-horizontal.noUi-marker {
+        display: none;
+    }
+
+    .noUi-value-horizontal {
+        &:nth-of-type(2) {
+            transform: translateX(0);
+        }
+
+        &:nth-last-of-type(1) {
+            transform: translateX(-100%);
+        }
+    }
+
+    &__value {
+        position: absolute;
+        line-height: 19px;
+        font-weight: 700;
+        top: 24px;
+
+        &_from {
+            left: 0;
+        }
+
+        &_to {
+            right: 0;
+        }
+    }
+
+}
