@@ -1,10 +1,15 @@
 extends ../../templates/default
 block vars
 	-
-		title = ""
+		title = "Поставщики"
 		breadcrumbs = [
 			['Главная', 'index.html'],
 			[title]
 		]
 block content
+	include ../../../blocks/sup/sup
+	+style('sup', 'blocks') 
 	
+	- questionsClass = 'hidden-xs'
+	include ../../../blocks/questions/questions
+	+style('questions', 'blocks') 

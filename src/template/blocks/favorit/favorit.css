@@ -1,24 +1,24 @@
-.fav {
+.favorit {
   padding-top: 20px;
   padding-bottom: 75px;
 }
-.fav__breadcrumb {
+.favorit__breadcrumb {
   margin-bottom: 20px;
 }
-.fav__title {
+.favorit__title {
   margin-bottom: 40px;
 }
-.fav__desc {
+.favorit__desc {
   max-width: 450px;
   margin-bottom: 28px;
 }
-.fav .fav__slider {
+.favorit .favorit__slider {
   overflow: visible;
 }
-.fav .fav__item {
+.favorit .favorit__item {
   width: 261px;
 }
-.fav__alert {
+.favorit__alert {
   font-size: 18px;
   line-height: 24px;
   color: #F05454;
@@ -26,29 +26,29 @@
 }
 
 @media screen and (max-width: 991px) {
-  .fav {
+  .favorit {
     padding-bottom: 50px;
   }
 }
 @media screen and (max-width: 767px) {
-  .fav {
+  .favorit {
     padding-top: 77px;
     padding-bottom: 0;
     min-height: 100vh;
   }
-  .fav__title {
+  .favorit__title {
     font-size: 18px;
     line-height: 24px;
     padding-top: 5px;
     margin-bottom: 10px;
   }
-  .fav__desc {
+  .favorit__desc {
     display: none;
   }
-  .fav__list {
+  .favorit__list {
     flex-wrap: nowrap;
   }
-  .fav__item {
+  .favorit__item {
     min-width: 261px;
   }
 }

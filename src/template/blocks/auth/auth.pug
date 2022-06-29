@@ -1,5 +1,139 @@
 include ../../pug/vars
 
-.auth
-	.case
-		
+<div class="auth">
+  <div class="case case_sm">
+    <!--[-->
+    +breadcrumbs('auth__breadcrumb hidden-xs')
+    +style('breadcrumb', 'blocks')
+    - returnClass = 'auth__return hidden show-xs-flex'
+    include ../return/return
+    
+    <div class="auth__inner row">
+      <div class="auth__left">
+        div(class="h1 auth__title")= authTitle
+        div(class="t1 auth__text")= authText
+        <form class="auth__form">
+          if authReg
+            <div class="field field_sm field_b-gray auth__field">
+              <div class="field__head">
+                <!---->
+                <div class="field__title">
+                  <!--[-->Email<!--]-->
+                </div>
+                <!---->
+              </div>
+              <div class="field__body">
+                <!----><!---->
+                <div class="field__inner">
+                  <div class="field__placeholder">example@email.com</div>
+                  <input class="field__area" type="text" value="" name="name">
+                </div>
+                <!----><!---->
+                <div class="field__icon field__icon_right">
+                  <!---->
+                </div>
+                <!----><!---->
+              </div>
+              <div class="field__foot">
+                <!---->
+                <div class="field__valid" style="display:none;">
+                  <!----><!---->
+                </div>
+                <!---->
+              </div>
+            </div>
+          <!---->
+          <div class="field field_sm field_b-gray auth__field">
+            <div class="field__head">
+              <!---->
+              <div class="field__title">
+                <!--[-->Телефон<!--]-->
+              </div>
+              <!---->
+            </div>
+            <div class="field__body">
+              <!----><!---->
+              <div class="field__inner">
+                <div class="field__placeholder">+7 888 888 88 88</div>
+                <input class="field__area" type="text" value="" name="name">
+              </div>
+              <!----><!---->
+              <div class="field__icon field__icon_right">
+                <!---->
+              </div>
+              <!----><!---->
+            </div>
+            <div class="field__foot">
+              <!---->
+              <div class="field__valid" style="display:none;">
+                <!----><!---->
+              </div>
+              <!---->
+            </div>
+          </div>
+          <div class="field field_sm field_b-gray field_password auth__field">
+            <div class="field__head">
+              <!---->
+              <div class="field__title">
+                <!--[-->Пароль<!--]-->
+              </div>
+              <!---->
+            </div>
+            <div class="field__body">
+              <!----><!---->
+              <div class="field__inner">
+                <div class="field__placeholder">Пароль</div>
+                <input class="field__area" type="password" value="" name="name">
+              </div>
+              <!----><!---->
+              <div class="field__icon field__icon_right">
+                <!---->
+              </div>
+              <div class="field__icon_hidden field__visible field__icon field__icon_right">
+                <svg class="icon icon_eye">
+                  <use xlink:href="#icon-eye"></use>
+                </svg>
+              </div>
+              <!---->
+            </div>
+            <div class="field__foot">
+              <!---->
+              <div class="field__valid" style="display:none;">
+                <!----><!---->
+              </div>
+              <!---->
+            </div>
+          </div>
+          <!---->
+          if authReg
+            <div class="check check_checked auth__check check_md check_round" html="yes">
+              <input type="checkbox" class="check__input" value="yes" name="policy" checked="">
+              <div class="check__box">
+                <svg class="icon icon_check f-red">
+                  <use xlink:href="#icon-check"></use>
+                </svg>
+              </div>
+              <div class="check__wrap">
+                <!--[-->Согласен(а) с правила обработки <a href="/privacy-policy">персональных данных</a> и другими правилами<!--]-->
+              </div>
+            </div>
+          <div class="auth__or">
+            <span>или</span>
+            if authReg
+              <p>Есть учетная запись? <a href="/login.html">Войти</a></p>
+            else
+              <p>Нет учетной записи? <a href="/reg.html">Зарегистрироваться</a></p>
+          </div>
+          <a class="button button_md button_bg-red button_shadow-black auth__button" href="javascript:;">
+            <!----><!---->
+            div(class="button__text")= authReg ? 'Зарегистрироваться' : 'Войти'
+          </a>
+        </form>
+      </div>
+      <div class="auth__right">
+        <div class="auth__img"><img src="uploads/auto-lg.png" alt=""></div>
+      </div>
+    </div>
+    <!--]-->
+  </div>
+</div>

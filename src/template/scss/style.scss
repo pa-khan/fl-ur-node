@@ -230,3 +230,35 @@ line {
 @import '../blocks/btop/btop.scss';
 
 @import '../blocks/product/product.scss';
+
+
+.sitemap {
+  padding-top: 100px;
+  padding-bottom: 300px;
+
+  ul {
+    flex-direction: column;
+
+    ul {
+      margin-left: 20px;
+    }
+  }
+
+  li {
+    margin-bottom: 6px;
+  }
+
+  h5 {
+    margin-top: 10px;
+    margin-bottom: 4px;
+  }
+
+  a {
+    border-color: $black;
+
+    &:hover {
+      border-color: transparent;
+    }
+  }
+
+}

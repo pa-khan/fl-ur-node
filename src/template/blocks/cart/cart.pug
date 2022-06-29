@@ -1,5 +1,312 @@
 include ../../pug/vars
 
-.cart
-	.case
-		
+<div class="cart">
+  <div class="case case_sm">
+    if !cartIsOrder
+      +breadcrumbs('cart__breadcrumb hidden-xs')
+      +style('breadcrumb', 'blocks')
+      - returnClass = 'cart__return hidden show-xs-flex'
+      include ../return/return
+    else
+      <a href="basket.html" class="cart__return">
+        <svg class="icon icon_chevron f-red">
+          <use xlink:href="#icon-chevron"></use>
+        </svg>
+        <span>Назад к корзине</span>
+      </a>
+
+    +style('incdec', 'components')
+    <!--v-if--><!--v-if-->
+    <div class="cart__wrap row">
+      <div class="cart__left">
+        div(class="h1 cart__title")= cartTitle
+        <div class="cart__list">
+          <a class="product product_has-remove product_row cart__item" href="/catalog/2">
+            <div class="product__inner">
+              <div class="product__img img"><img src="/uploads/products/product-2.png" alt="Даунпайп для"></div>
+              <div class="product__content">
+                <div class="product__title">Даунпайп для</div>
+                <div class="product__desc">7880 collection for the earth and human environment</div>
+                <div class="product__data">
+                  <div class="product__price">
+                    <div class="product__price-current">шт. 25&nbsp;940 <span class="r"></span></div>
+                    <!--v-if-->
+                  </div>
+                  if !cartIsOrder
+                    <div class="product__button-remove nk">
+                      <svg class="icon icon_trash">
+                        <use xlink:href="#icon-trash"></use>
+                      </svg>
+                    </div>
+                    <!--v-if--><!--v-if--><!--v-if-->
+                    <div class="incdec product__incdec nk" value="1">
+                      <div class="incdec__button incdec__button_plus"></div>
+                      <input class="incdec__input" type="tel">
+                      <div class="incdec__button incdec__button_minus incdec__button_disabled"></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!--v-if--><!--v-if-->
+          </a>
+          <a class="product product_has-remove product_row cart__item" href="/catalog/3">
+            <div class="product__inner">
+              <div class="product__img img"><img src="/uploads/products/product-3.jpg" alt="Винтовая подвеска BCR"></div>
+              <div class="product__content">
+                <div class="product__title">Винтовая подвеска BCR</div>
+                <div class="product__desc">Уникальное решение для точной настройки хода подвела меня тут</div>
+                <div class="product__data">
+                  <div class="product__price">
+                    <div class="product__price-current">шт. 12&nbsp;325 <span class="r"></span></div>
+                    <!--v-if-->
+                  </div>
+                  if !cartIsOrder
+                    <div class="product__button-remove nk">
+                      <svg class="icon icon_trash">
+                        <use xlink:href="#icon-trash"></use>
+                      </svg>
+                    </div>
+                    <!--v-if--><!--v-if--><!--v-if-->
+                    <div class="incdec product__incdec nk" value="1">
+                      <div class="incdec__button incdec__button_plus"></div>
+                      <input class="incdec__input" type="tel">
+                      <div class="incdec__button incdec__button_minus incdec__button_disabled"></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!--v-if--><!--v-if-->
+          </a>
+          <a class="product product_has-remove product_row cart__item" href="/catalog/4">
+            <div class="product__inner">
+              <div class="product__img img"><img src="/uploads/products/product-4.jpg" alt="Винтовая подвеска BCR"></div>
+              <div class="product__content">
+                <div class="product__title">Винтовая подвеска BCR</div>
+                <div class="product__desc">Уникальное решение для точной настройки хода подвела меня тут</div>
+                <div class="product__data">
+                  <div class="product__price">
+                    <div class="product__price-current">шт. 12&nbsp;325 <span class="r"></span></div>
+                    <!--v-if-->
+                  </div>
+                  if !cartIsOrder
+                    <div class="product__button-remove nk">
+                      <svg class="icon icon_trash">
+                        <use xlink:href="#icon-trash"></use>
+                      </svg>
+                    </div>
+                    <!--v-if--><!--v-if--><!--v-if-->
+                    <div class="incdec product__incdec nk" value="1">
+                      <div class="incdec__button incdec__button_plus"></div>
+                      <input class="incdec__input" type="tel">
+                      <div class="incdec__button incdec__button_minus incdec__button_disabled"></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!--v-if--><!--v-if-->
+          </a>
+          <a class="product product_has-remove product_row cart__item" href="/catalog/5">
+            <div class="product__inner">
+              <div class="product__img img"><img src="/uploads/products/product-5.jpg" alt="Винтовая подвеска BCR"></div>
+              <div class="product__content">
+                <div class="product__title">Винтовая подвеска BCR</div>
+                <div class="product__desc">Уникальное решение для точной настройки хода подвела меня тут</div>
+                <div class="product__data">
+                  <div class="product__price">
+                    <div class="product__price-current">шт. 12&nbsp;325 <span class="r"></span></div>
+                    <!--v-if-->
+                  </div>
+                  if !cartIsOrder
+                    <div class="product__button-remove nk">
+                      <svg class="icon icon_trash">
+                        <use xlink:href="#icon-trash"></use>
+                      </svg>
+                    </div>
+                    <!--v-if--><!--v-if--><!--v-if-->
+                    <div class="incdec product__incdec nk" value="1">
+                      <div class="incdec__button incdec__button_plus"></div>
+                      <input class="incdec__input" type="tel">
+                      <div class="incdec__button incdec__button_minus incdec__button_disabled"></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <!--v-if--><!--v-if-->
+          </a>
+        </div>
+        if cartIsEmpty
+          <div class="cart__empty">
+            <img src="uploads/empty.png" alt="">
+            <span>Ой, а тут пусто...</span>
+          </div>
+      </div>
+      <div class="cart__right">
+        if !cartIsOrder
+          <div class="cart__info">
+            <div class="cart__delivery">
+              <div class="h3 cart__delivery-title">Условия доставки и оплаты</div>
+              <div class="t2 cart__delivery-text">Представленные предложения ввиду своего комплексного характера сочетают в себе выгоду при затратах времени и средств и полноту реализации выбранного вами уровня усовершенствования.Представленные предложения ввиду своего комплексного характера сочетают в себе выгоду при затратах времени и средств и </div>
+            </div>
+          </div>
+        else
+          <div class="cart__order">
+            <div class="field field_sm field_b-gray cart__field">
+              <div class="field__head">
+                <!--v-if-->
+                <div class="field__title">Email</div>
+                <!--v-if-->
+              </div>
+              <div class="field__body">
+                <!--v-if--><!--v-if-->
+                <div class="field__inner">
+                  <div class="field__placeholder">example@email.com</div>
+                  <input class="field__area" type="text" name="name">
+                </div>
+                <!--v-if--><!--v-if-->
+                <div class="field__icon field__icon_right">
+                  <!--v-if-->
+                </div>
+                <!--v-if--><!--v-if-->
+              </div>
+              <div class="field__foot">
+                <!--v-if-->
+                <div class="field__valid" style="display: none;">
+                  <!--v-if--><!--v-if-->
+                </div>
+                <!--v-if-->
+              </div>
+            </div>
+            <div class="field field_sm field_b-gray cart__field">
+              <div class="field__head">
+                <!--v-if-->
+                <div class="field__title">Телефон</div>
+                <!--v-if-->
+              </div>
+              <div class="field__body">
+                <!--v-if--><!--v-if-->
+                <div class="field__inner">
+                  <div class="field__placeholder">+7 888 888 88 88</div>
+                  <input class="field__area" type="text" name="name">
+                </div>
+                <!--v-if--><!--v-if-->
+                <div class="field__icon field__icon_right">
+                  <!--v-if-->
+                </div>
+                <!--v-if--><!--v-if-->
+              </div>
+              <div class="field__foot">
+                <!--v-if-->
+                <div class="field__valid" style="display: none;">
+                  <!--v-if--><!--v-if-->
+                </div>
+                <!--v-if-->
+              </div>
+            </div>
+            <div class="field field_sm field_b-gray cart__field">
+              <div class="field__head">
+                <!--v-if-->
+                <div class="field__title">Адрес доставки</div>
+                <!--v-if-->
+              </div>
+              <div class="field__body">
+                <!--v-if--><!--v-if-->
+                <div class="field__inner">
+                  <div class="field__placeholder">Москва, ул. Академика королева, 132 в, 343</div>
+                  <input class="field__area" type="text" name="name">
+                </div>
+                <!--v-if--><!--v-if--><!--v-if--><!--v-if--><!--v-if-->
+              </div>
+              <!--v-if-->
+            </div>
+            <div class="select select_sm select_b-gray cart__select">
+              <div class="select__title">Способ доставки</div>
+              <div class="select__area">
+                <!--v-if-->
+                <div class="select__value select__placeholder">Выберите способ доставки</div>
+                <div class="select__clear">
+                  <!--v-if-->
+                </div>
+                <div class="select__chevron">
+                  <svg class="icon icon_chevron-wide">
+                    <use xlink:href="#icon-chevron-wide"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="select__drop">
+                <div class="select__list">
+                  <div class="select__item">
+                    <!--v-if-->
+                    <div class="select__item-title">СДЭК</div>
+                    <div class="select__item-check">
+                      <svg class="icon icon_check icon_hide">
+                        <use xlink:href="#icon-check"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--v-if-->
+              <select>
+                <option value="[object Object]">СДЭК</option>
+              </select>
+            </div>
+            <div class="cart__checks">
+              <div class="cart__checks-title">Способ оплаты</div>
+              <div class="cart__checks-list">
+                <div class="check cart__checks-item check_md check_gray">
+                  <input type="checkbox" class="check__input" name="pay" value="Сбербанк Онлайн">
+                  <div class="check__box">
+                    <svg class="icon icon_check f-red">
+                      <use xlink:href="#icon-check"></use>
+                    </svg>
+                  </div>
+                  <div class="check__wrap">Сбербанк Онлайн</div>
+                </div>
+                <div class="check cart__checks-item check_md check_gray">
+                  <input type="checkbox" class="check__input" name="pay" value="Сберкасса">
+                  <div class="check__box">
+                    <svg class="icon icon_check f-red">
+                      <use xlink:href="#icon-check"></use>
+                    </svg>
+                  </div>
+                  <div class="check__wrap">Сберкасса</div>
+                </div>
+                <div class="check cart__checks-item check_md check_gray">
+                  <input type="checkbox" class="check__input" name="pay" value="Биткоин">
+                  <div class="check__box">
+                    <svg class="icon icon_check f-red">
+                      <use xlink:href="#icon-check"></use>
+                    </svg>
+                  </div>
+                  <div class="check__wrap">Биткоин</div>
+                </div>
+                <div class="check cart__checks-item check_md check_gray">
+                  <input type="checkbox" class="check__input" name="pay" value="Эфир">
+                  <div class="check__box">
+                    <svg class="icon icon_check f-red">
+                      <use xlink:href="#icon-check"></use>
+                    </svg>
+                  </div>
+                  <div class="check__wrap">Эфир</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <div class="cart__price">Итого: <var>62&nbsp;915</var> <span class="r"></span></div>
+        if !cartIsOrder
+          <a class="button button_md button_bg-red cart__button-order" href="order.html">
+            <!--v-if--><!--v-if-->
+            <div class="button__text">Оформить заказ</div>
+            <!--v-if-->
+          </a>
+        else
+          <a class="button button_md button_bg-red cart__button-order" href="javascript:;">
+            <!--v-if--><!--v-if-->
+            <div class="button__text">Оплатить</div>
+            <!--v-if-->
+          </a>
+      </div>
+      <!--v-if-->
+    </div>
+  </div>
+</div>

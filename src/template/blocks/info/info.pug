@@ -1,5 +1,255 @@
 include ../../pug/vars
 
-.info
-	.case
-		
+div(class="info")
+  <div class="case case_sm">
+    <!--[-->
+    +breadcrumbs('info__breadcrumb hidden-xs')
+    +style('breadcrumb', 'blocks')
+
+    - returnClass = 'info__return hidden show-xs-flex'
+    include ../return/return
+    +style('return', 'blocks')
+    <!---->
+    div(class="info__title hidden show-xs")= infoTitle
+    <div class="info__inner row">
+      <div class="info__left">
+        div(class="h1 info__title hidden-xs")= infoTitle
+        div(class="info__desc-top info__text")!= infoDescTop
+      </div>
+      <div class="info__right">
+        <div class="info__images">
+          <div class="info__slider swiper">
+            <div class="info__slider-list swiper-wrapper">
+              <div class="info__slider-item swiper-slide"><img src="/uploads/product.jpg" alt=""></div>
+              <div class="info__slider-item swiper-slide"><img src="/uploads/product.jpg" alt=""></div>
+              <div class="info__slider-item swiper-slide"><img src="/uploads/product.jpg" alt=""></div>
+              <div class="info__slider-item swiper-slide"><img src="/uploads/product.jpg" alt=""></div>
+              <div class="info__slider-item swiper-slide"><img src="/uploads/product.jpg" alt=""></div>
+              <div class="info__slider-item swiper-slide"><img src="/uploads/product.jpg" alt=""></div>
+            </div>
+          </div>
+          <div class="info__pagination swiper">
+            <div class="info__pagination-list swiper-wrapper">
+              <!--[-->
+              <div class="info__pagination-item swiper-slide swiper-slide-visible"><img src="/uploads/product.jpg" alt=""></div>
+              <div class="info__pagination-item swiper-slide swiper-slide-visible"><img src="/uploads/product.jpg" alt=""></div>
+              <div class="info__pagination-item swiper-slide swiper-slide-visible"><img src="/uploads/product.jpg" alt=""></div>
+              <div class="info__pagination-item swiper-slide swiper-slide-visible"><img src="/uploads/product.jpg" alt=""></div>
+              <div class="info__pagination-item swiper-slide swiper-slide-visible"><img src="/uploads/product.jpg" alt=""></div>
+              <div class="info__pagination-item swiper-slide swiper-slide-visible"><img src="/uploads/product.jpg" alt=""></div>
+              <div class="info__pagination-item swiper-slide swiper-slide-visible"><img src="/uploads/product.jpg" alt=""></div>
+              <!--]-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    div(class="info__desc-bottom info__text")!= infoDescBottom
+    if infoVideo
+      <div class="info__video">
+        <div class="h3 info__video-title info__subtitle">
+          <!--[-->Видео обзор<!--]-->
+        </div>
+        <div class="video info__video-wrap">
+          <div class="video__inner"><iframe width="100%" height="100%" src="https://www.youtube.com/embed/LtAgXMsXOxk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+          <div class="video__poster">
+            <div class="video__icon">
+              <svg class="icon icon_play">
+                <use xlink:href="#icon-play"></use>
+              </svg>
+            </div>
+            <div class="video__img"><img src="/uploads/video-poster.jpg" alt=""></div>
+          </div>
+        </div>
+      </div>
+      +style('video', 'blocks')
+    if infoRec
+      <div class="info__rec">
+        <div class="info__rec-head">
+          <div class="h3 info__rec-title info__subtitle">
+            <!--[-->Рекомендуем к установке<!--]-->
+          </div>
+          <div class="info__rec-add-all">Добавить все в корзину</div>
+        </div>
+        <div class="info__rec-list row">
+        <!--[-->
+        <a class="product product_col info__rec-item" href="/catalog/1">
+          <div class="product__inner">
+            <div class="product__img img"><img src="/uploads/products/product-1.jpg" alt="Винтовая подвеска BCR"></div>
+            <div class="product__content">
+              <div class="product__title">Винтовая подвеска BCR</div>
+              <div class="product__desc">Уникальное решение для точной настройки хода подвела меня тут</div>
+              <div class="product__data">
+                <div class="product__price">
+                  <div class="product__price-current">12&nbsp;325 <span class="r"></span></div>
+                  <div class="product__price-old">22&nbsp;759 <span class="r"></span></div>
+                </div>
+                <!--v-if--><!--v-if--><!--v-if-->
+                <div class="product__button-add nk">
+                  <svg class="icon icon_cart-add">
+                    <use xlink:href="#icon-cart-add"></use>
+                  </svg>
+                </div>
+                <!--v-if-->
+              </div>
+            </div>
+          </div>
+          <!--v-if-->
+          <div class="product__modal nk">
+            <div class="product__modal-inner">
+              <div class="product__sets">
+                <div class="product__sets-title">Максимальное занижение</div>
+                <div class="product__sets-list row">
+                  <div class="plus form__sets-item plus_md plus_gray">
+                    <input type="checkbox" class="plus__input" name="sets" value="10 мм">
+                    <div class="plus__inner">
+                      <div class="plus__value">10 мм</div>
+                      <div class="plus__icon">
+                        <div></div>
+                        <div></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="plus form__sets-item plus_md plus_gray">
+                    <input type="checkbox" class="plus__input" name="sets" value="15 мм">
+                    <div class="plus__inner">
+                      <div class="plus__value">15 мм</div>
+                      <div class="plus__icon">
+                        <div></div>
+                        <div></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="plus form__sets-item plus_md plus_gray">
+                    <input type="checkbox" class="plus__input" name="sets" value="20 мм">
+                    <div class="plus__inner">
+                      <div class="plus__value">20 мм</div>
+                      <div class="plus__icon">
+                        <div></div>
+                        <div></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="plus form__sets-item plus_md plus_gray">
+                    <input type="checkbox" class="plus__input" name="sets" value="32 мм">
+                    <div class="plus__inner">
+                      <div class="plus__value">32 мм</div>
+                      <div class="plus__icon">
+                        <div></div>
+                        <div></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="plus form__sets-item plus_md plus_gray">
+                    <input type="checkbox" class="plus__input" name="sets" value="35 мм">
+                    <div class="plus__inner">
+                      <div class="plus__value">35 мм</div>
+                      <div class="plus__icon">
+                        <div></div>
+                        <div></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="plus form__sets-item plus_md plus_gray">
+                    <input type="checkbox" class="plus__input" name="sets" value="40 мм">
+                    <div class="plus__inner">
+                      <div class="plus__value">40 мм</div>
+                      <div class="plus__icon">
+                        <div></div>
+                        <div></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="plus form__sets-item plus_md plus_gray">
+                    <input type="checkbox" class="plus__input" name="sets" value="50 мм">
+                    <div class="plus__inner">
+                      <div class="plus__value">50 мм</div>
+                      <div class="plus__icon">
+                        <div></div>
+                        <div></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="product__sets-error" style="display: none;">Выберите хотя бы одно свойство</div>
+        <a class="button button_md button_bg-red button_shadow-black product__sets-button" href="javascript:;"><!--v-if--><!--v-if--><div class="button__text">Добавить в корзину</div><!--v-if--></a></div></div></div></a>
+        <a class="product product_col info__rec-item" href="/catalog/2">
+          <div class="product__inner">
+            <div class="product__img img"><img src="/uploads/products/product-2.png" alt="Даунпайп для"></div>
+            <div class="product__content">
+              <div class="product__title">Даунпайп для</div>
+              <div class="product__desc">7880 collection for the earth and human environment</div>
+              <div class="product__data">
+                <div class="product__price">
+                  <div class="product__price-current">25&nbsp;940 <span class="r"></span></div>
+                  <div class="product__price-old">52&nbsp;499 <span class="r"></span></div>
+                </div>
+                <!--v-if--><!--v-if--><!--v-if-->
+                <div class="product__button-add nk">
+                  <svg class="icon icon_cart-add">
+                    <use xlink:href="#icon-cart-add"></use>
+                  </svg>
+                </div>
+                <!--v-if-->
+              </div>
+            </div>
+          </div>
+          <!--v-if--><!--v-if-->
+        </a>
+        <a class="product product_col info__rec-item" href="/catalog/3">
+          <div class="product__inner">
+            <div class="product__img img"><img src="/uploads/products/product-3.jpg" alt="Винтовая подвеска BCR"></div>
+            <div class="product__content">
+              <div class="product__title">Винтовая подвеска BCR</div>
+              <div class="product__desc">Уникальное решение для точной настройки хода подвела меня тут</div>
+              <div class="product__data">
+                <div class="product__price">
+                  <div class="product__price-current">12&nbsp;325 <span class="r"></span></div>
+                  <!--v-if-->
+                </div>
+                <!--v-if--><!--v-if--><!--v-if-->
+                <div class="product__button-add nk">
+                  <svg class="icon icon_cart-add">
+                    <use xlink:href="#icon-cart-add"></use>
+                  </svg>
+                </div>
+                <!--v-if-->
+              </div>
+            </div>
+          </div>
+          <!--v-if--><!--v-if-->
+        </a>
+        <a class="product product_col info__rec-item" href="/catalog/4">
+          <div class="product__inner">
+            <div class="product__img img"><img src="/uploads/products/product-4.jpg" alt="Винтовая подвеска BCR"></div>
+            <div class="product__content">
+              <div class="product__title">Винтовая подвеска BCR</div>
+              <div class="product__desc">Уникальное решение для точной настройки хода подвела меня тут</div>
+              <div class="product__data">
+                <div class="product__price">
+                  <div class="product__price-current">12&nbsp;325 <span class="r"></span></div>
+                  <!--v-if-->
+                </div>
+                <!--v-if--><!--v-if--><!--v-if-->
+                <div class="product__button-add nk">
+                  <svg class="icon icon_cart-add">
+                    <use xlink:href="#icon-cart-add"></use>
+                  </svg>
+                </div>
+                <!--v-if-->
+              </div>
+            </div>
+          </div>
+          <!--v-if--><!--v-if-->
+        </a>
+        <!--]-->
+      </div>
+      <a class="button button_md button_bg-red button_shadow-black super" href="/basket">
+        <!----><!---->
+        <div class="button__text">
+          <!--[-->Создать заказ<!--]-->
+        </div>
+        <!---->
+      </a>
+    </div>
+  </div>

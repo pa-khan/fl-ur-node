@@ -1,91 +1,91 @@
-.inf {
+.info {
   padding-top: 20px;
   padding-bottom: 75px;
 }
-.inf__breadcrumb {
+.info__breadcrumb {
   margin-bottom: 20px;
 }
-.inf__left {
+.info__left {
   width: 455px;
 }
-.inf__title {
+.info__title {
   margin-bottom: 40px;
 }
-.inf__text {
+.info__text {
   font-size: 24px;
   line-height: 38px;
 }
-.inf__text p {
+.info__text p {
   margin-bottom: 20px;
 }
-.inf__text p:last-child {
+.info__text p:last-child {
   margin-bottom: 0;
 }
-.inf__right {
+.info__right {
   width: calc(100% - 455px);
   padding-left: 15px;
 }
-.inf__images {
+.info__images {
   position: relative;
 }
-.inf .inf__slider {
+.info .info__slider {
   overflow: hidden;
   border-radius: 4px;
 }
-.inf .inf__slider-item {
+.info .info__slider-item {
   height: 430px;
 }
-.inf .inf__slider-item img {
+.info .info__slider-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.inf .inf__pagination {
+.info .info__pagination {
   position: absolute;
   left: 15px;
   right: 15px;
   bottom: 15px;
 }
-.inf .inf__pagination-item {
+.info .info__pagination-item {
   width: 50px;
   height: 50px;
   border-radius: 4px;
   overflow: hidden;
   cursor: pointer;
 }
-.inf .inf__pagination-item img {
+.info .info__pagination-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.inf__desc-bottom {
+.info__desc-bottom {
   margin-top: 25px;
 }
-.inf__subtitle {
+.info__subtitle {
   font-size: 35px;
   line-height: 43px;
   font-family: "Montserrat", sans-serif;
   color: #262626;
   letter-spacing: -0.005em;
 }
-.inf__video {
+.info__video {
   margin-top: 30px;
 }
-.inf__video-title {
+.info__video-title {
   margin-bottom: 30px;
 }
-.inf__video-wrap {
+.info__video-wrap {
   height: 320px;
 }
-.inf__rec {
+.info__rec {
   margin-top: 40px;
 }
-.inf__rec-head {
+.info__rec-head {
   display: flex;
   align-items: center;
   margin-bottom: 35px;
 }
-.inf__rec-add-all {
+.info__rec-add-all {
   font-size: 24px;
   line-height: 38px;
   color: #F05454;
@@ -94,13 +94,13 @@
   margin-left: auto;
   cursor: pointer;
 }
-.inf__rec-add-all:hover {
+.info__rec-add-all:hover {
   border-color: #F05454;
 }
-.inf__rec-list {
+.info__rec-list {
   margin: 0 -10px;
 }
-.inf__rec-item {
+.info__rec-item {
   width: calc(25% - 20px);
   margin: 0 10px;
 }
@@ -156,10 +156,10 @@
     padding-left: 15px;
     padding-right: 15px;
   }
-  .inf .inf__slider {
+  .inf .info__slider {
     overflow: visible;
   }
-  .inf .inf__slider-item {
+  .inf .info__slider-item {
     position: relative;
     height: 190px;
     border-radius: 4px;
@@ -168,21 +168,21 @@
     padding-bottom: 7px;
     transition: 0.3s;
   }
-  .inf .inf__slider-item.swiper-slide-active {
+  .inf .info__slider-item.swiper-slide-active {
     padding-top: 0;
     padding-bottom: 0;
   }
-  .inf .inf__slider-item.swiper-slide-prev {
+  .inf .info__slider-item.swiper-slide-prev {
     left: -10px;
   }
-  .inf .inf__slider-item.swiper-slide-next {
+  .inf .info__slider-item.swiper-slide-next {
     right: -10px;
   }
-  .inf .inf__pagination {
+  .inf .info__pagination {
     position: static;
     margin-top: 11px;
   }
-  .inf .inf__pagination-item {
+  .inf .info__pagination-item {
     width: 10px;
     height: 10px;
     border-radius: 50px;
@@ -190,10 +190,10 @@
     transition: 0.3s;
     margin-right: 4px !important;
   }
-  .inf .inf__pagination-item.swiper-slide-thumb-active {
+  .inf .info__pagination-item.swiper-slide-thumb-active {
     width: 29px;
   }
-  .inf .inf__pagination-item img {
+  .inf .info__pagination-item img {
     display: none;
   }
   .inf__left {

@@ -1,10 +1,15 @@
 extends ../../templates/default
 block vars
-	-
-		title = ""
-		breadcrumbs = [
-			['Главная', 'index.html'],
-			[title]
-		]
+  -
+    title = "Сравнение"
+    breadcrumbs = [
+      ['Главная', 'index.html'],
+      [title]
+    ]
 block content
-	
+  include ../../../blocks/compare/compare
+  +style('compare', 'blocks')
+  
+  - questionsClass = 'hidden-xs'
+  include ../../../blocks/questions/questions
+  +style('questions', 'blocks')

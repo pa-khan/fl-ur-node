@@ -1,10 +1,20 @@
 extends ../../templates/default
 block vars
-	-
-		title = ""
-		breadcrumbs = [
-			['Главная', 'index.html'],
-			[title]
-		]
+  -
+    title = "Партнеры"
+    breadcrumbs = [
+      ['Главная', 'index.html'],
+      [title]
+    ]
 block content
-	
+  -
+    partnershipTitle = 'Партнеры'
+    partnershipText  = '<p>Наши партнеры которые вам установят все так как нужо и так как надо которые знают какой патрубок куда требуется вставить чтобы было хорошо</p>'
+    partnershipFormTitle = 'Хотите попасть в этот список ?'
+    partnershipChoiser = true
+  include ../../../blocks/partnership/partnership
+  +style('partnership', 'blocks')
+  
+  - questionsClass = 'hidden-xs'
+  include ../../../blocks/questions/questions
+  +style('questions', 'blocks')

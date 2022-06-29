@@ -1,6 +1,6 @@
 @import '../../scss/vars';
 
-.ord {
+.order {
     padding-top: 20px;
     padding-bottom: 75px;
 
@@ -27,9 +27,25 @@
         box-shadow: 0px 0px 45px rgba(41, 41, 41, 0.15);
         margin-bottom: 8px;
 
+        &_button {
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            min-height: 52px;
+            transition: .3s;
+
+            svg {
+                height: 20px;
+                margin-right: 14px;
+                width: 16px;
+            }
+        }
+
         &:last-child {
             margin-bottom: 0;
         }
+
+
 
         h3 {
             display: block;
@@ -102,7 +118,7 @@
 }
 
 @media screen and (max-width: 991px) {
-    .ord {
+    .order {
         .case {
             max-width: 540px;
             margin-left: auto;
@@ -123,7 +139,7 @@
 }
 
 @media screen and (max-width: 767px) {
-    .ord {
+    .order {
         padding-top: 76px;
         padding-bottom: 0;
 
@@ -147,7 +163,7 @@
 }
 
 @media screen and (max-width: 465px) {
-    .ord {
+    .order {
         &__item {
             width: calc(100% - 20px);
         }

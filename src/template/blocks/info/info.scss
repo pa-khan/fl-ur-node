@@ -1,6 +1,6 @@
 @import '../../scss/vars';
 
-.inf {
+.info {
     padding-top: 20px;
     padding-bottom: 75px;
 
@@ -38,7 +38,7 @@
         position: relative;
     }
 
-    .inf__slider {
+    .info__slider {
         overflow: hidden;
         border-radius: 4px;
 
@@ -53,7 +53,7 @@
         }
     }
 
-    .inf__pagination {
+    .info__pagination {
         position: absolute;
         left: 15px;
         right: 15px;
@@ -200,7 +200,7 @@
             padding-right: 15px;
         }
 
-        .inf__slider {
+        .info__slider {
             overflow: visible;
 
             &-item {
@@ -227,7 +227,7 @@
             }
         }
 
-        .inf__pagination {
+        .info__pagination {
             position: static;
             margin-top: 11px;
 

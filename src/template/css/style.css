@@ -1476,3 +1476,27 @@ body,
   bottom: 0;
   background: rgba(196, 196, 196, 0.6);
 }
+
+.sitemap {
+  padding-top: 100px;
+  padding-bottom: 300px;
+}
+.sitemap ul {
+  flex-direction: column;
+}
+.sitemap ul ul {
+  margin-left: 20px;
+}
+.sitemap li {
+  margin-bottom: 6px;
+}
+.sitemap h5 {
+  margin-top: 10px;
+  margin-bottom: 4px;
+}
+.sitemap a {
+  border-color: #4F4F4F;
+}
+.sitemap a:hover {
+  border-color: transparent;
+}

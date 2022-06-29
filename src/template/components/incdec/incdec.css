@@ -1,0 +1,53 @@
+.incdec {
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+.incdec__button, .incdec__input {
+  height: 30px;
+}
+.incdec__button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  text-align: center;
+  width: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+  background: #F9F9F9;
+  border-radius: 4px;
+}
+.incdec__button:before, .incdec__button:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 14px;
+  height: 2px;
+  background: #4F4F4F;
+  transition: 0.3s;
+  transform: translate(-50%, -50%);
+}
+.incdec__button:after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+.incdec__button_minus:after {
+  display: none;
+}
+.incdec__button:hover {
+  background: #F05454;
+}
+.incdec__button:hover:before, .incdec__button:hover:after {
+  background: #fff;
+}
+.incdec__input {
+  display: block;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  color: #121212;
+  width: 40px;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+}

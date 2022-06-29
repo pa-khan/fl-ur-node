@@ -1,10 +1,19 @@
 extends ../../templates/default
 block vars
-	-
-		title = ""
-		breadcrumbs = [
-			['Главная', 'index.html'],
-			[title]
-		]
+  -
+    title = "Регистрация"
+    breadcrumbs = [
+      ['Главная', 'index.html'],
+      [title]
+    ]
 block content
-	
+  -
+    authTitle = 'Регистрация'
+    authText  = 'Введите контакнтные данные и пароль для создания учетной записи'
+    authReg   = true
+  include ../../../blocks/auth/auth
+  +style('auth', 'blocks')
+  
+  - questionsClass = 'hidden-xs'
+  include ../../../blocks/questions/questions
+  +style('questions', 'blocks')

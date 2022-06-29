@@ -1,10 +1,67 @@
 extends ../../templates/default
 block vars
-	-
-		title = ""
-		breadcrumbs = [
-			['Главная', 'index.html'],
-			[title]
-		]
+  -
+    title = "Покупателям"
+    breadcrumbs = [
+      ['Главная', 'index.html'],
+      [title]
+    ]
 block content
-	
+  <div class="page">
+    <div class="case case_sm">
+      <!--[-->
+      +breadcrumbs('page__breadcrumb hidden-xs')
+      +style('breadcrumb', 'blocks')
+      - returnClass = 'page__return hidden show-xs-flex'
+      include ../../../blocks/return/return
+
+      <div class="h1 page__title">
+        <!--[-->Информация<!--]-->
+      </div>
+      <div class="page__content">
+        <!--[-->
+        <div class="togs">
+          <div class="togs__list">
+            <!--[-->
+            <div class="togs__item_current togs__item">
+              <div class="togs__head">
+                <div class="togs__title">Варианты оплаты</div>
+                <div class="togs__icon"></div>
+              </div>
+              <div class="togs__body">
+                <div class="togs__text">Все что вы хотели спросить, но боялись. Расказываем, что будет с вашим поло после stage 3 REVOВсе что вы хотели спросить, но боялись. Расказываем, что будет с вашим поло после stage 3 REVOВсе что вы хотели спросить, но боялись. Расказываем, что будет с вашим поло после stage 3 REVOВсе что вы хотели спросить, но боялись. Расказываем, что будет с вашим поло после stage 3 REVOВсе что вы хотели спросить, но боялись. Расказываем, что будет с вашим поло после stage 3 REVOВсе что вы хотели спросить, но боялись. Расказываем.</div>
+              </div>
+            </div>
+            <div class="togs__item">
+              <div class="togs__head">
+                <div class="togs__title">Доставка</div>
+                <div class="togs__icon"></div>
+              </div>
+              <div class="togs__body">
+                <div class="togs__text">Все что вы хотели спросить, но боялись. Расказываем, что будет с вашим поло после stage 3 REVOВсе что вы хотели спросить, но боялись. Расказываем, что будет с вашим поло после stage 3 REVOВсе что вы хотели спросить, но боялись. Расказываем, что будет с вашим поло после stage 3 REVOВсе что вы хотели спросить, но боялись. Расказываем, что будет с вашим поло после stage 3 REVOВсе что вы хотели спросить, но боялись. Расказываем, что будет с вашим поло после stage 3 REVOВсе что вы хотели спросить, но боялись. Расказываем.</div>
+              </div>
+            </div>
+            <div class="togs__item">
+              <div class="togs__head">
+                <div class="togs__title">Обмен и возврат</div>
+                <div class="togs__icon"></div>
+              </div>
+              <div class="togs__body">
+                <div class="togs__text">Все что вы хотели спросить, но боялись. Расказываем, что будет с вашим поло после stage 3 REVOВсе что вы хотели спросить, но боялись. Расказываем, что будет с вашим поло после stage 3 REVOВсе что вы хотели спросить, но боялись. Расказываем, что будет с вашим поло после stage 3 REVOВсе что вы хотели спросить, но боялись. Расказываем, что будет с вашим поло после stage 3 REVOВсе что вы хотели спросить, но боялись. Расказываем, что будет с вашим поло после stage 3 REVOВсе что вы хотели спросить, но боялись. Расказываем.</div>
+              </div>
+            </div>
+            <!--]-->
+          </div>
+        </div>
+        <!--]-->
+      </div>
+      <!--]-->
+    </div>
+  </div>
+  +style('page', 'blocks')
+  +style('togs', 'components')
+
+  - questionsClass = 'hidden-xs'
+  include ../../../blocks/questions/questions
+  +style('questions', 'blocks')
+  

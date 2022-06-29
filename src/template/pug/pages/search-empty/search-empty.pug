@@ -1,0 +1,21 @@
+extends ../../templates/default
+block vars
+	-
+		title = "Поиск"
+		breadcrumbs = [
+			['Главная', 'index.html'],
+			[title]
+		]
+block content
+	- catalogSearch = true
+	- catalogSearchEmpty = true
+	include ../../../blocks/catalog/catalog
+	+style('catalog', 'blocks') 
+
+	- groupTitle = 'Специальное предложение'
+	include ../../../blocks/group/group
+	+style('group', 'blocks')
+
+	- questionsClass = 'questions_mt-minus hidden-xs'
+	include ../../../blocks/questions/questions
+	+style('questions', 'blocks') 

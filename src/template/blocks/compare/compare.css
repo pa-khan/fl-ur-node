@@ -1,31 +1,31 @@
-.comp {
+.compare {
   padding-top: 20px;
   padding-bottom: 75px;
 }
-.comp__breadcrumb {
+.compare__breadcrumb {
   margin-bottom: 20px;
 }
-.comp__title {
+.compare__title {
   margin-bottom: 40px;
 }
-.comp__desc {
+.compare__desc {
   max-width: 450px;
   margin-bottom: 28px;
 }
-.comp .comp__slider {
+.compare .compare__slider {
   overflow: visible;
 }
-.comp .comp__item {
+.compare .compare__item {
   width: 261px;
   margin-right: 20px;
 }
-.comp .comp__item:last-child {
+.compare .compare__item:last-child {
   margin-right: 0;
 }
-.comp .comp__item .product__inner {
+.compare .compare__item .product__inner {
   height: auto;
 }
-.comp__alert {
+.compare__alert {
   font-size: 18px;
   line-height: 24px;
   color: #F05454;

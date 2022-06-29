@@ -1,5 +1,79 @@
 include ../../pug/vars
 
-.list
-	.case
-		
+<div class="list">
+  <div class="case">
+    <!--[-->
+    +breadcrumbs('list__breadcrumb hidden-xs')
+    +style('breadcrumb', 'blocks')
+    - returnClass = 'list__return hidden show-xs-flex'
+    include ../return/return
+    <div class="h1 list__title">
+      <!--[-->Актуальное<!--]-->
+    </div>
+    <div class="list__wrap">
+      <div class="list__links">
+        <div class="list__link_current list__link" data-text="Все">Все</div>
+        <div class="list__link" data-text="Блог">Блог</div>
+        <div class="list__link" data-text="Новости">Новости</div>
+        <div class="list__link" data-text="Акции">Акции</div>
+      </div>
+      <div class="list__inner row">
+        <!--[--><!--[-->
+        <a class="list__item" href="/news/item">
+          <div class="list__item-img"><img src="/uploads/actual/1.png" alt=""></div>
+          <div class="list__item-title">Ломается ли ваг? После тюнинга</div>
+          <div class="list__item-desc">Все что вы хотели спросить, но боялись. Расказываем, что будет с вашим поло после stage 3 REVO</div>
+          <div class="list__item-data">
+            <div class="list__item-date">12 января</div>
+            <div class="list__item-cat">Видеоблог</div>
+          </div>
+        </a>
+        <!--]--><!--[-->
+        <a class="list__item" href="/news/item">
+          <div class="list__item-img"><img src="/uploads/actual/2.png" alt=""></div>
+          <div class="list__item-title">Ломается ли ваг? После тюнинга</div>
+          <div class="list__item-desc">Все что вы хотели спросить, но боялись. Расказываем, что будет с вашим поло после stage 3 REVO</div>
+          <div class="list__item-data">
+            <div class="list__item-date">12 января</div>
+            <div class="list__item-cat">Видеоблог</div>
+          </div>
+        </a>
+        <!--]--><!--[-->
+        <a class="list__item" href="/news/item">
+          <div class="list__item-img"><img src="/uploads/actual/1.png" alt=""></div>
+          <div class="list__item-title">Почему мы стоит менять диски?</div>
+          <div class="list__item-desc">Все что вы хотели спросить, но боялись. Расказываем, что будет с вашим поло после stage 3 REVO</div>
+          <div class="list__item-data">
+            <div class="list__item-date">12 января</div>
+            <div class="list__item-cat">Акция</div>
+          </div>
+        </a>
+        <!--]--><!--[-->
+        <a class="list__item" href="/news/item">
+          <div class="list__item-img"><img src="/uploads/actual/2.png" alt=""></div>
+          <div class="list__item-title">Почему мы стоит менять диски?</div>
+          <div class="list__item-desc">Все что вы хотели спросить, но боялись. Расказываем, что будет с вашим поло после stage 3 REVO</div>
+          <div class="list__item-data">
+            <div class="list__item-date">12 января</div>
+            <div class="list__item-cat">Новости</div>
+          </div>
+        </a>
+        <!--]--><!--[-->
+        <a class="list__item" href="/news/item">
+          <div class="list__item-img"><img src="/uploads/actual/1.png" alt=""></div>
+          <div class="list__item-title">Почему мы стоит менять диски?</div>
+          <div class="list__item-desc">Все что вы хотели спросить, но боялись. Расказываем, что будет с вашим поло после stage 3 REVO</div>
+          <div class="list__item-data">
+            <div class="list__item-date">12 января</div>
+            <div class="list__item-cat">Видеоблог</div>
+          </div>
+        </a>
+        <!--]--><!--]-->
+      </div>
+      - paginationClass = 'list__pagination'
+      include ../pagination/pagination
+      +style('pagination', 'blocks')
+    </div>
+    <!--]-->
+  </div>
+</div>

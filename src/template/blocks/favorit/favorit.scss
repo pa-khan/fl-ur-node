@@ -1,6 +1,6 @@
 @import '../../scss/vars';
 
-.fav {
+.favorit {
     padding-top: 20px;
     padding-bottom: 75px;
 
@@ -17,11 +17,11 @@
         margin-bottom: 28px;
     }
 
-    .fav__slider {
+    .favorit__slider {
         overflow: visible;
     }
 
-    .fav__item {
+    .favorit__item {
         width: 261px;
     }
 
@@ -34,13 +34,13 @@
 }
 
 @media screen and (max-width: 991px) {
-    .fav {
+    .favorit {
         padding-bottom: 50px;
     }
 }
 
 @media screen and (max-width: 767px) {
-    .fav {
+    .favorit {
         padding-top: 77px;
         padding-bottom: 0;
         min-height: 100vh;

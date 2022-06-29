@@ -1,10 +1,20 @@
 extends ../../templates/default
 block vars
-	-
-		title = ""
-		breadcrumbs = [
-			['Главная', 'index.html'],
-			[title]
-		]
+  -
+    title = "Категории товаров"
+    breadcrumbs = [
+      ['Главная', 'index.html'],
+      [title]
+    ]
 block content
-	
+  - catsIsPage = true
+  include ../../../blocks/cats/cats
+  +style('cats', 'blocks')
+
+  - actualClass = 'actual_mt-minus hidden-xs'
+  include ../../../blocks/actual/actual
+  +style('actual', 'blocks')
+  
+  - questionsClass = 'questions_mt-minus hidden-xs'
+  include ../../../blocks/questions/questions
+  +style('questions', 'blocks')

@@ -1,10 +1,20 @@
 extends ../../templates/default
 block vars
-	-
-		title = ""
-		breadcrumbs = [
-			['Главная', 'index.html'],
-			[title]
-		]
+  -
+    title = "Доставка"
+    breadcrumbs = [
+      ['Главная', 'index.html'],
+      [title]
+    ]
 block content
-	
+  -
+    infoTitle      = 'Доставка'
+    infoDescTop    = '<p>Добро пожаловать в в интернет-магазин комплектующих для тюнинга «CARCAINE»</p>'
+    infoDescBottom = '<p>Для Вашего удобства мы всегда стараемся держать в наличии самые популярные товары или доставить их в кратчайшие сроки!</p> <p>Мы являемся официальными дилерами многих брендов: Revo, Milltek, Wagner Tuning, Burger Tuning, Sachs Performance и др.</p> <p>Так же мы предлагаем установку всех запчастей и грамотную настройку программного обеспечения с помощью наших друзей Urban Racers. </p> <p>Вы получаете возможность заказать интересующую запчасть, установить её и настроить автомобиль в одном месте и с гарантией!</p>'
+    infoRec        = true
+  include ../../../blocks/info/info
+  +style('info', 'blocks')
+  
+  - questionsClass = 'hidden-xs'
+  include ../../../blocks/questions/questions
+  +style('questions', 'blocks')

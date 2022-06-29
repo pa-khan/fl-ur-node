@@ -1,5 +1,22 @@
 include ../../pug/vars
 
-.error
-	.case
-		
+<div class="error">
+	<div class="case">
+		<!--[-->
+		<div class="error__inner">
+			div(class="error__title")= errorTitle
+			<div class="error__img"><img src="/uploads/error.png" alt=""></div>
+			div(class="error__code")= errorCode
+			div(class="error__status")= errorStatus
+			<a class="button button_md button_bg-red button_shadow-black error__button" href="/categories.html">
+				<!----><!---->
+				<div class="button__text">
+					<!--[-->Назад к стоку<!--]-->
+				</div>
+				<!---->
+			</a>
+			<div class="error__desc">Если вы считаете, что вы все сделали правильно, а попали сюда – <a href="mailto:mail@mail.com">напишите нам</a></div>
+		</div>
+		<!--]-->
+	</div>
+</div>

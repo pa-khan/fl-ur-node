@@ -1,0 +1,21 @@
+extends ../../templates/default
+block vars
+	-
+		title = "Ошибка 404"
+		breadcrumbs = [
+			['Главная', 'index.html'],
+			[title]
+		]
+block content 
+	-
+		errorTitle  = 'Октавия на стейдже...'
+		errorCode   = '404'
+		errorStatus = 'Количество ошибок на приборке'
+	include ../../../blocks/error/error
+	+style('error', 'blocks')
+	
+	- questionsClass = 'hidden-xs'
+	include ../../../blocks/questions/questions
+	+style('questions', 'blocks')
+
+	
