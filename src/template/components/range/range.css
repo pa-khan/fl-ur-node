@@ -1,0 +1,60 @@
+.range {
+  position: relative;
+  padding-top: 5px;
+  padding-bottom: 45px;
+}
+.range .noUi-target {
+  border: none;
+  background: #D9D9D9;
+  box-shadow: none;
+  height: 2px;
+}
+.range .noUi-connect {
+  background: #F05454;
+}
+.range .noUi-handle {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #F05454;
+  box-shadow: none;
+  border: 1px solid #fff;
+}
+.range .noUi-handle:before, .range .noUi-handle:after {
+  display: none;
+}
+.range .noUi-handle {
+  top: -10px;
+  right: -12px;
+  outline: none;
+  cursor: ew-resize;
+}
+.range .noUi-value {
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 600;
+  letter-spacing: -0.3px;
+  color: #4F4F4F;
+  top: 20px;
+}
+.range .noUi-marker-horizontal.noUi-marker {
+  display: none;
+}
+.range .noUi-value-horizontal:nth-of-type(2) {
+  transform: translateX(0);
+}
+.range .noUi-value-horizontal:nth-last-of-type(1) {
+  transform: translateX(-100%);
+}
+.range__value {
+  position: absolute;
+  line-height: 19px;
+  font-weight: 700;
+  top: 24px;
+}
+.range__value_from {
+  left: 0;
+}
+.range__value_to {
+  right: 0;
+}

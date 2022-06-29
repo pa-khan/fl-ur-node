@@ -1,0 +1,48 @@
+.check {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.check__input {
+  display: none;
+}
+.check__box {
+  border-radius: 4px;
+  transform: unset !important;
+}
+.check__box svg {
+  transition: 0.3s;
+  transform: scale(0) translate3d(0px, 0px, 0px);
+}
+.check__wrap a {
+  color: #F05454;
+}
+.check__wrap a:hover {
+  border-color: #F05454;
+}
+.check_md .check__box {
+  width: 20px;
+  min-width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  padding: 3px;
+}
+.check_md .check__wrap {
+  line-height: 19px;
+}
+.check_gray .check__box {
+  border: 1px solid #D1D1D6;
+}
+.check_round .check__box {
+  background: #F05454;
+  border: none;
+  border-radius: 50%;
+  padding: 4px;
+  margin-right: 25px;
+}
+.check_round .check__box svg {
+  fill: #fff;
+}
+.check_checked .check__box svg {
+  transform: scale(1) translate3d(0px, 0px, 0px);
+}

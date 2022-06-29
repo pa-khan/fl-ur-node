@@ -1,0 +1,81 @@
+@import '../../scss/vars';
+
+.check {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  &__input {
+    display: none;
+  }
+
+  &__box {
+    border-radius: 4px;
+    transform: unset !important;
+
+    svg {
+      transition: .3s;
+      transform: scale(0) translate3d(0px, 0px, 0px);
+    }
+  }
+
+  &__wrap {
+    a {
+      color: $red;
+
+      &:hover {
+        border-color: $red;
+      }
+    }
+  }
+
+  &_md {
+    .check {
+      &__box {
+        width: 20px;
+        min-width: 20px;
+        height: 20px;
+        margin-right: 8px;
+        padding: 3px;
+      }
+
+      &__wrap {
+        line-height: 19px;
+      }
+    }
+  }
+
+  &_gray {
+    .check {
+      &__box {
+        border: 1px solid #D1D1D6;
+      }
+    }
+  }
+
+  &_round {
+    .check {
+      &__box {
+        background: $red;
+        border: none;
+        border-radius: 50%;
+        padding: 4px;
+        margin-right: 25px;
+
+        svg {
+          fill: #fff;
+        }
+      }
+    }
+  }
+
+  &_checked {
+    .check {
+      &__box {
+        svg {
+          transform: scale(1) translate3d(0px, 0px, 0px);
+        }
+      }
+    }
+  }
+}
