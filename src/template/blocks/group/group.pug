@@ -1,25 +1,26 @@
 include ../../pug/vars
 
-div(class="group bgw" class=groupClass)
+div(class="group bgw tabs" class=groupClass class=actualClass data-current-link="group__nav-item_current" data-current-tab="group__tab_current")
+
 	<div class="case">
 		<!--[-->
 		<div class="btop group__btop">
 			div(class="h2 btop__title")= groupTitle ? groupTitle : 'Главное'
-			<div class="btop__link"><a href="#">Показать все</a></div>
+			<div class="btop__link"><a href="catalog.html">Показать все</a></div>
 		</div>
 		<div class="group__inner">
 			<div class="group__nav">
 				<div class="group__nav-list">
 					<!--[-->
-					<div class="group__nav-item group__nav-item_current" data-text="Популярное">Популярное</div>
-					<div class="group__nav-item" data-text="Новинки">Новинки</div>
-					<div class="group__nav-item" data-text="Акции">Акции</div>
+					<div class="group__nav-item tabs__link" data-text="Популярное" data-el="group-1">Популярное</div>
+					<div class="group__nav-item tabs__link" data-text="Новинки" data-el="group-2">Новинки</div>
+					<div class="group__nav-item tabs__link" data-text="Акции" data-el="group-3">Акции</div>
 					<!--]-->
 				</div>
 			</div>
 			<div class="group__tabs">
 				<!--[-->
-				<div class="group__tab" style="">
+				<div class="group__tab" id="group-1">
 					<div class="group__slider swiper swiper-initialized swiper-horizontal swiper-pointer-events">
 						<div class="group__list swiper-wrapper" style="transition-duration: 0ms;">
 							<!--[-->
@@ -519,7 +520,7 @@ div(class="group bgw" class=groupClass)
 						</div>
 					</div>
 				</div>
-				<div class="group__tab" style="display:none;">
+				<div class="group__tab" id="group-2">
 					<div class="group__slider swiper swiper-initialized swiper-horizontal swiper-pointer-events">
 						<div class="group__list swiper-wrapper" style="transition-duration: 0ms;">
 							<!--[-->
@@ -1042,7 +1043,7 @@ div(class="group bgw" class=groupClass)
 						</div>
 					</div>
 				</div>
-				<div class="group__tab" style="display:none;">
+				<div class="group__tab" id="group-3">
 					<div class="group__slider swiper swiper-initialized swiper-horizontal swiper-pointer-events">
 						<div class="group__list swiper-wrapper" style="transition-duration: 0ms;">
 							<!--[-->

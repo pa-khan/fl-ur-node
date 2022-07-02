@@ -28,6 +28,9 @@
     }
 
     &__icon {
+        width: 0;
+        transition: .3s;
+
         svg {
             fill: #232738;
         }
@@ -38,9 +41,10 @@
     }
 
     &__clear {
-        width: 12px;
+        width: 0px;
         height: 12px;
         margin-right: 17px;
+        transition: .3s;
 
         svg {
             width: 100%;
@@ -90,18 +94,20 @@
         transition: .3s;
 
         &-check {
-            .icon {
-                &_hide {
-                    opacity: 0;
-                    visibility: hidden;
-                    transform: scale(0);
-                }
-            }
+            display: none;
         }
 
         &_current {
             cursor: default;
             pointer-events: none;
+
+            .select {
+                &__item {
+                    &-check {
+                        display: block
+                    }
+                }
+            }
         }
     }
 
@@ -138,8 +144,6 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                width: 27px;
-                min-width: 27px;
                 height: 35px;
                 margin-right: 10px;
 
@@ -193,6 +197,15 @@
                 }
             }
         }
+
+        &.select_filled {
+            .select {
+                &__clear {
+                    width: 27px;
+                    min-width: 27px;
+                }
+            }
+        }
     }
 
     &_md {
@@ -211,8 +224,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                width: 27px;
-                min-width: 27px;
+                width: 0px;
                 height: 35px;
                 margin-right: 10px;
 
@@ -264,6 +276,15 @@
                         height: 100%;
                         fill: $black-dark;
                     }
+                }
+            }
+        }
+
+        &.select_filled {
+            .select {
+                &__clear {
+                    width: 27px;
+                    min-width: 27px;
                 }
             }
         }
@@ -327,6 +348,15 @@
             &__bg {
                 opacity: 1;
                 visibility: visible;
+            }
+        }
+    }
+
+    &_filled {
+        .select {
+            &__clear {
+                width: 12px;
+                min-width: 12px;
             }
         }
     }

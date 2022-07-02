@@ -1,6 +1,6 @@
 include ../../pug/vars
 
-div(class="choiser" class=choiserClass)
+div(class="choiser" class=choiserClass id="choiser")
 	<div class="case">
 		<!--[-->
 		<div class="choiser__wrap">
@@ -37,7 +37,7 @@ div(class="choiser" class=choiserClass)
 		</div>
 		<div class="choiser__inner">
 			<div class="choiser__area">
-				<div class="field field_md field_b-gray field_text choiser__field">
+				<div class="field field_md field_b-gray field_text choiser__field choiser__search">
 					<!---->
 					<div class="field__body">
 						<!---->
@@ -62,63 +62,23 @@ div(class="choiser" class=choiserClass)
 					<!---->
 				</div>
 			</div>
-			<div class="choiser__list">
-				<!--[-->
-				<div style="" class="choiser__item">
-					<div class="choiser__item-icon"><img src="/uploads/marks/volkswagen.svg" alt="Volkswagen"></div>
-					<div class="choiser__item-title">Volkswagen</div>
-					<div class="choiser__item-arrow">
-						<svg class="icon icon_arrow">
-							<use xlink:href="#icon-arrow"></use>
-						</svg>
-					</div>
-				</div>
-				<div style="" class="choiser__item">
-					<div class="choiser__item-icon"><img src="/uploads/marks/porsche.svg" alt="Porsche"></div>
-					<div class="choiser__item-title">Porsche</div>
-					<div class="choiser__item-arrow">
-						<svg class="icon icon_arrow">
-							<use xlink:href="#icon-arrow"></use>
-						</svg>
-					</div>
-				</div>
-				<div style="" class="choiser__item">
-					<div class="choiser__item-icon"><img src="/uploads/marks/audi.svg" alt="Audi"></div>
-					<div class="choiser__item-title">Audi</div>
-					<div class="choiser__item-arrow">
-						<svg class="icon icon_arrow">
-							<use xlink:href="#icon-arrow"></use>
-						</svg>
-					</div>
-				</div>
-				<div style="" class="choiser__item">
-					<div class="choiser__item-icon"><img src="/uploads/marks/bmw.svg" alt="BMW"></div>
-					<div class="choiser__item-title">BMW</div>
-					<div class="choiser__item-arrow">
-						<svg class="icon icon_arrow">
-							<use xlink:href="#icon-arrow"></use>
-						</svg>
-					</div>
-				</div>
-				<div style="" class="choiser__item">
-					<div class="choiser__item-icon"><img src="/uploads/marks/mini.svg" alt="Mini"></div>
-					<div class="choiser__item-title">Mini</div>
-					<div class="choiser__item-arrow">
-						<svg class="icon icon_arrow">
-							<use xlink:href="#icon-arrow"></use>
-						</svg>
-					</div>
-				</div>
-				<!--]-->
-				<div class="choiser__sub" style="display:none;">
+			<div class="choiser__lists" id="choiser-autos">
+				<div class="choiser__list" id="choiser-marks">
 					<!--[--><!--]-->
 				</div>
-				<div class="choiser__sub" style="display:none;">
+				<div class="choiser__sub" id="choiser-models">
+					<!--[--><!--]-->
+				</div>
+				<div class="choiser__sub" id="choiser-mods">
 					<!--[--><!--]-->
 				</div>
 			</div>
+			<div class="choiser__empty choiser__empty_hide" id="choiser-empty">
+				<div class="choiser__empty-icon"><img src="/uploads/empty.png" alt=""></div>
+				<div class="choiser__empty-title">Ой, а тут пусто...</div>
+			</div>
 		</div>
-		<a class="button button_md button_bg-red choiser__button" href="javascript:;">
+		<a class="button button_md button_bg-red choiser__button" href="javascript:;" id="choiser-button">
 			<!----><!---->
 			<div class="button__text">
 				<!--[-->Продолжить<!--]-->

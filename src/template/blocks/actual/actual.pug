@@ -1,6 +1,6 @@
 include ../../pug/vars
 
-div(class="actual bgw" class=actualClass)
+div(class="actual bgw tabs" class=actualClass data-current-link="actual__nav-item_current" data-current-tab="actual__tab_current")
 	<div class="case">
 		<!--[-->
 		<div class="btop actual__btop">
@@ -13,15 +13,15 @@ div(class="actual bgw" class=actualClass)
 			<div class="actual__nav">
 				<div class="actual__nav-list row">
 					<!--[-->
-					<div class="actual__nav-item actual__nav-item_current" data-text="Все">Все</div>
-					<div class="actual__nav-item" data-text="Новости">Новости</div>
-					<div class="actual__nav-item" data-text="Акции">Акции</div>
+					<div class="actual__nav-item tabs__link" data-text="Все" data-el="actual-1">Все</div>
+					<div class="actual__nav-item tabs__link" data-text="Новости" data-el="actual-2">Новости</div>
+					<div class="actual__nav-item tabs__link" data-text="Акции" data-el="actual-3">Акции</div>
 					<!--]-->
 				</div>
 			</div>
 			<div class="actual__tabs">
 				<!--[-->
-				<div class="actual__tab" style="">
+				<div class="actual__tab" id="actual-1">
 					<div class="actual__slider swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
 						<div class="actual__list swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
 							<!--[-->
@@ -107,7 +107,7 @@ div(class="actual bgw" class=actualClass)
 						</svg>
 					</div>
 				</div>
-				<div class="actual__tab" style="display: none;">
+				<div class="actual__tab" id="actual-2">
 					<div class="actual__slider swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
 						<div class="actual__list swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
 							<!--[-->
@@ -202,7 +202,7 @@ div(class="actual bgw" class=actualClass)
 						</svg>
 					</div>
 				</div>
-				<div class="actual__tab" style="display: none;">
+				<div class="actual__tab" id="actual-3">
 					<div class="actual__slider swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
 						<div class="actual__list swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
 							<!--[-->

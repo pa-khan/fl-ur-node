@@ -58,6 +58,13 @@
         padding-bottom: 85px;
     }
 
+    &__autos {
+
+        &_hide {
+            display: none;
+        }
+    }
+
     &__list {
         margin-top: 14px;
     }
@@ -170,6 +177,10 @@
             letter-spacing: -0.41px;
             text-align: center;
             margin-top: 7px;
+        }
+
+        &_hide {
+            display: none;
         }
     }
 

@@ -44,6 +44,12 @@
 .group__nav-item:hover:before {
   font-weight: 700;
 }
+.group__tab {
+  display: none;
+}
+.group__tab_current {
+  display: block;
+}
 .group__slider {
   overflow: visible;
 }

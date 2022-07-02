@@ -59,6 +59,14 @@
         }
     }
 
+    &__tab {
+        display: none;
+
+        &_current {
+            display: block;
+        }
+    }
+
     &__slider {
         overflow: visible;
     }

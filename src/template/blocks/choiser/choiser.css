@@ -45,6 +45,9 @@
   height: calc(100% - 19px - 18px);
   padding-bottom: 85px;
 }
+.choiser__autos_hide {
+  display: none;
+}
 .choiser__list {
   margin-top: 14px;
 }
@@ -131,6 +134,9 @@
   letter-spacing: -0.41px;
   text-align: center;
   margin-top: 7px;
+}
+.choiser__empty_hide {
+  display: none;
 }
 .choiser__button {
   position: absolute;

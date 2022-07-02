@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Ошибка 404</title><link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"><link rel="stylesheet" href="template/css/style.css?ver=1656508266648"></head><body><div class="wrap"><svg class="icons" style="display: none;" width="0" height="0">
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Ошибка 404</title><link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"><link rel="stylesheet" href="template/css/style.css?ver=1656796417928"></head><body><div class="wrap"><svg class="icons" style="display: none;" width="0" height="0">
 <symbol id="icon-phone" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.55 2.16667C12.5 2.90833 12.375 3.63333 12.175 4.325L13.175 5.325C13.5167 4.325 13.7333 3.26667 13.8083 2.16667H12.55V2.16667ZM4.33333 12.1833C3.625 12.3833 2.9 12.5083 2.16667 12.5583V13.8C3.26667 13.725 4.325 13.5083 5.33333 13.175L4.33333 12.1833ZM11.75 0.5H14.6667C15.125 0.5 15.5 0.875 15.5 1.33333C15.5 9.15833 9.15833 15.5 1.33333 15.5C0.875 15.5 0.5 15.125 0.5 14.6667V11.7583C0.5 11.3 0.875 10.925 1.33333 10.925C2.36667 10.925 3.375 10.7583 4.30833 10.45C4.39167 10.4167 4.48333 10.4083 4.56667 10.4083C4.78333 10.4083 4.99167 10.4917 5.15833 10.65L6.99167 12.4833C9.35 11.275 11.2833 9.35 12.4833 6.99167L10.65 5.15833C10.4167 4.925 10.35 4.6 10.4417 4.30833C10.75 3.375 10.9167 2.375 10.9167 1.33333C10.9167 0.875 11.2917 0.5 11.75 0.5Z" />
 </symbol>
@@ -128,12 +128,12 @@
 <div class="location__drop">
 <div class="location__list">
 <!--[-->
-<div class="location__item_current location__item">Москва</div>
+<div class="location__item">Москва</div>
 <div class="location__item">Ростов</div>
 <!--]-->
 </div>
 </div>
-</div><link rel="stylesheet" href="template/blocks/location/location.css?ver=1656508266648"><a href="tel:+32015287667" class="panel__phone row c-red">
+</div><link rel="stylesheet" href="template/blocks/location/location.css?ver=1656796417928"><script src="template/blocks/location/location.js?ver=1656796417928"></script><a href="tel:+32015287667" class="panel__phone row c-red">
 <svg class="icon icon_phone f-red">
 <use xlink:href="#icon-phone"></use>
 </svg>
@@ -157,10 +157,10 @@
 <!--[--><a href="/profile/" class="lkp__item">Личный кабинет</a><a href="#" class="lkp__item">Выйти</a><!--]-->
 </div>
 </div>
-</div><link rel="stylesheet" href="template/blocks/lkp/lkp.css?ver=1656508266648"></div>
+</div><link rel="stylesheet" href="template/blocks/lkp/lkp.css?ver=1656796417929"><script src="template/blocks/lkp/lkp.js?ver=1656796417929"></script></div>
 <!--]-->
 </div>
-</div><link rel="stylesheet" href="template/blocks/panel/panel.css?ver=1656508266648"><div class="case">
+</div><link rel="stylesheet" href="template/blocks/panel/panel.css?ver=1656796417929"><div class="case">
 <!--[-->
 <div class="header__inner row">
 <a class="logo header__logo" href="index.html">
@@ -178,9 +178,9 @@
 <a href="/catalog.html" class="header__links-item">каталог</a>
 <a href="/info.html" class="header__links-item">информация</a>
 <a href="/contacts.html" class="header__links-item">контакты</a>
-<a href="javascript:;" class="header__links-item">еще...</a><!--]-->
+<a href="javascript:;" class="header__links-item toggler-nav">еще...</a><!--]-->
 </nav>
-<a class="button header__button-search" href="javascript:;">
+<a class="button header__button-search toggler-search" href="javascript:;">
 <div class="button__icon">
 <!--[-->
 <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -215,7 +215,7 @@
 </div>
 <!---->
 </a>
-<div class="header__ham">
+<div class="header__ham toggler-nav">
 <div></div>
 <div></div>
 <div></div>
@@ -226,7 +226,7 @@
 <!--[-->Подбор по автомобилю<!--]-->
 </div>
 <!---->
-</a><form class="search header__search">
+</a><form class="search header__search" action="search.html" method="GET">
 <div class="search__area">
 <div class="field field_md field_bg-gray field_text search__field">
 <!---->
@@ -242,7 +242,7 @@
 </div>
 <div class="field__inner">
 <div class="field__placeholder">Поиск каталогу</div>
-<input class="field__area" type="text" value="" name="name">
+<input class="field__area" type="text" value="" name="q">
 </div>
 <div class="field__icon_hidden field__clear field__icon field__icon_right">
 <svg class="icon icon_cross-round">
@@ -253,7 +253,7 @@
 </div>
 <!---->
 </div>
-<a class="button search__button-submit" href="javascript:;">
+<a class="button search__button-submit toggler-search" href="javascript:;">
 <!----><!---->
 <div class="button__text">
 <!--[--><span>Отмена</span><!--]-->
@@ -267,36 +267,36 @@
 <div class="search__popular-title">Популярно</div>
 <div class="search__popular-list">
 <!--[-->
-<div class="search__popular-item search__item">
+<a class="search__popular-item search__item" href="search.html?q=VW тубина 123412">
 <div class="search__popular-icon search__item-icon">
 <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M11.8556 11.795C11.8556 11.795 15.3464 15.2857 16.0303 15.9697L14.9697 17.0303L10.7089 12.7695C9.666 13.4678 8.4118 13.875 7.0625 13.875C3.43813 13.875 0.5 10.9369 0.5 7.3125C0.5 3.68813 3.43813 0.75 7.0625 0.75C10.6869 0.75 13.625 3.68813 13.625 7.3125C13.625 9.04567 12.9531 10.6219 11.8556 11.795ZM7.0625 2.25C4.271 2.25 2 4.521 2 7.3125C2 10.104 4.271 12.375 7.0625 12.375C9.854 12.375 12.125 10.104 12.125 7.3125C12.125 4.521 9.854 2.25 7.0625 2.25Z" fill="black"></path>
 </svg>
 </div>
 <div class="search__popular-name seach__item-name">VW тубина 123412</div>
-</div>
-<div class="search__popular-item search__item">
+</a>
+<a class="search__popular-item search__item" href="search.html?q=Супер кит для моего тигуана">
 <div class="search__popular-icon search__item-icon">
 <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M11.8556 11.795C11.8556 11.795 15.3464 15.2857 16.0303 15.9697L14.9697 17.0303L10.7089 12.7695C9.666 13.4678 8.4118 13.875 7.0625 13.875C3.43813 13.875 0.5 10.9369 0.5 7.3125C0.5 3.68813 3.43813 0.75 7.0625 0.75C10.6869 0.75 13.625 3.68813 13.625 7.3125C13.625 9.04567 12.9531 10.6219 11.8556 11.795ZM7.0625 2.25C4.271 2.25 2 4.521 2 7.3125C2 10.104 4.271 12.375 7.0625 12.375C9.854 12.375 12.125 10.104 12.125 7.3125C12.125 4.521 9.854 2.25 7.0625 2.25Z" fill="black"></path>
 </svg>
 </div>
 <div class="search__popular-name seach__item-name">Супер кит для моего тигуана</div>
-</div>
-<div class="search__popular-item search__item">
+</a>
+<a class="search__popular-item search__item" href="search.html?q=REVO">
 <div class="search__popular-icon search__item-icon">
 <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M11.8556 11.795C11.8556 11.795 15.3464 15.2857 16.0303 15.9697L14.9697 17.0303L10.7089 12.7695C9.666 13.4678 8.4118 13.875 7.0625 13.875C3.43813 13.875 0.5 10.9369 0.5 7.3125C0.5 3.68813 3.43813 0.75 7.0625 0.75C10.6869 0.75 13.625 3.68813 13.625 7.3125C13.625 9.04567 12.9531 10.6219 11.8556 11.795ZM7.0625 2.25C4.271 2.25 2 4.521 2 7.3125C2 10.104 4.271 12.375 7.0625 12.375C9.854 12.375 12.125 10.104 12.125 7.3125C12.125 4.521 9.854 2.25 7.0625 2.25Z" fill="black"></path>
 </svg>
 </div>
 <div class="search__popular-name seach__item-name">REVO</div>
-</div>
+</a>
 <!--]-->
 </div>
 </div>
 <!----><!----><!---->
 </div>
-</form><link rel="stylesheet" href="template/blocks/search/search.css?ver=1656508266648"></div>
+</form><link rel="stylesheet" href="template/blocks/search/search.css?ver=1656796417929"><script src="template/blocks/search/search.js?ver=1656796417929"></script></div>
 <!--]-->
 </div><div class="nav dd header__nav">
 <div class="case">
@@ -559,8 +559,8 @@
 </div>
 <!--]-->
 </div>
-<div class="nav__bg"></div>
-</div><link rel="stylesheet" href="template/blocks/nav/nav.css?ver=1656508266648"></div><link rel="stylesheet" href="template/blocks/header/header.css?ver=1656508266648"><main class="main"><div class="error">
+<div class="nav__bg toggler-nav"></div>
+</div><link rel="stylesheet" href="template/blocks/nav/nav.css?ver=1656796417929"><script src="template/blocks/nav/nav.js?ver=1656796417929"></script></div><link rel="stylesheet" href="template/blocks/header/header.css?ver=1656796417929"><script src="template/blocks/header/header.js?ver=1656796417929"></script><main class="main"><div class="error">
 <div class="case">
 <!--[-->
 <div class="error__inner"><div class="error__title">Кажется, лег мотор...</div><div class="error__img"><img src="/uploads/error.png" alt=""></div><div class="error__code">404</div><div class="error__status">Крутить в отсечку нельзя</div><a class="button button_md button_bg-red button_shadow-black error__button" href="/categories.html">
@@ -574,7 +574,7 @@
 </div>
 <!--]-->
 </div>
-</div><link rel="stylesheet" href="template/blocks/error/error.css?ver=1656508266648"><div class="questions hidden-xs"><div class="case">
+</div><link rel="stylesheet" href="template/blocks/error/error.css?ver=1656796417930"><div class="questions hidden-xs"><div class="case">
 <!--[-->
 <div class="questions__wrap row">
 <div class="h2 h2_nols questions__title">
@@ -647,7 +647,7 @@
 </form>
 </div>
 <!--]-->
-</div></div><link rel="stylesheet" href="template/blocks/questions/questions.css?ver=1656508266648"></main><footer class="footer"><div class="case">
+</div></div><link rel="stylesheet" href="template/blocks/questions/questions.css?ver=1656796417930"></main><footer class="footer"><div class="case">
 <!--[-->
 <div class="footer__mid row">
 <div class="footer__data">
@@ -747,4 +747,4 @@
 <div class="footer__copy">© 2022 UrbanRacers</div>
 </div>
 <!--]-->
-</div></footer><link rel="stylesheet" href="template/blocks/footer/footer.css?ver=1656508266649"><div class="alert"><div class="case"></div></div><link rel="stylesheet" href="template/blocks/alert/alert.css?ver=1656508266649"><script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script><script src="template/js/common.js?ver=1656508266649"></script></div></body></html>
+</div></footer><link rel="stylesheet" href="template/blocks/footer/footer.css?ver=1656796417930"><div class="alert"><div class="case"></div></div><link rel="stylesheet" href="template/blocks/alert/alert.css?ver=1656796417931"><script src="template/components/field/field.js?ver=1656796417931"></script><script src="template/components/select/select.js?ver=1656796417931"></script><script src="template/components/tabs/tabs.js?ver=1656796417931"></script><script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script><script src="template/js/common.js?ver=1656796417931"></script></div></body></html>

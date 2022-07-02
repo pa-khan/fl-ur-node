@@ -16,9 +16,10 @@ div(class="selection" class=selectionClass)
                     <p>Ищите товары сразу для вашего автомобиля, это помжет сильно сузить ассортимент и ускорит выбор товаров. </p>
                 </div>
             </div>
-            <form class="selection__form">
+            <form class="selection__form" action="catalog.html" method="GET">
                 include ../auto/auto
                 +style('auto', 'blocks')
+                +script('auto', 'blocks')
             </form>
         </div>
         <div class="selection__img"><img src="/uploads/selection-car.png" alt=""></div>

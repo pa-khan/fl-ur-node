@@ -1,0 +1,220 @@
+[
+  {
+    "value": "Volkswagen",
+    "icon": "/uploads/marks/volkswagen.svg",
+    "models": [
+      {
+        "value": "Golf",
+        "mods": [
+          {
+            "value": "Golf"
+          },
+          {
+            "value": "Golf Alltrack"
+          },
+          {
+            "value": "Golf Country"
+          },
+          {
+            "value": "e-Golf"
+          }
+        ]
+      },
+      {
+        "value": "Jetta",
+        "mods": [
+          {
+            "value": "Jetta"
+          },
+          {
+            "value": "Jeta GLI"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "value": "Porsche",
+    "icon": "/uploads/marks/porsche.svg",
+    "models": [
+      {
+        "value": "911",
+        "mods": [
+          {
+            "value": "911"
+          },
+          {
+            "value": "911 Carrera"
+          },
+          {
+            "value": "911 R"
+          },
+          {
+            "value": "911 Turbo"
+          },
+          {
+            "value": "911 Turbo S"
+          }
+        ]
+      },
+      {
+        "value": "Cayenne",
+        "mods": [
+          {
+            "value": "Cayenne"
+          },
+          {
+            "value": "Cayenne Diesel"
+          },
+          {
+            "value": "Cayenne S"
+          },
+          {
+            "value": "Cayenne Turbo"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "value": "Audi",
+    "icon": "/uploads/marks/audi.svg",
+    "models": [
+      {
+        "value": "100",
+        "mods": [
+          {
+            "value": "100"
+          },
+          {
+            "value": "100 S4"
+          }
+        ]
+      },
+      {
+        "value": "A5",
+        "mods": [
+          {
+            "value": "A5"
+          },
+          {
+            "value": "A5 g-tron"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "value": "BMW",
+    "icon": "/uploads/marks/bmw.svg",
+    "models": [
+      {
+        "value": "X1",
+        "mods": [
+          {
+            "value": "X1"
+          },
+          {
+            "value": "X1 16d"
+          },
+          {
+            "value": "X1 18d"
+          },
+          {
+            "value": "X1 18i"
+          },
+          {
+            "value": "X1 20d"
+          },
+          {
+            "value": "X1 20i"
+          },
+          {
+            "value": "X1 23d"
+          },
+          {
+            "value": "X1 28i"
+          }
+        ]
+      },
+      {
+        "value": "X2",
+        "mods": [
+          {
+            "value": "X2"
+          },
+          {
+            "value": "X2 16d"
+          },
+          {
+            "value": "X2 18d"
+          },
+          {
+            "value": "X2 18i"
+          },
+          {
+            "value": "X2 20d"
+          },
+          {
+            "value": "X2 20i"
+          },
+          {
+            "value": "X2 23d"
+          },
+          {
+            "value": "X2 28i"
+          }
+        ]
+      },
+      {
+        "value": "X3",
+        "mods": [
+          {
+            "value": "X3"
+          },
+          {
+            "value": "X3 16d"
+          },
+          {
+            "value": "X3 18d"
+          },
+          {
+            "value": "X3 18i"
+          },
+          {
+            "value": "X3 20d"
+          },
+          {
+            "value": "X3 20i"
+          },
+          {
+            "value": "X3 23d"
+          },
+          {
+            "value": "X3 28i"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "value": "Mini",
+    "icon": "/uploads/marks/mini.svg",
+    "models": [
+      {
+        "value": "Cabrio",
+        "mods": [
+          {
+            "value": "Cabrio Cooper"
+          },
+          {
+            "value": "Cabrio Cooper D"
+          },
+          {
+            "value": "Cabrio Cooper S"
+          }
+        ]
+      }
+    ]
+  }
+]

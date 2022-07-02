@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Подбор по автомобилю</title><link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"><link rel="stylesheet" href="template/css/style.css?ver=1656506770287"></head><body><div class="wrap"><svg class="icons" style="display: none;" width="0" height="0">
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Подбор по автомобилю</title><link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"><link rel="stylesheet" href="template/css/style.css?ver=1656796449754"></head><body><div class="wrap"><svg class="icons" style="display: none;" width="0" height="0">
 <symbol id="icon-phone" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.55 2.16667C12.5 2.90833 12.375 3.63333 12.175 4.325L13.175 5.325C13.5167 4.325 13.7333 3.26667 13.8083 2.16667H12.55V2.16667ZM4.33333 12.1833C3.625 12.3833 2.9 12.5083 2.16667 12.5583V13.8C3.26667 13.725 4.325 13.5083 5.33333 13.175L4.33333 12.1833ZM11.75 0.5H14.6667C15.125 0.5 15.5 0.875 15.5 1.33333C15.5 9.15833 9.15833 15.5 1.33333 15.5C0.875 15.5 0.5 15.125 0.5 14.6667V11.7583C0.5 11.3 0.875 10.925 1.33333 10.925C2.36667 10.925 3.375 10.7583 4.30833 10.45C4.39167 10.4167 4.48333 10.4083 4.56667 10.4083C4.78333 10.4083 4.99167 10.4917 5.15833 10.65L6.99167 12.4833C9.35 11.275 11.2833 9.35 12.4833 6.99167L10.65 5.15833C10.4167 4.925 10.35 4.6 10.4417 4.30833C10.75 3.375 10.9167 2.375 10.9167 1.33333C10.9167 0.875 11.2917 0.5 11.75 0.5Z" />
 </symbol>
@@ -128,12 +128,12 @@
 <div class="location__drop">
 <div class="location__list">
 <!--[-->
-<div class="location__item_current location__item">Москва</div>
+<div class="location__item">Москва</div>
 <div class="location__item">Ростов</div>
 <!--]-->
 </div>
 </div>
-</div><link rel="stylesheet" href="template/blocks/location/location.css?ver=1656506770287"><a href="tel:+32015287667" class="panel__phone row c-red">
+</div><link rel="stylesheet" href="template/blocks/location/location.css?ver=1656796449754"><script src="template/blocks/location/location.js?ver=1656796449754"></script><a href="tel:+32015287667" class="panel__phone row c-red">
 <svg class="icon icon_phone f-red">
 <use xlink:href="#icon-phone"></use>
 </svg>
@@ -157,10 +157,10 @@
 <!--[--><a href="/profile/" class="lkp__item">Личный кабинет</a><a href="#" class="lkp__item">Выйти</a><!--]-->
 </div>
 </div>
-</div><link rel="stylesheet" href="template/blocks/lkp/lkp.css?ver=1656506770287"></div>
+</div><link rel="stylesheet" href="template/blocks/lkp/lkp.css?ver=1656796449755"><script src="template/blocks/lkp/lkp.js?ver=1656796449755"></script></div>
 <!--]-->
 </div>
-</div><link rel="stylesheet" href="template/blocks/panel/panel.css?ver=1656506770287"><div class="case">
+</div><link rel="stylesheet" href="template/blocks/panel/panel.css?ver=1656796449755"><div class="case">
 <!--[-->
 <div class="header__inner row">
 <a class="logo header__logo" href="index.html">
@@ -178,9 +178,9 @@
 <a href="/catalog.html" class="header__links-item">каталог</a>
 <a href="/info.html" class="header__links-item">информация</a>
 <a href="/contacts.html" class="header__links-item">контакты</a>
-<a href="javascript:;" class="header__links-item">еще...</a><!--]-->
+<a href="javascript:;" class="header__links-item toggler-nav">еще...</a><!--]-->
 </nav>
-<a class="button header__button-search" href="javascript:;">
+<a class="button header__button-search toggler-search" href="javascript:;">
 <div class="button__icon">
 <!--[-->
 <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -215,7 +215,7 @@
 </div>
 <!---->
 </a>
-<div class="header__ham">
+<div class="header__ham toggler-nav">
 <div></div>
 <div></div>
 <div></div>
@@ -226,7 +226,7 @@
 <!--[-->Подбор по автомобилю<!--]-->
 </div>
 <!---->
-</a><form class="search header__search">
+</a><form class="search header__search" action="search.html" method="GET">
 <div class="search__area">
 <div class="field field_md field_bg-gray field_text search__field">
 <!---->
@@ -242,7 +242,7 @@
 </div>
 <div class="field__inner">
 <div class="field__placeholder">Поиск каталогу</div>
-<input class="field__area" type="text" value="" name="name">
+<input class="field__area" type="text" value="" name="q">
 </div>
 <div class="field__icon_hidden field__clear field__icon field__icon_right">
 <svg class="icon icon_cross-round">
@@ -253,7 +253,7 @@
 </div>
 <!---->
 </div>
-<a class="button search__button-submit" href="javascript:;">
+<a class="button search__button-submit toggler-search" href="javascript:;">
 <!----><!---->
 <div class="button__text">
 <!--[--><span>Отмена</span><!--]-->
@@ -267,36 +267,36 @@
 <div class="search__popular-title">Популярно</div>
 <div class="search__popular-list">
 <!--[-->
-<div class="search__popular-item search__item">
+<a class="search__popular-item search__item" href="search.html?q=VW тубина 123412">
 <div class="search__popular-icon search__item-icon">
 <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M11.8556 11.795C11.8556 11.795 15.3464 15.2857 16.0303 15.9697L14.9697 17.0303L10.7089 12.7695C9.666 13.4678 8.4118 13.875 7.0625 13.875C3.43813 13.875 0.5 10.9369 0.5 7.3125C0.5 3.68813 3.43813 0.75 7.0625 0.75C10.6869 0.75 13.625 3.68813 13.625 7.3125C13.625 9.04567 12.9531 10.6219 11.8556 11.795ZM7.0625 2.25C4.271 2.25 2 4.521 2 7.3125C2 10.104 4.271 12.375 7.0625 12.375C9.854 12.375 12.125 10.104 12.125 7.3125C12.125 4.521 9.854 2.25 7.0625 2.25Z" fill="black"></path>
 </svg>
 </div>
 <div class="search__popular-name seach__item-name">VW тубина 123412</div>
-</div>
-<div class="search__popular-item search__item">
+</a>
+<a class="search__popular-item search__item" href="search.html?q=Супер кит для моего тигуана">
 <div class="search__popular-icon search__item-icon">
 <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M11.8556 11.795C11.8556 11.795 15.3464 15.2857 16.0303 15.9697L14.9697 17.0303L10.7089 12.7695C9.666 13.4678 8.4118 13.875 7.0625 13.875C3.43813 13.875 0.5 10.9369 0.5 7.3125C0.5 3.68813 3.43813 0.75 7.0625 0.75C10.6869 0.75 13.625 3.68813 13.625 7.3125C13.625 9.04567 12.9531 10.6219 11.8556 11.795ZM7.0625 2.25C4.271 2.25 2 4.521 2 7.3125C2 10.104 4.271 12.375 7.0625 12.375C9.854 12.375 12.125 10.104 12.125 7.3125C12.125 4.521 9.854 2.25 7.0625 2.25Z" fill="black"></path>
 </svg>
 </div>
 <div class="search__popular-name seach__item-name">Супер кит для моего тигуана</div>
-</div>
-<div class="search__popular-item search__item">
+</a>
+<a class="search__popular-item search__item" href="search.html?q=REVO">
 <div class="search__popular-icon search__item-icon">
 <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M11.8556 11.795C11.8556 11.795 15.3464 15.2857 16.0303 15.9697L14.9697 17.0303L10.7089 12.7695C9.666 13.4678 8.4118 13.875 7.0625 13.875C3.43813 13.875 0.5 10.9369 0.5 7.3125C0.5 3.68813 3.43813 0.75 7.0625 0.75C10.6869 0.75 13.625 3.68813 13.625 7.3125C13.625 9.04567 12.9531 10.6219 11.8556 11.795ZM7.0625 2.25C4.271 2.25 2 4.521 2 7.3125C2 10.104 4.271 12.375 7.0625 12.375C9.854 12.375 12.125 10.104 12.125 7.3125C12.125 4.521 9.854 2.25 7.0625 2.25Z" fill="black"></path>
 </svg>
 </div>
 <div class="search__popular-name seach__item-name">REVO</div>
-</div>
+</a>
 <!--]-->
 </div>
 </div>
 <!----><!----><!---->
 </div>
-</form><link rel="stylesheet" href="template/blocks/search/search.css?ver=1656506770287"></div>
+</form><link rel="stylesheet" href="template/blocks/search/search.css?ver=1656796449755"><script src="template/blocks/search/search.js?ver=1656796449755"></script></div>
 <!--]-->
 </div><div class="nav dd header__nav">
 <div class="case">
@@ -559,101 +559,28 @@
 </div>
 <!--]-->
 </div>
-<div class="nav__bg"></div>
-</div><link rel="stylesheet" href="template/blocks/nav/nav.css?ver=1656506770287"></div><link rel="stylesheet" href="template/blocks/header/header.css?ver=1656506770287"><main class="main"><div class="selection selection_pb-more"><div class="case"><div class="breadcrumb selection__breadcrumb hidden-xs"><div class="breadcrumb__list" itemscope itemtype="http://schema.org/BreadcrumbList"><div class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a class="breadcrumb__link" href="index.html" itemprop="item"><span class="breadcrumb__name" itemprop="name">Главная</span></a><meta itemprop="position" content="1"></div><div class="breadcrumb__sep"><svg class="icon icon_chevron"><use xlink:href="#icon-chevron"></use></svg></div><div class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><div class="breadcrumb__text" itemprop="item"><span class="breadcrumb__name" itemprop="name">Подбор по автомобилю</span></div><meta itemprop="position" content="2"></div></div></div><link rel="stylesheet" href="template/blocks/breadcrumb/breadcrumb.css?ver=1656506770287"><div class="return selection__return hidden show-xs-flex"><div class="return__button">
+<div class="nav__bg toggler-nav"></div>
+</div><link rel="stylesheet" href="template/blocks/nav/nav.css?ver=1656796449756"><script src="template/blocks/nav/nav.js?ver=1656796449756"></script></div><link rel="stylesheet" href="template/blocks/header/header.css?ver=1656796449756"><script src="template/blocks/header/header.js?ver=1656796449756"></script><main class="main"><div class="selection selection_pb-more"><div class="case"><div class="breadcrumb selection__breadcrumb hidden-xs"><div class="breadcrumb__list" itemscope itemtype="http://schema.org/BreadcrumbList"><div class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a class="breadcrumb__link" href="index.html" itemprop="item"><span class="breadcrumb__name" itemprop="name">Главная</span></a><meta itemprop="position" content="1"></div><div class="breadcrumb__sep"><svg class="icon icon_chevron"><use xlink:href="#icon-chevron"></use></svg></div><div class="breadcrumb__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><div class="breadcrumb__text" itemprop="item"><span class="breadcrumb__name" itemprop="name">Подбор по автомобилю</span></div><meta itemprop="position" content="2"></div></div></div><link rel="stylesheet" href="template/blocks/breadcrumb/breadcrumb.css?ver=1656796449756"><div class="return selection__return hidden show-xs-flex"><div class="return__button">
 <svg class="icon icon_chevron f-red">
 <use xlink:href="#icon-chevron"></use>
 </svg>
 <span>Назад</span>
-</div></div><link rel="stylesheet" href="template/blocks/return/return.css?ver=1656506770288"><div class="selection__wrap row">
+</div></div><link rel="stylesheet" href="template/blocks/return/return.css?ver=1656796449758"><div class="selection__wrap row">
 <div class="selection__content">
 <div class="h2 selection__title c-red">Подбор по автомобилю</div>
 <div class="t1 selection__text">
 <p>Ищите товары сразу для вашего автомобиля, это помжет сильно сузить ассортимент и ускорит выбор товаров. </p>
 </div>
 </div>
-<form class="selection__form"><div class="auto selection__list row">
-<div class="select select_md select_b-gray auto__select selection__select select_drop-mt">
+<form class="selection__form" action="catalog.html" method="GET"><div class="auto selection__list row" action="catalog.html" id="auto">
+<div id="auto-mark" class="select select_md select_b-gray auto__select selection__select select_drop-mt" data-placeholder="Выберите марку автомобиля">
 <!--v-if-->
 <div class="select__area">
 <!--v-if-->
-<div class="select__value select__placeholder">Выберите марку автомобиля</div>
+<div class="select__icon"></div>
+<div class="select__value"></div>
 <div class="select__clear">
-<svg class="icon icon_cross icon_hide">
-<use xlink:href="#icon-cross"></use>
-</svg>
-</div>
-<div class="select__chevron">
-<svg class="icon icon_chevron-wide">
-<use xlink:href="#icon-chevron-wide"></use>
-</svg>
-</div>
-</div>
-<div class="select__drop">
-<div class="select__list">
-<div class="select__item">
-<div class="select__item-icon"><img src="/uploads/marks/volkswagen.svg" alt="Volkswagen"></div>
-<div class="select__item-title">Volkswagen</div>
-<div class="select__item-check">
-<svg class="icon icon_check icon_hide">
-<use xlink:href="#icon-check"></use>
-</svg>
-</div>
-</div>
-<div class="select__item">
-<div class="select__item-icon"><img src="/uploads/marks/porsche.svg" alt="Porsche"></div>
-<div class="select__item-title">Porsche</div>
-<div class="select__item-check">
-<svg class="icon icon_check icon_hide">
-<use xlink:href="#icon-check"></use>
-</svg>
-</div>
-</div>
-<div class="select__item">
-<div class="select__item-icon"><img src="/uploads/marks/audi.svg" alt="Audi"></div>
-<div class="select__item-title">Audi</div>
-<div class="select__item-check">
-<svg class="icon icon_check icon_hide">
-<use xlink:href="#icon-check"></use>
-</svg>
-</div>
-</div>
-<div class="select__item">
-<div class="select__item-icon"><img src="/uploads/marks/bmw.svg" alt="BMW"></div>
-<div class="select__item-title">BMW</div>
-<div class="select__item-check">
-<svg class="icon icon_check icon_hide">
-<use xlink:href="#icon-check"></use>
-</svg>
-</div>
-</div>
-<div class="select__item">
-<div class="select__item-icon"><img src="/uploads/marks/mini.svg" alt="Mini"></div>
-<div class="select__item-title">Mini</div>
-<div class="select__item-check">
-<svg class="icon icon_check icon_hide">
-<use xlink:href="#icon-check"></use>
-</svg>
-</div>
-</div>
-</div>
-</div>
-<div class="select__bg"></div>
-<select>
-<option value="[object Object]">Volkswagen</option>
-<option value="[object Object]">Porsche</option>
-<option value="[object Object]">Audi</option>
-<option value="[object Object]">BMW</option>
-<option value="[object Object]">Mini</option>
-</select>
-</div>
-<div class="select select_md select_b-gray auto__select selection__select select_drop-mt">
-<!--v-if-->
-<div class="select__area">
-<!--v-if-->
-<div class="select__value select__placeholder">Выберите модель автомобиля</div>
-<div class="select__clear">
-<svg class="icon icon_cross icon_hide">
+<svg class="icon icon_cross">
 <use xlink:href="#icon-cross"></use>
 </svg>
 </div>
@@ -667,15 +594,16 @@
 <div class="select__list"></div>
 </div>
 <div class="select__bg"></div>
-<select></select>
+<select name="mark"></select>
 </div>
-<div class="select select_md select_b-gray auto__select selection__select select_drop-mt">
+<div id="auto-model" class="select select_md select_b-gray auto__select selection__select select_drop-mt" data-placeholder="Выберите модель автомобиля">
 <!--v-if-->
 <div class="select__area">
 <!--v-if-->
-<div class="select__value select__placeholder">Выберите модификацию </div>
+<div class="select__icon"></div>
+<div class="select__value"></div>
 <div class="select__clear">
-<svg class="icon icon_cross icon_hide">
+<svg class="icon icon_cross">
 <use xlink:href="#icon-cross"></use>
 </svg>
 </div>
@@ -689,17 +617,40 @@
 <div class="select__list"></div>
 </div>
 <div class="select__bg"></div>
-<select></select>
+<select name="model"></select>
 </div>
-<a class="button button_md button_bg-red button_shadow-black auto__button selection__button" href="javascript:;">
+<div id="auto-mode" class="select select_md select_b-gray auto__select selection__select select_drop-mt" data-placeholder="Выберите модификацию">
+<!--v-if-->
+<div class="select__area">
+<!--v-if-->
+<div class="select__icon"></div>
+<div class="select__value"></div>
+<div class="select__clear">
+<svg class="icon icon_cross">
+<use xlink:href="#icon-cross"></use>
+</svg>
+</div>
+<div class="select__chevron">
+<svg class="icon icon_chevron-wide">
+<use xlink:href="#icon-chevron-wide"></use>
+</svg>
+</div>
+</div>
+<div class="select__drop">
+<div class="select__list"></div>
+</div>
+<div class="select__bg"></div>
+<select class="mode"></select>
+</div>
+<button class="button button_md button_bg-red button_shadow-black auto__button selection__button" href="javascript:;">
 <!--v-if--><!--v-if-->
 <div class="button__text">Подобрать</div>
 <!--v-if-->
-</a>
-</div><link rel="stylesheet" href="template/blocks/auto/auto.css?ver=1656506770288"></form>
+</button>
+</div><link rel="stylesheet" href="template/blocks/auto/auto.css?ver=1656796449758"><script src="template/blocks/auto/auto.js?ver=1656796449758"></script></form>
 </div>
 <div class="selection__img"><img src="/uploads/selection-car.png" alt=""></div>
-</div></div><link rel="stylesheet" href="template/blocks/selection/selection.css?ver=1656506770288"><div class="actual bgw actual_mt-minus hidden-xs"><div class="case">
+</div></div><link rel="stylesheet" href="template/blocks/selection/selection.css?ver=1656796449758"><div class="actual bgw tabs actual_mt-minus hidden-xs" data-current-link="actual__nav-item_current" data-current-tab="actual__tab_current"><div class="case">
 <!--[-->
 <div class="btop actual__btop">
 <div class="h2 btop__title">
@@ -711,15 +662,15 @@
 <div class="actual__nav">
 <div class="actual__nav-list row">
 <!--[-->
-<div class="actual__nav-item actual__nav-item_current" data-text="Все">Все</div>
-<div class="actual__nav-item" data-text="Новости">Новости</div>
-<div class="actual__nav-item" data-text="Акции">Акции</div>
+<div class="actual__nav-item tabs__link" data-text="Все" data-el="actual-1">Все</div>
+<div class="actual__nav-item tabs__link" data-text="Новости" data-el="actual-2">Новости</div>
+<div class="actual__nav-item tabs__link" data-text="Акции" data-el="actual-3">Акции</div>
 <!--]-->
 </div>
 </div>
 <div class="actual__tabs">
 <!--[-->
-<div class="actual__tab" style="">
+<div class="actual__tab" id="actual-1">
 <div class="actual__slider swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
 <div class="actual__list swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
 <!--[-->
@@ -805,7 +756,7 @@
 </svg>
 </div>
 </div>
-<div class="actual__tab" style="display: none;">
+<div class="actual__tab" id="actual-2">
 <div class="actual__slider swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
 <div class="actual__list swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
 <!--[-->
@@ -900,7 +851,7 @@
 </svg>
 </div>
 </div>
-<div class="actual__tab" style="display: none;">
+<div class="actual__tab" id="actual-3">
 <div class="actual__slider swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
 <div class="actual__list swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
 <!--[-->
@@ -991,7 +942,7 @@
 </div>
 <!--]-->
 </div>
-<div class="actual__bg bg"><img src="/uploads/actual.jpg" alt=""></div></div><link rel="stylesheet" href="template/blocks/actual/actual.css?ver=1656506770288"><div class="questions questions_mt-minus hidden-xs"><div class="case">
+<div class="actual__bg bg"><img src="/uploads/actual.jpg" alt=""></div></div><link rel="stylesheet" href="template/blocks/actual/actual.css?ver=1656796449758"><div class="questions questions_mt-minus hidden-xs"><div class="case">
 <!--[-->
 <div class="questions__wrap row">
 <div class="h2 h2_nols questions__title">
@@ -1064,7 +1015,7 @@
 </form>
 </div>
 <!--]-->
-</div></div><link rel="stylesheet" href="template/blocks/questions/questions.css?ver=1656506770288"></main><footer class="footer"><div class="case">
+</div></div><link rel="stylesheet" href="template/blocks/questions/questions.css?ver=1656796449758"></main><footer class="footer"><div class="case">
 <!--[-->
 <div class="footer__mid row">
 <div class="footer__data">
@@ -1164,4 +1115,4 @@
 <div class="footer__copy">© 2022 UrbanRacers</div>
 </div>
 <!--]-->
-</div></footer><link rel="stylesheet" href="template/blocks/footer/footer.css?ver=1656506770288"><div class="alert"><div class="case"></div></div><link rel="stylesheet" href="template/blocks/alert/alert.css?ver=1656506770288"><script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script><script src="template/js/common.js?ver=1656506770288"></script></div></body></html>
+</div></footer><link rel="stylesheet" href="template/blocks/footer/footer.css?ver=1656796449759"><div class="alert"><div class="case"></div></div><link rel="stylesheet" href="template/blocks/alert/alert.css?ver=1656796449759"><script src="template/components/field/field.js?ver=1656796449759"></script><script src="template/components/select/select.js?ver=1656796449759"></script><script src="template/components/tabs/tabs.js?ver=1656796449759"></script><script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script><script src="template/js/common.js?ver=1656796449759"></script></div></body></html>

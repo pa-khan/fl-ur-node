@@ -20,6 +20,7 @@
   box-shadow: none;
 }
 .header__links {
+  display: flex;
   margin-left: 12px;
   margin-right: auto;
 }
@@ -93,6 +94,10 @@
   background-color: #fff;
   border-radius: 4px;
   box-shadow: 0px 12px 12px rgba(0, 0, 0, 0.04), 0px 0px 12px rgba(0, 0, 0, 0.04);
+}
+.header_search-show .header__button-search {
+  opacity: 0;
+  visibility: hidden;
 }
 
 @media screen and (max-width: 1400px) {

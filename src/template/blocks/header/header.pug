@@ -22,9 +22,9 @@ include ../../pug/vars
 				<a href="/catalog.html" class="header__links-item">каталог</a>
 				<a href="/info.html" class="header__links-item">информация</a>
 				<a href="/contacts.html" class="header__links-item">контакты</a>
-				<a href="javascript:;" class="header__links-item">еще...</a><!--]-->
+				<a href="javascript:;" class="header__links-item toggler-nav">еще...</a><!--]-->
 			</nav>
-			<a class="button header__button-search" href="javascript:;">
+			<a class="button header__button-search toggler-search" href="javascript:;">
 				<div class="button__icon">
 					<!--[-->
 					<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -59,7 +59,7 @@ include ../../pug/vars
 				</div>
 				<!---->
 			</a>
-			<div class="header__ham">
+			<div class="header__ham toggler-nav">
 				<div></div>
 				<div></div>
 				<div></div>
@@ -74,10 +74,11 @@ include ../../pug/vars
 
 			include ../search/search
 			+style('search', 'blocks')
-			
+			+script('search', 'blocks')
 		</div>
 		<!--]-->
 	</div>
 
 	include ../nav/nav
 	+style('nav', 'blocks')
+	+script('nav', 'blocks')

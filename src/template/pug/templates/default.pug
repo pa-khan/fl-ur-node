@@ -14,6 +14,7 @@ html(lang="ru")
 
       include ../../blocks/header/header
       +style('header', 'blocks')
+      +script('header', 'blocks')
       main.main
         block content
 
@@ -22,5 +23,9 @@ html(lang="ru")
 
       include ../../blocks/alert/alert
       +style('alert', 'blocks')
+
+      +script('field', 'components')
+      +script('select', 'components')
+      +script('tabs', 'components')
       script(src="https://unpkg.com/swiper@8/swiper-bundle.min.js")
       script(src="template/js/common.js" + version)

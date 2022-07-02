@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Главная</title><link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"><link rel="stylesheet" href="template/css/style.css?ver=1656506765733"></head><body><div class="wrap"><svg class="icons" style="display: none;" width="0" height="0">
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Главная</title><link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"><link rel="stylesheet" href="template/css/style.css?ver=1656805572858"></head><body><div class="wrap"><svg class="icons" style="display: none;" width="0" height="0">
 <symbol id="icon-phone" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
 <path d="M12.55 2.16667C12.5 2.90833 12.375 3.63333 12.175 4.325L13.175 5.325C13.5167 4.325 13.7333 3.26667 13.8083 2.16667H12.55V2.16667ZM4.33333 12.1833C3.625 12.3833 2.9 12.5083 2.16667 12.5583V13.8C3.26667 13.725 4.325 13.5083 5.33333 13.175L4.33333 12.1833ZM11.75 0.5H14.6667C15.125 0.5 15.5 0.875 15.5 1.33333C15.5 9.15833 9.15833 15.5 1.33333 15.5C0.875 15.5 0.5 15.125 0.5 14.6667V11.7583C0.5 11.3 0.875 10.925 1.33333 10.925C2.36667 10.925 3.375 10.7583 4.30833 10.45C4.39167 10.4167 4.48333 10.4083 4.56667 10.4083C4.78333 10.4083 4.99167 10.4917 5.15833 10.65L6.99167 12.4833C9.35 11.275 11.2833 9.35 12.4833 6.99167L10.65 5.15833C10.4167 4.925 10.35 4.6 10.4417 4.30833C10.75 3.375 10.9167 2.375 10.9167 1.33333C10.9167 0.875 11.2917 0.5 11.75 0.5Z" />
 </symbol>
@@ -128,12 +128,12 @@
 <div class="location__drop">
 <div class="location__list">
 <!--[-->
-<div class="location__item_current location__item">Москва</div>
+<div class="location__item">Москва</div>
 <div class="location__item">Ростов</div>
 <!--]-->
 </div>
 </div>
-</div><link rel="stylesheet" href="template/blocks/location/location.css?ver=1656506765733"><a href="tel:+32015287667" class="panel__phone row c-red">
+</div><link rel="stylesheet" href="template/blocks/location/location.css?ver=1656805572858"><script src="template/blocks/location/location.js?ver=1656805572858"></script><a href="tel:+32015287667" class="panel__phone row c-red">
 <svg class="icon icon_phone f-red">
 <use xlink:href="#icon-phone"></use>
 </svg>
@@ -157,10 +157,10 @@
 <!--[--><a href="/profile/" class="lkp__item">Личный кабинет</a><a href="#" class="lkp__item">Выйти</a><!--]-->
 </div>
 </div>
-</div><link rel="stylesheet" href="template/blocks/lkp/lkp.css?ver=1656506765733"></div>
+</div><link rel="stylesheet" href="template/blocks/lkp/lkp.css?ver=1656805572858"><script src="template/blocks/lkp/lkp.js?ver=1656805572858"></script></div>
 <!--]-->
 </div>
-</div><link rel="stylesheet" href="template/blocks/panel/panel.css?ver=1656506765733"><div class="case">
+</div><link rel="stylesheet" href="template/blocks/panel/panel.css?ver=1656805572858"><div class="case">
 <!--[-->
 <div class="header__inner row">
 <a class="logo header__logo" href="index.html">
@@ -178,9 +178,9 @@
 <a href="/catalog.html" class="header__links-item">каталог</a>
 <a href="/info.html" class="header__links-item">информация</a>
 <a href="/contacts.html" class="header__links-item">контакты</a>
-<a href="javascript:;" class="header__links-item">еще...</a><!--]-->
+<a href="javascript:;" class="header__links-item toggler-nav">еще...</a><!--]-->
 </nav>
-<a class="button header__button-search" href="javascript:;">
+<a class="button header__button-search toggler-search" href="javascript:;">
 <div class="button__icon">
 <!--[-->
 <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -215,7 +215,7 @@
 </div>
 <!---->
 </a>
-<div class="header__ham">
+<div class="header__ham toggler-nav">
 <div></div>
 <div></div>
 <div></div>
@@ -226,7 +226,7 @@
 <!--[-->Подбор по автомобилю<!--]-->
 </div>
 <!---->
-</a><form class="search header__search">
+</a><form class="search header__search" action="search.html" method="GET">
 <div class="search__area">
 <div class="field field_md field_bg-gray field_text search__field">
 <!---->
@@ -242,7 +242,7 @@
 </div>
 <div class="field__inner">
 <div class="field__placeholder">Поиск каталогу</div>
-<input class="field__area" type="text" value="" name="name">
+<input class="field__area" type="text" value="" name="q">
 </div>
 <div class="field__icon_hidden field__clear field__icon field__icon_right">
 <svg class="icon icon_cross-round">
@@ -253,7 +253,7 @@
 </div>
 <!---->
 </div>
-<a class="button search__button-submit" href="javascript:;">
+<a class="button search__button-submit toggler-search" href="javascript:;">
 <!----><!---->
 <div class="button__text">
 <!--[--><span>Отмена</span><!--]-->
@@ -267,36 +267,36 @@
 <div class="search__popular-title">Популярно</div>
 <div class="search__popular-list">
 <!--[-->
-<div class="search__popular-item search__item">
+<a class="search__popular-item search__item" href="search.html?q=VW тубина 123412">
 <div class="search__popular-icon search__item-icon">
 <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M11.8556 11.795C11.8556 11.795 15.3464 15.2857 16.0303 15.9697L14.9697 17.0303L10.7089 12.7695C9.666 13.4678 8.4118 13.875 7.0625 13.875C3.43813 13.875 0.5 10.9369 0.5 7.3125C0.5 3.68813 3.43813 0.75 7.0625 0.75C10.6869 0.75 13.625 3.68813 13.625 7.3125C13.625 9.04567 12.9531 10.6219 11.8556 11.795ZM7.0625 2.25C4.271 2.25 2 4.521 2 7.3125C2 10.104 4.271 12.375 7.0625 12.375C9.854 12.375 12.125 10.104 12.125 7.3125C12.125 4.521 9.854 2.25 7.0625 2.25Z" fill="black"></path>
 </svg>
 </div>
 <div class="search__popular-name seach__item-name">VW тубина 123412</div>
-</div>
-<div class="search__popular-item search__item">
+</a>
+<a class="search__popular-item search__item" href="search.html?q=Супер кит для моего тигуана">
 <div class="search__popular-icon search__item-icon">
 <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M11.8556 11.795C11.8556 11.795 15.3464 15.2857 16.0303 15.9697L14.9697 17.0303L10.7089 12.7695C9.666 13.4678 8.4118 13.875 7.0625 13.875C3.43813 13.875 0.5 10.9369 0.5 7.3125C0.5 3.68813 3.43813 0.75 7.0625 0.75C10.6869 0.75 13.625 3.68813 13.625 7.3125C13.625 9.04567 12.9531 10.6219 11.8556 11.795ZM7.0625 2.25C4.271 2.25 2 4.521 2 7.3125C2 10.104 4.271 12.375 7.0625 12.375C9.854 12.375 12.125 10.104 12.125 7.3125C12.125 4.521 9.854 2.25 7.0625 2.25Z" fill="black"></path>
 </svg>
 </div>
 <div class="search__popular-name seach__item-name">Супер кит для моего тигуана</div>
-</div>
-<div class="search__popular-item search__item">
+</a>
+<a class="search__popular-item search__item" href="search.html?q=REVO">
 <div class="search__popular-icon search__item-icon">
 <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M11.8556 11.795C11.8556 11.795 15.3464 15.2857 16.0303 15.9697L14.9697 17.0303L10.7089 12.7695C9.666 13.4678 8.4118 13.875 7.0625 13.875C3.43813 13.875 0.5 10.9369 0.5 7.3125C0.5 3.68813 3.43813 0.75 7.0625 0.75C10.6869 0.75 13.625 3.68813 13.625 7.3125C13.625 9.04567 12.9531 10.6219 11.8556 11.795ZM7.0625 2.25C4.271 2.25 2 4.521 2 7.3125C2 10.104 4.271 12.375 7.0625 12.375C9.854 12.375 12.125 10.104 12.125 7.3125C12.125 4.521 9.854 2.25 7.0625 2.25Z" fill="black"></path>
 </svg>
 </div>
 <div class="search__popular-name seach__item-name">REVO</div>
-</div>
+</a>
 <!--]-->
 </div>
 </div>
 <!----><!----><!---->
 </div>
-</form><link rel="stylesheet" href="template/blocks/search/search.css?ver=1656506765733"></div>
+</form><link rel="stylesheet" href="template/blocks/search/search.css?ver=1656805572858"><script src="template/blocks/search/search.js?ver=1656805572858"></script></div>
 <!--]-->
 </div><div class="nav dd header__nav">
 <div class="case">
@@ -559,8 +559,8 @@
 </div>
 <!--]-->
 </div>
-<div class="nav__bg"></div>
-</div><link rel="stylesheet" href="template/blocks/nav/nav.css?ver=1656506765734"></div><link rel="stylesheet" href="template/blocks/header/header.css?ver=1656506765734"><main class="main"><div class="intro">
+<div class="nav__bg toggler-nav"></div>
+</div><link rel="stylesheet" href="template/blocks/nav/nav.css?ver=1656805572858"><script src="template/blocks/nav/nav.js?ver=1656805572858"></script></div><link rel="stylesheet" href="template/blocks/header/header.css?ver=1656805572858"><script src="template/blocks/header/header.js?ver=1656805572858"></script><main class="main"><div class="intro">
 <div class="case">
 <div class="intro__wrap row">
 <div class="intro__content">
@@ -576,7 +576,7 @@
 </div>
 <div class="intro__slides swiper">
 <div class="intro__list swiper-wrapper">
-<div class="intro__item swiper-slide bgw intro__item_right swiper-slide-duplicate">
+<div class="intro__item swiper-slide bgw intro__item_bottom intro__item_left">
 <div class="intro__item-content">
 <div class="intro__item-title">Скидки на подвеску BC Racing</div>
 <div class="intro__item-group">
@@ -595,7 +595,7 @@
 </div>
 <div class="intro__item-bg bg"><img src="/uploads/intro-1.jpg" alt=""></div>
 </div>
-<div class="intro__item swiper-slide bgw intro__item_center swiper-slide-duplicate swiper-slide-duplicate-prev" style="width: 810px;" data-swiper-slide-index="4">
+<div class="intro__item swiper-slide bgw intro__item_bottom intro__item_right">
 <div class="intro__item-content">
 <div class="intro__item-title">Скидки на подвеску BC Racing</div>
 <div class="intro__item-group">
@@ -614,45 +614,7 @@
 </div>
 <div class="intro__item-bg bg"><img src="/uploads/intro-2.jpg" alt=""></div>
 </div>
-<div class="intro__item swiper-slide bgw intro__item_bottom intro__item_left swiper-slide-duplicate-active" style="width: 810px;" data-swiper-slide-index="0">
-<div class="intro__item-content">
-<div class="intro__item-title">Скидки на подвеску BC Racing</div>
-<div class="intro__item-group">
-<div class="logo intro__item-logo">
-<div class="logo__icon">
-<svg viewBox="0 0 57 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.09716 0.5H56.4153C56.4153 0.5 54.4996 14.1713 45.1767 20.0868L51.8177 28.3685L33.3635 28.4342L30.6177 24.6878L29.4683 28.5L8.7395 28.4382C8.7395 28.4382 -0.857985 28.9233 0.565992 16.7479C1.01809 12.8055 6.09716 0.5 6.09716 0.5Z" fill="white"></path>
-<path d="M9.08991 4.20564L15.8663 4.18066C14.4742 8.18611 11.9902 15.1362 11.8293 15.9932C11.5151 17.6746 11.6058 18.6933 12.2265 19.4295C12.897 20.2182 13.9557 20.4299 14.7948 20.4667C16.441 20.5219 18.9952 20.6126 20.6554 20.4811C20.6554 20.4811 20.7538 20.5771 21.1663 19.5609L24.6783 9.11024H39.2374C39.2374 9.11024 38.7265 12.0023 35.7892 12.2652C33.9979 12.4237 32.1987 12.465 30.4023 12.3887L26.4663 24.4905L9.99155 24.622C8.8728 24.5431 7.09889 24.2197 5.88947 22.8539C4.61235 21.4079 4.70558 19.0101 4.84479 17.8586C4.88821 17.4984 5.60467 14.3869 5.71323 14.0464L9.08991 4.20564Z" fill="#D9211C"></path>
-<path d="M17.3986 4.24658L13.4664 16.1407C13.4664 16.1407 12.7218 18.5502 14.0462 18.821C15.6273 19.1444 17.313 19.1181 18.4778 19.084C19.1789 19.0655 19.6272 19.0301 19.6272 19.0301L20.1559 17.4526L23.1852 8.38217C23.5862 7.20959 23.4585 7.47249 24.5287 7.40677H41.9191C41.8632 7.81786 41.7674 8.22214 41.633 8.61353C40.559 11.8855 37.499 14.0242 34.1441 13.9283L31.383 13.9138L30.1697 18.449L35.0227 24.3645H43.8348L38.5348 17.5946H38.9179C38.9179 17.5946 47.283 17.5288 51.1143 4.25184L17.3986 4.24658Z" fill="#1D1D1B"></path>
-</svg>
-</div>
-<div class="logo__title" style="display: none;">Магазин Автотюнинга</div>
-</div>
-<div class="intro__item-desc">до 60%</div>
-</div>
-</div>
-<div class="intro__item-bg bg"><img src="/uploads/intro-1.jpg" alt=""></div>
-</div>
-<div class="intro__item swiper-slide bgw intro__item_bottom intro__item_right swiper-slide-duplicate-next" style="width: 810px;" data-swiper-slide-index="1">
-<div class="intro__item-content">
-<div class="intro__item-title">Скидки на подвеску BC Racing</div>
-<div class="intro__item-group">
-<div class="logo intro__item-logo">
-<div class="logo__icon">
-<svg viewBox="0 0 57 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.09716 0.5H56.4153C56.4153 0.5 54.4996 14.1713 45.1767 20.0868L51.8177 28.3685L33.3635 28.4342L30.6177 24.6878L29.4683 28.5L8.7395 28.4382C8.7395 28.4382 -0.857985 28.9233 0.565992 16.7479C1.01809 12.8055 6.09716 0.5 6.09716 0.5Z" fill="white"></path>
-<path d="M9.08991 4.20564L15.8663 4.18066C14.4742 8.18611 11.9902 15.1362 11.8293 15.9932C11.5151 17.6746 11.6058 18.6933 12.2265 19.4295C12.897 20.2182 13.9557 20.4299 14.7948 20.4667C16.441 20.5219 18.9952 20.6126 20.6554 20.4811C20.6554 20.4811 20.7538 20.5771 21.1663 19.5609L24.6783 9.11024H39.2374C39.2374 9.11024 38.7265 12.0023 35.7892 12.2652C33.9979 12.4237 32.1987 12.465 30.4023 12.3887L26.4663 24.4905L9.99155 24.622C8.8728 24.5431 7.09889 24.2197 5.88947 22.8539C4.61235 21.4079 4.70558 19.0101 4.84479 17.8586C4.88821 17.4984 5.60467 14.3869 5.71323 14.0464L9.08991 4.20564Z" fill="#D9211C"></path>
-<path d="M17.3986 4.24658L13.4664 16.1407C13.4664 16.1407 12.7218 18.5502 14.0462 18.821C15.6273 19.1444 17.313 19.1181 18.4778 19.084C19.1789 19.0655 19.6272 19.0301 19.6272 19.0301L20.1559 17.4526L23.1852 8.38217C23.5862 7.20959 23.4585 7.47249 24.5287 7.40677H41.9191C41.8632 7.81786 41.7674 8.22214 41.633 8.61353C40.559 11.8855 37.499 14.0242 34.1441 13.9283L31.383 13.9138L30.1697 18.449L35.0227 24.3645H43.8348L38.5348 17.5946H38.9179C38.9179 17.5946 47.283 17.5288 51.1143 4.25184L17.3986 4.24658Z" fill="#1D1D1B"></path>
-</svg>
-</div>
-<div class="logo__title" style="display: none;">Магазин Автотюнинга</div>
-</div>
-<div class="intro__item-desc">до 60%</div>
-</div>
-</div>
-<div class="intro__item-bg bg"><img src="/uploads/intro-2.jpg" alt=""></div>
-</div>
-<div class="intro__item swiper-slide bgw" data-swiper-slide-index="2" style="width: 810px;">
+<div class="intro__item swiper-slide bgw">
 <div class="intro__item-content">
 <div class="intro__item-title">Скидки на подвеску BC Racing</div>
 <div class="intro__item-group">
@@ -671,7 +633,7 @@
 </div>
 <div class="intro__item-bg bg"><img src="/uploads/intro-3.jpg" alt=""></div>
 </div>
-<div class="intro__item swiper-slide bgw intro__item_right" style="width: 810px;" data-swiper-slide-index="3">
+<div class="intro__item swiper-slide bgw intro__item_right">
 <div class="intro__item-content">
 <div class="intro__item-title">Скидки на подвеску BC Racing</div>
 <div class="intro__item-group">
@@ -690,45 +652,7 @@
 </div>
 <div class="intro__item-bg bg"><img src="/uploads/intro-1.jpg" alt=""></div>
 </div>
-<div class="intro__item swiper-slide bgw intro__item_center swiper-slide-prev" style="width: 810px;" data-swiper-slide-index="4">
-<div class="intro__item-content">
-<div class="intro__item-title">Скидки на подвеску BC Racing</div>
-<div class="intro__item-group">
-<div class="logo intro__item-logo">
-<div class="logo__icon">
-<svg viewBox="0 0 57 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.09716 0.5H56.4153C56.4153 0.5 54.4996 14.1713 45.1767 20.0868L51.8177 28.3685L33.3635 28.4342L30.6177 24.6878L29.4683 28.5L8.7395 28.4382C8.7395 28.4382 -0.857985 28.9233 0.565992 16.7479C1.01809 12.8055 6.09716 0.5 6.09716 0.5Z" fill="white"></path>
-<path d="M9.08991 4.20564L15.8663 4.18066C14.4742 8.18611 11.9902 15.1362 11.8293 15.9932C11.5151 17.6746 11.6058 18.6933 12.2265 19.4295C12.897 20.2182 13.9557 20.4299 14.7948 20.4667C16.441 20.5219 18.9952 20.6126 20.6554 20.4811C20.6554 20.4811 20.7538 20.5771 21.1663 19.5609L24.6783 9.11024H39.2374C39.2374 9.11024 38.7265 12.0023 35.7892 12.2652C33.9979 12.4237 32.1987 12.465 30.4023 12.3887L26.4663 24.4905L9.99155 24.622C8.8728 24.5431 7.09889 24.2197 5.88947 22.8539C4.61235 21.4079 4.70558 19.0101 4.84479 17.8586C4.88821 17.4984 5.60467 14.3869 5.71323 14.0464L9.08991 4.20564Z" fill="#D9211C"></path>
-<path d="M17.3986 4.24658L13.4664 16.1407C13.4664 16.1407 12.7218 18.5502 14.0462 18.821C15.6273 19.1444 17.313 19.1181 18.4778 19.084C19.1789 19.0655 19.6272 19.0301 19.6272 19.0301L20.1559 17.4526L23.1852 8.38217C23.5862 7.20959 23.4585 7.47249 24.5287 7.40677H41.9191C41.8632 7.81786 41.7674 8.22214 41.633 8.61353C40.559 11.8855 37.499 14.0242 34.1441 13.9283L31.383 13.9138L30.1697 18.449L35.0227 24.3645H43.8348L38.5348 17.5946H38.9179C38.9179 17.5946 47.283 17.5288 51.1143 4.25184L17.3986 4.24658Z" fill="#1D1D1B"></path>
-</svg>
-</div>
-<div class="logo__title" style="display: none;">Магазин Автотюнинга</div>
-</div>
-<div class="intro__item-desc">до 60%</div>
-</div>
-</div>
-<div class="intro__item-bg bg"><img src="/uploads/intro-2.jpg" alt=""></div>
-</div>
-<div class="intro__item swiper-slide bgw intro__item_bottom intro__item_left swiper-slide-duplicate " style="width: 810px;" data-swiper-slide-index="0">
-<div class="intro__item-content">
-<div class="intro__item-title">Скидки на подвеску BC Racing</div>
-<div class="intro__item-group">
-<div class="logo intro__item-logo">
-<div class="logo__icon">
-<svg viewBox="0 0 57 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6.09716 0.5H56.4153C56.4153 0.5 54.4996 14.1713 45.1767 20.0868L51.8177 28.3685L33.3635 28.4342L30.6177 24.6878L29.4683 28.5L8.7395 28.4382C8.7395 28.4382 -0.857985 28.9233 0.565992 16.7479C1.01809 12.8055 6.09716 0.5 6.09716 0.5Z" fill="white"></path>
-<path d="M9.08991 4.20564L15.8663 4.18066C14.4742 8.18611 11.9902 15.1362 11.8293 15.9932C11.5151 17.6746 11.6058 18.6933 12.2265 19.4295C12.897 20.2182 13.9557 20.4299 14.7948 20.4667C16.441 20.5219 18.9952 20.6126 20.6554 20.4811C20.6554 20.4811 20.7538 20.5771 21.1663 19.5609L24.6783 9.11024H39.2374C39.2374 9.11024 38.7265 12.0023 35.7892 12.2652C33.9979 12.4237 32.1987 12.465 30.4023 12.3887L26.4663 24.4905L9.99155 24.622C8.8728 24.5431 7.09889 24.2197 5.88947 22.8539C4.61235 21.4079 4.70558 19.0101 4.84479 17.8586C4.88821 17.4984 5.60467 14.3869 5.71323 14.0464L9.08991 4.20564Z" fill="#D9211C"></path>
-<path d="M17.3986 4.24658L13.4664 16.1407C13.4664 16.1407 12.7218 18.5502 14.0462 18.821C15.6273 19.1444 17.313 19.1181 18.4778 19.084C19.1789 19.0655 19.6272 19.0301 19.6272 19.0301L20.1559 17.4526L23.1852 8.38217C23.5862 7.20959 23.4585 7.47249 24.5287 7.40677H41.9191C41.8632 7.81786 41.7674 8.22214 41.633 8.61353C40.559 11.8855 37.499 14.0242 34.1441 13.9283L31.383 13.9138L30.1697 18.449L35.0227 24.3645H43.8348L38.5348 17.5946H38.9179C38.9179 17.5946 47.283 17.5288 51.1143 4.25184L17.3986 4.24658Z" fill="#1D1D1B"></path>
-</svg>
-</div>
-<div class="logo__title" style="display: none;">Магазин Автотюнинга</div>
-</div>
-<div class="intro__item-desc">до 60%</div>
-</div>
-</div>
-<div class="intro__item-bg bg"><img src="/uploads/intro-1.jpg" alt=""></div>
-</div>
-<div class="intro__item swiper-slide bgw intro__item_bottom intro__item_right swiper-slide-duplicate " style="width: 810px;" data-swiper-slide-index="1">
+<div class="intro__item swiper-slide bgw intro__item_center">
 <div class="intro__item-content">
 <div class="intro__item-title">Скидки на подвеску BC Racing</div>
 <div class="intro__item-group">
@@ -748,99 +672,26 @@
 <div class="intro__item-bg bg"><img src="/uploads/intro-2.jpg" alt=""></div>
 </div>
 </div>
-<div class="intro__pagination swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
+<div class="intro__pagination"></div>
 </div>
 </div>
 </div>
-</div><link rel="stylesheet" href="template/blocks/intro/intro.css?ver=1656506765734"><div class="selection hidden-xs"><div class="case"><div class="selection__wrap row">
+</div><link rel="stylesheet" href="template/blocks/intro/intro.css?ver=1656805572858"><script src="template/blocks/intro/intro.js?ver=1656805572858"></script><div class="selection hidden-xs"><div class="case"><div class="selection__wrap row">
 <div class="selection__content">
 <div class="h2 selection__title c-red">Подбор по автомобилю</div>
 <div class="t1 selection__text">
 <p>Ищите товары сразу для вашего автомобиля, это помжет сильно сузить ассортимент и ускорит выбор товаров. </p>
 </div>
 </div>
-<form class="selection__form"><div class="auto selection__list row">
-<div class="select select_md select_b-gray auto__select selection__select select_drop-mt">
+<form class="selection__form" action="catalog.html" method="GET"><div class="auto selection__list row" action="catalog.html" id="auto">
+<div id="auto-mark" class="select select_md select_b-gray auto__select selection__select select_drop-mt" data-placeholder="Выберите марку автомобиля">
 <!--v-if-->
 <div class="select__area">
 <!--v-if-->
-<div class="select__value select__placeholder">Выберите марку автомобиля</div>
+<div class="select__icon"></div>
+<div class="select__value"></div>
 <div class="select__clear">
-<svg class="icon icon_cross icon_hide">
-<use xlink:href="#icon-cross"></use>
-</svg>
-</div>
-<div class="select__chevron">
-<svg class="icon icon_chevron-wide">
-<use xlink:href="#icon-chevron-wide"></use>
-</svg>
-</div>
-</div>
-<div class="select__drop">
-<div class="select__list">
-<div class="select__item">
-<div class="select__item-icon"><img src="/uploads/marks/volkswagen.svg" alt="Volkswagen"></div>
-<div class="select__item-title">Volkswagen</div>
-<div class="select__item-check">
-<svg class="icon icon_check icon_hide">
-<use xlink:href="#icon-check"></use>
-</svg>
-</div>
-</div>
-<div class="select__item">
-<div class="select__item-icon"><img src="/uploads/marks/porsche.svg" alt="Porsche"></div>
-<div class="select__item-title">Porsche</div>
-<div class="select__item-check">
-<svg class="icon icon_check icon_hide">
-<use xlink:href="#icon-check"></use>
-</svg>
-</div>
-</div>
-<div class="select__item">
-<div class="select__item-icon"><img src="/uploads/marks/audi.svg" alt="Audi"></div>
-<div class="select__item-title">Audi</div>
-<div class="select__item-check">
-<svg class="icon icon_check icon_hide">
-<use xlink:href="#icon-check"></use>
-</svg>
-</div>
-</div>
-<div class="select__item">
-<div class="select__item-icon"><img src="/uploads/marks/bmw.svg" alt="BMW"></div>
-<div class="select__item-title">BMW</div>
-<div class="select__item-check">
-<svg class="icon icon_check icon_hide">
-<use xlink:href="#icon-check"></use>
-</svg>
-</div>
-</div>
-<div class="select__item">
-<div class="select__item-icon"><img src="/uploads/marks/mini.svg" alt="Mini"></div>
-<div class="select__item-title">Mini</div>
-<div class="select__item-check">
-<svg class="icon icon_check icon_hide">
-<use xlink:href="#icon-check"></use>
-</svg>
-</div>
-</div>
-</div>
-</div>
-<div class="select__bg"></div>
-<select>
-<option value="[object Object]">Volkswagen</option>
-<option value="[object Object]">Porsche</option>
-<option value="[object Object]">Audi</option>
-<option value="[object Object]">BMW</option>
-<option value="[object Object]">Mini</option>
-</select>
-</div>
-<div class="select select_md select_b-gray auto__select selection__select select_drop-mt">
-<!--v-if-->
-<div class="select__area">
-<!--v-if-->
-<div class="select__value select__placeholder">Выберите модель автомобиля</div>
-<div class="select__clear">
-<svg class="icon icon_cross icon_hide">
+<svg class="icon icon_cross">
 <use xlink:href="#icon-cross"></use>
 </svg>
 </div>
@@ -854,15 +705,16 @@
 <div class="select__list"></div>
 </div>
 <div class="select__bg"></div>
-<select></select>
+<select name="mark"></select>
 </div>
-<div class="select select_md select_b-gray auto__select selection__select select_drop-mt">
+<div id="auto-model" class="select select_md select_b-gray auto__select selection__select select_drop-mt" data-placeholder="Выберите модель автомобиля">
 <!--v-if-->
 <div class="select__area">
 <!--v-if-->
-<div class="select__value select__placeholder">Выберите модификацию </div>
+<div class="select__icon"></div>
+<div class="select__value"></div>
 <div class="select__clear">
-<svg class="icon icon_cross icon_hide">
+<svg class="icon icon_cross">
 <use xlink:href="#icon-cross"></use>
 </svg>
 </div>
@@ -876,17 +728,40 @@
 <div class="select__list"></div>
 </div>
 <div class="select__bg"></div>
-<select></select>
+<select name="model"></select>
 </div>
-<a class="button button_md button_bg-red button_shadow-black auto__button selection__button" href="javascript:;">
+<div id="auto-mode" class="select select_md select_b-gray auto__select selection__select select_drop-mt" data-placeholder="Выберите модификацию">
+<!--v-if-->
+<div class="select__area">
+<!--v-if-->
+<div class="select__icon"></div>
+<div class="select__value"></div>
+<div class="select__clear">
+<svg class="icon icon_cross">
+<use xlink:href="#icon-cross"></use>
+</svg>
+</div>
+<div class="select__chevron">
+<svg class="icon icon_chevron-wide">
+<use xlink:href="#icon-chevron-wide"></use>
+</svg>
+</div>
+</div>
+<div class="select__drop">
+<div class="select__list"></div>
+</div>
+<div class="select__bg"></div>
+<select class="mode"></select>
+</div>
+<button class="button button_md button_bg-red button_shadow-black auto__button selection__button" href="javascript:;">
 <!--v-if--><!--v-if-->
 <div class="button__text">Подобрать</div>
 <!--v-if-->
-</a>
-</div><link rel="stylesheet" href="template/blocks/auto/auto.css?ver=1656506765734"></form>
+</button>
+</div><link rel="stylesheet" href="template/blocks/auto/auto.css?ver=1656805572858"><script src="template/blocks/auto/auto.js?ver=1656805572858"></script></form>
 </div>
 <div class="selection__img"><img src="/uploads/selection-car.png" alt=""></div>
-</div></div><link rel="stylesheet" href="template/blocks/selection/selection.css?ver=1656506765734"><div class="choiser hidden show-xs"><div class="case">
+</div></div><link rel="stylesheet" href="template/blocks/selection/selection.css?ver=1656805572858"><div class="choiser hidden show-xs" id="choiser"><div class="case">
 <!--[-->
 <div class="choiser__wrap">
 <div class="choiser__area">
@@ -922,7 +797,7 @@
 </div>
 <div class="choiser__inner">
 <div class="choiser__area">
-<div class="field field_md field_b-gray field_text choiser__field">
+<div class="field field_md field_b-gray field_text choiser__field choiser__search">
 <!---->
 <div class="field__body">
 <!---->
@@ -947,86 +822,46 @@
 <!---->
 </div>
 </div>
-<div class="choiser__list">
-<!--[-->
-<div style="" class="choiser__item">
-<div class="choiser__item-icon"><img src="/uploads/marks/volkswagen.svg" alt="Volkswagen"></div>
-<div class="choiser__item-title">Volkswagen</div>
-<div class="choiser__item-arrow">
-<svg class="icon icon_arrow">
-<use xlink:href="#icon-arrow"></use>
-</svg>
-</div>
-</div>
-<div style="" class="choiser__item">
-<div class="choiser__item-icon"><img src="/uploads/marks/porsche.svg" alt="Porsche"></div>
-<div class="choiser__item-title">Porsche</div>
-<div class="choiser__item-arrow">
-<svg class="icon icon_arrow">
-<use xlink:href="#icon-arrow"></use>
-</svg>
-</div>
-</div>
-<div style="" class="choiser__item">
-<div class="choiser__item-icon"><img src="/uploads/marks/audi.svg" alt="Audi"></div>
-<div class="choiser__item-title">Audi</div>
-<div class="choiser__item-arrow">
-<svg class="icon icon_arrow">
-<use xlink:href="#icon-arrow"></use>
-</svg>
-</div>
-</div>
-<div style="" class="choiser__item">
-<div class="choiser__item-icon"><img src="/uploads/marks/bmw.svg" alt="BMW"></div>
-<div class="choiser__item-title">BMW</div>
-<div class="choiser__item-arrow">
-<svg class="icon icon_arrow">
-<use xlink:href="#icon-arrow"></use>
-</svg>
-</div>
-</div>
-<div style="" class="choiser__item">
-<div class="choiser__item-icon"><img src="/uploads/marks/mini.svg" alt="Mini"></div>
-<div class="choiser__item-title">Mini</div>
-<div class="choiser__item-arrow">
-<svg class="icon icon_arrow">
-<use xlink:href="#icon-arrow"></use>
-</svg>
-</div>
-</div>
-<!--]-->
-<div class="choiser__sub" style="display:none;">
+<div class="choiser__lists" id="choiser-autos">
+<div class="choiser__list" id="choiser-marks">
 <!--[--><!--]-->
 </div>
-<div class="choiser__sub" style="display:none;">
+<div class="choiser__sub" id="choiser-models">
+<!--[--><!--]-->
+</div>
+<div class="choiser__sub" id="choiser-mods">
 <!--[--><!--]-->
 </div>
 </div>
+<div class="choiser__empty choiser__empty_hide" id="choiser-empty">
+<div class="choiser__empty-icon"><img src="/uploads/empty.png" alt=""></div>
+<div class="choiser__empty-title">Ой, а тут пусто...</div>
 </div>
-<a class="button button_md button_bg-red choiser__button" href="javascript:;">
+</div>
+<a class="button button_md button_bg-red choiser__button" href="javascript:;" id="choiser-button">
 <!----><!---->
 <div class="button__text">
 <!--[-->Продолжить<!--]-->
 </div>
 <!---->
 </a>
-</div></div><link rel="stylesheet" href="template/blocks/choiser/choiser.css?ver=1656506765734"><div class="group bgw hidden show-xs"><div class="case">
+</div></div><link rel="stylesheet" href="template/blocks/choiser/choiser.css?ver=1656805572859"><script src="template/blocks/choiser/choiser.js?ver=1656805572859"></script><div class="group bgw tabs hidden show-xs" data-current-link="group__nav-item_current" data-current-tab="group__tab_current"><div class="case">
 <!--[-->
-<div class="btop group__btop"><div class="h2 btop__title">Главное</div><div class="btop__link"><a href="#">Показать все</a></div>
+<div class="btop group__btop"><div class="h2 btop__title">Главное</div><div class="btop__link"><a href="catalog.html">Показать все</a></div>
 </div>
 <div class="group__inner">
 <div class="group__nav">
 <div class="group__nav-list">
 <!--[-->
-<div class="group__nav-item group__nav-item_current" data-text="Популярное">Популярное</div>
-<div class="group__nav-item" data-text="Новинки">Новинки</div>
-<div class="group__nav-item" data-text="Акции">Акции</div>
+<div class="group__nav-item tabs__link" data-text="Популярное" data-el="group-1">Популярное</div>
+<div class="group__nav-item tabs__link" data-text="Новинки" data-el="group-2">Новинки</div>
+<div class="group__nav-item tabs__link" data-text="Акции" data-el="group-3">Акции</div>
 <!--]-->
 </div>
 </div>
 <div class="group__tabs">
 <!--[-->
-<div class="group__tab" style="">
+<div class="group__tab" id="group-1">
 <div class="group__slider swiper swiper-initialized swiper-horizontal swiper-pointer-events">
 <div class="group__list swiper-wrapper" style="transition-duration: 0ms;">
 <!--[-->
@@ -1526,7 +1361,7 @@
 </div>
 </div>
 </div>
-<div class="group__tab" style="display:none;">
+<div class="group__tab" id="group-2">
 <div class="group__slider swiper swiper-initialized swiper-horizontal swiper-pointer-events">
 <div class="group__list swiper-wrapper" style="transition-duration: 0ms;">
 <!--[-->
@@ -2049,7 +1884,7 @@
 </div>
 </div>
 </div>
-<div class="group__tab" style="display:none;">
+<div class="group__tab" id="group-3">
 <div class="group__slider swiper swiper-initialized swiper-horizontal swiper-pointer-events">
 <div class="group__list swiper-wrapper" style="transition-duration: 0ms;">
 <!--[-->
@@ -2554,7 +2389,7 @@
 </div>
 <!--]-->
 </div>
-<div class="group__bg bg"><img src="/uploads/actual.jpg" alt=""></div></div><link rel="stylesheet" href="template/blocks/group/group.css?ver=1656506765734"><div class="questions hidden-xs"><div class="case">
+<div class="group__bg bg"><img src="/uploads/actual.jpg" alt=""></div></div><link rel="stylesheet" href="template/blocks/group/group.css?ver=1656805572859"><script src="template/blocks/group/group.js?ver=1656805572859"></script><div class="questions hidden-xs"><div class="case">
 <!--[-->
 <div class="questions__wrap row">
 <div class="h2 h2_nols questions__title">
@@ -2627,7 +2462,7 @@
 </form>
 </div>
 <!--]-->
-</div></div><link rel="stylesheet" href="template/blocks/questions/questions.css?ver=1656506765734"><div class="utp hidden show-xs"><div class="case">
+</div></div><link rel="stylesheet" href="template/blocks/questions/questions.css?ver=1656805572859"><div class="utp hidden show-xs"><div class="case">
 <!--[-->
 <div class="utp__wrap bgw">
 <div class="utp__text">
@@ -2637,7 +2472,7 @@
 <div class="utp__bg bg"><img src="/uploads/utp.png" alt=""></div>
 </div>
 <!--]-->
-</div></div><link rel="stylesheet" href="template/blocks/utp/utp.css?ver=1656506765734"><div class="text hidden show-xs"><div class="case">
+</div></div><link rel="stylesheet" href="template/blocks/utp/utp.css?ver=1656805572859"><div class="text hidden show-xs"><div class="case">
 <!--[-->
 <div class="btop text__btop">
 <div class="h2 btop__title">
@@ -2649,7 +2484,7 @@
 <p><strong>CARCAINE</strong> – интернет-магазин тюнинг-комплектующих для современных автомобилей Audi, Skoda, Seat, Skoda, Porsche, BMW, Mercedes-Benz и др.Мы предлагаем только лучшие товары из Европы и США. Работаем напрямую с заводами, тем самым гарантируя отличные цены и сроки доставки.Если вы хотите произвести тюнинг своего автомобиля, но не знаете с чего лучше начать - напишите нам, мы обязательно вам поможем!</p>
 </div>
 <!--]-->
-</div></div><link rel="stylesheet" href="template/blocks/text/text.css?ver=1656506765734"><div class="cats"><div class="case">
+</div></div><link rel="stylesheet" href="template/blocks/text/text.css?ver=1656805572859"><div class="cats"><div class="case">
 <!--[--><!----><!----><div class="cats__wrap row">
 <div class="cats__content">
 <div class="h2 cats__title c-red hidden-xs">
@@ -2903,7 +2738,7 @@
 <!---->
 </a>
 </div>
-<!----></div><link rel="stylesheet" href="template/blocks/cats/cats.css?ver=1656506765734"><div class="actual bgw actual_mt-minus"><div class="case">
+<!----></div><link rel="stylesheet" href="template/blocks/cats/cats.css?ver=1656805572859"><div class="actual bgw tabs actual_mt-minus" data-current-link="actual__nav-item_current" data-current-tab="actual__tab_current"><div class="case">
 <!--[-->
 <div class="btop actual__btop">
 <div class="h2 btop__title">
@@ -2915,15 +2750,15 @@
 <div class="actual__nav">
 <div class="actual__nav-list row">
 <!--[-->
-<div class="actual__nav-item actual__nav-item_current" data-text="Все">Все</div>
-<div class="actual__nav-item" data-text="Новости">Новости</div>
-<div class="actual__nav-item" data-text="Акции">Акции</div>
+<div class="actual__nav-item tabs__link" data-text="Все" data-el="actual-1">Все</div>
+<div class="actual__nav-item tabs__link" data-text="Новости" data-el="actual-2">Новости</div>
+<div class="actual__nav-item tabs__link" data-text="Акции" data-el="actual-3">Акции</div>
 <!--]-->
 </div>
 </div>
 <div class="actual__tabs">
 <!--[-->
-<div class="actual__tab" style="">
+<div class="actual__tab" id="actual-1">
 <div class="actual__slider swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
 <div class="actual__list swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);">
 <!--[-->
@@ -3009,7 +2844,7 @@
 </svg>
 </div>
 </div>
-<div class="actual__tab" style="display: none;">
+<div class="actual__tab" id="actual-2">
 <div class="actual__slider swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
 <div class="actual__list swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
 <!--[-->
@@ -3104,7 +2939,7 @@
 </svg>
 </div>
 </div>
-<div class="actual__tab" style="display: none;">
+<div class="actual__tab" id="actual-3">
 <div class="actual__slider swiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
 <div class="actual__list swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
 <!--[-->
@@ -3195,7 +3030,7 @@
 </div>
 <!--]-->
 </div>
-<div class="actual__bg bg"><img src="/uploads/actual.jpg" alt=""></div></div><link rel="stylesheet" href="template/blocks/actual/actual.css?ver=1656506765734"><div class="questions questions_mt-minus hidden-xs"><div class="case">
+<div class="actual__bg bg"><img src="/uploads/actual.jpg" alt=""></div></div><link rel="stylesheet" href="template/blocks/actual/actual.css?ver=1656805572859"><script src="template/blocks/actual/actual.js?ver=1656805572859"></script><div class="questions questions_mt-minus hidden-xs"><div class="case">
 <!--[-->
 <div class="questions__wrap row">
 <div class="h2 h2_nols questions__title">
@@ -3368,4 +3203,4 @@
 <div class="footer__copy">© 2022 UrbanRacers</div>
 </div>
 <!--]-->
-</div></footer><link rel="stylesheet" href="template/blocks/footer/footer.css?ver=1656506765734"><div class="alert"><div class="case"></div></div><link rel="stylesheet" href="template/blocks/alert/alert.css?ver=1656506765734"><script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script><script src="template/js/common.js?ver=1656506765734"></script></div></body></html>
+</div></footer><link rel="stylesheet" href="template/blocks/footer/footer.css?ver=1656805572859"><div class="alert"><div class="case"></div></div><link rel="stylesheet" href="template/blocks/alert/alert.css?ver=1656805572859"><script src="template/components/field/field.js?ver=1656805572859"></script><script src="template/components/select/select.js?ver=1656805572859"></script><script src="template/components/tabs/tabs.js?ver=1656805572859"></script><script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script><script src="template/js/common.js?ver=1656805572859"></script></div></body></html>
