@@ -22,6 +22,7 @@ div(class="catalog")
 			else
 				include ../filter/filter
 				+style('filter', 'blocks')
+				+script('filter', 'blocks')
 
 			if !catalogSearchEmpty
 				<div class="catalog__inner">
@@ -48,84 +49,92 @@ div(class="catalog")
 								</div>
 							</div>
 							<!--v-if-->
-							<div class="product__modal nk">
-								<div class="product__modal-inner">
-									<div class="product__sets">
-										<div class="product__sets-title">Максимальное занижение</div>
-										<div class="product__sets-list row">
-											<div class="plus form__sets-item plus_md plus_gray">
-												<input type="checkbox" class="plus__input" name="sets" value="10 мм">
-												<div class="plus__inner">
-													<div class="plus__value">10 мм</div>
-													<div class="plus__icon">
-														<div></div>
-														<div></div>
+							.product__modal.form
+								<div class="form__head"><div class="form__title">Выберите свойства</div><div class="form__close modal__close popup-close"></div></div>
+								.form__inner
+									<div class="product__modal-inner">
+										<div class="product__sets">
+											<div class="product__sets-title">Максимальное занижение</div>
+											<div class="product__sets-list row">
+												<div class="plus form__sets-item plus_md plus_gray check">
+													<input type="checkbox" class="check__input" name="sets" value="10 мм">
+													<div class="plus__inner">
+														<div class="plus__value">10 мм</div>
+														<div class="plus__icon">
+															<div></div>
+															<div></div>
+														</div>
+													</div>
+												</div>
+												<div class="plus form__sets-item plus_md plus_gray check">
+													<input type="checkbox" class="check__input" name="sets" value="15 мм">
+													<div class="plus__inner">
+														<div class="plus__value">15 мм</div>
+														<div class="plus__icon">
+															<div></div>
+															<div></div>
+														</div>
+													</div>
+												</div>
+												<div class="plus form__sets-item plus_md plus_gray check">
+													<input type="checkbox" class="check__input" name="sets" value="20 мм">
+													<div class="plus__inner">
+														<div class="plus__value">20 мм</div>
+														<div class="plus__icon">
+															<div></div>
+															<div></div>
+														</div>
+													</div>
+												</div>
+												<div class="plus form__sets-item plus_md plus_gray check">
+													<input type="checkbox" class="check__input" name="sets" value="32 мм">
+													<div class="plus__inner">
+														<div class="plus__value">32 мм</div>
+														<div class="plus__icon">
+															<div></div>
+															<div></div>
+														</div>
+													</div>
+												</div>
+												<div class="plus form__sets-item plus_md plus_gray check">
+													<input type="checkbox" class="check__input" name="sets" value="35 мм">
+													<div class="plus__inner">
+														<div class="plus__value">35 мм</div>
+														<div class="plus__icon">
+															<div></div>
+															<div></div>
+														</div>
+													</div>
+												</div>
+												<div class="plus form__sets-item plus_md plus_gray check">
+													<input type="checkbox" class="check__input" name="sets" value="40 мм">
+													<div class="plus__inner">
+														<div class="plus__value">40 мм</div>
+														<div class="plus__icon">
+															<div></div>
+															<div></div>
+														</div>
+													</div>
+												</div>
+												<div class="plus form__sets-item plus_md plus_gray check">
+													<input type="checkbox" class="check__input" name="sets" value="50 мм">
+													<div class="plus__inner">
+														<div class="plus__value">50 мм</div>
+														<div class="plus__icon">
+															<div></div>
+															<div></div>
+														</div>
 													</div>
 												</div>
 											</div>
-											<div class="plus form__sets-item plus_md plus_gray">
-												<input type="checkbox" class="plus__input" name="sets" value="15 мм">
-												<div class="plus__inner">
-													<div class="plus__value">15 мм</div>
-													<div class="plus__icon">
-														<div></div>
-														<div></div>
-													</div>
-												</div>
-											</div>
-											<div class="plus form__sets-item plus_md plus_gray">
-												<input type="checkbox" class="plus__input" name="sets" value="20 мм">
-												<div class="plus__inner">
-													<div class="plus__value">20 мм</div>
-													<div class="plus__icon">
-														<div></div>
-														<div></div>
-													</div>
-												</div>
-											</div>
-											<div class="plus form__sets-item plus_md plus_gray">
-												<input type="checkbox" class="plus__input" name="sets" value="32 мм">
-												<div class="plus__inner">
-													<div class="plus__value">32 мм</div>
-													<div class="plus__icon">
-														<div></div>
-														<div></div>
-													</div>
-												</div>
-											</div>
-											<div class="plus form__sets-item plus_md plus_gray">
-												<input type="checkbox" class="plus__input" name="sets" value="35 мм">
-												<div class="plus__inner">
-													<div class="plus__value">35 мм</div>
-													<div class="plus__icon">
-														<div></div>
-														<div></div>
-													</div>
-												</div>
-											</div>
-											<div class="plus form__sets-item plus_md plus_gray">
-												<input type="checkbox" class="plus__input" name="sets" value="40 мм">
-												<div class="plus__inner">
-													<div class="plus__value">40 мм</div>
-													<div class="plus__icon">
-														<div></div>
-														<div></div>
-													</div>
-												</div>
-											</div>
-											<div class="plus form__sets-item plus_md plus_gray">
-												<input type="checkbox" class="plus__input" name="sets" value="50 мм">
-												<div class="plus__inner">
-													<div class="plus__value">50 мм</div>
-													<div class="plus__icon">
-														<div></div>
-														<div></div>
-													</div>
-												</div>
-											</div>
+											<div class="product__sets-error" style="display: none;">Выберите хотя бы одно свойство</div>
+											<div class="button button_md button_bg-red button_shadow-black product__sets-button"><!--v-if--><!--v-if--><div class="button__text">Добавить в корзину</div><!--v-if--></div>
 										</div>
-										<div class="product__sets-error" style="display: none;">Выберите хотя бы одно свойство</div>
-						<a class="button button_md button_bg-red button_shadow-black product__sets-button" href="javascript:;"><!--v-if--><!--v-if--><div class="button__text">Добавить в корзину</div><!--v-if--></a></div></div></div></a>
+									</div>
+							
+							
+									
+						
 						<a class="product product_col catalog__item" href="catalog-item.html">
 							<div class="product__inner">
 								<div class="product__img img"><img src="/uploads/products/product-2.png" alt="Даунпайп для"></div>
@@ -387,7 +396,7 @@ div(class="catalog")
 				</div>
 		</div>
 		<div class="catalog__bg"><img src="/uploads/tires.png" alt=""></div>
-		<a class="button button_md button_bg-red button_shadow-black super" href="javascript:;">
+		<a class="button button_md button_bg-red button_shadow-black super filter-toggle" href="javascript:;">
 			<!--v-if--><!--v-if-->
 			<div class="button__text">Фильтр</div>
 			<!--v-if-->

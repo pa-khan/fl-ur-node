@@ -41,7 +41,7 @@ include ../../pug/vars
                     <!--v-if--><!--v-if--><!--v-if-->
                     <div class="incdec product__incdec nk" value="1">
                       <div class="incdec__button incdec__button_plus"></div>
-                      <input class="incdec__input" type="tel">
+                      <input class="incdec__input" type="tel" value="1">
                       <div class="incdec__button incdec__button_minus incdec__button_disabled"></div>
                     </div>
                 </div>
@@ -69,7 +69,7 @@ include ../../pug/vars
                     <!--v-if--><!--v-if--><!--v-if-->
                     <div class="incdec product__incdec nk" value="1">
                       <div class="incdec__button incdec__button_plus"></div>
-                      <input class="incdec__input" type="tel">
+                      <input class="incdec__input" type="tel" value="1">
                       <div class="incdec__button incdec__button_minus incdec__button_disabled"></div>
                     </div>
                 </div>
@@ -97,7 +97,7 @@ include ../../pug/vars
                     <!--v-if--><!--v-if--><!--v-if-->
                     <div class="incdec product__incdec nk" value="1">
                       <div class="incdec__button incdec__button_plus"></div>
-                      <input class="incdec__input" type="tel">
+                      <input class="incdec__input" type="tel" value="1">
                       <div class="incdec__button incdec__button_minus incdec__button_disabled"></div>
                     </div>
                 </div>
@@ -125,7 +125,7 @@ include ../../pug/vars
                     <!--v-if--><!--v-if--><!--v-if-->
                     <div class="incdec product__incdec nk" value="1">
                       <div class="incdec__button incdec__button_plus"></div>
-                      <input class="incdec__input" type="tel">
+                      <input class="incdec__input" type="tel" value="1">
                       <div class="incdec__button incdec__button_minus incdec__button_disabled"></div>
                     </div>
                 </div>
@@ -134,6 +134,7 @@ include ../../pug/vars
             <!--v-if--><!--v-if-->
           </a>
         </div>
+        +script('incdec', 'components')
         if cartIsEmpty
           <div class="cart__empty">
             <img src="uploads/empty.png" alt="">
@@ -150,7 +151,7 @@ include ../../pug/vars
           </div>
         else
           <div class="cart__order">
-            <div class="field field_sm field_b-gray cart__field">
+            <div class="field field_sm field_b-gray cart__field" data-validation="email">
               <div class="field__head">
                 <!--v-if-->
                 <div class="field__title">Email</div>
@@ -163,20 +164,21 @@ include ../../pug/vars
                   <input class="field__area" type="text" name="name">
                 </div>
                 <!--v-if--><!--v-if-->
-                <div class="field__icon field__icon_right">
-                  <!--v-if-->
+                <div class="field__icon field__valid-icon field__icon_right">
+                  <svg class="field__valid-successful icon icon_check-round f-green"><use xlink:href="#icon-check-round"></use></svg>
+                  <svg class="field__valid-error icon icon_alert f-red"><use xlink:href="#icon-alert"></use></svg>
                 </div>
                 <!--v-if--><!--v-if-->
               </div>
               <div class="field__foot">
                 <!--v-if-->
-                <div class="field__valid" style="display: none;">
+                <div class="field__valid">
                   <!--v-if--><!--v-if-->
                 </div>
                 <!--v-if-->
               </div>
             </div>
-            <div class="field field_sm field_b-gray cart__field">
+            <div class="field field_sm field_b-gray cart__field" data-validation="phone">
               <div class="field__head">
                 <!--v-if-->
                 <div class="field__title">Телефон</div>
@@ -189,14 +191,15 @@ include ../../pug/vars
                   <input class="field__area" type="text" name="name">
                 </div>
                 <!--v-if--><!--v-if-->
-                <div class="field__icon field__icon_right">
-                  <!--v-if-->
+                <div class="field__icon field__valid-icon field__icon_right">
+                  <svg class="field__valid-successful icon icon_check-round f-green"><use xlink:href="#icon-check-round"></use></svg>
+                  <svg class="field__valid-error icon icon_alert f-red"><use xlink:href="#icon-alert"></use></svg>
                 </div>
                 <!--v-if--><!--v-if-->
               </div>
               <div class="field__foot">
                 <!--v-if-->
-                <div class="field__valid" style="display: none;">
+                <div class="field__valid">
                   <!--v-if--><!--v-if-->
                 </div>
                 <!--v-if-->
@@ -215,16 +218,30 @@ include ../../pug/vars
                   <input class="field__area" type="text" name="name">
                 </div>
                 <!--v-if--><!--v-if--><!--v-if--><!--v-if--><!--v-if-->
+                <div class="field__icon field__valid-icon field__icon_right">
+                  <svg class="field__valid-successful icon icon_check-round f-green"><use xlink:href="#icon-check-round"></use></svg>
+                  <svg class="field__valid-error icon icon_alert f-red"><use xlink:href="#icon-alert"></use></svg>
+                </div>
+              </div>
+              <div class="field__foot">
+                <!--v-if-->
+                <div class="field__valid">
+                  <!--v-if--><!--v-if-->
+                </div>
+                <!--v-if-->
               </div>
               <!--v-if-->
             </div>
-            <div class="select select_sm select_b-gray cart__select">
+            <div class="select select_sm select_b-gray cart__select" data-placeholder="Выберите способ доставки">
               <div class="select__title">Способ доставки</div>
               <div class="select__area">
                 <!--v-if-->
-                <div class="select__value select__placeholder">Выберите способ доставки</div>
+                <div class="select__icon"></div>
+                <div class="select__value"></div>
                 <div class="select__clear">
-                  <!--v-if-->
+                  <svg class="icon icon_cross">
+                    <use xlink:href="#icon-cross"></use>
+                  </svg>
                 </div>
                 <div class="select__chevron">
                   <svg class="icon icon_chevron-wide">

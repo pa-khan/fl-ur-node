@@ -59,7 +59,7 @@
             }
         }
 
-        &.plus_checked {
+        &.--checked {
             .plus {
                 &__inner {
                     background: $red;

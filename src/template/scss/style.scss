@@ -178,6 +178,12 @@ line {
   display: none !important;
 }
 
+.modal {
+  display: none;
+  width: 485px;
+  max-width: 485px;
+}
+
 @media screen and (max-width: 767px) {
 
   html,
@@ -216,6 +222,7 @@ line {
 @import '../components/select/select.scss';
 @import '../components/check/check.scss';
 @import '../components/radio/radio.scss';
+@import '../components/popup/popup.scss';
 @import '../components/plus/plus.scss';
 @import '../components/icon/icon.scss';
 
@@ -230,6 +237,7 @@ line {
 @import '../blocks/btop/btop.scss';
 
 @import '../blocks/product/product.scss';
+@import '../blocks/form/form.scss';
 
 
 .sitemap {

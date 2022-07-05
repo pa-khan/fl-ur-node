@@ -43,6 +43,6 @@
 .check_round .check__box svg {
   fill: #fff;
 }
-.check_checked .check__box svg {
+.check.--checked .check__box svg {
   transform: scale(1) translate3d(0px, 0px, 0px);
 }

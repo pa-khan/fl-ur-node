@@ -9,6 +9,8 @@ block vars
 block content
   include ../../../blocks/contact/contact
   +style('contact', 'blocks')
+  script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU")
+  +script('contact', 'blocks')
   
   - actualClass = 'actual_mt-minus hidden-xs'
   include ../../../blocks/actual/actual

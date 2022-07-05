@@ -4,6 +4,8 @@ include ../../pug/vars
 	- returnClass = 'contact__return hidden show-xs-flex'
 	- returnShare = true
 	include ../return/return
+	+style('return', 'blocks')
+
 	<div class="h1 contact__title">
 		<!--[-->Контакты<!--]-->
 	</div>
@@ -71,7 +73,7 @@ include ../../pug/vars
 				<!--]-->
 			</div>
 		</div>
-		<a class="button button_md button_bg-red button_shadow-black contact__button" href="javascript:;">
+		<a class="button button_md button_bg-red button_shadow-black contact__button" href="javascript:;" data-src="#modal-feedback" data-popup="">
 			<!----><!---->
 			<div class="button__text">
 				<!--[-->Написать нам<!--]-->
@@ -79,5 +81,5 @@ include ../../pug/vars
 			<!---->
 		</a>
 	</div>
-	<div class="contact__map"></div>
+	<div class="contact__map" id="map"></div>
 </div>

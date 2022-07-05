@@ -1,13 +1,13 @@
 <div class="auth">
 <div class="case case_sm">
-<!--[--><link rel="stylesheet" href="template/blocks/breadcrumb/breadcrumb.css?ver=1656796406958"/><div class="return auth__return hidden show-xs-flex"><div class="return__button">
+<!--[--><link rel="stylesheet" href="template/blocks/breadcrumb/breadcrumb.css?ver=1656985445386"/><div class="return auth__return hidden show-xs-flex"><div class="return__button">
 <svg class="icon icon_chevron f-red">
 <use xlink:href="#icon-chevron"></use>
 </svg>
 <span>Назад</span>
 </div></div><div class="auth__inner row">
 <div class="auth__left"><div class="h1 auth__title"></div><div class="t1 auth__text"></div><form class="auth__form"><!---->
-<div class="field field_sm field_b-gray auth__field">
+<div class="field field_sm field_b-gray auth__field" data-validation="phone">
 <div class="field__head">
 <!---->
 <div class="field__title">
@@ -22,14 +22,15 @@
 <input class="field__area" type="text" value="" name="name">
 </div>
 <!----><!---->
-<div class="field__icon field__icon_right">
-<!---->
+<div class="field__icon field__valid-icon field__icon_right">
+<svg class="field__valid-successful icon icon_check-round f-green"><use xlink:href="#icon-check-round"></use></svg>
+<svg class="field__valid-error icon icon_alert f-red"><use xlink:href="#icon-alert"></use></svg>
 </div>
 <!----><!---->
 </div>
 <div class="field__foot">
 <!---->
-<div class="field__valid" style="display:none;">
+<div class="field__valid">
 <!----><!---->
 </div>
 <!---->
@@ -50,19 +51,23 @@
 <input class="field__area" type="password" value="" name="name">
 </div>
 <!----><!---->
-<div class="field__icon field__icon_right">
-<!---->
-</div>
-<div class="field__icon_hidden field__visible field__icon field__icon_right">
+<div class="field__visible field__icon field__icon_right">
 <svg class="icon icon_eye">
 <use xlink:href="#icon-eye"></use>
 </svg>
+<svg class="icon icon_eye-line">
+<use xlink:href="#icon-eye-line"></use>
+</svg>
+</div>
+<div class="field__icon field__valid-icon field__icon_right">
+<svg class="field__valid-successful icon icon_check-round f-green"><use xlink:href="#icon-check-round"></use></svg>
+<svg class="field__valid-error icon icon_alert f-red"><use xlink:href="#icon-alert"></use></svg>
 </div>
 <!---->
 </div>
 <div class="field__foot">
 <!---->
-<div class="field__valid" style="display:none;">
+<div class="field__valid">
 <!----><!---->
 </div>
 <!---->

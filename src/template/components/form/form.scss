@@ -1,0 +1,195 @@
+@import '../../scss/vars';
+
+.form {
+  transition: .3s;
+  padding: 18px 16px;
+  background: #FFFFFF;
+  box-shadow: 0px 0px 45px rgba(41, 41, 41, 0.15);
+  border-radius: 4px;
+
+  &__head {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  &__title {
+    font-size: 24px;
+    line-height: 30px;
+    font-family: $ff2;
+    letter-spacing: -0.005em;
+    color: $black-dark;
+    transition: .3s;
+  }
+
+  &__close {
+    position: relative;
+    min-width: 20px;
+    width: 44px;
+    height: 44px;
+    margin-left: auto;
+    cursor: pointer;
+
+    &:before,
+    &:after {
+      position: absolute;
+      content: '';
+      width: 20px;
+      height: 3px;
+      top: 50%;
+      left: 50%;
+      background: $red;
+      border-radius: 50px;
+      transition: .3s;
+    }
+
+    &:before {
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+    }
+
+    &:hover {
+
+      &:before,
+      &:after {
+        background: $black;
+      }
+    }
+  }
+
+  &__desc {
+    line-height: 1.4;
+    color: #8A8E85;
+    transition: .3s;
+    margin-bottom: 15px;
+  }
+
+  &__field {
+    margin-bottom: 15px;
+  }
+
+  &__files {
+    margin-bottom: 15px;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      background: #FCFCFD;
+      border: 1px solid #d9d9d9;
+      border-radius: 4px;
+      padding: 12px;
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &-remove {
+      position: relative;
+      min-width: 15px;
+      width: 15px;
+      height: 15px;
+      margin-left: auto;
+      cursor: pointer;
+
+      &:before,
+      &:after {
+        position: absolute;
+        content: '';
+        width: 15px;
+        height: 3px;
+        top: 50%;
+        left: 50%;
+        background: #979797;
+        transition: .3s;
+      }
+
+      &:before {
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+
+      &:after {
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+
+      &:hover {
+
+        &:before,
+        &:after {
+          background: $red;
+        }
+      }
+    }
+  }
+
+  &__file {
+    margin-bottom: 15px;
+  }
+
+  &__sets {
+    &-title {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    &-list {
+      margin: 0 -3px -11px;
+    }
+
+    &-item {
+      margin: 0 3px 11px;
+    }
+
+    &-button {
+      margin-top: 25px;
+    }
+  }
+
+  &__successful {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 40px;
+
+    &-title {
+      font-size: 24px;
+      line-height: 33px;
+      font-weight: 700;
+      letter-spacing: -0.005em;
+      text-align: center;
+    }
+
+    &-icon {
+      margin-top: 40px;
+    }
+  }
+
+  &_step-2 {
+    color: #fff;
+    background: $red;
+
+    .form {
+
+      &__title,
+      &__desc {
+        color: #fff;
+        opacity: 0;
+      }
+
+      &__close {
+
+        &:before,
+        &:after {
+          background: #fff;
+        }
+      }
+    }
+  }
+
+}

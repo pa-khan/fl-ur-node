@@ -168,8 +168,8 @@ class Select {
     this.value.selectItem.classList.add(this.classItemCurrent);
     this.$el.value.innerText = this.value.innerText;
 
-    if (this.option?.dataset?.icon) {
-      this.$el.iconImg.src = this.option.dataset.icon;
+    if (option?.dataset?.icon) {
+      this.$el.iconImg.src = option.dataset.icon;
       this.element.classList.add(this.classHasIcon);
     } else {
       this.$el.iconImg.src = '';

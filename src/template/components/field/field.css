@@ -51,9 +51,24 @@
 }
 .field__visible {
   cursor: pointer;
+  position: relative;
+}
+.field__visible svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.field__visible svg:nth-of-type(2) {
+  opacity: 0;
 }
 .field__visible:hover .icon {
   fill: #F05454;
+}
+.field__visible.--show svg:nth-of-type(1) {
+  opacity: 0;
+}
+.field__visible.--show svg:nth-of-type(2) {
+  opacity: 1;
 }
 .field__valid {
   display: flex;
@@ -184,10 +199,10 @@
   opacity: 0;
   visibility: hidden;
 }
-.field_error-type-41 .field__valid-password diGv {
+.field_error-type-41 .field__valid-password div {
   border-color: #F05454;
 }
-.field_error-type-41 .field__valid-password diGv:nth-of-type(1) {
+.field_error-type-41 .field__valid-password div:nth-of-type(1) {
   background: #F05454;
 }
 .field_error-type-42 .field__body {
@@ -212,13 +227,65 @@
   border-color: #13BD38;
   background: #13BD38;
 }
+.field .field__valid-icon {
+  width: 0;
+  min-width: 0;
+  margin-left: 0;
+}
+.field .field__valid-icon svg {
+  width: 0;
+}
 .field_textarea .field__area {
   overflow: hidden;
   resize: none;
 }
 .field_error .field__valid {
   color: #F05454;
+  display: block !important;
+}
+.field_error .field__valid-icon {
+  width: 14px;
+  min-width: 14px;
+  margin-left: 12px;
+}
+.field_error .field__valid-icon .field__valid-error {
+  width: 100%;
+}
+.field__valid {
+  display: none;
+}
+.field__valid-pass {
+  display: flex;
+}
+.field__valid-pass.--red {
+  color: #f05454;
+}
+.field__valid-pass.--red .field__valid-password div {
+  background: #f05454;
+}
+.field__valid-pass.--orange {
+  color: #ffad4f;
+}
+.field__valid-pass.--orange .field__valid-password div {
+  background: #ffad4f;
+}
+.field__valid-pass.--green {
+  color: #13bd38;
+}
+.field__valid-pass.--green .field__valid-password div {
+  background: #13bd38;
 }
 .field_valid .field__valid {
   color: #13BD38;
+}
+.field_valid .field__valid-icon {
+  width: 14px;
+  min-width: 14px;
+  margin-left: 12px;
+}
+.field_valid .field__valid-icon .field__valid-successful {
+  width: 100%;
+}
+.field.field_filled.field_valid[data-validation=password] .field__valid {
+  display: block !important;
 }

@@ -33,22 +33,22 @@
 }
 
 @media screen and (max-width: 991px) {
-  .comp {
+  .compare {
     padding-bottom: 50px;
   }
 }
 @media screen and (max-width: 767px) {
-  .comp {
+  .compare {
     padding-top: 77px;
     padding-bottom: 0;
   }
-  .comp__title {
+  .compare__title {
     font-size: 18px;
     line-height: 24px;
     padding-top: 5px;
     margin-bottom: 10px;
   }
-  .comp__desc {
+  .compare__desc {
     margin-bottom: 15px;
   }
 }

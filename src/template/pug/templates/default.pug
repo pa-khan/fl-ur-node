@@ -23,9 +23,14 @@ html(lang="ru")
 
       include ../../blocks/alert/alert
       +style('alert', 'blocks')
+      +script('alert', 'blocks')
 
       +script('field', 'components')
       +script('select', 'components')
+      +script('check', 'components')
       +script('tabs', 'components')
+      +script('popup', 'components')
+      +script('product', 'blocks')
       script(src="https://unpkg.com/swiper@8/swiper-bundle.min.js")
+      script(src="https://unpkg.com/imask")
       script(src="template/js/common.js" + version)

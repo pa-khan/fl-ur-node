@@ -28,14 +28,14 @@
   font-size: 14px;
   line-height: 14px;
 }
-.radio_tab.radio_checked .radio__wrap {
+.radio_tab.--checked .radio__wrap {
   color: #fff;
   background: #F05454;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
 }
-.radio_tab.radio_checked .radio__wrap:before {
+.radio_tab.--checked .radio__wrap:before {
   font-weight: 700;
 }
-.radio_checked {
+.radio.--checked {
   cursor: default;
 }

@@ -18,7 +18,7 @@
 <div class="group__slider swiper swiper-initialized swiper-horizontal swiper-pointer-events">
 <div class="group__list swiper-wrapper" style="transition-duration: 0ms;">
 <!--[-->
-<a class="product product_col group__item swiper-slide" href="/catalog/1">
+<a class="product product_col group__item swiper-slide" href="/catalog-item.html">
 <div class="product__inner">
 <div class="product__img img"><img src="/uploads/products/product-1.jpg" alt="Винтовая подвеска BCR"></div>
 <div class="product__content">
@@ -39,14 +39,12 @@
 </div>
 </div>
 </div>
-<!--v-if-->
-<div class="product__modal nk">
-<div class="product__modal-inner">
+<!--v-if--><div class="product__modal form"><div class="form__head"><div class="form__title">Выберите свойства</div><div class="form__close modal__close popup-close"></div></div><div class="form__inner"><div class="product__modal-inner">
 <div class="product__sets">
 <div class="product__sets-title">Максимальное занижение</div>
 <div class="product__sets-list row">
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="10 мм">
+<div class="plus form__sets-item plus_md plus_gray check">
+<input type="checkbox" class="check__input" name="sets" value="10 мм">
 <div class="plus__inner">
 <div class="plus__value">10 мм</div>
 <div class="plus__icon">
@@ -55,8 +53,8 @@
 </div>
 </div>
 </div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="15 мм">
+<div class="plus form__sets-item plus_md plus_gray check">
+<input type="checkbox" class="check__input" name="sets" value="15 мм">
 <div class="plus__inner">
 <div class="plus__value">15 мм</div>
 <div class="plus__icon">
@@ -65,8 +63,8 @@
 </div>
 </div>
 </div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="20 мм">
+<div class="plus form__sets-item plus_md plus_gray check">
+<input type="checkbox" class="check__input" name="sets" value="20 мм">
 <div class="plus__inner">
 <div class="plus__value">20 мм</div>
 <div class="plus__icon">
@@ -75,8 +73,8 @@
 </div>
 </div>
 </div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="32 мм">
+<div class="plus form__sets-item plus_md plus_gray check">
+<input type="checkbox" class="check__input" name="sets" value="32 мм">
 <div class="plus__inner">
 <div class="plus__value">32 мм</div>
 <div class="plus__icon">
@@ -85,8 +83,8 @@
 </div>
 </div>
 </div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="35 мм">
+<div class="plus form__sets-item plus_md plus_gray check">
+<input type="checkbox" class="check__input" name="sets" value="35 мм">
 <div class="plus__inner">
 <div class="plus__value">35 мм</div>
 <div class="plus__icon">
@@ -95,8 +93,8 @@
 </div>
 </div>
 </div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="40 мм">
+<div class="plus form__sets-item plus_md plus_gray check">
+<input type="checkbox" class="check__input" name="sets" value="40 мм">
 <div class="plus__inner">
 <div class="plus__value">40 мм</div>
 <div class="plus__icon">
@@ -105,8 +103,8 @@
 </div>
 </div>
 </div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="50 мм">
+<div class="plus form__sets-item plus_md plus_gray check">
+<input type="checkbox" class="check__input" name="sets" value="50 мм">
 <div class="plus__inner">
 <div class="plus__value">50 мм</div>
 <div class="plus__icon">
@@ -117,8 +115,10 @@
 </div>
 </div>
 <div class="product__sets-error" style="display: none;">Выберите хотя бы одно свойство</div>
-<a class="button button_md button_bg-red button_shadow-black product__sets-button" href="javascript:;"><!--v-if--><!--v-if--><div class="button__text">Добавить в корзину</div><!--v-if--></a></div></div></div></a>
-<a class="product product_col group__item swiper-slide" href="/catalog/2">
+<div class="button button_md button_bg-red button_shadow-black product__sets-button"><!--v-if--><!--v-if--><div class="button__text">Добавить в корзину</div><!--v-if--></div>
+</div>
+</div></div></div></a>
+<a class="product product_col group__item swiper-slide" href="/catalog-item.html">
 <div class="product__inner">
 <div class="product__img img"><img src="/uploads/products/product-2.png" alt="Даунпайп для"></div>
 <div class="product__content">
@@ -141,7 +141,7 @@
 </div>
 <!--v-if--><!--v-if-->
 </a>
-<a class="product product_col group__item swiper-slide" href="/catalog/1">
+<a class="product product_col group__item swiper-slide" href="/catalog-item.html">
 <div class="product__inner">
 <div class="product__img img"><img src="/uploads/products/product-1.jpg" alt="Винтовая подвеска BCR"></div>
 <div class="product__content">
@@ -163,85 +163,8 @@
 </div>
 </div>
 <!--v-if-->
-<div class="product__modal nk">
-<div class="product__modal-inner">
-<div class="product__sets">
-<div class="product__sets-title">Максимальное занижение</div>
-<div class="product__sets-list row">
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="10 мм">
-<div class="plus__inner">
-<div class="plus__value">10 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="15 мм">
-<div class="plus__inner">
-<div class="plus__value">15 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="20 мм">
-<div class="plus__inner">
-<div class="plus__value">20 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="32 мм">
-<div class="plus__inner">
-<div class="plus__value">32 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="35 мм">
-<div class="plus__inner">
-<div class="plus__value">35 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="40 мм">
-<div class="plus__inner">
-<div class="plus__value">40 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="50 мм">
-<div class="plus__inner">
-<div class="plus__value">50 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-</div>
-<div class="product__sets-error" style="display: none;">Выберите хотя бы одно свойство</div>
-<a class="button button_md button_bg-red button_shadow-black product__sets-button" href="javascript:;"><!--v-if--><!--v-if--><div class="button__text">Добавить в корзину</div><!--v-if--></a></div></div></div></a>
-<a class="product product_col group__item swiper-slide" href="/catalog/2">
+</a>
+<a class="product product_col group__item swiper-slide" href="/catalog-item.html">
 <div class="product__inner">
 <div class="product__img img"><img src="/uploads/products/product-2.png" alt="Даунпайп для"></div>
 <div class="product__content">
@@ -264,7 +187,7 @@
 </div>
 <!--v-if--><!--v-if-->
 </a>
-<a class="product product_col group__item swiper-slide" href="/catalog/1">
+<a class="product product_col group__item swiper-slide" href="/catalog-item.html">
 <div class="product__inner">
 <div class="product__img img"><img src="/uploads/products/product-1.jpg" alt="Винтовая подвеска BCR"></div>
 <div class="product__content">
@@ -286,85 +209,8 @@
 </div>
 </div>
 <!--v-if-->
-<div class="product__modal nk">
-<div class="product__modal-inner">
-<div class="product__sets">
-<div class="product__sets-title">Максимальное занижение</div>
-<div class="product__sets-list row">
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="10 мм">
-<div class="plus__inner">
-<div class="plus__value">10 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="15 мм">
-<div class="plus__inner">
-<div class="plus__value">15 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="20 мм">
-<div class="plus__inner">
-<div class="plus__value">20 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="32 мм">
-<div class="plus__inner">
-<div class="plus__value">32 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="35 мм">
-<div class="plus__inner">
-<div class="plus__value">35 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="40 мм">
-<div class="plus__inner">
-<div class="plus__value">40 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="50 мм">
-<div class="plus__inner">
-<div class="plus__value">50 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-</div>
-<div class="product__sets-error" style="display: none;">Выберите хотя бы одно свойство</div>
-<a class="button button_md button_bg-red button_shadow-black product__sets-button" href="javascript:;"><!--v-if--><!--v-if--><div class="button__text">Добавить в корзину</div><!--v-if--></a></div></div></div></a>
-<a class="product product_col group__item swiper-slide" href="/catalog/2">
+</a>
+<a class="product product_col group__item swiper-slide" href="/catalog-item.html">
 <div class="product__inner">
 <div class="product__img img"><img src="/uploads/products/product-2.png" alt="Даунпайп для"></div>
 <div class="product__content">
@@ -387,7 +233,7 @@
 </div>
 <!--v-if--><!--v-if-->
 </a>
-<a class="product product_col group__item swiper-slide" href="/catalog/1">
+<a class="product product_col group__item swiper-slide" href="/catalog-item.html">
 <div class="product__inner">
 <div class="product__img img"><img src="/uploads/products/product-1.jpg" alt="Винтовая подвеска BCR"></div>
 <div class="product__content">
@@ -408,86 +254,8 @@
 </div>
 </div>
 </div>
-<!--v-if-->
-<div class="product__modal nk">
-<div class="product__modal-inner">
-<div class="product__sets">
-<div class="product__sets-title">Максимальное занижение</div>
-<div class="product__sets-list row">
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="10 мм">
-<div class="plus__inner">
-<div class="plus__value">10 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="15 мм">
-<div class="plus__inner">
-<div class="plus__value">15 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="20 мм">
-<div class="plus__inner">
-<div class="plus__value">20 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="32 мм">
-<div class="plus__inner">
-<div class="plus__value">32 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="35 мм">
-<div class="plus__inner">
-<div class="plus__value">35 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="40 мм">
-<div class="plus__inner">
-<div class="plus__value">40 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="50 мм">
-<div class="plus__inner">
-<div class="plus__value">50 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-</div>
-<div class="product__sets-error" style="display: none;">Выберите хотя бы одно свойство</div>
-<a class="button button_md button_bg-red button_shadow-black product__sets-button" href="javascript:;"><!--v-if--><!--v-if--><div class="button__text">Добавить в корзину</div><!--v-if--></a></div></div></div></a>
-<a class="product product_col group__item swiper-slide" href="/catalog/2">
+</a>
+<a class="product product_col group__item swiper-slide" href="/catalog-item.html">
 <div class="product__inner">
 <div class="product__img img"><img src="/uploads/products/product-2.png" alt="Даунпайп для"></div>
 <div class="product__content">
@@ -518,7 +286,107 @@
 <div class="group__slider swiper swiper-initialized swiper-horizontal swiper-pointer-events">
 <div class="group__list swiper-wrapper" style="transition-duration: 0ms;">
 <!--[-->
-<a class="product product_col group__item swiper-slide" href="/catalog/2">
+<a class="product product_col group__item swiper-slide" href="/catalog-item.html">
+<div class="product__inner">
+<div class="product__img img"><img src="/uploads/products/product-1.jpg" alt="Винтовая подвеска BCR"></div>
+<div class="product__content">
+<div class="product__title">Винтовая подвеска BCR</div>
+<div class="product__desc">Уникальное решение для точной настройки хода подвела меня тут</div>
+<div class="product__data">
+<div class="product__price">
+<div class="product__price-current">12&nbsp;325 <span class="r"></span></div>
+<div class="product__price-old">22&nbsp;759 <span class="r"></span></div>
+</div>
+<!--v-if--><!--v-if--><!--v-if-->
+<div class="product__button-add nk">
+<svg class="icon icon_cart-add">
+<use xlink:href="#icon-cart-add"></use>
+</svg>
+</div>
+<!--v-if-->
+</div>
+</div>
+</div>
+<!--v-if--><div class="product__modal form"><div class="form__head"><div class="form__title">Выберите свойства</div><div class="form__close modal__close popup-close"></div></div><div class="form__inner"><div class="product__modal-inner">
+<div class="product__sets">
+<div class="product__sets-title">Максимальное занижение</div>
+<div class="product__sets-list row">
+<div class="plus form__sets-item plus_md plus_gray check">
+<input type="checkbox" class="check__input" name="sets" value="10 мм">
+<div class="plus__inner">
+<div class="plus__value">10 мм</div>
+<div class="plus__icon">
+<div></div>
+<div></div>
+</div>
+</div>
+</div>
+<div class="plus form__sets-item plus_md plus_gray check">
+<input type="checkbox" class="check__input" name="sets" value="15 мм">
+<div class="plus__inner">
+<div class="plus__value">15 мм</div>
+<div class="plus__icon">
+<div></div>
+<div></div>
+</div>
+</div>
+</div>
+<div class="plus form__sets-item plus_md plus_gray check">
+<input type="checkbox" class="check__input" name="sets" value="20 мм">
+<div class="plus__inner">
+<div class="plus__value">20 мм</div>
+<div class="plus__icon">
+<div></div>
+<div></div>
+</div>
+</div>
+</div>
+<div class="plus form__sets-item plus_md plus_gray check">
+<input type="checkbox" class="check__input" name="sets" value="32 мм">
+<div class="plus__inner">
+<div class="plus__value">32 мм</div>
+<div class="plus__icon">
+<div></div>
+<div></div>
+</div>
+</div>
+</div>
+<div class="plus form__sets-item plus_md plus_gray check">
+<input type="checkbox" class="check__input" name="sets" value="35 мм">
+<div class="plus__inner">
+<div class="plus__value">35 мм</div>
+<div class="plus__icon">
+<div></div>
+<div></div>
+</div>
+</div>
+</div>
+<div class="plus form__sets-item plus_md plus_gray check">
+<input type="checkbox" class="check__input" name="sets" value="40 мм">
+<div class="plus__inner">
+<div class="plus__value">40 мм</div>
+<div class="plus__icon">
+<div></div>
+<div></div>
+</div>
+</div>
+</div>
+<div class="plus form__sets-item plus_md plus_gray check">
+<input type="checkbox" class="check__input" name="sets" value="50 мм">
+<div class="plus__inner">
+<div class="plus__value">50 мм</div>
+<div class="plus__icon">
+<div></div>
+<div></div>
+</div>
+</div>
+</div>
+</div>
+<div class="product__sets-error" style="display: none;">Выберите хотя бы одно свойство</div>
+<div class="button button_md button_bg-red button_shadow-black product__sets-button"><!--v-if--><!--v-if--><div class="button__text">Добавить в корзину</div><!--v-if--></div>
+</div>
+</div></div></div></a>
+<a class="product product_col group__item swiper-slide" href="/catalog-item.html">
 <div class="product__inner">
 <div class="product__img img"><img src="/uploads/products/product-2.png" alt="Даунпайп для"></div>
 <div class="product__content">
@@ -541,7 +409,7 @@
 </div>
 <!--v-if--><!--v-if-->
 </a>
-<a class="product product_col group__item swiper-slide" href="/catalog/1">
+<a class="product product_col group__item swiper-slide" href="/catalog-item.html">
 <div class="product__inner">
 <div class="product__img img"><img src="/uploads/products/product-1.jpg" alt="Винтовая подвеска BCR"></div>
 <div class="product__content">
@@ -563,85 +431,8 @@
 </div>
 </div>
 <!--v-if-->
-<div class="product__modal nk">
-<div class="product__modal-inner">
-<div class="product__sets">
-<div class="product__sets-title">Максимальное занижение</div>
-<div class="product__sets-list row">
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="10 мм">
-<div class="plus__inner">
-<div class="plus__value">10 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="15 мм">
-<div class="plus__inner">
-<div class="plus__value">15 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="20 мм">
-<div class="plus__inner">
-<div class="plus__value">20 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="32 мм">
-<div class="plus__inner">
-<div class="plus__value">32 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="35 мм">
-<div class="plus__inner">
-<div class="plus__value">35 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="40 мм">
-<div class="plus__inner">
-<div class="plus__value">40 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="50 мм">
-<div class="plus__inner">
-<div class="plus__value">50 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-</div>
-<div class="product__sets-error" style="display: none;">Выберите хотя бы одно свойство</div>
-<a class="button button_md button_bg-red button_shadow-black product__sets-button" href="javascript:;"><!--v-if--><!--v-if--><div class="button__text">Добавить в корзину</div><!--v-if--></a></div></div></div></a>
-<a class="product product_col group__item swiper-slide" href="/catalog/2">
+</a>
+<a class="product product_col group__item swiper-slide" href="/catalog-item.html">
 <div class="product__inner">
 <div class="product__img img"><img src="/uploads/products/product-2.png" alt="Даунпайп для"></div>
 <div class="product__content">
@@ -664,7 +455,7 @@
 </div>
 <!--v-if--><!--v-if-->
 </a>
-<a class="product product_col group__item swiper-slide" href="/catalog/1">
+<a class="product product_col group__item swiper-slide" href="/catalog-item.html">
 <div class="product__inner">
 <div class="product__img img"><img src="/uploads/products/product-1.jpg" alt="Винтовая подвеска BCR"></div>
 <div class="product__content">
@@ -686,85 +477,8 @@
 </div>
 </div>
 <!--v-if-->
-<div class="product__modal nk">
-<div class="product__modal-inner">
-<div class="product__sets">
-<div class="product__sets-title">Максимальное занижение</div>
-<div class="product__sets-list row">
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="10 мм">
-<div class="plus__inner">
-<div class="plus__value">10 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="15 мм">
-<div class="plus__inner">
-<div class="plus__value">15 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="20 мм">
-<div class="plus__inner">
-<div class="plus__value">20 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="32 мм">
-<div class="plus__inner">
-<div class="plus__value">32 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="35 мм">
-<div class="plus__inner">
-<div class="plus__value">35 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="40 мм">
-<div class="plus__inner">
-<div class="plus__value">40 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="50 мм">
-<div class="plus__inner">
-<div class="plus__value">50 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-</div>
-<div class="product__sets-error" style="display: none;">Выберите хотя бы одно свойство</div>
-<a class="button button_md button_bg-red button_shadow-black product__sets-button" href="javascript:;"><!--v-if--><!--v-if--><div class="button__text">Добавить в корзину</div><!--v-if--></a></div></div></div></a>
-<a class="product product_col group__item swiper-slide" href="/catalog/2">
+</a>
+<a class="product product_col group__item swiper-slide" href="/catalog-item.html">
 <div class="product__inner">
 <div class="product__img img"><img src="/uploads/products/product-2.png" alt="Даунпайп для"></div>
 <div class="product__content">
@@ -787,7 +501,7 @@
 </div>
 <!--v-if--><!--v-if-->
 </a>
-<a class="product product_col group__item swiper-slide" href="/catalog/1">
+<a class="product product_col group__item swiper-slide" href="/catalog-item.html">
 <div class="product__inner">
 <div class="product__img img"><img src="/uploads/products/product-1.jpg" alt="Винтовая подвеска BCR"></div>
 <div class="product__content">
@@ -808,209 +522,8 @@
 </div>
 </div>
 </div>
-<!--v-if-->
-<div class="product__modal nk">
-<div class="product__modal-inner">
-<div class="product__sets">
-<div class="product__sets-title">Максимальное занижение</div>
-<div class="product__sets-list row">
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="10 мм">
-<div class="plus__inner">
-<div class="plus__value">10 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="15 мм">
-<div class="plus__inner">
-<div class="plus__value">15 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="20 мм">
-<div class="plus__inner">
-<div class="plus__value">20 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="32 мм">
-<div class="plus__inner">
-<div class="plus__value">32 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="35 мм">
-<div class="plus__inner">
-<div class="plus__value">35 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="40 мм">
-<div class="plus__inner">
-<div class="plus__value">40 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="50 мм">
-<div class="plus__inner">
-<div class="plus__value">50 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-</div>
-<div class="product__sets-error" style="display: none;">Выберите хотя бы одно свойство</div>
-<a class="button button_md button_bg-red button_shadow-black product__sets-button" href="javascript:;"><!--v-if--><!--v-if--><div class="button__text">Добавить в корзину</div><!--v-if--></a></div></div></div></a>
-<a class="product product_col group__item swiper-slide" href="/catalog/2">
-<div class="product__inner">
-<div class="product__img img"><img src="/uploads/products/product-2.png" alt="Даунпайп для"></div>
-<div class="product__content">
-<div class="product__title">Даунпайп для</div>
-<div class="product__desc">7880 collection for the earth and human environment</div>
-<div class="product__data">
-<div class="product__price">
-<div class="product__price-current">25&nbsp;940 <span class="r"></span></div>
-<div class="product__price-old">52&nbsp;499 <span class="r"></span></div>
-</div>
-<!--v-if--><!--v-if--><!--v-if-->
-<div class="product__button-add nk">
-<svg class="icon icon_cart-add">
-<use xlink:href="#icon-cart-add"></use>
-</svg>
-</div>
-<!--v-if-->
-</div>
-</div>
-</div>
-<!--v-if--><!--v-if-->
 </a>
-<a class="product product_col group__item swiper-slide" href="/catalog/1">
-<div class="product__inner">
-<div class="product__img img"><img src="/uploads/products/product-1.jpg" alt="Винтовая подвеска BCR"></div>
-<div class="product__content">
-<div class="product__title">Винтовая подвеска BCR</div>
-<div class="product__desc">Уникальное решение для точной настройки хода подвела меня тут</div>
-<div class="product__data">
-<div class="product__price">
-<div class="product__price-current">12&nbsp;325 <span class="r"></span></div>
-<div class="product__price-old">22&nbsp;759 <span class="r"></span></div>
-</div>
-<!--v-if--><!--v-if--><!--v-if-->
-<div class="product__button-add nk">
-<svg class="icon icon_cart-add">
-<use xlink:href="#icon-cart-add"></use>
-</svg>
-</div>
-<!--v-if-->
-</div>
-</div>
-</div>
-<!--v-if-->
-<div class="product__modal nk">
-<div class="product__modal-inner">
-<div class="product__sets">
-<div class="product__sets-title">Максимальное занижение</div>
-<div class="product__sets-list row">
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="10 мм">
-<div class="plus__inner">
-<div class="plus__value">10 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="15 мм">
-<div class="plus__inner">
-<div class="plus__value">15 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="20 мм">
-<div class="plus__inner">
-<div class="plus__value">20 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="32 мм">
-<div class="plus__inner">
-<div class="plus__value">32 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="35 мм">
-<div class="plus__inner">
-<div class="plus__value">35 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="40 мм">
-<div class="plus__inner">
-<div class="plus__value">40 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="50 мм">
-<div class="plus__inner">
-<div class="plus__value">50 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-</div>
-<div class="product__sets-error" style="display: none;">Выберите хотя бы одно свойство</div>
-<a class="button button_md button_bg-red button_shadow-black product__sets-button" href="javascript:;"><!--v-if--><!--v-if--><div class="button__text">Добавить в корзину</div><!--v-if--></a></div></div></div></a>
-<a class="product product_col group__item swiper-slide" href="/catalog/2">
+<a class="product product_col group__item swiper-slide" href="/catalog-item.html">
 <div class="product__inner">
 <div class="product__img img"><img src="/uploads/products/product-2.png" alt="Даунпайп для"></div>
 <div class="product__content">
@@ -1041,7 +554,7 @@
 <div class="group__slider swiper swiper-initialized swiper-horizontal swiper-pointer-events">
 <div class="group__list swiper-wrapper" style="transition-duration: 0ms;">
 <!--[-->
-<a class="product product_col group__item swiper-slide" href="/catalog/1">
+<a class="product product_col group__item swiper-slide" href="/catalog-item.html">
 <div class="product__inner">
 <div class="product__img img"><img src="/uploads/products/product-1.jpg" alt="Винтовая подвеска BCR"></div>
 <div class="product__content">
@@ -1062,14 +575,12 @@
 </div>
 </div>
 </div>
-<!--v-if-->
-<div class="product__modal nk">
-<div class="product__modal-inner">
+<!--v-if--><div class="product__modal form"><div class="form__head"><div class="form__title">Выберите свойства</div><div class="form__close modal__close popup-close"></div></div><div class="form__inner"><div class="product__modal-inner">
 <div class="product__sets">
 <div class="product__sets-title">Максимальное занижение</div>
 <div class="product__sets-list row">
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="10 мм">
+<div class="plus form__sets-item plus_md plus_gray check">
+<input type="checkbox" class="check__input" name="sets" value="10 мм">
 <div class="plus__inner">
 <div class="plus__value">10 мм</div>
 <div class="plus__icon">
@@ -1078,8 +589,8 @@
 </div>
 </div>
 </div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="15 мм">
+<div class="plus form__sets-item plus_md plus_gray check">
+<input type="checkbox" class="check__input" name="sets" value="15 мм">
 <div class="plus__inner">
 <div class="plus__value">15 мм</div>
 <div class="plus__icon">
@@ -1088,8 +599,8 @@
 </div>
 </div>
 </div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="20 мм">
+<div class="plus form__sets-item plus_md plus_gray check">
+<input type="checkbox" class="check__input" name="sets" value="20 мм">
 <div class="plus__inner">
 <div class="plus__value">20 мм</div>
 <div class="plus__icon">
@@ -1098,8 +609,8 @@
 </div>
 </div>
 </div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="32 мм">
+<div class="plus form__sets-item plus_md plus_gray check">
+<input type="checkbox" class="check__input" name="sets" value="32 мм">
 <div class="plus__inner">
 <div class="plus__value">32 мм</div>
 <div class="plus__icon">
@@ -1108,8 +619,8 @@
 </div>
 </div>
 </div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="35 мм">
+<div class="plus form__sets-item plus_md plus_gray check">
+<input type="checkbox" class="check__input" name="sets" value="35 мм">
 <div class="plus__inner">
 <div class="plus__value">35 мм</div>
 <div class="plus__icon">
@@ -1118,8 +629,8 @@
 </div>
 </div>
 </div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="40 мм">
+<div class="plus form__sets-item plus_md plus_gray check">
+<input type="checkbox" class="check__input" name="sets" value="40 мм">
 <div class="plus__inner">
 <div class="plus__value">40 мм</div>
 <div class="plus__icon">
@@ -1128,8 +639,8 @@
 </div>
 </div>
 </div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="50 мм">
+<div class="plus form__sets-item plus_md plus_gray check">
+<input type="checkbox" class="check__input" name="sets" value="50 мм">
 <div class="plus__inner">
 <div class="plus__value">50 мм</div>
 <div class="plus__icon">
@@ -1140,8 +651,10 @@
 </div>
 </div>
 <div class="product__sets-error" style="display: none;">Выберите хотя бы одно свойство</div>
-<a class="button button_md button_bg-red button_shadow-black product__sets-button" href="javascript:;"><!--v-if--><!--v-if--><div class="button__text">Добавить в корзину</div><!--v-if--></a></div></div></div></a>
-<a class="product product_col group__item swiper-slide" href="/catalog/2">
+<div class="button button_md button_bg-red button_shadow-black product__sets-button"><!--v-if--><!--v-if--><div class="button__text">Добавить в корзину</div><!--v-if--></div>
+</div>
+</div></div></div></a>
+<a class="product product_col group__item swiper-slide" href="/catalog-item.html">
 <div class="product__inner">
 <div class="product__img img"><img src="/uploads/products/product-2.png" alt="Даунпайп для"></div>
 <div class="product__content">
@@ -1164,7 +677,7 @@
 </div>
 <!--v-if--><!--v-if-->
 </a>
-<a class="product product_col group__item swiper-slide" href="/catalog/1">
+<a class="product product_col group__item swiper-slide" href="/catalog-item.html">
 <div class="product__inner">
 <div class="product__img img"><img src="/uploads/products/product-1.jpg" alt="Винтовая подвеска BCR"></div>
 <div class="product__content">
@@ -1186,85 +699,8 @@
 </div>
 </div>
 <!--v-if-->
-<div class="product__modal nk">
-<div class="product__modal-inner">
-<div class="product__sets">
-<div class="product__sets-title">Максимальное занижение</div>
-<div class="product__sets-list row">
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="10 мм">
-<div class="plus__inner">
-<div class="plus__value">10 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="15 мм">
-<div class="plus__inner">
-<div class="plus__value">15 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="20 мм">
-<div class="plus__inner">
-<div class="plus__value">20 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="32 мм">
-<div class="plus__inner">
-<div class="plus__value">32 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="35 мм">
-<div class="plus__inner">
-<div class="plus__value">35 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="40 мм">
-<div class="plus__inner">
-<div class="plus__value">40 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="50 мм">
-<div class="plus__inner">
-<div class="plus__value">50 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-</div>
-<div class="product__sets-error" style="display: none;">Выберите хотя бы одно свойство</div>
-<a class="button button_md button_bg-red button_shadow-black product__sets-button" href="javascript:;"><!--v-if--><!--v-if--><div class="button__text">Добавить в корзину</div><!--v-if--></a></div></div></div></a>
-<a class="product product_col group__item swiper-slide" href="/catalog/2">
+</a>
+<a class="product product_col group__item swiper-slide" href="/catalog-item.html">
 <div class="product__inner">
 <div class="product__img img"><img src="/uploads/products/product-2.png" alt="Даунпайп для"></div>
 <div class="product__content">
@@ -1287,7 +723,7 @@
 </div>
 <!--v-if--><!--v-if-->
 </a>
-<a class="product product_col group__item swiper-slide" href="/catalog/1">
+<a class="product product_col group__item swiper-slide" href="/catalog-item.html">
 <div class="product__inner">
 <div class="product__img img"><img src="/uploads/products/product-1.jpg" alt="Винтовая подвеска BCR"></div>
 <div class="product__content">
@@ -1309,85 +745,8 @@
 </div>
 </div>
 <!--v-if-->
-<div class="product__modal nk">
-<div class="product__modal-inner">
-<div class="product__sets">
-<div class="product__sets-title">Максимальное занижение</div>
-<div class="product__sets-list row">
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="10 мм">
-<div class="plus__inner">
-<div class="plus__value">10 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="15 мм">
-<div class="plus__inner">
-<div class="plus__value">15 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="20 мм">
-<div class="plus__inner">
-<div class="plus__value">20 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="32 мм">
-<div class="plus__inner">
-<div class="plus__value">32 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="35 мм">
-<div class="plus__inner">
-<div class="plus__value">35 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="40 мм">
-<div class="plus__inner">
-<div class="plus__value">40 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="50 мм">
-<div class="plus__inner">
-<div class="plus__value">50 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-</div>
-<div class="product__sets-error" style="display: none;">Выберите хотя бы одно свойство</div>
-<a class="button button_md button_bg-red button_shadow-black product__sets-button" href="javascript:;"><!--v-if--><!--v-if--><div class="button__text">Добавить в корзину</div><!--v-if--></a></div></div></div></a>
-<a class="product product_col group__item swiper-slide" href="/catalog/2">
+</a>
+<a class="product product_col group__item swiper-slide" href="/catalog-item.html">
 <div class="product__inner">
 <div class="product__img img"><img src="/uploads/products/product-2.png" alt="Даунпайп для"></div>
 <div class="product__content">
@@ -1410,7 +769,7 @@
 </div>
 <!--v-if--><!--v-if-->
 </a>
-<a class="product product_col group__item swiper-slide" href="/catalog/1">
+<a class="product product_col group__item swiper-slide" href="/catalog-item.html">
 <div class="product__inner">
 <div class="product__img img"><img src="/uploads/products/product-1.jpg" alt="Винтовая подвеска BCR"></div>
 <div class="product__content">
@@ -1431,86 +790,8 @@
 </div>
 </div>
 </div>
-<!--v-if-->
-<div class="product__modal nk">
-<div class="product__modal-inner">
-<div class="product__sets">
-<div class="product__sets-title">Максимальное занижение</div>
-<div class="product__sets-list row">
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="10 мм">
-<div class="plus__inner">
-<div class="plus__value">10 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="15 мм">
-<div class="plus__inner">
-<div class="plus__value">15 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="20 мм">
-<div class="plus__inner">
-<div class="plus__value">20 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="32 мм">
-<div class="plus__inner">
-<div class="plus__value">32 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="35 мм">
-<div class="plus__inner">
-<div class="plus__value">35 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="40 мм">
-<div class="plus__inner">
-<div class="plus__value">40 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-<div class="plus form__sets-item plus_md plus_gray">
-<input type="checkbox" class="plus__input" name="sets" value="50 мм">
-<div class="plus__inner">
-<div class="plus__value">50 мм</div>
-<div class="plus__icon">
-<div></div>
-<div></div>
-</div>
-</div>
-</div>
-</div>
-<div class="product__sets-error" style="display: none;">Выберите хотя бы одно свойство</div>
-<a class="button button_md button_bg-red button_shadow-black product__sets-button" href="javascript:;"><!--v-if--><!--v-if--><div class="button__text">Добавить в корзину</div><!--v-if--></a></div></div></div></a>
-<a class="product product_col group__item swiper-slide" href="/catalog/2">
+</a>
+<a class="product product_col group__item swiper-slide" href="/catalog-item.html">
 <div class="product__inner">
 <div class="product__img img"><img src="/uploads/products/product-2.png" alt="Даунпайп для"></div>
 <div class="product__content">

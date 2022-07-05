@@ -4,11 +4,13 @@ block vars
     title = "Избранное"
     breadcrumbs = [
       ['Главная', 'index.html'],
+      ['Профиль', 'profile.html'],
       [title]
     ]
 block content
   include ../../../blocks/favorit/favorit
   +style('favorit', 'blocks')
+  +script('favorit', 'blocks')
   
   - actualClass = 'actual_mt-minus hidden-xs'
   include ../../../blocks/actual/actual

@@ -32,7 +32,7 @@
 .select__clear {
   width: 0px;
   height: 12px;
-  margin-right: 17px;
+  margin-right: 10px;
   transition: 0.3s;
 }
 .select__clear svg {
@@ -113,7 +113,7 @@
   align-items: center;
   justify-content: center;
   height: 35px;
-  margin-right: 10px;
+  margin-right: 0px;
 }
 .select_sm .select__icon svg {
   width: 100%;
@@ -155,8 +155,13 @@
   fill: #262626;
 }
 .select_sm.select_filled .select__clear {
+  width: 12px;
+  min-width: 12px;
+}
+.select_sm.select_has-icon .select__icon {
   width: 27px;
   min-width: 27px;
+  margin-right: 10px;
 }
 .select_md .select__area {
   font-weight: 600;
@@ -172,7 +177,7 @@
   justify-content: center;
   width: 0px;
   height: 35px;
-  margin-right: 10px;
+  margin-right: 0px;
 }
 .select_md .select__icon svg {
   width: 100%;
@@ -214,8 +219,13 @@
   fill: #262626;
 }
 .select_md.select_filled .select__clear {
+  width: 12px;
+  min-width: 12px;
+}
+.select_md.select_has-icon .select__icon {
   width: 27px;
   min-width: 27px;
+  margin-right: 10px;
 }
 .select_b-gray .select__area {
   border: 1px solid #D9D9D9;

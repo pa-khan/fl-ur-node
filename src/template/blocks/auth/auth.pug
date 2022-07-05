@@ -14,7 +14,7 @@ include ../../pug/vars
         div(class="t1 auth__text")= authText
         <form class="auth__form">
           if authReg
-            <div class="field field_sm field_b-gray auth__field">
+            <div class="field field_sm field_b-gray auth__field" data-validation="email">
               <div class="field__head">
                 <!---->
                 <div class="field__title">
@@ -29,21 +29,22 @@ include ../../pug/vars
                   <input class="field__area" type="text" value="" name="name">
                 </div>
                 <!----><!---->
-                <div class="field__icon field__icon_right">
-                  <!---->
+                <div class="field__icon field__valid-icon field__icon_right">
+                  <svg class="field__valid-successful icon icon_check-round f-green"><use xlink:href="#icon-check-round"></use></svg>
+                  <svg class="field__valid-error icon icon_alert f-red"><use xlink:href="#icon-alert"></use></svg>
                 </div>
                 <!----><!---->
               </div>
               <div class="field__foot">
                 <!---->
-                <div class="field__valid" style="display:none;">
+                <div class="field__valid">
                   <!----><!---->
                 </div>
                 <!---->
               </div>
             </div>
           <!---->
-          <div class="field field_sm field_b-gray auth__field">
+          <div class="field field_sm field_b-gray auth__field" data-validation="phone">
             <div class="field__head">
               <!---->
               <div class="field__title">
@@ -58,14 +59,15 @@ include ../../pug/vars
                 <input class="field__area" type="text" value="" name="name">
               </div>
               <!----><!---->
-              <div class="field__icon field__icon_right">
-                <!---->
+              <div class="field__icon field__valid-icon field__icon_right">
+                <svg class="field__valid-successful icon icon_check-round f-green"><use xlink:href="#icon-check-round"></use></svg>
+                <svg class="field__valid-error icon icon_alert f-red"><use xlink:href="#icon-alert"></use></svg>
               </div>
               <!----><!---->
             </div>
             <div class="field__foot">
               <!---->
-              <div class="field__valid" style="display:none;">
+              <div class="field__valid">
                 <!----><!---->
               </div>
               <!---->
@@ -86,19 +88,23 @@ include ../../pug/vars
                 <input class="field__area" type="password" value="" name="name">
               </div>
               <!----><!---->
-              <div class="field__icon field__icon_right">
-                <!---->
-              </div>
-              <div class="field__icon_hidden field__visible field__icon field__icon_right">
+              <div class="field__visible field__icon field__icon_right">
                 <svg class="icon icon_eye">
                   <use xlink:href="#icon-eye"></use>
                 </svg>
+                <svg class="icon icon_eye-line">
+                  <use xlink:href="#icon-eye-line"></use>
+                </svg>
+              </div>
+              <div class="field__icon field__valid-icon field__icon_right">
+                <svg class="field__valid-successful icon icon_check-round f-green"><use xlink:href="#icon-check-round"></use></svg>
+                <svg class="field__valid-error icon icon_alert f-red"><use xlink:href="#icon-alert"></use></svg>
               </div>
               <!---->
             </div>
             <div class="field__foot">
               <!---->
-              <div class="field__valid" style="display:none;">
+              <div class="field__valid">
                 <!----><!---->
               </div>
               <!---->
@@ -106,8 +112,8 @@ include ../../pug/vars
           </div>
           <!---->
           if authReg
-            <div class="check check_checked auth__check check_md check_round" html="yes">
-              <input type="checkbox" class="check__input" value="yes" name="policy" checked="">
+            <div class="check check_checked auth__check check_md check_round">
+              <input type="checkbox" class="check__input" value="yes" name="policy" checked="checked">
               <div class="check__box">
                 <svg class="icon icon_check f-red">
                   <use xlink:href="#icon-check"></use>

@@ -135,7 +135,7 @@
 
 
 @media screen and (max-width: 991px) {
-    .inf {
+    .info {
         .case {
             max-width: 540px;
         }
@@ -179,7 +179,7 @@
 }
 
 @media screen and (max-width: 767px) {
-    .inf {
+    .info {
         padding-top: 77px;
         padding-bottom: 0;
 
@@ -295,7 +295,7 @@
 }
 
 @media screen and (max-width: 479px) {
-    .inf {
+    .info {
         &__rec {
             &-item {
                 width: calc(100% - 10px);

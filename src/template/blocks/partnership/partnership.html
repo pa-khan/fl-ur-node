@@ -1,17 +1,17 @@
 <div class="partnership">
 <div class="case case_sm">
-<!--[--><link rel="stylesheet" href="template/blocks/breadcrumb/breadcrumb.css?ver=1656796414795"/><div class="return partnership__return hidden show-xs-flex"><div class="return__button">
+<!--[--><link rel="stylesheet" href="template/blocks/breadcrumb/breadcrumb.css?ver=1656983149299"/><div class="return partnership__return hidden show-xs-flex"><div class="return__button">
 <svg class="icon icon_chevron f-red">
 <use xlink:href="#icon-chevron"></use>
 </svg>
 <span>Назад</span>
-</div></div><link rel="stylesheet" href="template/blocks/return/return.css?ver=1656796414798"/><!---->
+</div></div><link rel="stylesheet" href="template/blocks/return/return.css?ver=1656983149300"/><!---->
 <div class="partnership__inner row">
 <div class="partnership__left"><div class="h1 partnership__title"></div><div class="t1 partnership__text"></div><!----></div>
 <div class="partnership__right">
 <div class="partnership__form">
 <!----><div class="partnership__form-inner">
-<div class="field field_sm field_b-gray partnership__form-field">
+<div class="field field_sm field_b-gray partnership__form-field"  data-validation="name">
 <div class="field__head">
 <!---->
 <div class="field__title">
@@ -25,11 +25,22 @@
 <div class="field__placeholder">Ваше имя</div>
 <input class="field__area" type="text" value="" name="name">
 </div>
+<div class="field__icon field__valid-icon field__icon_right">
+<svg class="field__valid-successful icon icon_check-round f-green"><use xlink:href="#icon-check-round"></use></svg>
+<svg class="field__valid-error icon icon_alert f-red"><use xlink:href="#icon-alert"></use></svg>
+</div>
 <!----><!----><!----><!----><!---->
+</div>
+<div class="field__foot">
+<!---->
+<div class="field__valid">
+<!----><!---->
 </div>
 <!---->
 </div>
-<div class="field field_sm field_b-gray partnership__form-field">
+<!---->
+</div>
+<div class="field field_sm field_b-gray partnership__form-field"  data-validation="email">
 <div class="field__head">
 <!---->
 <div class="field__title">
@@ -44,19 +55,20 @@
 <input class="field__area" type="text" value="" name="name">
 </div>
 <!----><!---->
-<div class="field__icon field__icon_right">
-<!---->
+<div class="field__icon field__valid-icon field__icon_right">
+<svg class="field__valid-successful icon icon_check-round f-green"><use xlink:href="#icon-check-round"></use></svg>
+<svg class="field__valid-error icon icon_alert f-red"><use xlink:href="#icon-alert"></use></svg>
 </div>
 <!----><!---->
 </div>
 <div class="field__foot">
 <!---->
-<div class="field__valid" style="display:none;">
+<div class="field__valid">
 <!----><!---->
 </div>
 <!---->
 </div>
-</div><div class="field field_sm field_b-gray field_error field_error-type-30 partnership__form-field">
+</div><div class="field field_sm field_b-gray partnership__form-field" data-validation="phone">
 <div class="field__head">
 <!---->
 <div class="field__title">
@@ -71,19 +83,15 @@
 <input class="field__area" type="text" value="" name="name">
 </div>
 <!----><!---->
-<div class="field__icon field__icon_right">
-<svg class="icon icon_alert f-red">
-<use xlink:href="#icon-alert"></use>
-</svg>
+<div class="field__icon field__valid-icon field__icon_right">
+<svg class="field__valid-successful icon icon_check-round f-green"><use xlink:href="#icon-check-round"></use></svg>
+<svg class="field__valid-error icon icon_alert f-red"><use xlink:href="#icon-alert"></use></svg>
 </div>
 <!----><!---->
 </div>
 <div class="field__foot">
 <!---->
-<div class="field__valid" style="">
-<div class="field__valid-title">Ошибка, телефон введен не верно.</div>
-<!---->
-</div>
+<div class="field__valid"></div>
 <!---->
 </div>
 </div>
@@ -98,6 +106,6 @@
 </div>
 <!---->
 </div>
-</div><link rel="stylesheet" href="template/blocks/partner/partner.css?ver=1656796414798"/><!----><!--]-->
+</div><link rel="stylesheet" href="template/blocks/partner/partner.css?ver=1656983149300"/><!----><!--]-->
 </div>
 </div>

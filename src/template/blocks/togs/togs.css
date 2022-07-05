@@ -11,9 +11,6 @@
 .togs__item:last-child {
   margin-bottom: 0;
 }
-.togs__item_current {
-  cursor: default;
-}
 .togs__item_current .togs__head {
   padding-left: 0;
 }

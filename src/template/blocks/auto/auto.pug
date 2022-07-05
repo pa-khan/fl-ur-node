@@ -1,7 +1,7 @@
 include ../../pug/vars
 
-<div class="auto selection__list row" action="catalog.html" id="auto">
-	<div id="auto-mark" class="select select_md select_b-gray auto__select selection__select select_drop-mt" data-placeholder="Выберите марку автомобиля">
+div(class="auto selection__list row" action="catalog.html" class=autoClass id="auto")
+	div(id="auto-mark" class="select select_md select_b-gray auto__select selection__select" class=!autoSelectHideBg ? 'select_drop-mt' : null data-placeholder="Выберите марку автомобиля")
 		<!--v-if-->
 		<div class="select__area">
 			<!--v-if-->
@@ -21,10 +21,10 @@ include ../../pug/vars
 		<div class="select__drop">
 			<div class="select__list"></div>
 		</div>
-		<div class="select__bg"></div>
+		if !autoSelectHideBg
+			<div class="select__bg"></div>
 		<select name="mark"></select>
-	</div>
-	<div id="auto-model" class="select select_md select_b-gray auto__select selection__select select_drop-mt" data-placeholder="Выберите модель автомобиля">
+	div(id="auto-model" class="select select_md select_b-gray auto__select selection__select" class=!autoSelectHideBg ? 'select_drop-mt' : null data-placeholder="Выберите модель автомобиля")
 		<!--v-if-->
 		<div class="select__area">
 			<!--v-if-->
@@ -44,10 +44,10 @@ include ../../pug/vars
 		<div class="select__drop">
 			<div class="select__list"></div>
 		</div>
-		<div class="select__bg"></div>
+		if !autoSelectHideBg
+			<div class="select__bg"></div>
 		<select name="model"></select>
-	</div>
-	<div id="auto-mode" class="select select_md select_b-gray auto__select selection__select select_drop-mt" data-placeholder="Выберите модификацию">
+	div(id="auto-mode" class="select select_md select_b-gray auto__select selection__select" class=!autoSelectHideBg ? 'select_drop-mt' : null data-placeholder="Выберите модификацию")
 		<!--v-if-->
 		<div class="select__area">
 			<!--v-if-->
@@ -67,12 +67,12 @@ include ../../pug/vars
 		<div class="select__drop">
 			<div class="select__list"></div>
 		</div>
-		<div class="select__bg"></div>
+		if !autoSelectHideBg
+			<div class="select__bg"></div>
 		<select class="mode"></select>
-	</div>
-	<button class="button button_md button_bg-red button_shadow-black auto__button selection__button" href="javascript:;">
-		<!--v-if--><!--v-if-->
-		<div class="button__text">Подобрать</div>
-		<!--v-if-->
-	</button>
-</div>
+	if !autoButtonHide
+		<button class="button button_md button_bg-red button_shadow-black auto__button selection__button" href="javascript:;">
+			<!--v-if--><!--v-if-->
+			<div class="button__text">Подобрать</div>
+			<!--v-if-->
+		</button>

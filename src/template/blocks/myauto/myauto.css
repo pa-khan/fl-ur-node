@@ -50,10 +50,10 @@
   transition: 0.3s;
   transform: scale(0);
 }
-.myauto__item_current {
+.myauto__item.--checked {
   border-color: #d9d9d9;
 }
-.myauto__item_current .myauto__item-checked {
+.myauto__item.--checked .myauto__item-checked {
   transform: scale(1);
 }
 .myauto__item_remove {
@@ -102,4 +102,13 @@
 }
 .myauto__button-search {
   margin-top: 11px;
+}
+.myauto__choiser {
+  margin-top: 11px;
+}
+.myauto__choiser .select {
+  margin-bottom: 11px;
+}
+.myauto__choiser .select:last-child {
+  margin-bottom: 0;
 }

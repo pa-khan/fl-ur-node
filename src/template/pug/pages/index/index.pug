@@ -34,8 +34,11 @@ block content
   include ../../../blocks/text/text
   +style('text', 'blocks')
 
+  - catsListClass = 'cats__list_hidden-xs'
+  - catsLink = true
   include ../../../blocks/cats/cats
   +style('cats', 'blocks')
+  +script('cats', 'blocks')
 
   - actualClass = 'actual_mt-minus'
   include ../../../blocks/actual/actual

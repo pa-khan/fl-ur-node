@@ -28,6 +28,7 @@
   max-width: 810px;
 }
 .alert__message a {
+  color: #fff;
   border-color: #fff;
 }
 .alert__message a:hover {

@@ -1,11 +1,11 @@
 <div class="profile">
 <div class="case case_sm">
-<!--[--><link rel="stylesheet" href="template/blocks/breadcrumb/breadcrumb.css?ver=1656796415200"/><div class="return profile__return hidden show-xs-flex"><div class="return__button">
+<!--[--><link rel="stylesheet" href="template/blocks/breadcrumb/breadcrumb.css?ver=1656985054805"/><div class="return profile__return hidden show-xs-flex"><div class="return__button">
 <svg class="icon icon_chevron f-red">
 <use xlink:href="#icon-chevron"></use>
 </svg>
 <span>Назад</span>
-</div></div><link rel="stylesheet" href="template/blocks/return/return.css?ver=1656796415202"/><div class="profile__inner row">
+</div></div><link rel="stylesheet" href="template/blocks/return/return.css?ver=1656985054806"/><div class="profile__inner row">
 <div class="profile__left">
 <div class="h1 profile__title">
 <!--[-->Профиль<!--]-->
@@ -14,7 +14,7 @@
 <!--[-->Тут вы можете посмотреть историю заказов и изменить контактную информацию<!--]-->
 </div>
 <div class="profile__form">
-<div class="field field_sm field_b-gray profile__field">
+<div class="field field_sm field_b-gray profile__field" data-validation="email">
 <div class="field__head">
 <!---->
 <div class="field__title">
@@ -29,20 +29,21 @@
 <input class="field__area" type="text" value="" name="name">
 </div>
 <!----><!---->
-<div class="field__icon field__icon_right">
-<!---->
+<div class="field__icon field__valid-icon field__icon_right">
+<svg class="field__valid-successful icon icon_check-round f-green"><use xlink:href="#icon-check-round"></use></svg>
+<svg class="field__valid-error icon icon_alert f-red"><use xlink:href="#icon-alert"></use></svg>
 </div>
 <!----><!---->
 </div>
 <div class="field__foot">
 <!---->
-<div class="field__valid" style="display:none;">
+<div class="field__valid">
 <!----><!---->
 </div>
 <!---->
 </div>
 </div>
-<div class="field field_sm field_b-gray profile__field">
+<div class="field field_sm field_b-gray profile__field" data-validation="phone">
 <div class="field__head">
 <!---->
 <div class="field__title">
@@ -57,20 +58,21 @@
 <input class="field__area" type="text" value="" name="name">
 </div>
 <!----><!---->
-<div class="field__icon field__icon_right">
-<!---->
+<div class="field__icon field__valid-icon field__icon_right">
+<svg class="field__valid-successful icon icon_check-round f-green"><use xlink:href="#icon-check-round"></use></svg>
+<svg class="field__valid-error icon icon_alert f-red"><use xlink:href="#icon-alert"></use></svg>
 </div>
 <!----><!---->
 </div>
 <div class="field__foot">
 <!---->
-<div class="field__valid" style="display:none;">
+<div class="field__valid">
 <!----><!---->
 </div>
 <!---->
 </div>
 </div>
-<div class="field field_sm field_b-gray field_password profile__field">
+<div class="field field_sm field_b-gray field_password profile__field" data-validation="password">
 <div class="field__head">
 <!---->
 <div class="field__title">
@@ -88,16 +90,23 @@
 <div class="field__icon field__icon_right">
 <!---->
 </div>
-<div class="field__icon_hidden field__visible field__icon field__icon_right">
+<div class="field__visible field__icon field__icon_right">
 <svg class="icon icon_eye">
 <use xlink:href="#icon-eye"></use>
 </svg>
+<svg class="icon icon_eye-line">
+<use xlink:href="#icon-eye-line"></use>
+</svg>
+</div>
+<div class="field__icon field__valid-icon field__icon_right">
+<svg class="field__valid-successful icon icon_check-round f-green"><use xlink:href="#icon-check-round"></use></svg>
+<svg class="field__valid-error icon icon_alert f-red"><use xlink:href="#icon-alert"></use></svg>
 </div>
 <!---->
 </div>
 <div class="field__foot">
 <!---->
-<div class="field__valid" style="display:none;">
+<div class="field__valid">
 <!----><!---->
 </div>
 <!---->
@@ -113,7 +122,7 @@
 <div class="profile__links">
 <div class="profile__links-title">Сохраненные товары</div>
 <div class="profile__links-list">
-<a class="profile__link" href="/profile/compare">
+<a class="profile__link" href="compare.html">
 <div class="profile__link-icon">
 <svg class="icon icon_scale f-red">
 <use xlink:href="#icon-scale"></use>
@@ -121,7 +130,7 @@
 </div>
 <div class="profile__link-title">Сравнение</div>
 </a>
-<a class="profile__link" href="/profile/favorit">
+<a class="profile__link" href="favorit.html">
 <div class="profile__link-icon">
 <svg class="icon icon_bookmark f-red">
 <use xlink:href="#icon-bookmark"></use>
@@ -152,9 +161,62 @@
 <use xlink:href="#icon-plus"></use>
 </svg>
 <span>Добавить еще автомобиль</span>
+</div><div class="auto selection__list row myauto__choiser" action="catalog.html" id="auto"><div class="select select_md select_b-gray auto__select selection__select" id="auto-mark" data-placeholder="Выберите марку автомобиля"><!--v-if-->
+<div class="select__area">
+<!--v-if-->
+<div class="select__icon"></div>
+<div class="select__value"></div>
+<div class="select__clear">
+<svg class="icon icon_cross">
+<use xlink:href="#icon-cross"></use>
+</svg>
 </div>
-<!---->
-<a class="button button_md button_bg-blue-dark button_shadow-black myauto__button-search" href="javascript:;">
+<div class="select__chevron">
+<svg class="icon icon_chevron-wide">
+<use xlink:href="#icon-chevron-wide"></use>
+</svg>
+</div>
+</div>
+<div class="select__drop">
+<div class="select__list"></div>
+</div><select name="mark"></select></div><div class="select select_md select_b-gray auto__select selection__select" id="auto-model" data-placeholder="Выберите модель автомобиля"><!--v-if-->
+<div class="select__area">
+<!--v-if-->
+<div class="select__icon"></div>
+<div class="select__value"></div>
+<div class="select__clear">
+<svg class="icon icon_cross">
+<use xlink:href="#icon-cross"></use>
+</svg>
+</div>
+<div class="select__chevron">
+<svg class="icon icon_chevron-wide">
+<use xlink:href="#icon-chevron-wide"></use>
+</svg>
+</div>
+</div>
+<div class="select__drop">
+<div class="select__list"></div>
+</div><select name="model"></select></div><div class="select select_md select_b-gray auto__select selection__select" id="auto-mode" data-placeholder="Выберите модификацию"><!--v-if-->
+<div class="select__area">
+<!--v-if-->
+<div class="select__icon"></div>
+<div class="select__value"></div>
+<div class="select__clear">
+<svg class="icon icon_cross">
+<use xlink:href="#icon-cross"></use>
+</svg>
+</div>
+<div class="select__chevron">
+<svg class="icon icon_chevron-wide">
+<use xlink:href="#icon-chevron-wide"></use>
+</svg>
+</div>
+</div>
+<div class="select__drop">
+<div class="select__list"></div>
+</div><select class="mode"></select></div></div><link rel="stylesheet" href="template/blocks/auto/auto.css?ver=1656985054807"/><script src="template/blocks/auto/auto.js?ver=1656985054807"></script><!---->
+<a class="button button_md button_bg-blue-dark button_shadow-black myauto__button-search" href="/catalog.html">
 <!----><!---->
 <div class="button__text">
 <!--[-->К поиску запчастей<!--]-->
@@ -162,12 +224,12 @@
 <!---->
 </a>
 <!--]-->
-</div><link rel="stylesheet" href="template/blocks/myauto/myauto.css?ver=1656796415202"/></div>
+</div><link rel="stylesheet" href="template/blocks/myauto/myauto.css?ver=1656985054807"/><script src="template/blocks/myauto/myauto.js?ver=1656985054807"></script></div>
 </div>
 <div class="profile__right">
 <div class="profile__orders row">
 <!--[-->
-<a href="/profile/order" class="profile__order">
+<a href="orders-item.html" class="profile__order">
 <div class="profile__order-name">Заказ # 1234 1234 423</div>
 <div class="profile__order-date">14 мрата 2021</div>
 <div class="profile__order-data row">
@@ -182,7 +244,7 @@
 </div>
 </div>
 </a>
-<a href="/profile/order" class="profile__order">
+<a href="orders-item.html" class="profile__order">
 <div class="profile__order-name">Заказ # 1234 1234 423</div>
 <div class="profile__order-date">14 мрата 2021</div>
 <div class="profile__order-data row">
@@ -197,7 +259,7 @@
 </div>
 </div>
 </a>
-<a href="/profile/order" class="profile__order">
+<a href="orders-item.html" class="profile__order">
 <div class="profile__order-name">Заказ # 1234 1234 423</div>
 <div class="profile__order-date">14 мрата 2021</div>
 <div class="profile__order-data row">
@@ -212,7 +274,7 @@
 </div>
 </div>
 </a>
-<a href="/profile/order" class="profile__order">
+<a href="orders-item.html" class="profile__order">
 <div class="profile__order-name">Заказ # 1234 1234 423</div>
 <div class="profile__order-date">14 мрата 2021</div>
 <div class="profile__order-data row">
@@ -227,7 +289,7 @@
 </div>
 </div>
 </a>
-<a href="/profile/order" class="profile__order">
+<a href="orders-item.html" class="profile__order">
 <div class="profile__order-name">Заказ # 1234 1234 423</div>
 <div class="profile__order-date">14 мрата 2021</div>
 <div class="profile__order-data row">
@@ -242,7 +304,7 @@
 </div>
 </div>
 </a>
-<a href="/profile/order" class="profile__order">
+<a href="orders-item.html" class="profile__order">
 <div class="profile__order-name">Заказ # 1234 1234 423</div>
 <div class="profile__order-date">14 мрата 2021</div>
 <div class="profile__order-data row">
@@ -257,7 +319,7 @@
 </div>
 </div>
 </a>
-<a href="/profile/order" class="profile__order">
+<a href="orders-item.html" class="profile__order">
 <div class="profile__order-name">Заказ # 1234 1234 423</div>
 <div class="profile__order-date">14 мрата 2021</div>
 <div class="profile__order-data row">
@@ -272,7 +334,7 @@
 </div>
 </div>
 </a>
-<a href="/profile/order" class="profile__order">
+<a href="orders-item.html" class="profile__order">
 <div class="profile__order-name">Заказ # 1234 1234 423</div>
 <div class="profile__order-date">14 мрата 2021</div>
 <div class="profile__order-data row">
@@ -287,7 +349,7 @@
 </div>
 </div>
 </a>
-<a href="/profile/order" class="profile__order">
+<a href="orders-item.html" class="profile__order">
 <div class="profile__order-name">Заказ # 1234 1234 423</div>
 <div class="profile__order-date">14 мрата 2021</div>
 <div class="profile__order-data row">
@@ -302,7 +364,7 @@
 </div>
 </div>
 </a>
-<a href="/profile/order" class="profile__order">
+<a href="orders-item.html" class="profile__order">
 <div class="profile__order-name">Заказ # 1234 1234 423</div>
 <div class="profile__order-date">14 мрата 2021</div>
 <div class="profile__order-data row">

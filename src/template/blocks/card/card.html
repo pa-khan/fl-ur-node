@@ -1,10 +1,10 @@
 <div class="card">
-<div class="case case_sm"><link rel="stylesheet" href="template/blocks/breadcrumb/breadcrumb.css?ver=1656796407573"/><div class="return card__return hidden show-xs-flex"><div class="return__button">
+<div class="case case_sm"><link rel="stylesheet" href="template/blocks/breadcrumb/breadcrumb.css?ver=1656983143405"/><div class="return card__return hidden show-xs-flex"><div class="return__button">
 <svg class="icon icon_chevron f-red">
 <use xlink:href="#icon-chevron"></use>
 </svg>
 <span>Назад</span>
-</div></div><link rel="stylesheet" href="template/blocks/return/return.css?ver=1656796407574"/><div class="card__inner row">
+</div></div><link rel="stylesheet" href="template/blocks/return/return.css?ver=1656983143407"/><div class="card__inner row">
 <div class="card__data">
 <div class="card__gallery">
 <div class="card__images swiper">
@@ -31,19 +31,18 @@
 <div class="card__controls row">
 <div class="card__price">Цена: <var>12&nbsp;325</var> <span class="r"></span></div>
 <div class="card__actions row">
-<div class="card__action">
+<div class="card__action card__action_favorit">
 <svg class="icon icon_bookmark">
 <use xlink:href="#icon-bookmark"></use>
 </svg>
 </div>
-<div class="card__action">
+<div class="card__action card__action_compare">
 <svg class="icon icon_scale">
 <use xlink:href="#icon-scale"></use>
 </svg>
 </div>
 </div>
-</div>
-<div class="card__counts">
+</div><div class="card__counts">
 <div class="card__count">
 <div class="card__count-key">В наличии:</div>
 <div class="card__count-value">15 шт.</div>
@@ -52,78 +51,48 @@
 <div class="card__count-key">На складе:</div>
 <div class="card__count-value">10 шт.</div>
 </div>
-</div>
-<a class="button button_md button_bg-red button_shadow-black card__button-add" href="javascript:;">
+</div><a class="button button_md button_bg-red button_shadow-black card__button-add" href="javascript:;">
 <!--v-if-->
-<div class="button__icon button__icon_left">
+<div class="button__icon button__icon_left card__button-feedback">
 <svg class="icon icon_phone">
 <use xlink:href="#icon-phone"></use>
 </svg>
 </div>
 <div class="button__text">Добавить в корзину</div>
 <!--v-if-->
-</a>
-<!-- <Button v-else class="card__button-add" mods="md, bg-red, shadow-black" @click="toggleProduct"> --><!--   <template #default>Добавить в корзину</template> --><!--   <template #iconLeft><Icon name="cart" /></template> --><!-- </Button> -->
+</a><!-- <Button v-else class="card__button-add" mods="md, bg-red, shadow-black" @click="toggleProduct"> --><!--   <template #default>Добавить в корзину</template> --><!--   <template #iconLeft><Icon name="cart" /></template> --><!-- </Button> -->
 <div class="card__sets">
 <div class="card__sets-title">Максимальное занижение</div>
 <div class="card__sets-list">
-<div class="card__sets-item">10 мм</div>
-<div class="card__sets-item">15 мм</div>
-<div class="card__sets-item">20 мм</div>
-<div class="card__sets-item">32 мм</div>
-<div class="card__sets-item">35 мм</div>
-<div class="card__sets-item">40 мм</div>
-<div class="card__sets-item">50 мм</div>
+<div class="card__sets-item check"><input class="check__input" type="checkbox" name="sets" value="10 мм"/><span>10 мм</span></div>
+<div class="card__sets-item check"><input class="check__input" type="checkbox" name="sets" value="15 мм"/><span>15 мм</span></div>
+<div class="card__sets-item check"><input class="check__input" type="checkbox" name="sets" value="20 мм"/><span>20 мм</span></div>
+<div class="card__sets-item check"><input class="check__input" type="checkbox" name="sets" value="32 мм"/><span>32 мм</span></div>
+<div class="card__sets-item check"><input class="check__input" type="checkbox" name="sets" value="35 мм"/><span>35 мм</span></div>
+<div class="card__sets-item check"><input class="check__input" type="checkbox" name="sets" value="40 мм"/><span>40 мм</span></div>
+<div class="card__sets-item check"><input class="check__input" type="checkbox" name="sets" value="50 мм"/><span>50 мм</span></div>
 </div>
 </div>
 <div class="card__selection hidden-xs">
 <div class="h3 card__selection-title">Подходит для</div>
-<div class="card__selection-list">
-<div class="card__selection-item">
-<div class="card__selection-mark"><img src="/uploads/marks/volkswagen.svg" alt="Volkswagen"></div>
-<div class="card__selection-name">Volkswagen</div>
-<div class="card__selection-count">2 модели</div>
-<div class="card__selection-plus"></div>
-</div>
-<div class="card__selection-item">
-<div class="card__selection-mark"><img src="/uploads/marks/porsche.svg" alt="Porsche"></div>
-<div class="card__selection-name">Porsche</div>
-<div class="card__selection-count">2 модели</div>
-<div class="card__selection-plus"></div>
-</div>
-<div class="card__selection-item">
-<div class="card__selection-mark"><img src="/uploads/marks/audi.svg" alt="Audi"></div>
-<div class="card__selection-name">Audi</div>
-<div class="card__selection-count">2 модели</div>
-<div class="card__selection-plus"></div>
-</div>
-<div class="card__selection-item">
-<div class="card__selection-mark"><img src="/uploads/marks/bmw.svg" alt="BMW"></div>
-<div class="card__selection-name">BMW</div>
-<div class="card__selection-count">3 модели</div>
-<div class="card__selection-plus"></div>
-</div>
-<div class="card__selection-item">
-<div class="card__selection-mark"><img src="/uploads/marks/mini.svg" alt="Mini"></div>
-<div class="card__selection-name">Mini</div>
-<div class="card__selection-count">1 модель</div>
-<div class="card__selection-plus"></div>
-</div>
-</div>
+<div class="card__selection-list card__selection-list_marks"></div>
+<div class="card__selection-list card__selection-list_models"></div>
+<div class="card__selection-list card__selection-list_mods"></div>
+<div class="card__selection-item card__selection-return"><div class="card__selection-count">Назад</div><div class="card__selection-icon card__selection-icon_reverse"><svg class="icon icon_arrow"><use xlink:href="#icon-arrow"></use></svg></div><span></span></div>
 <!--v-if--><!--v-if--><!--v-if-->
 </div>
 </div>
 <div class="card__content">
 <div class="h3 card__title">Описание</div>
 <div class="card__text">Представленные предложения ввиду своего комплексного характера сочетают в себе выгоду при затратах времени и средств и полноту реализации выбранного вами уровня усовершенствования.Представленные предложения ввиду своего комплексного характера сочетают в себе выгоду при затратах времени и средств и </div>
-<div class="card__tabs">
+<div class="card__tabs tabs" data-current-link="card__tabs-link_current" data-current-tab="card__tabs-item_current">
 <div class="card__tabs-links">
-<div class="card__tabs-link card__tabs-link_current" data-text="Характеристики">Характеристики</div>
-<div class="card__tabs-link" data-text="Аналоги">Аналоги</div>
-<div class="card__tabs-link" data-text="Отзывы">Отзывы</div>
+<div class="card__tabs-link tabs__link" data-el="card-chars" data-text="Характеристики">Характеристики</div>
+<div class="card__tabs-link tabs__link" data-el="card-analogs" data-text="Аналоги">Аналоги</div>
+<div class="card__tabs-link tabs__link" data-el="card-reviews" data-text="Отзывы">Отзывы</div>
 </div>
 <div class="card__tabs-list">
-<div class="card__tabs-item">
+<div class="card__tabs-item" id="card-chars">
 <div class="card__block">
 <h3>Характеристики</h3>
 <ul>
@@ -151,7 +120,151 @@
 <p>Болты 5х10, еще какие-то болты, сам товар, <br>куча пупырки, воздух немецкий, коробка, <br>ненужный болт из-за которого вы потом все <br>снимите и соберете заново, инструкция по <br>сборке шкафа икея</p>
 </div>
 </div>
+<div class="card__tabs-item" id="card-analogs">
+<div class="card__analogs">
+<a class="product product_row card__analog" href="/catalog-item.html">
+<div class="product__inner">
+<div class="product__img img"><img src="/uploads/products/product-1.jpg" alt="Винтовая подвеска BCR"></div>
+<div class="product__content">
+<div class="product__title">Винтовая подвеска BCR</div>
+<div class="product__desc">Уникальное решение для точной настройки хода подвела меня тут</div>
+<div class="product__data">
+<div class="product__price">
+<div class="product__price-current">12&nbsp;325 <span class="r"></span></div>
+<div class="product__price-old">22&nbsp;759 <span class="r"></span></div>
+</div>
+<!--v-if--><!--v-if--><!--v-if-->
+<div class="product__button-add nk">
+<svg class="icon icon_cart-add">
+<use xlink:href="#icon-cart-add"></use>
+</svg>
+</div>
+<!--v-if-->
+</div>
+</div>
+</div>
+</a>
+<a class="product product_row card__analog" href="/catalog-item.html">
+<div class="product__inner">
+<div class="product__img img"><img src="/uploads/products/product-2.png" alt="Даунпайп для"></div>
+<div class="product__content">
+<div class="product__title">Даунпайп для</div>
+<div class="product__desc">7880 collection for the earth and human environment</div>
+<div class="product__data">
+<div class="product__price">
+<div class="product__price-current">25&nbsp;940 <span class="r"></span></div>
+<div class="product__price-old">52&nbsp;499 <span class="r"></span></div>
+</div>
+<!--v-if--><!--v-if--><!--v-if-->
+<div class="product__button-add nk">
+<svg class="icon icon_cart-add">
+<use xlink:href="#icon-cart-add"></use>
+</svg>
+</div>
+<!--v-if-->
+</div>
+</div>
+</div>
 <!--v-if--><!--v-if-->
+</a>
+<a class="product product_row card__analog" href="/catalog-item.html">
+<div class="product__inner">
+<div class="product__img img"><img src="/uploads/products/product-3.jpg" alt="Винтовая подвеска BCR"></div>
+<div class="product__content">
+<div class="product__title">Винтовая подвеска BCR</div>
+<div class="product__desc">Уникальное решение для точной настройки хода подвела меня тут</div>
+<div class="product__data">
+<div class="product__price">
+<div class="product__price-current">12&nbsp;325 <span class="r"></span></div>
+<!--v-if-->
+</div>
+<!--v-if--><!--v-if--><!--v-if-->
+<div class="product__button-add nk">
+<svg class="icon icon_cart-add">
+<use xlink:href="#icon-cart-add"></use>
+</svg>
+</div>
+<!--v-if-->
+</div>
+</div>
+</div>
+<!--v-if--><!--v-if-->
+</a>
+</div>
+</div>
+<div class="card__tabs-item" id="card-reviews">
+<div class="card__reviews">
+<div class="review card__review">
+<div class="review__img"><img src="/uploads/product.jpg" alt=""></div>
+<div class="review__title">Иванов Иван Иванович</div>
+<div class="review__text">Представленные предложения ввиду своего комплексного характера сочетают в себе выгоду при затратах времени и средств и полноту.</div>
+</div>
+</div><link rel="stylesheet" href="template/blocks/review/review.css?ver=1656983143407"/><a class="button button_md button_bg-white button_c-red button_shadow-black card__button-review" href="javascript:;" data-popup="" data-src="#modal-review"><!--v-if--><!--v-if--><div class="button__text">Оставить отзыв</div><!--v-if--></a><div class="modal" id="modal-review"><div class="form form_step-1">
+<div class="form__head">
+<div class="form__title">Оставьте отзыв</div>
+<div class="form__close modal__close popup-close"></div>
+</div>
+<!---->
+<div class="form__inner">
+<!--[--><!--[-->
+<div class="field field_sm field_b-gray form__field">
+<div class="field__head">
+<!---->
+<div class="field__title">
+<!--[-->Имя<!--]-->
+</div>
+<!---->
+</div>
+<div class="field__body">
+<!----><!---->
+<div class="field__inner">
+<div class="field__placeholder">Ваше имя</div>
+<input class="field__area" type="text" value="" name="name">
+</div>
+<!----><!----><!----><!----><!---->
+</div>
+<!---->
+</div>
+<div class="field field_sm field_b-gray field_textarea field_textarea form__field">
+<div class="field__head">
+<!---->
+<div class="field__title">
+<!--[-->Отзыв<!--]-->
+</div>
+<!---->
+</div>
+<div class="field__body">
+<!----><!---->
+<div class="field__inner">
+<div class="field__placeholder">Отзыв</div>
+<textarea class="field__area" type="textarea" name="name"></textarea>
+</div>
+<!----><!----><!----><!----><!---->
+</div>
+<!---->
+</div><div class="file form__file"><div class="file__list">
+<!--[--><!--]-->
+</div>
+<div class="file__wrap" file="">
+<label class="file__inner">
+<input type="file" class="file__input" multiple="">
+<div class="file__title">Выбрать фото</div>
+<div class="file__icon">
+<svg class="icon icon_file-add">
+<use xlink:href="#icon-file-add"></use>
+</svg>
+</div>
+</label>
+</div></div><link rel="stylesheet" href="template/components/file/file.css?ver=1656983143407"/><script src="template/components/file/file.js?ver=1656983143407"></script><a class="button button_md button_bg-red button_shadow-black form__button" href="javascript:;">
+<!----><!---->
+<div class="button__text">
+<!--[-->Подать заявку<!--]-->
+</div>
+<!---->
+</a>
+<!--]--><!--]-->
+</div>
+</div></div></div>
 </div>
 </div>
 <div class="card__video">
@@ -166,11 +279,11 @@
 </div>
 <div class="video__img"><img src="/uploads/video-poster.jpg" alt=""></div>
 </div>
-</div><link rel="stylesheet" href="template/blocks/video/video.css?ver=1656796407574"/></div>
+</div><link rel="stylesheet" href="template/blocks/video/video.css?ver=1656983143407"/><script src="template/blocks/video/video.js?ver=1656983143407"></script></div>
 <div class="card__rec hidden show-xs">
 <div class="h3 card__rec-title">Рекомендуем к установке</div>
 <div class="card__rec-list">
-<a class="product product_col card__rec-item" href="/catalog/4">
+<a class="product product_col card__rec-item" href="/catalog-item.html">
 <div class="product__inner">
 <div class="product__img img"><img src="/uploads/products/product-4.jpg" alt="Винтовая подвеска BCR"></div>
 <div class="product__content">
@@ -193,7 +306,7 @@
 </div>
 <!--v-if--><!--v-if-->
 </a>
-<a class="product product_col card__rec-item" href="/catalog/5">
+<a class="product product_col card__rec-item" href="/catalog-item.html">
 <div class="product__inner">
 <div class="product__img img"><img src="/uploads/products/product-5.jpg" alt="Винтовая подвеска BCR"></div>
 <div class="product__content">
@@ -217,42 +330,6 @@
 <!--v-if--><!--v-if-->
 </a>
 </div>
-</div>
-<div class="card__selection hidden show-xs">
-<div class="h3 card__selection-title">Подходит для</div>
-<div class="card__selection-list">
-<div class="card__selection-item">
-<div class="card__selection-mark"><img src="/uploads/marks/volkswagen.svg" alt="Volkswagen"></div>
-<div class="card__selection-name">Volkswagen</div>
-<div class="card__selection-count">2 модели</div>
-<div class="card__selection-plus"></div>
-</div>
-<div class="card__selection-item">
-<div class="card__selection-mark"><img src="/uploads/marks/porsche.svg" alt="Porsche"></div>
-<div class="card__selection-name">Porsche</div>
-<div class="card__selection-count">2 модели</div>
-<div class="card__selection-plus"></div>
-</div>
-<div class="card__selection-item">
-<div class="card__selection-mark"><img src="/uploads/marks/audi.svg" alt="Audi"></div>
-<div class="card__selection-name">Audi</div>
-<div class="card__selection-count">2 модели</div>
-<div class="card__selection-plus"></div>
-</div>
-<div class="card__selection-item">
-<div class="card__selection-mark"><img src="/uploads/marks/bmw.svg" alt="BMW"></div>
-<div class="card__selection-name">BMW</div>
-<div class="card__selection-count">3 модели</div>
-<div class="card__selection-plus"></div>
-</div>
-<div class="card__selection-item">
-<div class="card__selection-mark"><img src="/uploads/marks/mini.svg" alt="Mini"></div>
-<div class="card__selection-name">Mini</div>
-<div class="card__selection-count">1 модель</div>
-<div class="card__selection-plus"></div>
-</div>
-</div>
-<!--v-if--><!--v-if--><!--v-if-->
 </div>
 </div>
 </div>

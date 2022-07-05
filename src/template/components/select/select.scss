@@ -43,7 +43,7 @@
     &__clear {
         width: 0px;
         height: 12px;
-        margin-right: 17px;
+        margin-right: 10px;
         transition: .3s;
 
         svg {
@@ -145,7 +145,7 @@
                 align-items: center;
                 justify-content: center;
                 height: 35px;
-                margin-right: 10px;
+                margin-right: 0px;
 
                 svg {
                     width: 100%;
@@ -200,9 +200,21 @@
 
         &.select_filled {
             .select {
+
+
                 &__clear {
+                    width: 12px;
+                    min-width: 12px;
+                }
+            }
+        }
+
+        &.select_has-icon {
+            .select {
+                &__icon {
                     width: 27px;
                     min-width: 27px;
+                    margin-right: 10px;
                 }
             }
         }
@@ -226,7 +238,7 @@
                 justify-content: center;
                 width: 0px;
                 height: 35px;
-                margin-right: 10px;
+                margin-right: 0px;
 
                 svg {
                     width: 100%;
@@ -282,9 +294,21 @@
 
         &.select_filled {
             .select {
+
+
                 &__clear {
+                    width: 12px;
+                    min-width: 12px;
+                }
+            }
+        }
+
+        &.select_has-icon {
+            .select {
+                &__icon {
                     width: 27px;
                     min-width: 27px;
+                    margin-right: 10px;
                 }
             }
         }

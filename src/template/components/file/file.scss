@@ -1,0 +1,104 @@
+@import '../../scss/vars';
+
+.file {
+  &__input {
+    display: none;
+  }
+
+  &__list {
+    margin-bottom: 15px;
+
+    &:empty {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item {
+    align-items: center;
+    background: #fcfcfd;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    display: flex;
+    margin-bottom: 10px;
+    padding: 12px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &-remove {
+      cursor: pointer;
+      height: 15px;
+      margin-left: auto;
+      min-width: 15px;
+      position: relative;
+      width: 15px;
+
+      &:hover {
+
+        &::before,
+        &:after {
+          background: #f05454;
+        }
+      }
+
+      &:before,
+      &:after {
+        background: #979797;
+        content: "";
+        height: 3px;
+        left: 50%;
+        position: absolute;
+        top: 50%;
+        transition: .3s;
+        width: 15px;
+      }
+
+      &:before {
+        transform: translate(-50%, -50%) rotate(-45deg);
+      }
+
+      &:after {
+        transform: translate(-50%, -50%) rotate(45deg);
+      }
+    }
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    background: #FCFCFD;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    padding: 12px;
+    cursor: pointer;
+
+    &:hover {
+      .file {
+        &__icon {
+          svg {
+            fill: $red;
+          }
+        }
+      }
+    }
+  }
+
+  &__title {
+    color: $black;
+    line-height: 20px;
+    padding-left: 3px;
+  }
+
+  &__icon {
+    width: 18px;
+    height: 18px;
+    margin-left: auto;
+
+    svg {
+      fill: #979797;
+    }
+  }
+
+
+}

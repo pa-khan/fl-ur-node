@@ -19,7 +19,7 @@ include ../../pug/vars
           <!--[-->Тут вы можете посмотреть историю заказов и изменить контактную информацию<!--]-->
         </div>
         <div class="profile__form">
-          <div class="field field_sm field_b-gray profile__field">
+          <div class="field field_sm field_b-gray profile__field" data-validation="email">
             <div class="field__head">
               <!---->
               <div class="field__title">
@@ -34,20 +34,21 @@ include ../../pug/vars
                 <input class="field__area" type="text" value="" name="name">
               </div>
               <!----><!---->
-              <div class="field__icon field__icon_right">
-                <!---->
+              <div class="field__icon field__valid-icon field__icon_right">
+                <svg class="field__valid-successful icon icon_check-round f-green"><use xlink:href="#icon-check-round"></use></svg>
+                <svg class="field__valid-error icon icon_alert f-red"><use xlink:href="#icon-alert"></use></svg>
               </div>
               <!----><!---->
             </div>
             <div class="field__foot">
               <!---->
-              <div class="field__valid" style="display:none;">
+              <div class="field__valid">
                 <!----><!---->
               </div>
               <!---->
             </div>
           </div>
-          <div class="field field_sm field_b-gray profile__field">
+          <div class="field field_sm field_b-gray profile__field" data-validation="phone">
             <div class="field__head">
               <!---->
               <div class="field__title">
@@ -62,20 +63,21 @@ include ../../pug/vars
                 <input class="field__area" type="text" value="" name="name">
               </div>
               <!----><!---->
-              <div class="field__icon field__icon_right">
-                <!---->
+              <div class="field__icon field__valid-icon field__icon_right">
+                <svg class="field__valid-successful icon icon_check-round f-green"><use xlink:href="#icon-check-round"></use></svg>
+                <svg class="field__valid-error icon icon_alert f-red"><use xlink:href="#icon-alert"></use></svg>
               </div>
               <!----><!---->
             </div>
             <div class="field__foot">
               <!---->
-              <div class="field__valid" style="display:none;">
+              <div class="field__valid">
                 <!----><!---->
               </div>
               <!---->
             </div>
           </div>
-          <div class="field field_sm field_b-gray field_password profile__field">
+          <div class="field field_sm field_b-gray field_password profile__field" data-validation="password">
             <div class="field__head">
               <!---->
               <div class="field__title">
@@ -93,16 +95,23 @@ include ../../pug/vars
               <div class="field__icon field__icon_right">
                 <!---->
               </div>
-              <div class="field__icon_hidden field__visible field__icon field__icon_right">
+              <div class="field__visible field__icon field__icon_right">
                 <svg class="icon icon_eye">
                   <use xlink:href="#icon-eye"></use>
                 </svg>
+                <svg class="icon icon_eye-line">
+                  <use xlink:href="#icon-eye-line"></use>
+                </svg>
+              </div>
+              <div class="field__icon field__valid-icon field__icon_right">
+                <svg class="field__valid-successful icon icon_check-round f-green"><use xlink:href="#icon-check-round"></use></svg>
+                <svg class="field__valid-error icon icon_alert f-red"><use xlink:href="#icon-alert"></use></svg>
               </div>
               <!---->
             </div>
             <div class="field__foot">
               <!---->
-              <div class="field__valid" style="display:none;">
+              <div class="field__valid">
                 <!----><!---->
               </div>
               <!---->
@@ -118,7 +127,7 @@ include ../../pug/vars
           <div class="profile__links">
             <div class="profile__links-title">Сохраненные товары</div>
             <div class="profile__links-list">
-              <a class="profile__link" href="/profile/compare">
+              <a class="profile__link" href="compare.html">
                 <div class="profile__link-icon">
                   <svg class="icon icon_scale f-red">
                     <use xlink:href="#icon-scale"></use>
@@ -126,7 +135,7 @@ include ../../pug/vars
                 </div>
                 <div class="profile__link-title">Сравнение</div>
               </a>
-              <a class="profile__link" href="/profile/favorit">
+              <a class="profile__link" href="favorit.html">
                 <div class="profile__link-icon">
                   <svg class="icon icon_bookmark f-red">
                     <use xlink:href="#icon-bookmark"></use>
@@ -158,8 +167,15 @@ include ../../pug/vars
               </svg>
               <span>Добавить еще автомобиль</span>
             </div>
+
+            - autoClass = 'myauto__choiser'
+            - autoButtonHide = true
+            - autoSelectHideBg = true
+            include ../auto/auto
+            +style('auto', 'blocks')
+            +script('auto', 'blocks')
             <!---->
-            <a class="button button_md button_bg-blue-dark button_shadow-black myauto__button-search" href="javascript:;">
+            <a class="button button_md button_bg-blue-dark button_shadow-black myauto__button-search" href="/catalog.html">
               <!----><!---->
               <div class="button__text">
                 <!--[-->К поиску запчастей<!--]-->
@@ -169,12 +185,13 @@ include ../../pug/vars
             <!--]-->
           </div>
           +style('myauto', 'blocks')
+          +script('myauto', 'blocks')
         </div>
       </div>
       <div class="profile__right">
         <div class="profile__orders row">
           <!--[-->
-          <a href="/profile/order" class="profile__order">
+          <a href="orders-item.html" class="profile__order">
             <div class="profile__order-name">Заказ # 1234 1234 423</div>
             <div class="profile__order-date">14 мрата 2021</div>
             <div class="profile__order-data row">
@@ -189,7 +206,7 @@ include ../../pug/vars
               </div>
             </div>
           </a>
-          <a href="/profile/order" class="profile__order">
+          <a href="orders-item.html" class="profile__order">
             <div class="profile__order-name">Заказ # 1234 1234 423</div>
             <div class="profile__order-date">14 мрата 2021</div>
             <div class="profile__order-data row">
@@ -204,7 +221,7 @@ include ../../pug/vars
               </div>
             </div>
           </a>
-          <a href="/profile/order" class="profile__order">
+          <a href="orders-item.html" class="profile__order">
             <div class="profile__order-name">Заказ # 1234 1234 423</div>
             <div class="profile__order-date">14 мрата 2021</div>
             <div class="profile__order-data row">
@@ -219,7 +236,7 @@ include ../../pug/vars
               </div>
             </div>
           </a>
-          <a href="/profile/order" class="profile__order">
+          <a href="orders-item.html" class="profile__order">
             <div class="profile__order-name">Заказ # 1234 1234 423</div>
             <div class="profile__order-date">14 мрата 2021</div>
             <div class="profile__order-data row">
@@ -234,7 +251,7 @@ include ../../pug/vars
               </div>
             </div>
           </a>
-          <a href="/profile/order" class="profile__order">
+          <a href="orders-item.html" class="profile__order">
             <div class="profile__order-name">Заказ # 1234 1234 423</div>
             <div class="profile__order-date">14 мрата 2021</div>
             <div class="profile__order-data row">
@@ -249,7 +266,7 @@ include ../../pug/vars
               </div>
             </div>
           </a>
-          <a href="/profile/order" class="profile__order">
+          <a href="orders-item.html" class="profile__order">
             <div class="profile__order-name">Заказ # 1234 1234 423</div>
             <div class="profile__order-date">14 мрата 2021</div>
             <div class="profile__order-data row">
@@ -264,7 +281,7 @@ include ../../pug/vars
               </div>
             </div>
           </a>
-          <a href="/profile/order" class="profile__order">
+          <a href="orders-item.html" class="profile__order">
             <div class="profile__order-name">Заказ # 1234 1234 423</div>
             <div class="profile__order-date">14 мрата 2021</div>
             <div class="profile__order-data row">
@@ -279,7 +296,7 @@ include ../../pug/vars
               </div>
             </div>
           </a>
-          <a href="/profile/order" class="profile__order">
+          <a href="orders-item.html" class="profile__order">
             <div class="profile__order-name">Заказ # 1234 1234 423</div>
             <div class="profile__order-date">14 мрата 2021</div>
             <div class="profile__order-data row">
@@ -294,7 +311,7 @@ include ../../pug/vars
               </div>
             </div>
           </a>
-          <a href="/profile/order" class="profile__order">
+          <a href="orders-item.html" class="profile__order">
             <div class="profile__order-name">Заказ # 1234 1234 423</div>
             <div class="profile__order-date">14 мрата 2021</div>
             <div class="profile__order-data row">
@@ -309,7 +326,7 @@ include ../../pug/vars
               </div>
             </div>
           </a>
-          <a href="/profile/order" class="profile__order">
+          <a href="orders-item.html" class="profile__order">
             <div class="profile__order-name">Заказ # 1234 1234 423</div>
             <div class="profile__order-date">14 мрата 2021</div>
             <div class="profile__order-data row">

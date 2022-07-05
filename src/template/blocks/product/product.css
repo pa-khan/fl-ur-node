@@ -264,28 +264,12 @@
   box-shadow: 0 1px 25px rgba(0, 0, 0, 0.15);
 }
 .product__modal {
-  opacity: 0;
-  z-index: 1000;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  transition: 0.3s;
-  visibility: hidden;
+  display: none;
   padding: 30px 15px;
-  overflow-y: auto;
-  pointer-events: none;
-  cursor: default;
-}
-.product__modal_show {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
+  opacity: 1 !important;
+  visibility: visible !important;
+  width: 100%;
+  max-width: 355px;
 }
 .product__modal-head {
   display: flex;

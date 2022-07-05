@@ -43,16 +43,16 @@
   height: 2px;
   background: #6B6D81;
 }
-.plus_gray.plus_checked .plus__inner {
+.plus_gray.--checked .plus__inner {
   background: #F05454;
 }
-.plus_gray.plus_checked .plus__value {
+.plus_gray.--checked .plus__value {
   color: #fff;
 }
-.plus_gray.plus_checked .plus__icon {
+.plus_gray.--checked .plus__icon {
   transform: rotate(45deg) translateZ(0);
 }
-.plus_gray.plus_checked .plus__icon div {
+.plus_gray.--checked .plus__icon div {
   background: #fff;
 }
 .plus_md {

@@ -60,10 +60,10 @@
 .filter__select_w3 {
   width: calc(33.3333333333% - 16px);
 }
-.filter__auto-select {
+.filter__auto .select {
   margin-bottom: 15px;
 }
-.filter__auto-select:last-child {
+.filter__auto .select:last-child {
   margin-bottom: 0;
 }
 .filter__myauto {

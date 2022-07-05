@@ -63,7 +63,7 @@
             transform: scale(0);
         }
 
-        &_current {
+        &.--checked {
             border-color: #d9d9d9;
 
             .myauto {
@@ -133,5 +133,17 @@
 
     &__button-search {
         margin-top: 11px;
+    }
+
+    &__choiser {
+        margin-top: 11px;
+
+        .select {
+            margin-bottom: 11px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
     }
 }

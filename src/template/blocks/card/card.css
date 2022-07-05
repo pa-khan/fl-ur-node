@@ -112,6 +112,9 @@
   margin-top: 15px;
   max-width: 355px;
 }
+.card__button-favorit_selected .icon {
+  fill: #f05454;
+}
 .card__sets {
   margin-top: 15px;
 }
@@ -139,7 +142,7 @@
   transition: 0.3s;
   cursor: pointer;
 }
-.card__sets-item_checked {
+.card__sets-item.--checked {
   color: #fff;
   background: #F05454;
   cursor: default;
@@ -280,6 +283,12 @@
 .card__tabs-link_current:before {
   color: #fff;
   font-weight: 700;
+}
+.card__tabs-item {
+  display: none;
+}
+.card__tabs-item_current {
+  display: block;
 }
 .card__block {
   display: block;

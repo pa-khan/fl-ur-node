@@ -1,0 +1,18 @@
+extends ../../templates/default
+block vars
+  -
+    title = "Комплект винтовой подвески BC Racing серия BR тип RA"
+    breadcrumbs = [
+      ['Главная', 'index.html'],
+      ['Каталог запчастей', 'catalog.html'],
+      [title]
+    ]
+block content
+  - cardNone = true
+  include ../../../blocks/card/card
+  +style('card', 'blocks')
+  +script('card', 'blocks')
+  
+  - questionsClass = 'hidden-xs'
+  include ../../../blocks/questions/questions
+  +style('questions', 'blocks')

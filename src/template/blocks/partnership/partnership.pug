@@ -20,13 +20,16 @@ include ../../pug/vars
 				if partnershipChoiser
 					<div class="partnership__choiser hidden-xs">
 						<div class="partnership__choiser-title partnership__subtitle">Выберите город</div>
-						<div class="select select_md select_b-gray partnership__choiser-select">
+						<div class="select select_md select_b-gray partnership__choiser-select" data-placeholder="Выберите город">
 							<!---->
 							<div class="select__area">
-								<!---->
-								<div class="select__value select__placeholder">Выберите город</div>
+								<!--v-if-->
+								<div class="select__icon"></div>
+								<div class="select__value"></div>
 								<div class="select__clear">
-									<!---->
+									<svg class="icon icon_cross">
+										<use xlink:href="#icon-cross"></use>
+									</svg>
 								</div>
 								<div class="select__chevron">
 									<svg class="icon icon_chevron-wide">
@@ -35,44 +38,14 @@ include ../../pug/vars
 								</div>
 							</div>
 							<div class="select__drop">
-								<div class="select__list">
-									<!--[-->
-									<div class="select__item">
-										<!---->
-										<div class="select__item-title">Санкт-Петербург</div>
-										<div class="select__item-check">
-											<svg class="icon icon_check icon_hide">
-												<use xlink:href="#icon-check"></use>
-											</svg>
-										</div>
-									</div>
-									<div class="select__item">
-										<!---->
-										<div class="select__item-title">Москва</div>
-										<div class="select__item-check">
-											<svg class="icon icon_check icon_hide">
-												<use xlink:href="#icon-check"></use>
-											</svg>
-										</div>
-									</div>
-									<div class="select__item">
-										<!---->
-										<div class="select__item-title">Ростов</div>
-										<div class="select__item-check">
-											<svg class="icon icon_check icon_hide">
-												<use xlink:href="#icon-check"></use>
-											</svg>
-										</div>
-									</div>
-									<!--]-->
-								</div>
+								<div class="select__list"></div>
 							</div>
 							<!---->
 							<select>
 								<!--[-->
-								<option value="[object Object]">Санкт-Петербург</option>
-								<option value="[object Object]">Москва</option>
-								<option value="[object Object]">Ростов</option>
+								<option value="spb">Санкт-Петербург</option>
+								<option value="msk">Москва</option>
+								<option value="rost">Ростов</option>
 								<!--]-->
 							</select>
 						</div>
@@ -84,7 +57,7 @@ include ../../pug/vars
 					if partnershipFormTitle
 						div.partnership__form-title.partnership__subtitle= partnershipFormTitle
 					<div class="partnership__form-inner">
-						<div class="field field_sm field_b-gray partnership__form-field">
+						<div class="field field_sm field_b-gray partnership__form-field"  data-validation="name">
 							<div class="field__head">
 								<!---->
 								<div class="field__title">
@@ -98,11 +71,22 @@ include ../../pug/vars
 									<div class="field__placeholder">Ваше имя</div>
 									<input class="field__area" type="text" value="" name="name">
 								</div>
+								<div class="field__icon field__valid-icon field__icon_right">
+									<svg class="field__valid-successful icon icon_check-round f-green"><use xlink:href="#icon-check-round"></use></svg>
+									<svg class="field__valid-error icon icon_alert f-red"><use xlink:href="#icon-alert"></use></svg>
+								</div>
 								<!----><!----><!----><!----><!---->
+							</div>
+							<div class="field__foot">
+								<!---->
+								<div class="field__valid">
+									<!----><!---->
+								</div>
+								<!---->
 							</div>
 							<!---->
 						</div>
-						<div class="field field_sm field_b-gray partnership__form-field">
+						<div class="field field_sm field_b-gray partnership__form-field"  data-validation="email">
 							<div class="field__head">
 								<!---->
 								<div class="field__title">
@@ -117,14 +101,15 @@ include ../../pug/vars
 									<input class="field__area" type="text" value="" name="name">
 								</div>
 								<!----><!---->
-								<div class="field__icon field__icon_right">
-									<!---->
+								<div class="field__icon field__valid-icon field__icon_right">
+									<svg class="field__valid-successful icon icon_check-round f-green"><use xlink:href="#icon-check-round"></use></svg>
+									<svg class="field__valid-error icon icon_alert f-red"><use xlink:href="#icon-alert"></use></svg>
 								</div>
 								<!----><!---->
 							</div>
 							<div class="field__foot">
 								<!---->
-								<div class="field__valid" style="display:none;">
+								<div class="field__valid">
 									<!----><!---->
 								</div>
 								<!---->
@@ -149,7 +134,7 @@ include ../../pug/vars
 								</div>
 								<!---->
 							</div>
-						<div class="field field_sm field_b-gray field_error field_error-type-30 partnership__form-field">
+						<div class="field field_sm field_b-gray partnership__form-field" data-validation="phone">
 							<div class="field__head">
 								<!---->
 								<div class="field__title">
@@ -164,19 +149,15 @@ include ../../pug/vars
 									<input class="field__area" type="text" value="" name="name">
 								</div>
 								<!----><!---->
-								<div class="field__icon field__icon_right">
-									<svg class="icon icon_alert f-red">
-										<use xlink:href="#icon-alert"></use>
-									</svg>
+								<div class="field__icon field__valid-icon field__icon_right">
+									<svg class="field__valid-successful icon icon_check-round f-green"><use xlink:href="#icon-check-round"></use></svg>
+									<svg class="field__valid-error icon icon_alert f-red"><use xlink:href="#icon-alert"></use></svg>
 								</div>
 								<!----><!---->
 							</div>
 							<div class="field__foot">
 								<!---->
-								<div class="field__valid" style="">
-									<div class="field__valid-title">Ошибка, телефон введен не верно.</div>
-									<!---->
-								</div>
+								<div class="field__valid"></div>
 								<!---->
 							</div>
 						</div>
@@ -196,7 +177,7 @@ include ../../pug/vars
 		if partnershipChoiser
 			<div class="partnership__blocks">
 				<!--[-->
-				<div class="partnership__block">
+				<div class="partnership__block" data-value="spb">
 					<div class="h2 partnership__block-title">
 						<!--[-->Санкт-Петербург<!--]-->
 					</div>
@@ -339,7 +320,7 @@ include ../../pug/vars
 						</div>
 					</div>
 				</div>
-				<div class="partnership__block">
+				<div class="partnership__block" data-value="msk">
 					<div class="h2 partnership__block-title">
 						<!--[-->Москва<!--]-->
 					</div>
@@ -416,7 +397,7 @@ include ../../pug/vars
 						</div>
 					</div>
 				</div>
-				<div class="partnership__block">
+				<div class="partnership__block" data-value="rost">
 					<div class="h2 partnership__block-title">
 						<!--[-->Ростов<!--]-->
 					</div>
