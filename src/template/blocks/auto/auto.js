@@ -33,12 +33,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         select.classList.remove(Auto.classSelectError);
       }, 3000);
     }
-
-    static sctollToBlock() {
-      if (document.body >= 768) {
-        this.block.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      }
-    }
   }
 
   await Auto.getList('autos.json');

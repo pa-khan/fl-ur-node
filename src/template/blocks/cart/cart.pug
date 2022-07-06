@@ -7,6 +7,7 @@ include ../../pug/vars
       +style('breadcrumb', 'blocks')
       - returnClass = 'cart__return hidden show-xs-flex'
       include ../return/return
+      +style('return', 'blocks')
     else
       <a href="basket.html" class="cart__return">
         <svg class="icon icon_chevron f-red">

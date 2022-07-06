@@ -94,14 +94,16 @@ document.addEventListener('DOMContentLoaded', () => {
 		forms.forEach((form) => {
 			form.btn = form.querySelector('.form__button');
 
-			form.btn.addEventListener('click', () => {
-				Popup.close();
+			if (form.btn) {
+				form.btn.addEventListener('click', () => {
+					Popup.close();
 
-				setTimeout(() => {
-					Popup.show(modalThanks);
-				}, 100);
-			});
-			// validation here
+					setTimeout(() => {
+						Popup.show(modalThanks);
+					}, 100);
+				});
+			}
+
 		});
 	}
 });
